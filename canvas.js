@@ -85,7 +85,7 @@
  $('search').addEventListener('input',e=>{query=e.target.value;render();fit();});$('clear-search').onclick=()=>{query='';$('search').value='';render();reset();};
  document.querySelectorAll('[data-version]').forEach(b=>b.onclick=()=>{version=b.dataset.version;document.querySelectorAll('[data-version]').forEach(c=>c.setAttribute('aria-pressed',String(c===b)));render();reset();});
  $('menu').onclick=()=>{const state=$('sidebar').classList.toggle('is-open');$('menu').setAttribute('aria-expanded',String(state));};
- $('close-preview').onclick=()=>preview.close();preview.addEventListener('close',()=>{modalFrame.src='about:blank';history.replaceState(null,'',location.pathname+location.search);});
+ $('close-preview').onclick=()=>preview.close();preview.addEventListener('close',()=>{if(preview.open)return;modalFrame.src='about:blank';const id=new URLSearchParams(location.hash.slice(1)).get('screen');if(!id||id===selected)history.replaceState(null,'',location.pathname+location.search);});
  $('previous').onclick=()=>{const i=visible.findIndex(s=>s.id===selected);if(i>0)open(visible[i-1]);};$('next').onclick=()=>{const i=visible.findIndex(s=>s.id===selected);if(i<visible.length-1)open(visible[i+1]);};
  $('play').onclick=()=>open(screens.find(s=>s.id==='GV01-TongQuan'));
  $('share').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('share').textContent='Đã chép';}catch{$('announcement').textContent='Link màn hình: '+location.href;}};
@@ -102,5 +102,7 @@
  document.addEventListener('keydown',e=>{if(preview.open||$('help-dialog').open||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;if(e.key==='/'){e.preventDefault();if(innerWidth<760){$('sidebar').classList.add('is-open');$('menu').setAttribute('aria-expanded','true');}$('search').focus();}else if(e.key==='0')fit();else if(e.key==='+'||e.key==='=')zoom(scale*1.25);else if(e.key==='-')zoom(scale/1.25);else if(e.key==='Escape')closeMenu();else if(e.key.startsWith('Arrow')){e.preventDefault();if(e.key==='ArrowLeft')x+=80;if(e.key==='ArrowRight')x-=80;if(e.key==='ArrowUp')y+=80;if(e.key==='ArrowDown')y-=80;transform();}});
  let priorWidth=viewport.clientWidth;new ResizeObserver(()=>{if(priorWidth!==viewport.clientWidth){priorWidth=viewport.clientWidth;reset();}}).observe(viewport);
  new ResizeObserver(sizeModal).observe(preview.querySelector('.preview-body'));
- fetch('assets/screens.json').then(r=>{if(!r.ok)throw Error('inventory');return r.json();}).then(data=>{screens=data;units=buildUnits();$('total').textContent=screens.length+' prototype';render();reset();const id=new URLSearchParams(location.hash.slice(1)).get('screen');const s=screens.find(s=>s.id===id);if(s)open(s,false);}).catch(()=>{$('load-error').hidden=false;$('total').textContent='Chưa tải được';});
+ function openFromHash(){const id=new URLSearchParams(location.hash.slice(1)).get('screen'),s=screens.find(s=>s.id===id);if(s)open(s,false);else if(!id&&preview.open)preview.close();}
+ window.addEventListener('hashchange',openFromHash);
+ fetch('assets/screens.json').then(r=>{if(!r.ok)throw Error('inventory');return r.json();}).then(data=>{screens=data;units=buildUnits();$('total').textContent=screens.length+' prototype';render();reset();openFromHash();}).catch(()=>{$('load-error').hidden=false;$('total').textContent='Chưa tải được';});
 })();
