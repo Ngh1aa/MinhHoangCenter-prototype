@@ -1,0 +1,20 @@
+{
+  "source": "Latest direct user correction",
+  "request": "Show static, clear screens on canvas and remove prototype behavior",
+  "supersedes": "Live-canvas presentation; historical receipts remain dated evidence",
+  "preserves": [
+    "69 canonical documents",
+    "17 exact pairs",
+    "red V1 outline",
+    "supplied design system",
+    "canonical source content"
+  ],
+  "implementation": [
+    "Export rendered DOM and scoped CSS",
+    "Strip scripts, event attributes and navigation hrefs",
+    "Inert controls; no iframe",
+    "100% entry zoom and native-size control",
+    "Expand current-screen content without changing canonical app routes"
+  ],
+  "verification": "docs/evidence/static-canvas-qa.json"
+}

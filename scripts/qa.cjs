@@ -8,13 +8,13 @@ async function main(){
   const page=await browser.newPage({viewport:{width:1440,height:1000}});
   page.on('pageerror',e=>issues.push({type:'runtime',message:e.message}));
   const goto=async(file)=>{await page.goto('http://127.0.0.1:4173/'+(file?'app/'+file:''));await page.waitForSelector(file?'.screen':'.artboard');};
-  await goto();assert.equal(await page.locator('.artboard:not([hidden])').count(),inventory.length);await page.screenshot({path:path.join(dir,'canvas-desktop.png')});
+  await goto();assert.equal(await page.locator('.artboard:not([hidden])').count(),inventory.length);await page.locator('.artboard[data-screen="GV01-TongQuan"] .static-slot.ready').waitFor();await page.screenshot({path:path.join(dir,'canvas-desktop.png')});
   const before=await page.locator('#world').getAttribute('style');await page.locator('#zoom-in').click();assert.notEqual(await page.locator('#world').getAttribute('style'),before);
   await page.mouse.move(1200,150);await page.mouse.down();await page.mouse.move(1000,190);await page.mouse.up();
   await page.locator('#search').fill('zz-no-screen');assert.equal(await page.locator('.artboard:not([hidden])').count(),0);await page.locator('#clear-search').click();assert.equal(await page.locator('.artboard:not([hidden])').count(),69);
   await page.locator('[data-version=current]').click();assert.equal(await page.locator('.artboard:not([hidden])').count(),46);await page.locator('[data-version=all]').click();
-  await page.locator('#play').click();await page.frameLocator('#prototype').locator('.mh-greeting').waitFor();await page.locator('#close-preview').click();assert.equal(await page.locator('#preview').evaluate(d=>d.open),false);
-  scenarios.push({id:'S1',task:'Canvas, search, empty recovery, version filters, zoom, pan and prototype dialog',result:'PASS'});
+  await page.getByRole('button',{name:'Mở lớn GV01-TongQuan',exact:true}).click();await page.locator('#preview-static .mh-greeting').waitFor();await page.locator('#close-preview').click();assert.equal(await page.locator('#preview').evaluate(d=>d.open),false);
+  scenarios.push({id:'S1',task:'Canvas, search, empty recovery, version filters, zoom, pan and static screen dialog',result:'PASS'});
   await page.setViewportSize({width:390,height:844});await goto('GV04-NhapHoSo.dc.html');
   await page.locator('#n').fill('');await page.getByRole('link',{name:'Tiếp tục',exact:true}).click();assert.equal(await page.locator('#n').getAttribute('aria-invalid'),'true');
   await page.locator('#n').fill('Nguyễn Minh Khánh An');await page.getByRole('link',{name:'Tiếp tục',exact:true}).click();await page.waitForURL('**/GV04b-PhuHuynh.dc.html');await page.goBack();assert.equal(await page.locator('#n').inputValue(),'Nguyễn Minh Khánh An');
@@ -28,7 +28,7 @@ async function main(){
   await goto('GV02-HocSinh.dc.html');await page.locator('input').first().fill('zzz-khong-ton-tai');await page.locator('.mh-no-results').waitFor();await page.getByRole('button',{name:'Xóa tìm kiếm',exact:true}).click();assert.equal(await page.locator('input').first().inputValue(),'');
   await goto('GV03-HoSo.dc.html');await page.locator('[data-unavailable]').first().click();await page.locator('dialog[open]').waitFor();await page.keyboard.press('Escape');assert.equal(await page.locator('dialog[open]').count(),0);
   scenarios.push({id:'S4',task:'No student search results can recover; missing source screen gives closable explanation',result:'PASS'});
-  await page.setViewportSize({width:390,height:844});await goto();await page.locator('#menu').click();await page.locator('#search').fill('Xác nhận xếp lớp');assert.equal(await page.locator('.artboard:not([hidden])').count(),1);await page.locator('#clear-search').isVisible();await page.locator('#menu').click();await page.getByRole('button',{name:'Mở lớn XL03-XacNhanXepLop',exact:true}).click();await page.frameLocator('#prototype').locator('.screen').waitFor();await page.locator('#close-preview').click();await page.screenshot({path:path.join(dir,'canvas-mobile.png')});
+  await page.setViewportSize({width:390,height:844});await goto();await page.locator('#menu').click();await page.locator('#search').fill('Xác nhận xếp lớp');assert.equal(await page.locator('.artboard:not([hidden])').count(),1);await page.locator('#clear-search').isVisible();await page.locator('#menu').click();await page.getByRole('button',{name:'Mở lớn XL03-XacNhanXepLop',exact:true}).click();await page.locator('#preview-static .screen').waitFor();await page.locator('#close-preview').click();await page.screenshot({path:path.join(dir,'canvas-mobile.png')});
   scenarios.push({id:'S5',task:'Mobile menu, search by Vietnamese title, open artboard and return to canvas',result:'PASS'});
   // All affected current screens receive elementary responsive sanity coverage.
   for(const width of [320,390,768]){

@@ -1,0 +1,352 @@
+{
+  "generatedAt": "2026-10-23T05:27:54.699Z",
+  "mode": "static-dom",
+  "sourceSha256": "153a64bedc8c0849ad1bb9aad850eae10c4bc8e98e17f356c1557e32b73e2ebd",
+  "documents": [
+    {
+      "id": "Main",
+      "width": 2600,
+      "height": 1240
+    },
+    {
+      "id": "Line-1",
+      "width": 40,
+      "height": 7488
+    },
+    {
+      "id": "Line-2",
+      "width": 40,
+      "height": 7488
+    },
+    {
+      "id": "DS-DesignSystem",
+      "width": 1440,
+      "height": 2560
+    },
+    {
+      "id": "v1-A00-DangNhap",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "v1-GV01-TongQuan",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV01-TongQuan",
+      "width": 390,
+      "height": 1090
+    },
+    {
+      "id": "CN01-TaiKhoanCuaToi",
+      "width": 390,
+      "height": 1242
+    },
+    {
+      "id": "v1-GV02-HocSinh",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV02-HocSinh",
+      "width": 390,
+      "height": 1816
+    },
+    {
+      "id": "v1-GV03-HoSo",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV03-HoSo",
+      "width": 390,
+      "height": 952
+    },
+    {
+      "id": "v1-GV04-NhapHoSo",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV04-NhapHoSo",
+      "width": 390,
+      "height": 1324
+    },
+    {
+      "id": "v1-GV04b-PhuHuynh",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV04b-PhuHuynh",
+      "width": 390,
+      "height": 1422
+    },
+    {
+      "id": "v1-GV04c-TestDauVao",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV04c-TestDauVao",
+      "width": 390,
+      "height": 985
+    },
+    {
+      "id": "GV04d-DaLuuHoSo",
+      "width": 390,
+      "height": 898
+    },
+    {
+      "id": "v1-GV05-TaoLop",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV05-TaoLop",
+      "width": 390,
+      "height": 1152
+    },
+    {
+      "id": "v1-GV05s1-GoiYMaHS",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV05s1-GoiYMaHS",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "v1-GV05s2-ChonMon",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV05s2-ChonMon",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "v1-GV05s3-ChonNgay",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV05s3-ChonNgay",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV05d-XepLopXong",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV06a-DieuChinhLop",
+      "width": 390,
+      "height": 1405
+    },
+    {
+      "id": "v1-GV06-ChuyenGV",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV06-ChuyenGV",
+      "width": 390,
+      "height": 1351
+    },
+    {
+      "id": "v1-GV06b-ChuyenLich",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV06b-ChuyenLich",
+      "width": 390,
+      "height": 933
+    },
+    {
+      "id": "v1-GV06c-NghiHoc",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV06c-NghiHoc",
+      "width": 390,
+      "height": 1063
+    },
+    {
+      "id": "GV06d-XacNhanThoiHoc",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV06e-TamNghi",
+      "width": 390,
+      "height": 1014
+    },
+    {
+      "id": "GV06f-DaTamNghi",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "v1-GV07-DuyetBaoCao",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV07-DuyetBaoCao",
+      "width": 390,
+      "height": 1432
+    },
+    {
+      "id": "GV07b-ChiTietBaoCao",
+      "width": 390,
+      "height": 1432
+    },
+    {
+      "id": "GV07c-YeuCauBoSung",
+      "width": 390,
+      "height": 1550
+    },
+    {
+      "id": "ST01-DuyetRong",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "v1-GV10-SuaTichLich",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV10-SuaTichLich",
+      "width": 390,
+      "height": 1071
+    },
+    {
+      "id": "v1-GV08-HoaDon",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV08-HoaDon",
+      "width": 390,
+      "height": 985
+    },
+    {
+      "id": "GV08b-ChiTietHocPhi",
+      "width": 390,
+      "height": 1256
+    },
+    {
+      "id": "v1-GV09-GiaoViec",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV09-GiaoViec",
+      "width": 390,
+      "height": 1108
+    },
+    {
+      "id": "GV09b-ChiTietViecGiao",
+      "width": 390,
+      "height": 860
+    },
+    {
+      "id": "GV09c-TraLaiViec",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV09d-DaDongViec",
+      "width": 390,
+      "height": 892
+    },
+    {
+      "id": "v1-GV11-TaiKhoan",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV11b-ChiTietTaiKhoan",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV13-LienLac",
+      "width": 390,
+      "height": 1098
+    },
+    {
+      "id": "GV14-GuiThongBao",
+      "width": 390,
+      "height": 1113
+    },
+    {
+      "id": "TP01-XemTep",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV03b-HoSoOFF",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "GV03f-DaAnHoSo",
+      "width": 390,
+      "height": 918
+    },
+    {
+      "id": "GV14b-GuiHangLoat",
+      "width": 390,
+      "height": 1572
+    },
+    {
+      "id": "GV14c-TaoNhom",
+      "width": 390,
+      "height": 998
+    },
+    {
+      "id": "GV03c-HoSoON",
+      "width": 390,
+      "height": 930
+    },
+    {
+      "id": "GV02c-KetQuaLoc",
+      "width": 390,
+      "height": 1095
+    },
+    {
+      "id": "GV02b-LocMon",
+      "width": 390,
+      "height": 1671
+    },
+    {
+      "id": "XL02-ChonLop",
+      "width": 390,
+      "height": 892
+    },
+    {
+      "id": "XL01-ChoXepLop",
+      "width": 390,
+      "height": 1012
+    },
+    {
+      "id": "XL04-DaXepLop",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "XL03-XacNhanXepLop",
+      "width": 390,
+      "height": 914
+    }
+  ]
+}

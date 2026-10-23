@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-23T05:03:13.626Z",
+  "generatedAt": "2026-10-23T05:28:50.262Z",
   "browser": "Chromium",
   "matrix": 138,
   "scenarios": [
     {
       "id": "S1",
-      "task": "Canvas, search, empty recovery, version filters, zoom, pan and prototype dialog",
+      "task": "Canvas, search, empty recovery, version filters, zoom, pan and static screen dialog",
       "result": "PASS"
     },
     {

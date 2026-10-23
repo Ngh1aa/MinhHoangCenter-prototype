@@ -1,19 +1,11 @@
 {
-  "generatedAt": "2026-10-23T05:07:19.048Z",
+  "generatedAt": "2026-10-23T05:27:54.678Z",
   "total": 69,
   "failed": 0,
   "results": [
     {
-      "id": "Line-2",
-      "text": 0,
-      "bodyWidth": 40,
-      "width": 40,
-      "screen": false,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
       "id": "Line-1",
+      "staticHeight": 7488,
       "text": 0,
       "bodyWidth": 40,
       "width": 40,
@@ -22,25 +14,28 @@
       "errors": []
     },
     {
-      "id": "Main",
-      "text": 1949,
-      "bodyWidth": 2600,
-      "width": 2600,
+      "id": "Line-2",
+      "staticHeight": 7488,
+      "text": 0,
+      "bodyWidth": 40,
+      "width": 40,
       "screen": false,
       "brokenImages": 0,
       "errors": []
     },
     {
-      "id": "v1-A00-DangNhap",
-      "text": 162,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
+      "id": "DS-DesignSystem",
+      "staticHeight": 2560,
+      "text": 4051,
+      "bodyWidth": 1440,
+      "width": 1440,
+      "screen": false,
       "brokenImages": 0,
       "errors": []
     },
     {
       "id": "v1-GV01-TongQuan",
+      "staticHeight": 844,
       "text": 247,
       "bodyWidth": 390,
       "width": 390,
@@ -51,27 +46,8 @@
       "errors": []
     },
     {
-      "id": "DS-DesignSystem",
-      "text": 4051,
-      "bodyWidth": 1440,
-      "width": 1440,
-      "screen": false,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
-      "id": "CN01-TaiKhoanCuaToi",
-      "text": 275,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
-      "pageWidth": 390,
-      "pageScroll": 390,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
       "id": "GV01-TongQuan",
+      "staticHeight": 1090,
       "text": 589,
       "bodyWidth": 390,
       "width": 390,
@@ -82,7 +58,30 @@
       "errors": []
     },
     {
+      "id": "CN01-TaiKhoanCuaToi",
+      "staticHeight": 1242,
+      "text": 275,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "pageWidth": 390,
+      "pageScroll": 390,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
+      "id": "v1-A00-DangNhap",
+      "staticHeight": 844,
+      "text": 162,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
       "id": "v1-GV02-HocSinh",
+      "staticHeight": 844,
       "text": 477,
       "bodyWidth": 390,
       "width": 390,
@@ -93,18 +92,18 @@
       "errors": []
     },
     {
-      "id": "GV02-HocSinh",
-      "text": 560,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
-      "pageWidth": 390,
-      "pageScroll": 390,
+      "id": "Main",
+      "staticHeight": 1240,
+      "text": 1949,
+      "bodyWidth": 2600,
+      "width": 2600,
+      "screen": false,
       "brokenImages": 0,
       "errors": []
     },
     {
       "id": "v1-GV03-HoSo",
+      "staticHeight": 844,
       "text": 684,
       "bodyWidth": 390,
       "width": 390,
@@ -115,8 +114,9 @@
       "errors": []
     },
     {
-      "id": "GV03-HoSo",
-      "text": 267,
+      "id": "GV02-HocSinh",
+      "staticHeight": 1816,
+      "text": 560,
       "bodyWidth": 390,
       "width": 390,
       "screen": true,
@@ -127,6 +127,7 @@
     },
     {
       "id": "v1-GV04-NhapHoSo",
+      "staticHeight": 844,
       "text": 292,
       "bodyWidth": 390,
       "width": 390,
@@ -137,7 +138,20 @@
       "errors": []
     },
     {
+      "id": "GV03-HoSo",
+      "staticHeight": 952,
+      "text": 267,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "pageWidth": 390,
+      "pageScroll": 390,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
       "id": "GV04-NhapHoSo",
+      "staticHeight": 1324,
       "text": 334,
       "bodyWidth": 390,
       "width": 390,
@@ -149,6 +163,7 @@
     },
     {
       "id": "v1-GV04b-PhuHuynh",
+      "staticHeight": 844,
       "text": 229,
       "bodyWidth": 390,
       "width": 390,
@@ -160,6 +175,7 @@
     },
     {
       "id": "GV04b-PhuHuynh",
+      "staticHeight": 1422,
       "text": 283,
       "bodyWidth": 390,
       "width": 390,
@@ -170,18 +186,8 @@
       "errors": []
     },
     {
-      "id": "GV04c-TestDauVao",
-      "text": 313,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
-      "pageWidth": 390,
-      "pageScroll": 390,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
       "id": "v1-GV04c-TestDauVao",
+      "staticHeight": 844,
       "text": 357,
       "bodyWidth": 390,
       "width": 390,
@@ -192,7 +198,20 @@
       "errors": []
     },
     {
+      "id": "GV04c-TestDauVao",
+      "staticHeight": 985,
+      "text": 313,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "pageWidth": 390,
+      "pageScroll": 390,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
       "id": "GV04d-DaLuuHoSo",
+      "staticHeight": 898,
       "text": 431,
       "bodyWidth": 390,
       "width": 390,
@@ -204,6 +223,7 @@
     },
     {
       "id": "v1-GV05-TaoLop",
+      "staticHeight": 844,
       "text": 223,
       "bodyWidth": 390,
       "width": 390,
@@ -215,6 +235,7 @@
     },
     {
       "id": "GV05-TaoLop",
+      "staticHeight": 1152,
       "text": 289,
       "bodyWidth": 390,
       "width": 390,
@@ -226,6 +247,7 @@
     },
     {
       "id": "v1-GV05s1-GoiYMaHS",
+      "staticHeight": 844,
       "text": 303,
       "bodyWidth": 390,
       "width": 390,
@@ -237,6 +259,7 @@
     },
     {
       "id": "GV05s1-GoiYMaHS",
+      "staticHeight": 844,
       "text": 296,
       "bodyWidth": 390,
       "width": 390,
@@ -248,6 +271,7 @@
     },
     {
       "id": "v1-GV05s2-ChonMon",
+      "staticHeight": 844,
       "text": 135,
       "bodyWidth": 390,
       "width": 390,
@@ -259,6 +283,7 @@
     },
     {
       "id": "GV05s2-ChonMon",
+      "staticHeight": 844,
       "text": 160,
       "bodyWidth": 390,
       "width": 390,
@@ -270,6 +295,7 @@
     },
     {
       "id": "v1-GV05s3-ChonNgay",
+      "staticHeight": 844,
       "text": 282,
       "bodyWidth": 390,
       "width": 390,
@@ -281,6 +307,7 @@
     },
     {
       "id": "GV05s3-ChonNgay",
+      "staticHeight": 844,
       "text": 265,
       "bodyWidth": 390,
       "width": 390,
@@ -292,6 +319,7 @@
     },
     {
       "id": "GV05d-XepLopXong",
+      "staticHeight": 844,
       "text": 173,
       "bodyWidth": 390,
       "width": 390,
@@ -303,6 +331,7 @@
     },
     {
       "id": "v1-GV06-ChuyenGV",
+      "staticHeight": 844,
       "text": 463,
       "bodyWidth": 390,
       "width": 390,
@@ -313,18 +342,8 @@
       "errors": []
     },
     {
-      "id": "GV06a-DieuChinhLop",
-      "text": 558,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
-      "pageWidth": 390,
-      "pageScroll": 390,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
       "id": "GV06-ChuyenGV",
+      "staticHeight": 1351,
       "text": 444,
       "bodyWidth": 390,
       "width": 390,
@@ -336,6 +355,7 @@
     },
     {
       "id": "v1-GV06b-ChuyenLich",
+      "staticHeight": 844,
       "text": 284,
       "bodyWidth": 390,
       "width": 390,
@@ -347,6 +367,7 @@
     },
     {
       "id": "GV06b-ChuyenLich",
+      "staticHeight": 933,
       "text": 287,
       "bodyWidth": 390,
       "width": 390,
@@ -358,6 +379,7 @@
     },
     {
       "id": "v1-GV06c-NghiHoc",
+      "staticHeight": 844,
       "text": 571,
       "bodyWidth": 390,
       "width": 390,
@@ -369,6 +391,7 @@
     },
     {
       "id": "GV06c-NghiHoc",
+      "staticHeight": 1063,
       "text": 353,
       "bodyWidth": 390,
       "width": 390,
@@ -380,6 +403,7 @@
     },
     {
       "id": "GV06d-XacNhanThoiHoc",
+      "staticHeight": 844,
       "text": 265,
       "bodyWidth": 390,
       "width": 390,
@@ -389,6 +413,7 @@
     },
     {
       "id": "GV06e-TamNghi",
+      "staticHeight": 1014,
       "text": 487,
       "bodyWidth": 390,
       "width": 390,
@@ -399,18 +424,8 @@
       "errors": []
     },
     {
-      "id": "v1-GV07-DuyetBaoCao",
-      "text": 448,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
-      "pageWidth": 390,
-      "pageScroll": 390,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
       "id": "GV06f-DaTamNghi",
+      "staticHeight": 844,
       "text": 356,
       "bodyWidth": 390,
       "width": 390,
@@ -421,7 +436,20 @@
       "errors": []
     },
     {
+      "id": "v1-GV07-DuyetBaoCao",
+      "staticHeight": 844,
+      "text": 448,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "pageWidth": 390,
+      "pageScroll": 390,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
       "id": "GV07-DuyetBaoCao",
+      "staticHeight": 1432,
       "text": 722,
       "bodyWidth": 390,
       "width": 390,
@@ -432,8 +460,9 @@
       "errors": []
     },
     {
-      "id": "GV07c-YeuCauBoSung",
-      "text": 607,
+      "id": "GV06a-DieuChinhLop",
+      "staticHeight": 1405,
+      "text": 558,
       "bodyWidth": 390,
       "width": 390,
       "screen": true,
@@ -444,6 +473,7 @@
     },
     {
       "id": "GV07b-ChiTietBaoCao",
+      "staticHeight": 1432,
       "text": 648,
       "bodyWidth": 390,
       "width": 390,
@@ -455,6 +485,7 @@
     },
     {
       "id": "ST01-DuyetRong",
+      "staticHeight": 844,
       "text": 226,
       "bodyWidth": 390,
       "width": 390,
@@ -466,6 +497,7 @@
     },
     {
       "id": "v1-GV10-SuaTichLich",
+      "staticHeight": 844,
       "text": 484,
       "bodyWidth": 390,
       "width": 390,
@@ -476,7 +508,20 @@
       "errors": []
     },
     {
+      "id": "GV07c-YeuCauBoSung",
+      "staticHeight": 1550,
+      "text": 607,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "pageWidth": 390,
+      "pageScroll": 390,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
       "id": "GV10-SuaTichLich",
+      "staticHeight": 1071,
       "text": 533,
       "bodyWidth": 390,
       "width": 390,
@@ -488,6 +533,7 @@
     },
     {
       "id": "v1-GV08-HoaDon",
+      "staticHeight": 844,
       "text": 429,
       "bodyWidth": 390,
       "width": 390,
@@ -499,6 +545,7 @@
     },
     {
       "id": "GV08-HoaDon",
+      "staticHeight": 985,
       "text": 415,
       "bodyWidth": 390,
       "width": 390,
@@ -509,18 +556,8 @@
       "errors": []
     },
     {
-      "id": "GV08b-ChiTietHocPhi",
-      "text": 446,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
-      "pageWidth": 390,
-      "pageScroll": 390,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
       "id": "v1-GV09-GiaoViec",
+      "staticHeight": 844,
       "text": 318,
       "bodyWidth": 390,
       "width": 390,
@@ -531,7 +568,20 @@
       "errors": []
     },
     {
+      "id": "GV08b-ChiTietHocPhi",
+      "staticHeight": 1256,
+      "text": 446,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "pageWidth": 390,
+      "pageScroll": 390,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
       "id": "GV09-GiaoViec",
+      "staticHeight": 1108,
       "text": 294,
       "bodyWidth": 390,
       "width": 390,
@@ -542,18 +592,8 @@
       "errors": []
     },
     {
-      "id": "GV09b-ChiTietViecGiao",
-      "text": 336,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
-      "pageWidth": 390,
-      "pageScroll": 390,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
       "id": "GV09c-TraLaiViec",
+      "staticHeight": 844,
       "text": 157,
       "bodyWidth": 390,
       "width": 390,
@@ -564,7 +604,20 @@
       "errors": []
     },
     {
+      "id": "GV09b-ChiTietViecGiao",
+      "staticHeight": 860,
+      "text": 336,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "pageWidth": 390,
+      "pageScroll": 390,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
       "id": "GV09d-DaDongViec",
+      "staticHeight": 892,
       "text": 351,
       "bodyWidth": 390,
       "width": 390,
@@ -575,18 +628,8 @@
       "errors": []
     },
     {
-      "id": "v1-GV11-TaiKhoan",
-      "text": 441,
-      "bodyWidth": 390,
-      "width": 390,
-      "screen": true,
-      "pageWidth": 390,
-      "pageScroll": 390,
-      "brokenImages": 0,
-      "errors": []
-    },
-    {
       "id": "GV11b-ChiTietTaiKhoan",
+      "staticHeight": 844,
       "text": 303,
       "bodyWidth": 390,
       "width": 390,
@@ -597,7 +640,20 @@
       "errors": []
     },
     {
+      "id": "v1-GV11-TaiKhoan",
+      "staticHeight": 844,
+      "text": 441,
+      "bodyWidth": 390,
+      "width": 390,
+      "screen": true,
+      "pageWidth": 390,
+      "pageScroll": 390,
+      "brokenImages": 0,
+      "errors": []
+    },
+    {
       "id": "GV13-LienLac",
+      "staticHeight": 1098,
       "text": 470,
       "bodyWidth": 390,
       "width": 390,
@@ -609,6 +665,7 @@
     },
     {
       "id": "TP01-XemTep",
+      "staticHeight": 844,
       "text": 168,
       "bodyWidth": 390,
       "width": 390,
@@ -620,6 +677,7 @@
     },
     {
       "id": "GV14-GuiThongBao",
+      "staticHeight": 1113,
       "text": 470,
       "bodyWidth": 390,
       "width": 390,
@@ -629,6 +687,7 @@
     },
     {
       "id": "GV03b-HoSoOFF",
+      "staticHeight": 844,
       "text": 168,
       "bodyWidth": 390,
       "width": 390,
@@ -640,6 +699,7 @@
     },
     {
       "id": "GV03f-DaAnHoSo",
+      "staticHeight": 918,
       "text": 481,
       "bodyWidth": 390,
       "width": 390,
@@ -651,6 +711,7 @@
     },
     {
       "id": "GV14b-GuiHangLoat",
+      "staticHeight": 1572,
       "text": 616,
       "bodyWidth": 390,
       "width": 390,
@@ -662,6 +723,7 @@
     },
     {
       "id": "GV03c-HoSoON",
+      "staticHeight": 930,
       "text": 346,
       "bodyWidth": 390,
       "width": 390,
@@ -673,6 +735,7 @@
     },
     {
       "id": "GV14c-TaoNhom",
+      "staticHeight": 998,
       "text": 408,
       "bodyWidth": 390,
       "width": 390,
@@ -684,6 +747,7 @@
     },
     {
       "id": "GV02c-KetQuaLoc",
+      "staticHeight": 1095,
       "text": 492,
       "bodyWidth": 390,
       "width": 390,
@@ -695,6 +759,7 @@
     },
     {
       "id": "XL02-ChonLop",
+      "staticHeight": 892,
       "text": 452,
       "bodyWidth": 390,
       "width": 390,
@@ -706,6 +771,7 @@
     },
     {
       "id": "GV02b-LocMon",
+      "staticHeight": 1671,
       "text": 722,
       "bodyWidth": 390,
       "width": 390,
@@ -717,6 +783,7 @@
     },
     {
       "id": "XL01-ChoXepLop",
+      "staticHeight": 1012,
       "text": 541,
       "bodyWidth": 390,
       "width": 390,
@@ -728,6 +795,7 @@
     },
     {
       "id": "XL04-DaXepLop",
+      "staticHeight": 844,
       "text": 195,
       "bodyWidth": 390,
       "width": 390,
@@ -739,6 +807,7 @@
     },
     {
       "id": "XL03-XacNhanXepLop",
+      "staticHeight": 914,
       "text": 282,
       "bodyWidth": 390,
       "width": 390,
