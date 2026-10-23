@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>GV09 Giao công việc</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[1148px]">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3">
+<a href="GV01-TongQuan.dc.html" class="icon-btn shrink-0 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<div class="flex-1 min-w-0 flex flex-col"><h1 class="m-0 text-[22px] leading-7 font-bold tracking-tight whitespace-nowrap">Giao công việc</h1></div>
+</header>
+<main class="page gap-0 pt-2 [&amp;&gt;*]:shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+
+<section class="flex flex-col gap-4" aria-labelledby="g-nd">
+<h2 id="g-nd" class="m-0 text-[13px] leading-[18px] font-semibold uppercase tracking-[0.08em] text-muted">Nội dung</h2>
+<div class="flex flex-col gap-2">
+<label for="td" class="text-[13px] font-medium text-muted px-1">Tiêu đề công việc <span class="text-brand-orange" aria-hidden="true">*</span></label>
+<input id="td" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="Soạn đề kiểm tra chương 2 lớp 7" aria-required="true">
+</div>
+<div class="flex flex-col gap-2">
+<label for="yc" class="text-[13px] font-medium text-muted px-1">Yêu cầu thực hiện <span class="text-brand-orange" aria-hidden="true">*</span></label>
+<textarea id="yc" rows="3" class="input h-28 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-brand-blue" aria-required="true">Đề 45 phút, 3 mức độ nhận thức, kèm đáp án và thang điểm. Nộp bản Word qua phiếu công việc.</textarea>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-[13px] font-medium text-muted px-1">Đính kèm</span>
+<button type="button" class="h-14 rounded-2xl border-2 border-dashed border-line bg-white flex items-center justify-center gap-2 text-sm font-medium text-ink font-sans active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12l-8.5 8.5a5 5 0 0 1-7-7L14 5a3.5 3.5 0 0 1 5 5l-8.5 8.5a2 2 0 0 1-3-3L15 8"></path></svg>Thêm tệp</button>
+</div>
+</section>
+
+<section class="flex flex-col gap-4 mt-6" aria-labelledby="g-pc">
+<h2 id="g-pc" class="m-0 text-[13px] leading-[18px] font-semibold uppercase tracking-[0.08em] text-muted">Phân công</h2>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-2 min-w-0">
+<label for="han" class="text-[13px] font-medium text-muted px-1 whitespace-nowrap">Hạn hoàn thành <span class="text-brand-orange" aria-hidden="true">*</span></label>
+<a id="han" href="GV05s3-ChonNgay.dc.html" class="field no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-required="true"><span class="whitespace-nowrap tabular-nums">25/10/2026</span><svg class="w-5 h-5 text-muted shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></a>
+</div>
+<div class="flex flex-col gap-2 min-w-0">
+<label for="ut" class="text-[13px] font-medium text-muted px-1 whitespace-nowrap">Mức ưu tiên <span class="text-brand-orange" aria-hidden="true">*</span></label>
+<button id="ut" type="button" class="field font-sans text-[15px] text-ink border-0 text-left active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-haspopup="listbox" aria-required="true"><span class="flex items-center gap-2 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-chart-1 shrink-0" aria-hidden="true"></span>Bình thường</span><svg class="w-5 h-5 text-muted shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+</div>
+</div>
+<fieldset class="m-0 p-0 border-0 flex flex-col" aria-required="true">
+<legend class="text-[13px] font-medium text-muted px-1 mb-2">Người phụ trách <span class="text-brand-orange" aria-hidden="true">*</span></legend>
+<div class="bg-white rounded-3xl overflow-hidden flex flex-col divide-y divide-line">
+<label class="flex items-center gap-3 px-4 py-3 min-h-[56px] active:bg-surface"><span class="initials w-9 h-9 text-xs shrink-0">TA</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Cô Thu Anh</span><span class="cap whitespace-nowrap">Toán · Trưởng bộ môn</span></span><input type="radio" name="pt" class="w-5 h-5 shrink-0 accent-brand-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"></label>
+<label class="relative flex items-center gap-3 px-4 py-3 min-h-[56px] bg-soft-blue before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-brand-blue"><span class="initials w-9 h-9 text-xs shrink-0 bg-white">MĐ</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Thầy Minh Đức</span><span class="cap text-ink whitespace-nowrap">Toán · 2 việc đang làm</span></span><input type="radio" name="pt" checked="" class="w-5 h-5 shrink-0 accent-brand-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"></label>
+<label class="flex items-center gap-3 px-4 py-3 min-h-[56px] active:bg-surface"><span class="initials w-9 h-9 text-xs shrink-0">DL</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Cô Diệu Linh</span><span class="cap whitespace-nowrap">Văn</span></span><input type="radio" name="pt" class="w-5 h-5 shrink-0 accent-brand-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"></label>
+<button type="button" aria-haspopup="listbox" class="w-full flex items-center justify-between px-4 h-14 bg-white border-0 font-sans text-sm font-semibold text-brand-blue text-left active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue"><span class="whitespace-nowrap">Xem tất cả giáo viên</span><svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></button>
+</div>
+</fieldset>
+</section>
+
+<a href="GV07-DuyetBaoCao.dc.html" class="btn mt-6 shrink-0 whitespace-nowrap transition-transform active:scale-[.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Giao công việc</a>
+
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1148}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

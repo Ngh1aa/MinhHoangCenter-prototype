@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minh Hoàng Center App · Prototype</title>
+<style>
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#17181c;background:#eceef4;display:flex}
+aside{width:300px;flex:none;background:#fff;border-right:1px solid #e6e8ef;display:flex;flex-direction:column;height:100%}
+aside header{padding:16px 16px 10px}
+aside h1{font-size:15px;margin:0 0 2px;color:#253a7e}
+aside p{margin:0;color:#6b6f7b;font-size:12px}
+#q{margin:8px 16px 10px;padding:8px 10px;border:1px solid #d9dce6;border-radius:8px;font:inherit;width:calc(100% - 32px)}
+#list{overflow:auto;flex:1;padding:0 8px 16px}
+.g{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6b6f7b;padding:12px 8px 4px}
+.it{display:block;width:100%;text-align:left;border:0;background:none;padding:7px 8px;border-radius:8px;cursor:pointer;font:inherit;color:inherit}
+.it:hover{background:#f1f3f9}.it.on{background:#eef1f9;color:#253a7e;font-weight:600}
+.it small{display:block;color:#8a8e9b;font-weight:400;font-size:11px}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#ea4c2d;margin-right:6px;vertical-align:middle}
+main{flex:1;min-width:0;display:flex;flex-direction:column;height:100%}
+.bar{display:flex;gap:8px;align-items:center;padding:10px 16px;background:#fff;border-bottom:1px solid #e6e8ef;flex-wrap:wrap}
+.bar b{font-size:13px}.bar span{color:#6b6f7b;font-size:12px;flex:1;min-width:120px}
+.bar button,.bar a{border:1px solid #d9dce6;background:#fff;border-radius:8px;padding:6px 10px;font:inherit;cursor:pointer;color:inherit;text-decoration:none;font-size:13px}
+.bar button:hover,.bar a:hover{background:#f1f3f9}
+#stage{flex:1;overflow:auto;display:flex;align-items:flex-start;justify-content:center;padding:24px}
+#wrap{flex:none;transform-origin:top center;border-radius:28px;background:#fff;box-shadow:0 10px 40px rgba(30,40,80,.18),0 0 0 8px #17181c;overflow:hidden}
+#wrap.flat{border-radius:8px;box-shadow:0 6px 24px rgba(30,40,80,.15)}
+iframe{display:block;border:0;background:#fff}
+@media(max-width:760px){aside{display:none}}
+</style>
+</head>
+<body>
+<aside>
+ <header><h1>Minh Hoàng Center App</h1><p>Prototype tương tác · bấm trực tiếp trong màn hình</p></header>
+ <input id="q" placeholder="Tìm màn hình…" aria-label="Tìm màn hình">
+ <div id="list"></div>
+</aside>
+<main>
+ <div class="bar">
+  <b id="cur"></b><span id="ttl"></span>
+  <button id="home" title="Về màn bắt đầu">⌂ Bắt đầu</button>
+  <button id="back" title="Quay lại">← Quay lại</button>
+  <button id="fit">Vừa khung</button>
+  <a id="open" target="_blank" rel="noopener">Mở riêng ↗</a>
+ </div>
+ <div id="stage"><div id="wrap"><iframe id="fr" title="Màn hình prototype"></iframe></div></div>
+</main>
+<script>
+var SCREENS=[{"f": "Main.dc.html", "t": "Luồng màn hình", "w": 2600, "h": 1240, "i": false}, {"f": "Line-1.dc.html", "t": "Đường chia vai trò", "w": 40, "h": 7488, "i": false}, {"f": "Line-2.dc.html", "t": "Đường chia vai trò", "w": 40, "h": 7488, "i": false}, {"f": "DS-DesignSystem.dc.html", "t": "Design System · Minh Hoàng Center", "w": 1440, "h": 2560, "i": false}, {"f": "v1-A00-DangNhap.dc.html", "t": "v1 · 00 Đăng nhập", "w": 390, "h": 844, "i": true}, {"f": "v1-GV01-TongQuan.dc.html", "t": "v1 · GV01 Tổng quan", "w": 390, "h": 844, "i": true}, {"f": "GV01-TongQuan.dc.html", "t": "GV01 Tổng quan giáo vụ", "w": 390, "h": 1135, "i": true}, {"f": "CN01-TaiKhoanCuaToi.dc.html", "t": "CN01 Tài khoản của bạn", "w": 390, "h": 1122, "i": true}, {"f": "v1-GV02-HocSinh.dc.html", "t": "v1 · GV02 Học sinh", "w": 390, "h": 844, "i": true}, {"f": "GV02-HocSinh.dc.html", "t": "GV02 Danh sách học sinh", "w": 390, "h": 1808, "i": true}, {"f": "v1-GV03-HoSo.dc.html", "t": "v1 · GV03 Hồ sơ học sinh", "w": 390, "h": 844, "i": true}, {"f": "GV03-HoSo.dc.html", "t": "GV03 Hồ sơ học sinh", "w": 390, "h": 952, "i": true}, {"f": "v1-GV04-NhapHoSo.dc.html", "t": "v1 · GV04 Nhập hồ sơ · 1 Học sinh", "w": 390, "h": 844, "i": true}, {"f": "GV04-NhapHoSo.dc.html", "t": "GV04 Tiếp nhận hồ sơ · 1 Học sinh", "w": 390, "h": 1380, "i": true}, {"f": "v1-GV04b-PhuHuynh.dc.html", "t": "v1 · GV04b Nhập hồ sơ · 2 Phụ huynh", "w": 390, "h": 844, "i": true}, {"f": "GV04b-PhuHuynh.dc.html", "t": "GV04b Tiếp nhận hồ sơ · 2 Phụ huynh", "w": 390, "h": 1426, "i": true}, {"f": "v1-GV04c-TestDauVao.dc.html", "t": "v1 · GV04c Nhập hồ sơ · 3 Test đầu vào", "w": 390, "h": 844, "i": true}, {"f": "GV04c-TestDauVao.dc.html", "t": "GV04c Tiếp nhận hồ sơ · 3 Kiểm tra đầu vào", "w": 390, "h": 957, "i": true}, {"f": "GV04d-DaLuuHoSo.dc.html", "t": "GV04d Đã lưu hồ sơ", "w": 390, "h": 920, "i": true}, {"f": "v1-GV05-TaoLop.dc.html", "t": "v1 · GV05 Tạo lớp", "w": 390, "h": 844, "i": true}, {"f": "GV05-TaoLop.dc.html", "t": "GV05 Tạo lớp", "w": 390, "h": 1196, "i": true}, {"f": "v1-GV05s1-GoiYMaHS.dc.html", "t": "v1 · GV05 · Gõ mã HS, hiện gợi ý", "w": 390, "h": 844, "i": true}, {"f": "GV05s1-GoiYMaHS.dc.html", "t": "GV05s1 Tìm học sinh", "w": 390, "h": 844, "i": true}, {"f": "v1-GV05s2-ChonMon.dc.html", "t": "v1 · GV05 · Xổ chọn Môn", "w": 390, "h": 844, "i": true}, {"f": "GV05s2-ChonMon.dc.html", "t": "GV05s2 Chọn môn", "w": 390, "h": 844, "i": true}, {"f": "v1-GV05s3-ChonNgay.dc.html", "t": "v1 · GV05 · Lịch chọn ngày bắt đầu", "w": 390, "h": 844, "i": true}, {"f": "GV05s3-ChonNgay.dc.html", "t": "GV05s3 Chọn ngày bắt đầu", "w": 390, "h": 844, "i": true}, {"f": "GV05d-XepLopXong.dc.html", "t": "GV05d Đã tạo lớp", "w": 390, "h": 844, "i": true}, {"f": "GV06a-DieuChinhLop.dc.html", "t": "GV06a Điều chỉnh lớp", "w": 390, "h": 1453, "i": true}, {"f": "v1-GV06-ChuyenGV.dc.html", "t": "v1 · GV06 Chuyển giáo viên", "w": 390, "h": 844, "i": true}, {"f": "GV06-ChuyenGV.dc.html", "t": "GV06 Chuyển giáo viên", "w": 390, "h": 1379, "i": true}, {"f": "v1-GV06b-ChuyenLich.dc.html", "t": "v1 · GV06b Chuyển lịch", "w": 390, "h": 844, "i": true}, {"f": "GV06b-ChuyenLich.dc.html", "t": "GV06b Chuyển lịch", "w": 390, "h": 935, "i": true}, {"f": "v1-GV06c-NghiHoc.dc.html", "t": "v1 · GV06c Nghỉ học", "w": 390, "h": 844, "i": true}, {"f": "GV06c-NghiHoc.dc.html", "t": "GV06c Nghỉ học luôn", "w": 390, "h": 1075, "i": true}, {"f": "GV06d-XacNhanThoiHoc.dc.html", "t": "GV06d Xác nhận thôi học", "w": 390, "h": 844, "i": true}, {"f": "GV06e-TamNghi.dc.html", "t": "GV06e Tạm nghỉ", "w": 390, "h": 1160, "i": true}, {"f": "GV06f-DaTamNghi.dc.html", "t": "GV06f Đã tạm nghỉ", "w": 390, "h": 1000, "i": true}, {"f": "v1-GV07-DuyetBaoCao.dc.html", "t": "v1 · GV07 Duyệt báo cáo", "w": 390, "h": 844, "i": true}, {"f": "GV07-DuyetBaoCao.dc.html", "t": "GV07 Duyệt báo cáo", "w": 390, "h": 1334, "i": true}, {"f": "GV07b-ChiTietBaoCao.dc.html", "t": "GV07b Chi tiết báo cáo học tập · Giáo vụ", "w": 390, "h": 1437, "i": true}, {"f": "GV07c-YeuCauBoSung.dc.html", "t": "GV07c Yêu cầu làm lại", "w": 390, "h": 1486, "i": true}, {"f": "ST01-DuyetRong.dc.html", "t": "ST01 Trạng thái rỗng · Duyệt báo cáo", "w": 390, "h": 844, "i": true}, {"f": "v1-GV10-SuaTichLich.dc.html", "t": "v1 · GV10 Sửa tích lịch sau giờ khóa", "w": 390, "h": 844, "i": true}, {"f": "GV10-SuaTichLich.dc.html", "t": "GV10 Sửa điểm danh", "w": 390, "h": 1063, "i": true}, {"f": "v1-GV08-HoaDon.dc.html", "t": "v1 · GV08 Hóa đơn", "w": 390, "h": 844, "i": true}, {"f": "GV08-HoaDon.dc.html", "t": "GV08 Học phí", "w": 390, "h": 963, "i": true}, {"f": "GV08b-ChiTietHocPhi.dc.html", "t": "GV08b Phiếu học phí", "w": 390, "h": 1233, "i": true}, {"f": "v1-GV09-GiaoViec.dc.html", "t": "v1 · GV09 Giao việc", "w": 390, "h": 844, "i": true}, {"f": "GV09-GiaoViec.dc.html", "t": "GV09 Giao công việc", "w": 390, "h": 1148, "i": true}, {"f": "GV09b-ChiTietViecGiao.dc.html", "t": "GV09b Chi tiết công việc · người giao", "w": 390, "h": 868, "i": true}, {"f": "GV09c-TraLaiViec.dc.html", "t": "GV09c Trả lại công việc", "w": 390, "h": 844, "i": true}, {"f": "GV09d-DaDongViec.dc.html", "t": "GV09d Công việc đã đóng", "w": 390, "h": 900, "i": true}, {"f": "v1-GV11-TaiKhoan.dc.html", "t": "v1 · GV11 Quản trị tài khoản", "w": 390, "h": 844, "i": true}, {"f": "GV11b-ChiTietTaiKhoan.dc.html", "t": "GV11b Chi tiết tài khoản", "w": 390, "h": 844, "i": true}, {"f": "GV13-LienLac.dc.html", "t": "GV13 Liên lạc giáo vụ", "w": 390, "h": 1180, "i": true}, {"f": "GV14-GuiThongBao.dc.html", "t": "GV14 Tạo mới", "w": 390, "h": 1090, "i": true}, {"f": "TP01-XemTep.dc.html", "t": "TP01 Xem tệp Excel", "w": 390, "h": 844, "i": true}, {"f": "GV03b-HoSoOFF.dc.html", "t": "GV03b Hồ sơ học sinh OFF", "w": 390, "h": 844, "i": true}, {"f": "GV03f-DaAnHoSo.dc.html", "t": "GV03f Đã tạm ẩn hồ sơ", "w": 390, "h": 920, "i": true}, {"f": "GV14b-GuiHangLoat.dc.html", "t": "GV14b Gửi hàng loạt", "w": 390, "h": 1780, "i": true}, {"f": "GV14c-TaoNhom.dc.html", "t": "GV14c Tạo nhóm", "w": 390, "h": 1054, "i": true}, {"f": "GV03c-HoSoON.dc.html", "t": "GV03c Hồ sơ học sinh ON", "w": 390, "h": 952, "i": true}, {"f": "GV02c-KetQuaLoc.dc.html", "t": "GV02c Kết quả lọc", "w": 390, "h": 1087, "i": true}, {"f": "GV02b-LocMon.dc.html", "t": "GV02b Lọc theo môn", "w": 390, "h": 844, "i": true}, {"f": "XL02-ChonLop.dc.html", "t": "XL02 Chọn lớp", "w": 390, "h": 1100, "i": true}, {"f": "XL01-ChoXepLop.dc.html", "t": "XL01 Chờ xếp lớp", "w": 390, "h": 1060, "i": true}, {"f": "XL04-DaXepLop.dc.html", "t": "XL04 Đã xếp lớp", "w": 390, "h": 844, "i": true}, {"f": "XL03-XacNhanXepLop.dc.html", "t": "XL03 Xác nhận xếp lớp", "w": 390, "h": 943, "i": true}];var START="GV01-TongQuan.dc.html";
+var by={};SCREENS.forEach(function(s){by[s.f]=s});
+var list=document.getElementById('list'),fr=document.getElementById('fr'),wrap=document.getElementById('wrap'),stage=document.getElementById('stage');
+var cur=START,fitMode=true,hist=[];
+function group(s){if(/^v1-/.test(s.f))return 'Bản v1 (cũ)';if(/^(Main|Line-|DS-)/.test(s.f))return 'Tổng quan & Design System';return 'Bản hiện tại'}
+var GROUPS=['Bản hiện tại','Tổng quan & Design System','Bản v1 (cũ)'];
+function render(q){q=(q||'').toLowerCase();list.innerHTML='';
+ GROUPS.forEach(function(g){var items=SCREENS.filter(function(s){return group(s)===g&&(!q||(s.t+' '+s.f).toLowerCase().indexOf(q)>-1)});
+  if(!items.length)return;var h=document.createElement('div');h.className='g';h.textContent=g+' ('+items.length+')';list.appendChild(h);
+  items.forEach(function(s){var b=document.createElement('button');b.className='it'+(s.f===cur?' on':'');b.dataset.f=s.f;
+   b.innerHTML=(s.i?'<span class="dot" title="Có tương tác"></span>':'')+esc(s.t)+'<small>'+esc(s.f.replace('.dc.html',''))+'</small>';
+   b.onclick=function(){go(s.f,true)};list.appendChild(b)})})}
+function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function size(f){var s=by[f]||{w:390,h:844};var flat=s.w>600||s.w<100;wrap.className=flat?'flat':'';
+ var w=Math.max(s.w,40),h=s.h;fr.style.width=w+'px';fr.style.height=h+'px';wrap.style.width=w+'px';wrap.style.height=h+'px';
+ var k=1;if(fitMode){k=Math.min(1,(stage.clientHeight-48)/h,(stage.clientWidth-48)/w);if(k<0.2)k=0.2}
+ wrap.style.transform='scale('+k+')';wrap.style.marginBottom=(-(h*(1-k)))+'px';wrap.style.marginRight=(-(w*(1-k)))+'px'}
+function mark(f){cur=f;var s=by[f];document.getElementById('cur').textContent=f.replace('.dc.html','');document.getElementById('ttl').textContent=s?s.t:'';
+ document.getElementById('open').href='app/'+encodeURI(f);size(f);
+ [].forEach.call(list.querySelectorAll('.it'),function(e){e.classList.toggle('on',e.dataset.f===f)});
+ var on=list.querySelector('.it.on');if(on&&on.scrollIntoView)on.scrollIntoView({block:'nearest'});location.hash=encodeURIComponent(f.replace('.dc.html',''))}
+function go(f,push){if(push&&cur!==f)hist.push(cur);fr.src='app/'+encodeURI(f);mark(f)}
+window.addEventListener('message',function(e){var d=e.data;if(!d||d.__dcproto!==1||!by[d.file])return;if(d.file!==cur){hist.push(cur);mark(d.file)}});
+document.getElementById('q').oninput=function(){render(this.value)};
+document.getElementById('home').onclick=function(){go(START,true)};
+document.getElementById('back').onclick=function(){var p=hist.pop();if(p)go(p,false)};
+document.getElementById('fit').onclick=function(){fitMode=!fitMode;this.textContent=fitMode?'Vừa khung':'100%';size(cur)};
+window.addEventListener('resize',function(){size(cur)});
+render();var h=decodeURIComponent((location.hash||'').slice(1));var first=by[h+'.dc.html']?h+'.dc.html':START;go(first,false);
+</script>
+</body>
+</html>

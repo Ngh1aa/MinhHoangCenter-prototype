@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>GV13 Liên lạc giáo vụ</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[1180px]">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3"><h1 class="flex-1 min-w-0 m-0 text-[28px] leading-8 font-bold tracking-tight whitespace-nowrap">Liên lạc</h1><a href="GV14-GuiThongBao.dc.html" class="w-11 h-11 shrink-0 rounded-full bg-brand-blue text-white flex items-center justify-center no-underline transition-transform active:scale-[.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue" aria-label="Tạo mới"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg></a></header>
+<div class="px-5 pb-2 shrink-0"><label class="relative block"><span class="sr-only">Tìm phụ huynh, đồng nghiệp</span><svg class="w-5 h-5 absolute left-4 top-3.5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg><input class="input h-12 pl-12 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Tìm phụ huynh, đồng nghiệp"></label></div>
+<div class="shrink-0 px-5 pt-1 pb-3 flex gap-2 overflow-x-auto [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden" role="group" aria-label="Lọc loại tin nhắn">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="5">
+<button type="button" onClick="{{f.pick}}" aria-pressed="{{f.on}}" class="{{f.cls}}">{{f.label}}<sc-if value="{{f.hasCount}}" hint-placeholder-val="{{true}}"><span class="{{f.countCls}}">{{f.count}}</span></sc-if></button>
+</sc-for>
+</div>
+<main class="page gap-0 pt-0 [&amp;&gt;*]:shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+
+<sc-if value="{{isAll}}" hint-placeholder-val="{{true}}">
+<ul class="-mx-5 px-5 m-0 pt-1 pb-3 list-none flex gap-2 overflow-x-auto [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden" aria-label="Ghim"><li class="shrink-0"><a href="TC07t-ThongBao.dc.html" class="w-[68px] flex flex-col items-center gap-1.5 no-underline text-ink focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue rounded-2xl"><span class="w-14 h-14 shrink-0 rounded-full bg-brand-blue text-white flex items-center justify-center"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4h4l7 5V5L7 10z"></path><path d="M18 9a4 4 0 0 1 0 6"></path></svg></span><span class="w-full text-center text-[12px] leading-4 font-medium truncate">Trung tâm</span></a></li><li class="shrink-0"><a href="TC07b-HoiThoai.dc.html" class="w-[68px] flex flex-col items-center gap-1.5 no-underline text-ink focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue rounded-2xl"><span class="relative shrink-0"><span class="w-14 h-14 rounded-full bg-soft-blue text-brand-blue text-[17px] font-bold flex items-center justify-center">TA</span><span class="absolute right-0 bottom-0 w-3.5 h-3.5 rounded-full bg-success ring-2 ring-white" aria-hidden="true"></span></span><span class="w-full text-center text-[12px] leading-4 font-medium truncate">Thu Anh</span></a></li><li class="shrink-0"><a href="TC07b-HoiThoai.dc.html" class="w-[68px] flex flex-col items-center gap-1.5 no-underline text-ink focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue rounded-2xl"><span class="w-14 h-14 rounded-full bg-soft-yellow text-ink text-[17px] font-bold flex items-center justify-center">T</span><span class="w-full text-center text-[12px] leading-4 font-medium truncate">Tổ Toán</span></a></li><li class="shrink-0"><a href="TC07b-HoiThoai.dc.html" class="w-[68px] flex flex-col items-center gap-1.5 no-underline text-ink focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue rounded-2xl"><span class="w-14 h-14 rounded-full bg-soft-blue text-brand-blue text-[17px] font-bold flex items-center justify-center">BM</span><span class="w-full text-center text-[12px] leading-4 font-medium truncate">Trưởng BM</span></a></li><li class="shrink-0"><a href="TC07b-HoiThoai.dc.html" class="w-[68px] flex flex-col items-center gap-1.5 no-underline text-ink focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue rounded-2xl"><span class="relative shrink-0"><span class="w-14 h-14 rounded-full bg-soft-green text-success text-[17px] font-bold flex items-center justify-center">Đ</span><span class="absolute right-0 bottom-0 w-3.5 h-3.5 rounded-full bg-success ring-2 ring-white" aria-hidden="true"></span></span><span class="w-full text-center text-[12px] leading-4 font-medium truncate">Thầy Đức</span></a></li></ul>
+
+<sc-for list="{{groups}}" as="g" hint-placeholder-count="4">
+<section class="mt-4 flex flex-col gap-2" aria-label="{{g.label}}">
+<div class="flex items-center gap-2 min-h-[32px]"><h2 class="m-0 flex-1 min-w-0 flex items-center gap-2 text-[15px] leading-5 font-bold tracking-tight whitespace-nowrap">{{g.label}}<sc-if value="{{g.hasUnread}}" hint-placeholder-val="{{true}}"><span class="min-w-5 h-5 px-1.5 rounded-full bg-brand-blue text-white text-xs font-semibold tabular-nums flex items-center justify-center">{{g.unread}}</span></sc-if></h2><button type="button" onClick="{{g.open}}" class="h-8 px-3 -mr-2 rounded-full bg-transparent border-0 font-sans text-[13px] font-semibold text-brand-blue whitespace-nowrap active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">{{g.total}} tin</button></div>
+<button type="button" onClick="{{g.open}}" aria-label="{{g.deckLabel}}" class="relative block w-full p-0 m-0 border-0 bg-transparent text-left font-sans text-ink transition-transform active:scale-[.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue rounded-3xl">
+<span class="relative z-[3] flex items-center gap-3 px-4 py-3 min-h-[76px] bg-white rounded-3xl shadow-sm">
+<sc-if value="{{g.top.isIcon}}" hint-placeholder-val="{{true}}"><span class="{{g.top.avCls}}"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{g.top.icon}}"></path></svg></span></sc-if>
+<sc-if value="{{g.top.isIni}}" hint-placeholder-val="{{false}}"><span class="{{g.top.avCls}}">{{g.top.ini}}</span></sc-if>
+<sc-if value="{{g.top.isPhoto}}" hint-placeholder-val="{{false}}"><img src="{{g.top.src}}" alt="" class="w-12 h-12 shrink-0 rounded-xl object-cover bg-soft-blue"></sc-if>
+<span class="flex-1 min-w-0 flex flex-col gap-0.5"><span class="flex items-center gap-2"><span class="{{g.top.titleCls}}">{{g.top.title}}</span><span class="{{g.top.timeCls}}">{{g.top.time}}</span></span><span class="flex items-center gap-3"><span class="{{g.top.prevCls}}">{{g.top.preview}}</span><sc-if value="{{g.top.hasUnread}}" hint-placeholder-val="{{true}}"><span class="min-w-5 h-5 px-1.5 shrink-0 rounded-full bg-brand-blue text-white text-xs font-semibold flex items-center justify-center">{{g.top.unread}}</span></sc-if></span></span>
+</span>
+<sc-if value="{{g.l1}}" hint-placeholder-val="{{true}}"><span class="relative z-[2] block mx-3 -mt-4 h-7 rounded-b-3xl bg-white/80 shadow-sm" aria-hidden="true"></span></sc-if>
+<sc-if value="{{g.l2}}" hint-placeholder-val="{{true}}"><span class="relative z-[1] block mx-7 -mt-4 h-7 rounded-b-3xl bg-white/50" aria-hidden="true"></span></sc-if>
+</button>
+</section>
+</sc-for>
+</sc-if>
+
+<sc-if value="{{isOne}}" hint-placeholder-val="{{false}}">
+<section class="pt-1 flex flex-col gap-3" aria-label="{{cur.label}}">
+<p class="m-0 px-1 cap">{{cur.desc}}</p>
+<ul class="m-0 p-0 list-none bg-white rounded-3xl overflow-hidden flex flex-col divide-y divide-line">
+<sc-for list="{{cur.items}}" as="it" hint-placeholder-count="4">
+<li><a href="{{it.href}}" class="flex items-center gap-3 px-4 py-3 min-h-[76px] no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue">
+<sc-if value="{{it.isIcon}}" hint-placeholder-val="{{true}}"><span class="{{it.avCls}}"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{it.icon}}"></path></svg></span></sc-if>
+<sc-if value="{{it.isIni}}" hint-placeholder-val="{{false}}"><span class="{{it.avCls}}">{{it.ini}}</span></sc-if>
+<sc-if value="{{it.isPhoto}}" hint-placeholder-val="{{false}}"><img src="{{it.src}}" alt="" class="w-12 h-12 shrink-0 rounded-xl object-cover bg-soft-blue"></sc-if>
+<span class="flex-1 min-w-0 flex flex-col gap-0.5"><span class="flex items-center gap-2"><span class="{{it.titleCls}}">{{it.title}}</span><span class="{{it.timeCls}}">{{it.time}}</span></span><sc-if value="{{it.hasSub}}" hint-placeholder-val="{{false}}"><span class="font-mono text-[12px] leading-4 tracking-wide text-muted whitespace-nowrap">{{it.sub}}</span></sc-if><span class="flex items-center gap-3"><span class="{{it.prevCls}}">{{it.preview}}</span><sc-if value="{{it.hasUnread}}" hint-placeholder-val="{{false}}"><span class="min-w-5 h-5 px-1.5 shrink-0 rounded-full bg-brand-blue text-white text-xs font-semibold flex items-center justify-center">{{it.unread}}</span></sc-if></span></span>
+</a></li>
+</sc-for>
+</ul>
+</section>
+</sc-if>
+
+</main>
+<nav class="nav z-30" aria-label="Điều hướng chính">
+<a href="GV01-TongQuan.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Tổng quan"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"></path></svg></a>
+<a href="GV02-HocSinh.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Học sinh"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></a>
+<a href="GV07-DuyetBaoCao.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Duyệt"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg></a>
+<a href="GV08-HoaDon.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Học phí"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6"></path></svg></a>
+<a href="GV13-LienLac.dc.html" class="tab tab-on w-auto px-4 gap-2 text-[13px] font-semibold transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-current="page"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path><path d="M8 10h8"></path></svg>Liên lạc</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1180}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { filter: 'all' }; }
+  renderVals() {
+    var P1 = 'data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E', P2 = 'data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E';
+    var IC = {
+      report: 'M7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3zM8 12l3 3 5-6',
+      req: 'M4 5h16v11H9l-5 4zM12 8v3M12 13.5v.01',
+      clock: 'M12 21a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM12 9v4l2.5 2M9 2h6',
+      fee: 'M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6',
+      mega: 'M3 10v4h4l7 5V5L7 10zM18 9a4 4 0 0 1 0 6'
+    };
+    var AV = 'w-12 h-12 shrink-0 rounded-full flex items-center justify-center ';
+    var data = [
+      { key: 'sys', label: 'Hệ thống', desc: 'Gồm cả kênh nghiệp vụ: báo cáo chờ duyệt, yêu cầu phụ huynh, nhắc hạn, học phí.', items: [
+        { title: 'Báo cáo chờ duyệt', preview: '2 báo cáo còn dưới 6 giờ', time: '10:40', unread: 2, icon: IC.report, av: AV + 'bg-soft-orange text-brand-orange', href: 'GV07-DuyetBaoCao.dc.html' },
+        { title: 'Yêu cầu phụ huynh', preview: 'PH Lê Văn C xin đổi lịch Toán', time: '09:30', unread: 1, icon: IC.req, av: AV + 'bg-soft-green text-success', href: 'GV06a-DieuChinhLop.dc.html' },
+        { title: 'Nhắc hạn', preview: 'Khóa điểm danh lúc 0h', time: '07:00', icon: IC.clock, av: AV + 'bg-soft-orange text-brand-orange', href: 'GV10-SuaTichLich.dc.html' },
+        { title: 'Học phí', preview: '18 học sinh chưa đóng, hạn 15/10', time: 'Hôm qua', icon: IC.fee, av: AV + 'bg-soft-yellow text-ink', href: 'GV08-HoaDon.dc.html' }
+      ]},
+      { key: 'dm', label: 'Tin nhắn riêng', desc: 'Trao đổi 1:1 với giáo viên và phụ huynh.', items: [
+        { title: 'Cô Thu Anh', preview: 'Em gửi đề nghị sửa điểm danh lớp 7 ạ', time: '10:12', unread: 2, ini: 'TA', av: AV + 'bg-soft-blue text-brand-blue text-[16px] font-bold', href: 'TC07b-HoiThoai.dc.html' },
+        { title: 'Phụ huynh Lê Văn C', sub: '16A0004 · Khối 5', preview: 'Tuần sau con có học bù được không ạ?', time: 'Hôm qua', unread: 1, src: P1, href: 'TC07b-HoiThoai.dc.html' },
+        { title: 'Trưởng bộ môn Toán', preview: 'Sinh hoạt tổ chuyên môn Thứ Sáu 17:00 nhé', time: 'Hôm qua', ini: 'BM', av: AV + 'bg-soft-blue text-brand-blue text-[16px] font-bold', href: 'TC07b-HoiThoai.dc.html' },
+        { title: 'Phụ huynh Phạm Thị D', sub: '14A0060 · Khối 7', preview: 'Bạn: Dạ, con tiến bộ rõ phần hình học ạ', time: '08/10', src: P2, href: 'TC07b-HoiThoai.dc.html' },
+        { title: 'Phụ huynh Hoàng Văn E', sub: '12A0150 · Khối 9', preview: 'Cảm ơn cô ạ', time: '05/10', src: P1, href: 'TC07b-HoiThoai.dc.html' }
+      ]},
+      { key: 'grp', label: 'Tin nhắn nhóm', desc: 'Nhóm văn phòng và tổ chuyên môn.', items: [
+        { title: 'Văn phòng', preview: 'Kế toán: Đã gửi công nợ tháng 10', time: 'Hôm qua', ini: 'VP', av: AV + 'bg-soft-blue text-brand-blue text-[16px] font-bold', href: 'TC07b-HoiThoai.dc.html' },
+        { title: 'Tổ Toán', preview: 'Thầy Đức: ai dạy thay ca Chiều T5 lớp 9?', time: 'T2', ini: 'T', av: AV + 'bg-soft-yellow text-ink text-[16px] font-bold', href: 'TC07b-HoiThoai.dc.html' }
+      ]},
+      { key: 'tb', label: 'Thông báo trung tâm', desc: 'Thông báo chung từ Ban giám đốc.', items: [
+        { title: 'Hạn nộp báo cáo tháng 10', preview: 'Bạn đã gửi', time: '09:00', icon: IC.mega, av: AV + 'bg-brand-blue text-white', href: 'TC07t-ThongBao.dc.html' },
+        { title: 'Lịch nghỉ lễ 20/11', preview: 'Ban giám đốc', time: '06/10', icon: IC.mega, av: AV + 'bg-brand-blue text-white', href: 'TC07t-ThongBao.dc.html' }
+      ]}
+    ];
+    var self = this, f = this.state.filter, totalUnread = 0;
+    var prep = function (it) {
+      var u = it.unread || 0;
+      return Object.assign({}, it, {
+        isIcon: !!it.icon, isIni: !!it.ini, isPhoto: !!it.src, avCls: it.av || '',
+        hasSub: !!it.sub, hasUnread: u > 0, unread: u,
+        titleCls: 'min-w-0 truncate text-[16px] leading-[22px] ' + (u ? 'font-semibold' : 'font-medium'),
+        timeCls: 'ml-auto text-[13px] leading-[18px] shrink-0 ' + (u ? 'text-brand-blue font-semibold' : 'text-muted'),
+        prevCls: 'flex-1 min-w-0 text-[14px] leading-5 truncate ' + (u ? 'text-ink font-medium' : 'text-muted')
+      });
+    };
+    var groups = data.map(function (g) {
+      var items = g.items.map(prep);
+      var unread = items.reduce(function (s, i) { return s + i.unread; }, 0);
+      totalUnread += unread;
+      return { key: g.key, label: g.label, desc: g.desc, items: items, top: items[0], total: items.length,
+        unread: unread, hasUnread: unread > 0, l1: items.length > 1, l2: items.length > 2,
+        deckLabel: 'Mở ' + g.label + ', ' + items.length + ' tin',
+        open: function () { self.setState({ filter: g.key }); } };
+    });
+    var defs = [{ key: 'all', label: 'Tất cả', count: totalUnread }].concat(groups.map(function (g) {
+      return { key: g.key, label: g.key === 'tb' ? 'Thông báo TT' : g.key === 'dm' ? 'Riêng' : g.key === 'grp' ? 'Nhóm' : g.label, count: g.unread };
+    }));
+    var filters = defs.map(function (d) {
+      var on = d.key === f;
+      return { label: d.label, count: d.count, hasCount: d.count > 0, on: on ? 'true' : 'false',
+        cls: 'chip gap-1.5 shrink-0 transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue ' + (on ? 'chip-on' : 'bg-white'),
+        countCls: 'min-w-5 h-5 px-1.5 rounded-full text-xs font-semibold tabular-nums flex items-center justify-center ' + (on ? 'bg-white/20 text-white' : 'bg-brand-blue text-white'),
+        pick: function () { self.setState({ filter: d.key }); } };
+    });
+    var cur = groups.filter(function (g) { return g.key === f; })[0] || groups[0];
+    return { filters: filters, groups: groups, cur: cur, isAll: f === 'all', isOne: f !== 'all' };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>GV09c Trả lại công việc</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3" aria-hidden="true">
+<span class="icon-btn shrink-0"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></span>
+<div class="flex-1 min-w-0 flex flex-col"><span class="text-[22px] leading-7 font-bold tracking-tight whitespace-nowrap">Công việc</span></div>
+</header>
+<main class="page [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" aria-hidden="true">
+<div class="bg-white rounded-3xl shrink-0 flex flex-col"><div class="h-28"></div><div class="h-16 border-t border-dashed border-line"></div><div class="h-36 border-t border-dashed border-line"></div><div class="h-32 border-t border-dashed border-line"></div></div>
+</main>
+<div class="absolute inset-0 bg-ink/40 z-30"></div>
+<section role="dialog" aria-modal="true" aria-labelledby="tl-title" class="absolute inset-x-0 bottom-0 z-40 bg-white rounded-t-[32px] px-6 pt-3 pb-8 flex flex-col">
+<span class="w-10 h-1 rounded-full bg-line self-center" aria-hidden="true"></span>
+<div class="flex items-center justify-between gap-3 mt-4">
+<div class="flex-1 min-w-0 flex flex-col"><h2 id="tl-title" class="h2 m-0 whitespace-nowrap">Giao lại công việc</h2></div>
+<a href="GV09b-ChiTietViecGiao.dc.html" class="icon-btn bg-surface shrink-0 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-label="Đóng"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></a>
+</div>
+<span class="flex items-center gap-2 h-11 px-3 mt-3 rounded-full border border-dashed border-line text-[13px] leading-[18px]"><span class="initials w-7 h-7 text-[10px]" aria-hidden="true">TA</span><span class="font-semibold whitespace-nowrap">Cô Thu Anh</span><span class="w-1 h-1 rounded-full bg-muted shrink-0" aria-hidden="true"></span><span class="text-muted whitespace-nowrap">Nộp báo cáo tháng 9 lớp 8</span></span>
+<div class="flex flex-col gap-2 mt-5">
+<label for="tl-ly" class="text-[13px] font-medium text-muted px-1">Chưa đạt ở điểm nào <span class="text-brand-orange" aria-hidden="true">*</span></label>
+<textarea id="tl-ly" rows="3" aria-required="true" class="w-full rounded-2xl bg-surface px-4 py-3 text-[15px] leading-[22px] text-ink font-sans border-0 resize-none focus:outline-none focus:ring-2 focus:ring-brand-blue">Còn thiếu báo cáo của Phạm Thị D. Cô bổ sung giúp em nhé.</textarea>
+<span class="self-start flex items-center gap-2.5 pl-1.5 pr-4 py-1.5 rounded-full border border-line" aria-label="Học sinh liên quan"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="w-8 h-8 shrink-0 object-cover bg-soft-blue rounded-lg"><span class="flex flex-col"><span class="text-[14px] leading-[18px] font-semibold whitespace-nowrap">Phạm Thị D</span><span class="font-mono text-[12px] leading-4 tracking-wide text-muted whitespace-nowrap">14A0060</span></span></span>
+</div>
+<div class="flex flex-col gap-2 mt-4">
+<span id="tl-han" class="text-[13px] font-medium text-muted px-1">Hạn mới</span>
+<button type="button" aria-labelledby="tl-han" aria-haspopup="dialog" class="field bg-surface text-ink active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="whitespace-nowrap">15/10/2026 17:00</span><svg class="w-5 h-5 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></button>
+</div>
+
+<div class="flex gap-2 mt-6"><a href="GV09b-ChiTietViecGiao.dc.html" class="btn-ghost h-14 px-6 shrink-0 whitespace-nowrap active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Hủy</a><a href="GV09-GiaoViec.dc.html" class="btn flex-1 whitespace-nowrap transition-transform active:scale-[.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Giao lại công việc</a></div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

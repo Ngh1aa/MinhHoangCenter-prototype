@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>v1 · GV04b Nhập hồ sơ · 2 Phụ huynh</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen"><div class="absolute inset-0 z-[60] pointer-events-none ring-[6px] ring-inset ring-brand-orange" aria-hidden="true"></div><div class="absolute top-3 left-1/2 -translate-x-1/2 z-[61] pointer-events-none pill h-7 px-4 bg-brand-orange text-white font-semibold whitespace-nowrap" aria-hidden="true">V1 · Bản cũ</div>&gt;
+<header class="px-5 pt-14 pb-3 flex items-center gap-3">
+<a href="v1-GV04-NhapHoSo.dc.html" class="icon-btn" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<div class="flex-1 flex flex-col"><span class="text-[22px] leading-7 font-bold tracking-tight">Phụ huynh</span><span class="cap">Bước 2 / 3 · Nguyễn Văn A</span></div>
+</header>
+<div class="px-5 pb-2 flex gap-1.5"><span class="flex-1 h-1 rounded-full bg-brand-blue"></span><span class="flex-1 h-1 rounded-full bg-brand-blue"></span><span class="flex-1 h-1 rounded-full bg-line"></span></div>
+<main class="page gap-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+<div class="flex flex-col gap-2"><label for="pn" class="text-[13px] font-medium text-muted px-1">Họ tên bố / mẹ</label><input id="pn" class="input" value="Nguyễn Văn X"></div>
+<div class="flex flex-col gap-2">
+<label for="pp" class="text-[13px] font-medium text-muted px-1">Số điện thoại</label>
+<input id="pp" class="input" value="0912 345 678">
+<div class="rounded-2xl bg-soft-orange px-4 py-3 flex items-center gap-3">
+<svg class="w-5 h-5 text-brand-orange shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+<span class="text-sm flex-1">SĐT này đã là phụ huynh của <b>Lê Văn C</b> · 16A0004</span>
+<a href="v1-GV04b-PhuHuynh.dc.html" class="text-sm font-semibold text-brand-orange no-underline whitespace-nowrap">Dùng chung</a>
+</div>
+</div>
+<div class="flex flex-col gap-2"><label for="pe" class="text-[13px] font-medium text-muted px-1">Email</label><input id="pe" class="input" placeholder="email@…"></div>
+<div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Quan hệ</span><div class="flex gap-2"><button class="chip chip-on">Bố</button><button class="chip">Mẹ</button><button class="chip">Khác</button></div></div>
+<div class="h-px bg-line my-1"></div>
+<span class="h2">Người liên hệ khẩn cấp</span>
+<div class="flex flex-col gap-2"><label for="en" class="text-[13px] font-medium text-muted px-1">Họ tên</label><input id="en" class="input" placeholder="Họ và tên"></div>
+<div class="flex flex-col gap-2"><label for="ep" class="text-[13px] font-medium text-muted px-1">Số điện thoại</label><input id="ep" class="input" placeholder="0xxx xxx xxx"></div>
+</main>
+<div class="absolute left-5 right-5 bottom-6">
+<a href="v1-GV04c-TestDauVao.dc.html" class="btn">Tiếp tục · Test đầu vào</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

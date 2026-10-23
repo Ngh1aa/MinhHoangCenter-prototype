@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>ST01 Trạng thái rỗng · Duyệt báo cáo</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen">
+<header class="px-5 pt-14 pb-3 flex flex-col gap-4">
+<h1 class="h1 m-0">Duyệt</h1>
+<div class="grid grid-cols-2 gap-1 p-1 rounded-full bg-line" role="tablist" aria-label="Loại duyệt">
+<a href="GV07-DuyetBaoCao.dc.html" role="tab" aria-selected="true" class="seg seg-on rounded-full whitespace-nowrap transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Báo cáo học tập</a>
+<a href="GV10-SuaTichLich.dc.html" role="tab" aria-selected="false" class="seg rounded-full whitespace-nowrap transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Điều chỉnh điểm danh</a>
+</div>
+</header>
+<div class="px-5 pb-1 flex gap-2 overflow-auto shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<button type="button" aria-pressed="true" class="chip chip-on whitespace-nowrap transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Chờ bạn 0</button><button type="button" aria-pressed="false" class="chip bg-white whitespace-nowrap transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Chờ Trưởng BM 0</button><button type="button" aria-pressed="false" class="chip bg-white whitespace-nowrap transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Làm lại 0</button><button type="button" aria-pressed="false" class="chip bg-white whitespace-nowrap transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Hoàn tất 53</button>
+</div>
+<main class="page pt-3 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<section class="flex-1 flex flex-col items-center justify-center text-center gap-3 px-6 pb-10" aria-labelledby="empty-title">
+<span class="w-20 h-20 mb-2 rounded-full bg-white ring-8 ring-brand-blue/10 text-brand-blue flex items-center justify-center"><svg class="w-9 h-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg></span>
+<h2 id="empty-title" class="h2 m-0 whitespace-nowrap">Không còn báo cáo chờ bạn</h2>
+<p class="cap m-0">Báo cáo mới sẽ hiện ở đây khi giáo viên gửi.</p>
+<a href="GV07-DuyetBaoCao.dc.html" class="btn-ghost bg-white px-6 mt-2 whitespace-nowrap active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Xem báo cáo hoàn tất</a>
+</section>
+</main>
+<nav class="nav z-20">
+<a href="GV01-TongQuan.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Tổng quan"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"></path></svg></a>
+<a href="GV02-HocSinh.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Học sinh"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></a>
+<a href="GV07-DuyetBaoCao.dc.html" class="tab tab-on w-auto px-4 gap-2 text-[13px] font-semibold transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-current="page"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg>Duyệt</a>
+<a href="GV08-HoaDon.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Học phí"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6"></path></svg></a>
+<a href="GV13-LienLac.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Liên lạc"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8"/></svg></a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

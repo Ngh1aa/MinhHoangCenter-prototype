@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>XL02 Chọn lớp</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[1100px]">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3"><a href="XL01-ChoXepLop.dc.html" class="icon-btn shrink-0 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a><h1 class="flex-1 min-w-0 m-0 text-[22px] leading-7 font-bold tracking-tight whitespace-nowrap">Chọn lớp</h1><span class="text-[13px] font-semibold text-muted tabular-nums whitespace-nowrap">Bước 1/2</span></header>
+<div class="px-5 pb-3 shrink-0"><section class="bg-white rounded-3xl px-4 py-3 flex flex-col gap-3" aria-label="Nhu cầu học sinh">
+<div class="flex items-center gap-3"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="w-11 h-11 shrink-0 rounded-xl object-cover bg-soft-blue"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">Nguyễn Văn A</span><span class="text-[13px] leading-[18px] text-muted whitespace-nowrap"><span class="font-mono text-[12px] tracking-wide">17A0105</span> · Khối 4</span></span><span class="pill bg-soft-blue text-brand-blue shrink-0">Toán · M3</span></div>
+<div class="flex items-center gap-2 text-[13px]"><span class="text-muted whitespace-nowrap">Cần học</span><span class="pill h-7 bg-surface text-ink">Chiều T3</span><span class="pill h-7 bg-surface text-ink">Chiều T5</span><span class="ml-auto text-muted whitespace-nowrap tabular-nums">từ 10/10</span></div>
+</section></div>
+<main class="page gap-3 pt-1 pb-40 [&amp;&gt;*]:shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-center gap-4 px-1 text-[12px] leading-4 text-muted"><span class="flex items-center gap-1.5 whitespace-nowrap"><span class="w-2.5 h-2.5 rounded-full bg-success" aria-hidden="true"></span>Khớp lịch</span><span class="flex items-center gap-1.5 whitespace-nowrap"><span class="w-2.5 h-2.5 rounded-full bg-brand-orange" aria-hidden="true"></span>Lệch lịch</span><span class="ml-auto whitespace-nowrap">3 lớp Toán M3</span></div>
+<div class="flex flex-col gap-3" role="radiogroup" aria-label="Lớp phù hợp">
+<sc-for list="{{classes}}" as="c" hint-placeholder-count="3">
+<button type="button" role="radio" aria-checked="{{c.checked}}" onClick="{{c.pick}}" class="{{c.cardCls}}">
+<span class="flex items-center gap-3"><span class="initials w-11 h-11 text-[13px]">{{c.ini}}</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">{{c.teacher}}</span><span class="text-[13px] leading-[18px] text-muted whitespace-nowrap">{{c.room}} · {{c.size}} học sinh</span></span><span class="{{c.radioCls}}" aria-hidden="true"><span class="{{c.dotCls}}"></span></span></span>
+<span class="flex items-center gap-1.5 flex-wrap"><span class="{{c.matchCls}}">{{c.matchText}}</span><sc-for list="{{c.slots}}" as="s" hint-placeholder-count="2"><span class="{{s.cls}}"><span class="{{s.dot}}" aria-hidden="true"></span>{{s.t}}</span></sc-for></span>
+<span class="flex items-center gap-3"><span class="flex-1 h-2 rounded-full bg-surface overflow-hidden flex" aria-hidden="true"><span class="{{c.barCls}}"></span></span><span class="text-[13px] font-semibold tabular-nums whitespace-nowrap">Còn {{c.left}} chỗ</span></span>
+<sc-if value="{{c.hasWarn}}" hint-placeholder-val="{{false}}"><span class="flex items-center gap-2 text-[13px] leading-[18px] text-brand-orange font-medium"><svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"></path><path d="M12 10v4M12 17.5v.01"></path></svg>{{c.warn}}</span></sc-if>
+</button>
+</sc-for>
+</div>
+</main>
+<div class="absolute inset-x-0 bottom-0 z-20 px-5 pt-3 pb-8 bg-surface border-t border-line flex flex-col gap-2"><span class="text-[13px] leading-[18px] text-muted px-1 whitespace-nowrap">Đã chọn: <span class="font-semibold text-ink">{{picked}}</span></span><a href="XL03-XacNhanXepLop.dc.html" class="btn whitespace-nowrap transition-transform active:scale-[.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Tiếp tục xác nhận</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1100}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { pick: 'ta' }; }
+  renderVals() {
+    var self = this, p = this.state.pick;
+    var list = [
+      { id: 'ta', ini: 'TA', teacher: 'Cô Thu Anh', room: 'P.105', size: '4/6', fill: 'w-4/6', left: 2, full: true, slots: [['Chiều T3', 1], ['Chiều T5', 1]] },
+      { id: 'md', ini: 'MĐ', teacher: 'Thầy Minh Đức', room: 'P.201', size: '5/6', fill: 'w-5/6', left: 1, full: false, slots: [['Chiều T3', 1], ['Tối T5', 0]] },
+      { id: 'hy', ini: 'HY', teacher: 'Cô Hải Yến', room: 'P.104', size: '5/8', fill: 'w-[62.5%]', left: 3, full: false, slots: [['Chiều T5', 1], ['Sáng T7', 0]], warn: 'Sáng T7 trùng lịch Anh của học sinh' }
+    ];
+    var picked = '';
+    var classes = list.map(function (c) {
+      var on = c.id === p;
+      if (on) picked = c.teacher + ' · ' + c.slots.map(function (s) { return s[0]; }).join(', ');
+      return {
+        ini: c.ini, teacher: c.teacher, room: c.room, size: c.size, left: c.left, warn: c.warn || '', hasWarn: !!c.warn,
+        checked: on ? 'true' : 'false',
+        pick: function () { self.setState({ pick: c.id }); },
+        cardCls: 'w-full p-4 m-0 rounded-3xl bg-white text-left font-sans text-ink flex flex-col gap-3 border-0 transition-transform active:scale-[.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue ' + (on ? 'ring-2 ring-brand-blue' : 'ring-1 ring-line'),
+        radioCls: 'w-6 h-6 shrink-0 rounded-full flex items-center justify-center ' + (on ? 'bg-brand-blue' : 'ring-2 ring-inset ring-line'),
+        dotCls: on ? 'w-2.5 h-2.5 rounded-full bg-white' : 'hidden',
+        matchCls: 'pill h-7 ' + (c.full ? 'bg-soft-green text-success' : 'bg-soft-yellow text-ink'),
+        matchText: c.full ? 'Khớp 2/2 buổi' : 'Khớp 1/2 buổi',
+        barCls: 'h-2 rounded-full bg-brand-blue ' + c.fill,
+        slots: c.slots.map(function (s) {
+          return { t: s[0], cls: 'pill h-7 gap-1.5 bg-surface ' + (s[1] ? 'text-ink' : 'text-brand-orange'), dot: 'w-2 h-2 rounded-full ' + (s[1] ? 'bg-success' : 'bg-brand-orange') };
+        })
+      };
+    });
+    return { classes: classes, picked: picked };
+  }
+}
+</script>
+</body>
+</html>

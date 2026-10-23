@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>v1 · 00 Đăng nhập</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen bg-brand-blue"><div class="absolute inset-0 z-[60] pointer-events-none ring-[6px] ring-inset ring-brand-orange" aria-hidden="true"></div><div class="absolute top-3 left-1/2 -translate-x-1/2 z-[61] pointer-events-none pill h-7 px-4 bg-brand-orange text-white font-semibold whitespace-nowrap" aria-hidden="true">V1 · Bản cũ</div>&gt;
+
+<svg class="absolute left-0 top-0 w-[390px] h-[380px]" viewBox="0 0 390 380" aria-hidden="true">
+<defs>
+<linearGradient id="mh-arc" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#f4e743"></stop>
+<stop offset=".5" stop-color="#f08a2f"></stop>
+<stop offset="1" stop-color="#ea4c2d"></stop>
+</linearGradient>
+<pattern id="mh-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#ffffff" opacity=".14"></circle></pattern>
+</defs>
+<rect x="18" y="24" width="98" height="84" fill="url(#mh-dots)"></rect>
+<g fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1.5">
+<circle cx="360" cy="40" r="56"></circle><circle cx="360" cy="40" r="98"></circle><circle cx="360" cy="40" r="140"></circle>
+</g>
+<path d="M-30 330 C 70 250, 170 240, 260 290 S 400 330, 430 300" fill="none" stroke="url(#mh-arc)" stroke-width="3" stroke-linecap="round"></path>
+<path d="M-30 352 C 80 280, 180 272, 270 318 S 400 352, 430 330" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="1.5"></path>
+<circle cx="262" cy="291" r="5" fill="#f4e743"></circle>
+</svg>
+
+<div class="absolute left-0 right-0 top-[52px] flex flex-col items-center">
+<img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="Minh Hoàng Center" class="w-[190px] h-[190px] object-contain">
+<p class="m-0 -mt-4 text-sm text-white/80 tracking-wide">TỔ HỢP GIÁO DỤC MINH HOÀNG</p>
+</div>
+
+<div class="absolute left-0 right-0 top-[352px] bottom-0 bg-white rounded-t-[32px] px-7 pt-9 pb-10 flex flex-col">
+<h1 class="text-[26px] leading-8 font-bold tracking-tight m-0">Đăng nhập</h1>
+<p class="cap mt-1 mb-6">Dùng tài khoản do trung tâm cấp</p>
+<div class="flex flex-col gap-3">
+<label for="u" class="sr-only">Số điện thoại</label>
+<input id="u" class="input bg-surface" placeholder="Số điện thoại">
+<label for="p" class="sr-only">Mật khẩu</label>
+<div class="relative"><input id="p" type="password" class="input bg-surface pr-12" placeholder="Mật khẩu"><button class="absolute right-3 top-3.5 text-muted" aria-label="Hiện mật khẩu"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></button></div>
+</div>
+<a href="#" class="self-end text-sm font-medium text-brand-blue no-underline mt-3">Quên mật khẩu?</a>
+<a href="v1-GV01-TongQuan.dc.html" class="btn mt-6">Đăng nhập</a>
+<div class="flex-1"></div>
+<div class="flex justify-center gap-6 text-[13px]">
+<a href="v1-GV01-TongQuan.dc.html" class="text-muted no-underline">Demo giáo vụ</a>
+<a href="v1-TC01-TongQuan.dc.html" class="text-muted no-underline">Demo giáo viên</a>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

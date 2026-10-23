@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>v1 · GV02 Học sinh</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen"><div class="absolute inset-0 z-[60] pointer-events-none ring-[6px] ring-inset ring-brand-orange" aria-hidden="true"></div><div class="absolute top-3 left-1/2 -translate-x-1/2 z-[61] pointer-events-none pill h-7 px-4 bg-brand-orange text-white font-semibold whitespace-nowrap" aria-hidden="true">V1 · Bản cũ</div>&gt;
+<header class="px-5 pt-14 pb-3 flex items-center gap-3">
+<h1 class="h1 flex-1">Học sinh</h1>
+<a href="v1-GV04-NhapHoSo.dc.html" class="w-11 h-11 rounded-full bg-brand-blue text-white flex items-center justify-center no-underline" aria-label="Thêm học sinh"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a>
+</header>
+<div class="px-5 flex flex-col gap-3">
+<label class="relative block"><span class="sr-only">Tìm học sinh</span><svg class="w-5 h-5 absolute left-4 top-3.5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg><input class="input h-12 pl-12" placeholder="Tìm tên, mã, số điện thoại"></label>
+<div class="flex gap-2 overflow-auto -mx-5 px-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+<button class="chip chip-on">Tất cả</button>
+<button class="chip">Chờ xếp lớp</button>
+<button class="chip">Khối</button>
+<button class="chip">Môn</button>
+<button class="chip">Đã nghỉ</button>
+</div>
+</div>
+<main class="page pt-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+<div class="list">
+<a href="v1-GV03-HoSo.dc.html" class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">Nguyễn Văn A</span><span class="cap">17A0105 · Khối 4 · TH Thịnh Hào</span></span><span class="pill bg-soft-orange text-brand-orange">Chờ xếp lớp</span></a>
+<a href="v1-GV03-HoSo.dc.html" class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">Trần Thị B</span><span class="cap">15A0102 · Khối 6 · THCS Cát Linh</span></span><span class="pill bg-soft-orange text-brand-orange">Chờ xếp lớp</span></a>
+<a href="v1-GV03-HoSo.dc.html" class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">Lê Văn C</span><span class="cap">16A0004 · Khối 5 · Toán, Văn</span></span><span class="pill bg-soft-green text-success">Đang học</span></a>
+<a href="v1-GV03-HoSo.dc.html" class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">Phạm Thị D</span><span class="cap">14A0060 · Khối 7 · Toán, Anh, KHTN</span></span><span class="pill bg-soft-green text-success">Đang học</span></a>
+<a href="v1-GV03-HoSo.dc.html" class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">Hoàng Văn E</span><span class="cap">12A0150 · Khối 9 · Toán, Văn, Anh</span></span><span class="pill bg-soft-green text-success">Đang học</span></a>
+<a href="v1-GV03-HoSo.dc.html" class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">Vũ Thị F</span><span class="cap">09A0388 · Khối 12 · HSA, Toán</span></span><span class="pill bg-soft-green text-success">Đang học</span></a>
+<a href="v1-GV03-HoSo.dc.html" class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">Đỗ Văn G</span><span class="cap">10A0220 · Khối 11 · Lý, Hóa</span></span><span class="pill bg-soft-green text-success">Đang học</span></a>
+<a href="v1-GV03-HoSo.dc.html" class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar opacity-50"><span class="flex-1 flex flex-col"><span class="font-medium text-muted">Bùi Thị H</span><span class="cap">11A0301 · Khối 10 · Văn</span></span><span class="pill bg-surface text-muted">Đã nghỉ</span></a>
+</div>
+</main>
+<nav class="nav">
+<a href="v1-GV01-TongQuan.dc.html" class="tab" aria-label="Tổng quan"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"></path></svg></a>
+<a href="v1-GV02-HocSinh.dc.html" class="tab tab-on" aria-label="Học sinh"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></a>
+<a href="v1-GV07-DuyetBaoCao.dc.html" class="tab" aria-label="Duyệt"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg></a>
+<a href="v1-GV08-HoaDon.dc.html" class="tab" aria-label="Hóa đơn"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6"></path></svg></a>
+<a href="v1-TC07-TraoDoi.dc.html" class="tab" aria-label="Trao đổi"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

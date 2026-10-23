@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>GV03b Hồ sơ học sinh OFF</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[844px]">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3">
+<a href="GV02-HocSinh.dc.html" class="icon-btn shrink-0 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<h1 class="m-0 text-[22px] leading-7 font-bold tracking-tight flex-1 min-w-0 whitespace-nowrap">Hồ sơ học sinh</h1>
+</header>
+<main class="page [&amp;&gt;*]:shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<section class="relative overflow-hidden rounded-3xl bg-muted text-white shrink-0" aria-label="Thẻ học sinh">
+<span class="absolute -right-12 -top-16 w-44 h-44 rounded-full bg-white/10" aria-hidden="true"></span>
+
+<div class="relative flex items-center gap-4 px-5 py-5">
+<span class="relative shrink-0">
+<img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="w-[84px] h-[104px] rounded-2xl object-cover bg-soft-blue ring-2 ring-white/40 grayscale opacity-70">
+</span>
+<span class="flex-1 min-w-0 flex flex-col gap-1">
+<span class="text-[24px] leading-7 font-bold tracking-tight">Bùi Thị H</span>
+<span class="flex items-end justify-between gap-2"><span class="flex flex-col"><span class="text-[11px] uppercase tracking-[0.14em] text-white/60">MSHS</span><span class="font-mono text-[17px] leading-6 font-semibold tracking-[0.12em]">11A0301</span></span></span>
+<span class="text-[14px] text-white/80">Khối 10</span>
+</span>
+</div>
+</section>
+<article class="bg-white rounded-3xl flex flex-col overflow-hidden" aria-label="Hồ sơ"><div class="px-4 min-h-[68px] py-3 flex items-center justify-between gap-3"><span class="flex flex-col"><span class="font-semibold whitespace-nowrap">Trạng thái</span><span class="cap whitespace-nowrap">Nghỉ từ 01/10/2026</span></span><span class="flex items-center gap-3"><span class="text-sm font-semibold text-muted whitespace-nowrap">OFF</span><a href="GV03c-HoSoON.dc.html" role="switch" aria-checked="false" aria-label="Trạng thái học" class="w-12 h-7 shrink-0 rounded-full bg-line relative before:absolute before:-inset-2 before:content-[''] focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="absolute left-1 top-1 w-5 h-5 rounded-full bg-white"></span></a></span></div><div class="px-4 py-8 border-t border-dashed border-line flex flex-col items-center text-center gap-2"><svg class="w-8 h-8 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg><span class="font-semibold">Hồ sơ đang ẩn</span><span class="cap">Hiện lại khi học sinh đi học lại</span></div></article>
+</main>
+<div class="absolute inset-x-0 bottom-0 z-20 px-5 pt-3 pb-8 bg-surface border-t border-line flex gap-2"><button type="button" aria-disabled="true" aria-describedby="off-why" class="btn flex-1 whitespace-nowrap bg-line text-muted cursor-not-allowed border-0 font-sans"><svg class="w-5 h-5 shrink-0 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>Tạo lớp mới</button><span id="off-why" class="sr-only">Bật trạng thái học để tạo lớp</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

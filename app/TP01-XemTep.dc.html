@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>TP01 Xem tệp Excel</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[844px]">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3 bg-white border-b border-line"><a href="GV09b-ChiTietViecGiao.dc.html" class="icon-btn bg-surface shrink-0 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-label="Đóng"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a><span class="w-10 h-10 shrink-0 rounded-2xl bg-soft-green text-success flex items-center justify-center" aria-hidden="true"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M9 13h6M9 17h6"/></svg></span><span class="flex-1 min-w-0 flex flex-col"><h1 class="m-0 text-[17px] leading-6 font-bold whitespace-nowrap">bao-cao-T9-lop8.xlsx</h1><span class="cap">24 KB, 5 dòng</span></span></header>
+<main class="page gap-4 pt-4 [&>*]:shrink-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+<div class="bg-white rounded-3xl overflow-hidden"><table class="w-full text-sm border-collapse tabular-nums"><thead class="text-muted"><tr><th class="px-4 h-11 text-left text-[13px] font-semibold border-b border-line whitespace-nowrap">Học sinh</th><th class="px-4 h-11 text-left text-[13px] font-semibold border-b border-line whitespace-nowrap">Chuyên cần</th><th class="px-4 h-11 text-left text-[13px] font-semibold border-b border-line whitespace-nowrap">Điểm TB</th></tr></thead><tbody><tr class="border-t border-line"><td class="px-4 py-3 whitespace-nowrap">Lê Văn C</td><td class="px-4 py-3">7/8</td><td class="px-4 py-3 font-semibold">7.8</td></tr><tr class="border-t border-line"><td class="px-4 py-3 whitespace-nowrap">Phạm Thị D</td><td class="px-4 py-3">8/8</td><td class="px-4 py-3 font-semibold">7.5</td></tr><tr class="border-t border-line"><td class="px-4 py-3 whitespace-nowrap">Hoàng Văn E</td><td class="px-4 py-3">8/8</td><td class="px-4 py-3 font-semibold">8.0</td></tr><tr class="border-t border-line"><td class="px-4 py-3 whitespace-nowrap">Nguyễn Văn A</td><td class="px-4 py-3">8/8</td><td class="px-4 py-3 font-semibold">8.3</td></tr><tr class="border-t border-line"><td class="px-4 py-3 whitespace-nowrap">Trần Thị B</td><td class="px-4 py-3">8/8</td><td class="px-4 py-3 font-semibold">8.5</td></tr></tbody></table></div>
+</main>
+<div class="absolute inset-x-0 bottom-0 z-20 px-5 pt-3 pb-8 bg-surface border-t border-line flex gap-2"><a href="files/bao-cao-T9-lop8.csv" target="_blank" class="btn flex-1 gap-2 whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Tải xuống</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

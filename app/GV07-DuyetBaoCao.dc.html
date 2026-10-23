@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>GV07 Duyệt báo cáo</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[1334px]">
+<header class="px-5 pt-14 pb-3 flex flex-col gap-3"><h1 class="h1 m-0">Duyệt</h1><nav aria-label="Loại yêu cầu" class="p-1 rounded-full bg-line flex gap-1"><a href="GV07-DuyetBaoCao.dc.html" class="seg seg-on rounded-full whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-current="page">Báo cáo học tập</a><a href="GV10-SuaTichLich.dc.html" class="seg rounded-full whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Điều chỉnh điểm danh</a></nav></header>
+<div class="shrink-0 px-5 pt-1 pb-2 flex items-center gap-3"><h2 class="flex-1 min-w-0 m-0 text-[20px] leading-7 font-bold tracking-tight whitespace-nowrap">Duyệt báo cáo</h2><button type="button" aria-haspopup="dialog" aria-label="Tháng báo cáo: Tháng 10/2026, mở lịch chọn tháng" class="h-11 pl-3.5 pr-3 shrink-0 rounded-full bg-white border-0 font-sans text-sm font-semibold text-ink flex items-center gap-2 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><svg class="w-4 h-4 text-brand-blue shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span class="whitespace-nowrap tabular-nums">T10/2026</span><svg class="w-4 h-4 text-muted shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+<div class="shrink-0 px-5 pt-1 pb-3 flex gap-2 overflow-x-auto [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden" role="group" aria-label="Lọc trạng thái báo cáo">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="5">
+<button type="button" onClick="{{f.pick}}" aria-pressed="{{f.on}}" class="{{f.cls}}">{{f.label}}<sc-if value="{{f.hasCount}}" hint-placeholder-val="{{true}}"><span class="{{f.countCls}}">{{f.count}}</span></sc-if></button>
+</sc-for>
+</div>
+<main class="page gap-0 pt-0 [&amp;&gt;*]:shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+
+<sc-if value="{{isAll}}" hint-placeholder-val="{{true}}">
+<sc-for list="{{groups}}" as="g" hint-placeholder-count="4">
+<section class="mt-3 flex flex-col gap-2" aria-label="{{g.label}}">
+<div class="flex items-center gap-2 min-h-[32px]"><h3 class="m-0 flex-1 min-w-0 flex items-center gap-2 text-[15px] leading-5 font-bold tracking-tight whitespace-nowrap"><span class="{{g.dotCls}}" aria-hidden="true"></span>{{g.label}}</h3><button type="button" onClick="{{g.open}}" class="h-8 px-3 -mr-2 rounded-full bg-transparent border-0 font-sans text-[13px] font-semibold text-brand-blue whitespace-nowrap tabular-nums active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">{{g.count}} báo cáo</button></div>
+<button type="button" onClick="{{g.open}}" aria-label="{{g.deckLabel}}" class="relative block w-full p-0 m-0 border-0 bg-transparent text-left font-sans text-ink transition-transform active:scale-[.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue rounded-3xl">
+<span class="relative z-[3] flex items-stretch gap-2.5 px-3 py-3 bg-white rounded-3xl shadow-sm">
+<span class="{{g.top.boxCls}}"><span class="text-[17px] leading-6 font-bold tracking-tight tabular-nums whitespace-nowrap">{{g.top.boxVal}}</span><span class="text-[11px] leading-4 text-muted whitespace-nowrap">{{g.top.boxLab}}</span></span>
+<span class="flex-1 min-w-0 flex flex-col gap-2.5"><span class="flex items-center gap-2.5"><img src="{{g.top.src}}" alt="" class="w-10 h-10 shrink-0 rounded-lg object-cover bg-soft-blue"><span class="flex-1 min-w-0 flex flex-col"><span class="flex items-center gap-2"><span class="font-semibold whitespace-nowrap">{{g.top.name}}</span><sc-if value="{{g.top.resent}}" hint-placeholder-val="{{false}}"><span class="pill bg-soft-blue text-ink h-6 px-2.5 shrink-0">Gửi lại</span></sc-if></span><span class="text-[13px] leading-[18px] text-muted truncate"><span class="font-mono text-[12px] tracking-wide">{{g.top.code}}</span> · {{g.top.meta}}</span></span></span>
+<span class="flex items-center gap-1"><span class="{{g.top.p1Cls}}"><sc-if value="{{g.top.p1Check}}" hint-placeholder-val="{{true}}"><svg class="w-3 h-3 text-success shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></sc-if>{{g.top.p1}}</span><span class="{{g.top.p2Cls}}"><sc-if value="{{g.top.p2Check}}" hint-placeholder-val="{{false}}"><svg class="w-3 h-3 text-success shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></sc-if>{{g.top.p2}}</span></span></span>
+</span>
+<sc-if value="{{g.l1}}" hint-placeholder-val="{{true}}"><span class="relative z-[2] block mx-3 -mt-4 h-7 rounded-b-3xl bg-white/80 shadow-sm" aria-hidden="true"></span></sc-if>
+<sc-if value="{{g.l2}}" hint-placeholder-val="{{true}}"><span class="relative z-[1] block mx-7 -mt-4 h-7 rounded-b-3xl bg-white/50" aria-hidden="true"></span></sc-if>
+</button>
+</section>
+</sc-for>
+
+<section class="mt-8 flex flex-col" aria-labelledby="h-dg"><div class="flex items-center gap-3 pb-3"><h2 id="h-dg" class="flex-1 min-w-0 m-0 text-[20px] leading-7 font-bold tracking-tight whitespace-nowrap">Công việc đã giao</h2><a href="GV09-GiaoViec.dc.html" class="h-11 px-4 rounded-full bg-white text-sm font-semibold text-brand-blue whitespace-nowrap no-underline flex items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Xem tất cả</a></div><ul class="m-0 p-1.5 list-none bg-white rounded-3xl flex flex-col gap-0.5"><li><a href="GV09b-ChiTietViecGiao.dc.html" class="px-3 py-3 rounded-[20px] flex items-center gap-3 no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue"><span class="w-16 h-16 shrink-0 rounded-2xl bg-surface flex flex-col items-center justify-center"><span class="text-[11px] leading-4 text-muted">hạn</span><span class="text-[17px] leading-6 font-bold tabular-nums">25/10</span></span><span class="flex-1 min-w-0 flex flex-col gap-1.5"><span class="font-medium leading-5">Soạn đề kiểm tra chương 2 lớp 7</span><span class="flex items-center justify-between gap-2"><span class="cap whitespace-nowrap">Thầy Minh Đức</span><span class="pill bg-soft-blue text-ink gap-2 shrink-0"><span class="w-2 h-2 rounded-full bg-chart-1" aria-hidden="true"></span>Mới giao</span></span></span></a></li><li><a href="GV09b-ChiTietViecGiao.dc.html" class="px-3 py-3 rounded-[20px] flex items-center gap-3 no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue"><span class="w-16 h-16 shrink-0 rounded-2xl bg-surface flex flex-col items-center justify-center"><span class="text-[11px] leading-4 text-muted">hạn</span><span class="text-[17px] leading-6 font-bold tabular-nums">17/10</span></span><span class="flex-1 min-w-0 flex flex-col gap-1.5"><span class="font-medium leading-5">Liên hệ phụ huynh 3 học sinh nghỉ nhiều</span><span class="flex items-center justify-between gap-2"><span class="cap whitespace-nowrap">Cô Thu Anh</span><span class="pill bg-soft-yellow text-ink gap-2 shrink-0"><span class="w-2 h-2 rounded-full bg-brand-yellow" aria-hidden="true"></span>Đang thực hiện</span></span></span></a></li></ul></section>
+</sc-if>
+
+<sc-if value="{{isOne}}" hint-placeholder-val="{{false}}">
+<section class="pt-1 flex flex-col gap-3" aria-label="{{cur.label}}">
+<p class="m-0 px-1 cap">{{cur.desc}}</p>
+<ul class="m-0 p-1.5 list-none bg-white rounded-3xl flex flex-col gap-0.5">
+<sc-for list="{{cur.items}}" as="it" hint-placeholder-count="4">
+<li><sc-if value="{{it.hasHead}}" hint-placeholder-val="{{false}}"><span class="block px-3 pt-3 pb-1 text-[12px] leading-4 font-semibold uppercase tracking-[0.12em] text-muted">{{it.head}}</span></sc-if><a href="GV07b-ChiTietBaoCao.dc.html" class="px-3 py-3 rounded-[20px] flex items-stretch gap-2.5 no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue">
+<span class="{{it.boxCls}}"><span class="text-[17px] leading-6 font-bold tracking-tight tabular-nums whitespace-nowrap">{{it.boxVal}}</span><span class="text-[11px] leading-4 text-muted whitespace-nowrap">{{it.boxLab}}</span></span>
+<span class="flex-1 min-w-0 flex flex-col gap-2.5"><span class="flex items-center gap-2.5"><img src="{{it.src}}" alt="" class="w-10 h-10 shrink-0 rounded-lg object-cover bg-soft-blue"><span class="flex-1 min-w-0 flex flex-col"><span class="flex items-center gap-2"><span class="font-semibold whitespace-nowrap">{{it.name}}</span><sc-if value="{{it.resent}}" hint-placeholder-val="{{false}}"><span class="pill bg-soft-blue text-ink h-6 px-2.5 shrink-0">Gửi lại</span></sc-if></span><span class="text-[13px] leading-[18px] text-muted truncate"><span class="font-mono text-[12px] tracking-wide">{{it.code}}</span> · {{it.meta}}</span></span></span>
+<span class="flex items-center gap-1"><span class="{{it.p1Cls}}"><sc-if value="{{it.p1Check}}" hint-placeholder-val="{{true}}"><svg class="w-3 h-3 text-success shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></sc-if>{{it.p1}}</span><span class="{{it.p2Cls}}"><sc-if value="{{it.p2Check}}" hint-placeholder-val="{{false}}"><svg class="w-3 h-3 text-success shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></sc-if>{{it.p2}}</span></span></span>
+</a></li>
+</sc-for>
+</ul>
+<sc-if value="{{cur.hasMore}}" hint-placeholder-val="{{true}}"><button type="button" class="h-12 rounded-2xl bg-white border-0 font-sans text-sm font-semibold text-brand-blue active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Xem thêm {{cur.more}} báo cáo</button></sc-if>
+</section>
+</sc-if>
+
+</main>
+<nav class="nav z-30" aria-label="Điều hướng chính">
+<a href="GV01-TongQuan.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Tổng quan"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"></path></svg></a>
+<a href="GV02-HocSinh.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Học sinh"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></a>
+<a href="GV07-DuyetBaoCao.dc.html" class="tab tab-on w-auto px-4 gap-2 text-[13px] font-semibold transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-current="page"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg>Duyệt</a>
+<a href="GV08-HoaDon.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Học phí"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6"></path></svg></a>
+<a href="GV13-LienLac.dc.html" class="tab transition-transform active:scale-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label="Liên lạc"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path><path d="M8 10h8"></path></svg></a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1334}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { filter: 'all' }; }
+  renderVals() {
+    var P1 = 'data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E', P2 = 'data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E';
+    var BOX = 'w-[60px] shrink-0 self-start h-16 rounded-2xl flex flex-col items-center justify-center ';
+    var TONE = { urgent: BOX + 'bg-soft-orange text-brand-orange', normal: BOX + 'bg-surface text-ink', done: BOX + 'bg-soft-green text-success', redo: BOX + 'bg-soft-yellow text-ink' };
+    var PB = 'min-w-0 h-7 px-2.5 rounded-full text-[11px] flex items-center gap-1 whitespace-nowrap ';
+    var PILL = {
+      ok: PB + 'flex-[1.6] bg-soft-green font-medium text-ink',
+      wait: PB + 'flex-[1.6] border border-dashed border-muted/40 text-muted',
+      mine: PB + 'flex-1 bg-soft-blue ring-1 ring-inset ring-brand-blue/30 font-semibold text-brand-blue',
+      idle: PB + 'flex-1 bg-surface text-muted',
+      back: PB + 'flex-[1.6] bg-soft-orange font-semibold text-brand-orange',
+      okEnd: PB + 'flex-1 bg-soft-green font-medium text-ink'
+    };
+    var data = [
+      { key: 'wait', label: 'Chờ bạn', count: 9, dot: 'bg-brand-blue', desc: 'Trưởng BM đã xem hoặc đang song song, cần bạn duyệt trước hạn 24 giờ.', items: [
+        { head: 'Sắp hết hạn', name: 'Lê Văn C', code: '16A0004', meta: 'Toán · Cô Thu Anh', src: P1, tone: 'urgent', boxVal: '2 giờ', boxLab: 'còn lại', p1: 'Trưởng BM', p1c: 'ok', p2: 'Chờ bạn', p2c: 'mine' },
+        { name: 'Phạm Thị D', code: '14A0060', meta: 'Anh · Cô Mai Hương', src: P2, tone: 'urgent', boxVal: '5 giờ', boxLab: 'còn lại', p1: 'Trưởng BM: đang chờ', p1c: 'wait', p2: 'Chờ bạn', p2c: 'mine' },
+        { head: 'Còn thời gian', name: 'Vũ Thị F', code: '09A0388', meta: 'Toán · Thầy Minh Đức', src: P2, resent: true, tone: 'normal', boxVal: '21 giờ', boxLab: 'còn lại', p1: 'Trưởng BM: đang chờ', p1c: 'wait', p2: 'Chờ bạn', p2c: 'mine' },
+        { name: 'Đỗ Văn G', code: '10A0220', meta: 'Lý · Thầy Quang', src: P1, tone: 'normal', boxVal: '23 giờ', boxLab: 'còn lại', p1: 'Trưởng BM', p1c: 'ok', p2: 'Chờ bạn', p2c: 'mine' }
+      ]},
+      { key: 'bm', label: 'Chờ Trưởng BM', count: 3, dot: 'bg-chart-1', desc: 'Đang ở bước Trưởng bộ môn, bạn chỉ theo dõi.', items: [
+        { name: 'Hoàng Văn E', code: '12A0150', meta: 'Toán · Thầy Minh Đức', src: P1, tone: 'normal', boxVal: '20/10', boxLab: 'đã nộp', p1: 'Trưởng BM: đang xem', p1c: 'wait', p2: 'Chưa tới bạn', p2c: 'idle' },
+        { name: 'Trần Thị B', code: '15A0102', meta: 'Anh · Cô Mai Hương', src: P2, tone: 'normal', boxVal: '21/10', boxLab: 'đã nộp', p1: 'Trưởng BM: đang chờ', p1c: 'wait', p2: 'Chưa tới bạn', p2c: 'idle' },
+        { name: 'Nguyễn Văn A', code: '17A0105', meta: 'Toán · Cô Thu Anh', src: P1, tone: 'normal', boxVal: '21/10', boxLab: 'đã nộp', p1: 'Trưởng BM: đang chờ', p1c: 'wait', p2: 'Chưa tới bạn', p2c: 'idle' }
+      ]},
+      { key: 'redo', label: 'Làm lại', count: 2, dot: 'bg-brand-orange', desc: 'Đã trả về giáo viên, chờ gửi lại.', items: [
+        { name: 'Bùi Minh K', code: '08A0410', meta: 'Văn · Cô Diệu Linh', src: P1, tone: 'redo', boxVal: '24/10', boxLab: 'hạn gửi', p1: 'Đã trả lại', p1c: 'back', p2: 'GV đang sửa', p2c: 'idle' },
+        { name: 'Mai Khánh Linh', code: '13A0207', meta: 'Toán · Thầy Quang', src: P2, tone: 'redo', boxVal: '25/10', boxLab: 'hạn gửi', p1: 'Đã trả lại', p1c: 'back', p2: 'GV đang sửa', p2c: 'idle' }
+      ]},
+      { key: 'done', label: 'Hoàn tất', count: 41, dot: 'bg-success', desc: 'Đã duyệt đủ 2 bước và gửi phụ huynh.', items: [
+        { name: 'Trần Hoàng M', code: '11A0277', meta: 'Anh · Cô Mai Hương', src: P1, tone: 'done', boxVal: '21/10', boxLab: 'đã duyệt', p1: 'Trưởng BM', p1c: 'ok', p2: 'Giáo vụ', p2c: 'okEnd' },
+        { name: 'Lý Thu N', code: '10A0198', meta: 'Toán · Cô Thu Anh', src: P2, tone: 'done', boxVal: '20/10', boxLab: 'đã duyệt', p1: 'Trưởng BM', p1c: 'ok', p2: 'Giáo vụ', p2c: 'okEnd' },
+        { name: 'Phan Đức P', code: '09A0315', meta: 'Lý · Thầy Quang', src: P1, tone: 'done', boxVal: '19/10', boxLab: 'đã duyệt', p1: 'Trưởng BM', p1c: 'ok', p2: 'Giáo vụ', p2c: 'okEnd' }
+      ]}
+    ];
+    var self = this, f = this.state.filter;
+    var prep = function (it) {
+      return Object.assign({}, it, {
+        resent: !!it.resent, hasHead: !!it.head, boxCls: TONE[it.tone],
+        p1Cls: PILL[it.p1c], p2Cls: PILL[it.p2c],
+        p1Check: it.p1c === 'ok', p2Check: it.p2c === 'okEnd'
+      });
+    };
+    var groups = data.map(function (g) {
+      var items = g.items.map(prep);
+      return { key: g.key, label: g.label, desc: g.desc, count: g.count, items: items, top: items[0],
+        more: g.count - items.length, hasMore: g.count > items.length,
+        l1: g.count > 1, l2: g.count > 2,
+        dotCls: 'w-2.5 h-2.5 rounded-full shrink-0 ' + g.dot,
+        deckLabel: 'Mở ' + g.label + ', ' + g.count + ' báo cáo',
+        open: function () { self.setState({ filter: g.key }); } };
+    });
+    var defs = [{ key: 'all', label: 'Tất cả', count: 0 }].concat(groups.map(function (g) { return { key: g.key, label: g.label, count: g.count }; }));
+    var filters = defs.map(function (d) {
+      var on = d.key === f;
+      return { label: d.label, count: d.count, hasCount: d.count > 0, on: on ? 'true' : 'false',
+        cls: 'chip gap-1.5 shrink-0 transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue ' + (on ? 'chip-on' : 'bg-white'),
+        countCls: 'min-w-5 h-5 px-1.5 rounded-full text-xs font-semibold tabular-nums flex items-center justify-center ' + (on ? 'bg-white/20 text-white' : (d.key === 'wait' ? 'bg-brand-blue text-white' : 'bg-surface text-muted')),
+        pick: function () { self.setState({ filter: d.key }); } };
+    });
+    var cur = groups.filter(function (g) { return g.key === f; })[0] || groups[0];
+    return { filters: filters, groups: groups, cur: cur, isAll: f === 'all', isOne: f !== 'all' };
+  }
+}
+</script>
+</body>
+</html>

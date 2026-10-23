@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Design System · Minh Hoàng Center</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="w-[1440px] bg-white font-sans text-ink text-[15px] leading-[22px] p-16 flex flex-col gap-14">
+
+<div class="flex items-end justify-between gap-8">
+<div class="flex flex-col gap-2">
+<span class="cap">Minh Hoàng Center · Mobile app · v1</span>
+<h1 class="text-[44px] leading-[52px] font-bold tracking-tight">Design System</h1>
+<p class="text-muted max-w-xl">Google Sans Flex · 3 màu brand + 4 nền dẫn xuất · Tailwind tokens trong <span class="font-mono text-sm bg-surface px-1.5 rounded">tailwind.config.js</span>, component trong <span class="font-mono text-sm bg-surface px-1.5 rounded">tailwind.src.css</span>.</p>
+</div>
+<img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="Logo Minh Hoàng" class="w-24 h-24 object-contain">
+</div>
+
+<section class="flex flex-col gap-5">
+<h2 class="text-[22px] leading-7 font-bold">01 · Màu</h2>
+<div class="grid grid-cols-6 gap-4">
+<div class="flex flex-col gap-2"><div class="h-28 rounded-2xl bg-brand-blue"></div><span class="font-semibold">brand.blue</span><span class="cap font-mono">#253a7e</span><span class="cap">Nút chính, tab bar, trạng thái chọn</span></div>
+<div class="flex flex-col gap-2"><div class="h-28 rounded-2xl bg-brand-orange"></div><span class="font-semibold">brand.orange</span><span class="cap font-mono">#ea4c2d</span><span class="cap">Cảnh báo, quá hạn, vắng, nghỉ học</span></div>
+<div class="flex flex-col gap-2"><div class="h-28 rounded-2xl bg-brand-yellow"></div><span class="font-semibold">brand.yellow</span><span class="cap font-mono">#f4e743</span><span class="cap">Điểm nhấn nhỏ: KPI, badge, TBM</span></div>
+<div class="flex flex-col gap-2"><div class="h-28 rounded-2xl bg-ink"></div><span class="font-semibold">ink</span><span class="cap font-mono">#17181c</span><span class="cap">Chữ chính, chip đang chọn</span></div>
+<div class="flex flex-col gap-2"><div class="h-28 rounded-2xl bg-muted"></div><span class="font-semibold">muted</span><span class="cap font-mono">#6b6f7b</span><span class="cap">Chữ phụ, icon tab không chọn</span></div>
+<div class="flex flex-col gap-2"><div class="h-28 rounded-2xl bg-success"></div><span class="font-semibold">success</span><span class="cap font-mono">#1f8a4c</span><span class="cap">Đã duyệt, đã thu, có mặt</span></div>
+<div class="flex flex-col gap-2"><div class="h-20 rounded-2xl bg-soft-blue border border-line"></div><span class="font-semibold">soft.blue</span><span class="cap font-mono">#eef1f9</span></div>
+<div class="flex flex-col gap-2"><div class="h-20 rounded-2xl bg-soft-orange border border-line"></div><span class="font-semibold">soft.orange</span><span class="cap font-mono">#fdede9</span></div>
+<div class="flex flex-col gap-2"><div class="h-20 rounded-2xl bg-soft-yellow border border-line"></div><span class="font-semibold">soft.yellow</span><span class="cap font-mono">#fdfae3</span></div>
+<div class="flex flex-col gap-2"><div class="h-20 rounded-2xl bg-soft-green border border-line"></div><span class="font-semibold">soft.green</span><span class="cap font-mono">#e6f4ec</span></div>
+<div class="flex flex-col gap-2"><div class="h-20 rounded-2xl bg-surface border border-line"></div><span class="font-semibold">surface</span><span class="cap font-mono">#f4f5f9</span><span class="cap">Nền màn hình</span></div>
+<div class="flex flex-col gap-2"><div class="h-20 rounded-2xl bg-line"></div><span class="font-semibold">line</span><span class="cap font-mono">#e6e8ef</span><span class="cap">Kẻ, viền checkbox</span></div>
+</div>
+</section>
+
+<section class="flex flex-col gap-5">
+<h2 class="text-[22px] leading-7 font-bold">02 · Chữ · Google Sans Flex</h2>
+<div class="grid grid-cols-[200px_1fr_220px] gap-x-8 gap-y-5 items-baseline">
+<span class="cap">Display · .h1 lớn</span><span class="text-[44px] leading-[52px] font-bold tracking-tight">Chào mừng trở lại</span><span class="cap font-mono">44 / 52 · 700 · tracking -0.02</span>
+<span class="cap">Title · .h1</span><span class="text-[28px] leading-8 font-bold tracking-tight">Học sinh</span><span class="cap font-mono">28 / 32 · 700</span>
+<span class="cap">Số liệu · .num</span><span class="text-[30px] leading-9 font-bold tracking-tight">94%</span><span class="cap font-mono">30 / 36 · 700</span>
+<span class="cap">Heading · header</span><span class="text-[22px] leading-7 font-bold tracking-tight">Lê Văn C</span><span class="cap font-mono">22 / 28 · 700</span>
+<span class="cap">Subheading · .h2</span><span class="text-[17px] leading-6 font-semibold">Lịch sử học tập</span><span class="cap font-mono">17 / 24 · 600</span>
+<span class="cap">Body</span><span class="text-[15px] leading-[22px]">Lịch học với giáo viên hiện tại không phù hợp</span><span class="cap font-mono">15 / 22 · 400, 500 nhấn</span>
+<span class="cap">Caption · .cap</span><span class="text-[13px] leading-[18px] text-muted">16A0004 · Khối 5 · TH Trần Nhật Duật</span><span class="cap font-mono">13 / 18 · 400 · muted</span>
+<span class="cap">Pill · .pill</span><span class="text-xs font-semibold">CHỜ DUYỆT · Đã thu</span><span class="cap font-mono">12 / 16 · 600</span>
+<span class="cap">Micro</span><span class="text-[11px] leading-[14px] text-muted">T2 · T3 · T4 · 13 · 14 · 15</span><span class="cap font-mono">11 / 14 · 400</span>
+</div>
+</section>
+
+<section class="grid grid-cols-2 gap-10">
+<div class="flex flex-col gap-5">
+<h2 class="text-[22px] leading-7 font-bold">03 · Bo góc</h2>
+<div class="flex items-end gap-4">
+<div class="flex flex-col items-center gap-2"><div class="w-16 h-16 bg-soft-blue rounded-lg"></div><span class="cap">8 · checkbox</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-16 h-16 bg-soft-blue rounded-xl"></div><span class="cap">12 · ô lịch, nút nhỏ</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-16 h-16 bg-soft-blue rounded-2xl"></div><span class="cap">16 · input, button</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-16 h-16 bg-soft-blue rounded-3xl"></div><span class="cap">24 · card, list</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-16 h-16 bg-soft-blue rounded-4xl"></div><span class="cap">28 · hero, sheet</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-16 h-16 bg-soft-blue rounded-full"></div><span class="cap">full · chip, avatar, nav</span></div>
+</div>
+</div>
+<div class="flex flex-col gap-5">
+<h2 class="text-[22px] leading-7 font-bold">04 · Khoảng cách</h2>
+<div class="flex items-end gap-4">
+<div class="flex flex-col items-center gap-2"><div class="w-1 h-10 bg-brand-blue"></div><span class="cap">4</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-2 h-10 bg-brand-blue"></div><span class="cap">8 · gap chip</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-3 h-10 bg-brand-blue"></div><span class="cap">12 · gap card</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-4 h-10 bg-brand-blue"></div><span class="cap">16 · padding card</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-5 h-10 bg-brand-blue"></div><span class="cap">20 · lề màn hình</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-6 h-10 bg-brand-blue"></div><span class="cap">24</span></div>
+<div class="flex flex-col items-center gap-2"><div class="w-14 h-10 bg-brand-blue"></div><span class="cap">56 · top safe area</span></div>
+</div>
+<span class="cap">Chạm tối thiểu 44 px. Màn 390 × 844, nội dung chừa 128 px đáy cho tab bar nổi.</span>
+</div>
+</section>
+
+<section class="flex flex-col gap-6">
+<h2 class="text-[22px] leading-7 font-bold">05 · Components</h2>
+<div class="grid grid-cols-3 gap-8 bg-surface rounded-4xl p-8">
+
+<div class="flex flex-col gap-3">
+<span class="font-semibold">Button</span>
+<span class="btn">.btn · Lưu</span>
+<span class="btn-sm">.btn-sm · Duyệt</span>
+<span class="btn-ghost bg-white">.btn-ghost · Làm lại</span>
+<span class="btn bg-brand-orange">.btn bg-brand-orange · Nghỉ học</span>
+<span class="btn-sm bg-white text-brand-blue">.btn-sm trên nền xanh</span>
+</div>
+
+<div class="flex flex-col gap-3">
+<span class="font-semibold">Chip · Pill · Segment</span>
+<div class="flex gap-2"><span class="chip">.chip</span><span class="chip chip-on">.chip-on</span><span class="chip gap-1">Tháng 9 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="flex flex-wrap gap-2"><span class="pill bg-soft-green text-success">Đã duyệt</span><span class="pill bg-soft-blue text-brand-blue">Chờ duyệt</span><span class="pill bg-soft-orange text-brand-orange">Làm lại</span><span class="pill bg-soft-yellow">Chờ xác nhận</span><span class="pill bg-white text-muted">Chưa nộp</span><span class="pill bg-white text-brand-blue">Tự điền</span></div>
+<div class="p-1 rounded-2xl bg-line flex gap-1"><span class="seg seg-on">.seg-on</span><span class="seg">.seg</span><span class="seg">.seg</span></div>
+<div class="flex rounded-full bg-white p-1 gap-1 w-max"><span class="h-9 px-4 rounded-full bg-brand-blue text-white text-sm font-semibold flex items-center">Có</span><span class="h-9 px-4 rounded-full text-sm font-medium text-muted flex items-center">Vắng</span></div>
+</div>
+
+<div class="flex flex-col gap-3">
+<span class="font-semibold">Input · Field · Toggle · Checkbox</span>
+<input class="input" placeholder=".input · Số điện thoại">
+<div class="field"><span>.field · Toán</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></div>
+<div class="field ring-2 ring-brand-blue"><span class="font-semibold">16A0<span class="inline-block w-0.5 h-5 bg-brand-blue align-middle"></span></span><span class="cap">focus</span></div>
+<div class="flex items-center gap-6">
+<span class="flex items-center gap-2"><span class="w-12 h-7 rounded-full bg-success relative"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span><span class="cap">on</span></span>
+<span class="flex items-center gap-2"><span class="w-12 h-7 rounded-full bg-line relative"><span class="absolute left-1 top-1 w-5 h-5 rounded-full bg-white"></span></span><span class="cap">off</span></span>
+<span class="flex items-center gap-2"><span class="w-6 h-6 rounded-lg bg-brand-blue text-white flex items-center justify-center"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></span><span class="w-6 h-6 rounded-lg border-2 border-line bg-white"></span><span class="cap">checkbox</span></span>
+</div>
+</div>
+
+<div class="flex flex-col gap-3">
+<span class="font-semibold">Card · Tile · Hero</span>
+<div class="card flex flex-col gap-2"><span class="h2">.card</span><span class="cap">Nền trắng, bo 24, padding 16</span></div>
+<div class="grid grid-cols-2 gap-3"><div class="tile"><span class="cap">.tile</span><span class="num">94%</span></div><div class="tile bg-brand-blue text-white"><span class="num">3</span><span class="text-sm text-white/80">đảo màu</span></div></div>
+<div class="rounded-4xl bg-brand-blue text-white p-5 flex flex-col gap-1"><span class="text-sm text-white/75">Hero · tổng tháng</span><span class="text-[30px] leading-9 font-bold">[TỔNG] đ</span></div>
+</div>
+
+<div class="flex flex-col gap-3">
+<span class="font-semibold">Avatar · Row · List</span>
+<div class="flex items-center gap-3"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="initials">TA</span><span class="initials bg-soft-yellow text-ink">GV</span><span class="cap">học sinh: ảnh · nhân sự: chữ cái</span></div>
+<div class="list">
+<div class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">.row trong .list</span><span class="cap">Khối 5 · Toán, Văn</span></span><span class="pill bg-soft-green text-success">Đang học</span></div>
+<div class="row"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="avatar"><span class="flex-1 flex flex-col"><span class="font-medium">Cách nhau 1 px bg-line</span><span class="cap">Khối 7</span></span><span class="pill bg-soft-orange text-brand-orange">Chờ xếp lớp</span></div>
+</div>
+</div>
+
+<div class="flex flex-col gap-3">
+<span class="font-semibold">Tab bar · Day strip · Ô lịch</span>
+<div class="relative h-20"><nav class="nav static w-full">
+<span class="tab tab-on"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"></path></svg></span>
+<span class="tab"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></span>
+<span class="tab"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></span>
+<span class="tab relative"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg><span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-brand-orange"></span></span>
+<span class="tab"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></span>
+</nav></div>
+<div class="grid grid-cols-4 gap-1.5"><span class="h-16 rounded-2xl bg-white flex flex-col items-center justify-center"><span class="text-[11px] text-muted">T2</span><span class="text-lg font-semibold">13</span></span><span class="h-16 rounded-2xl bg-brand-blue text-white flex flex-col items-center justify-center"><span class="text-[11px] text-white/75">T3</span><span class="text-lg font-semibold">14</span></span><span class="h-16 rounded-2xl bg-white flex flex-col items-center justify-center"><span class="text-[11px] text-muted">T4</span><span class="text-lg font-semibold">15</span></span><span class="h-16 rounded-2xl bg-white flex flex-col items-center justify-center text-muted"><span class="text-[11px]">CN</span><span class="text-lg font-semibold">19</span></span></div>
+<div class="flex gap-1.5"><span class="w-12 h-10 rounded-xl bg-white"></span><span class="w-12 h-10 rounded-xl bg-brand-blue text-white flex items-center justify-center"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></span><span class="w-12 h-10 rounded-xl bg-white"></span><span class="cap self-center">ô lịch tuần: trống / đã tick</span></div>
+</div>
+
+</div>
+</section>
+
+<section class="flex flex-col gap-5">
+<h2 class="text-[22px] leading-7 font-bold">06 · Biểu đồ</h2>
+<div class="grid grid-cols-[1fr_1fr_1fr] gap-8">
+<div class="flex flex-col gap-3">
+<span class="font-semibold">Bảng màu biểu đồ (thứ tự cố định)</span>
+<div class="flex gap-3">
+<div class="flex-1 flex flex-col gap-1.5"><div class="h-16 rounded-2xl bg-chart-1"></div><span class="text-sm font-semibold">chart.1</span><span class="cap font-mono">#3a56b0</span></div>
+<div class="flex-1 flex flex-col gap-1.5"><div class="h-16 rounded-2xl bg-chart-2"></div><span class="text-sm font-semibold">chart.2</span><span class="cap font-mono">#e0532f</span></div>
+<div class="flex-1 flex flex-col gap-1.5"><div class="h-16 rounded-2xl bg-chart-3"></div><span class="text-sm font-semibold">chart.3</span><span class="cap font-mono">#2a9d8f</span></div>
+</div>
+<span class="cap">Suy ra từ brand, đã chạy kiểm tra: mù màu ΔE ≥ 11 mọi cặp, tương phản ≥ 3:1 trên nền trắng. 1 chuỗi dữ liệu thì chỉ dùng chart.1.</span>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-semibold">Hình mẫu</span>
+<div class="flex items-end gap-4">
+<div class="flex items-end gap-1.5 h-20"><span class="w-5 h-[45%] rounded-t bg-chart-1"></span><span class="w-5 h-full rounded-t bg-chart-1"></span><span class="w-5 h-[60%] rounded-t bg-chart-1"></span></div>
+<span class="relative w-20 h-20"><svg class="w-20 h-20 -rotate-90" viewBox="0 0 36 36" role="img" aria-label="Vòng tiến độ 70 phần trăm"><circle cx="18" cy="18" r="15.9" fill="none" stroke="#e6e8ef" stroke-width="4"></circle><circle cx="18" cy="18" r="15.9" fill="none" stroke="#3a56b0" stroke-width="4" stroke-dasharray="70 30" stroke-linecap="round"></circle></svg><span class="absolute inset-0 flex items-center justify-center text-sm font-bold">70%</span></span>
+<svg class="w-24 h-20" viewBox="0 0 96 80" role="img" aria-label="Đường xu hướng"><polyline points="6,60 34,48 62,22 90,34" fill="none" stroke="#3a56b0" stroke-width="2" stroke-linejoin="round"></polyline><g fill="#3a56b0" stroke="#fff" stroke-width="2"><circle cx="6" cy="60" r="4.5"></circle><circle cx="34" cy="48" r="4.5"></circle><circle cx="62" cy="22" r="4.5"></circle><circle cx="90" cy="34" r="4.5"></circle></g></svg>
+</div>
+<div class="flex h-5 gap-0.5 rounded-md overflow-hidden"><span class="w-[29%] bg-chart-1"></span><span class="w-[53%] bg-chart-2"></span><span class="w-[18%] bg-chart-3"></span></div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-semibold">Quy tắc</span>
+<ul class="flex flex-col gap-1.5 text-sm text-muted list-disc pl-5 m-0">
+<li>Cột bo 4 px ở đầu dữ liệu, đường 2 px, điểm ≥ 8 px có viền trắng.</li>
+<li>Khe 2 px giữa các phần của thanh xếp chồng.</li>
+<li>Số và nhãn dùng màu chữ (ink, muted), không dùng màu chuỗi.</li>
+<li>Từ 2 chuỗi trở lên luôn có chú thích.</li>
+<li>Cảnh báo (thiếu buổi, quá hạn) dùng brand.orange kèm icon và chữ.</li>
+<li>Bản code: chạm vào cột hoặc điểm sẽ hiện tooltip.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="flex flex-col gap-5">
+<h2 class="text-[22px] leading-7 font-bold">07 · Icon · stroke 2, 24 px, currentColor</h2>
+<div class="flex flex-wrap gap-6 text-ink">
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"></path></svg><span class="cap">home</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg><span class="cap">calendar</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg><span class="cap">student</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg><span class="cap">approve</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 13h6M9 17h6"></path></svg><span class="cap">report</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6"></path></svg><span class="cap">invoice</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg><span class="cap">chat</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="3"></rect><path d="M9 7V5a3 3 0 0 1 6 0v2"></path></svg><span class="cap">task</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.5 2h-15z"></path><path d="M10 21h4"></path></svg><span class="cap">bell</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg><span class="cap">search</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="cap">plus</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg><span class="cap">back</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg><span class="cap">chevron</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg><span class="cap">check</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4M12 16h.01"></path></svg><span class="cap">alert</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span class="cap">clock</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg><span class="cap">lock</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3"></circle></svg><span class="cap">camera</span></span>
+<span class="flex flex-col items-center gap-2 w-20"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h13l-3-3M20 17H7l3 3"></path></svg><span class="cap">swap</span></span>
+</div>
+</section>
+
+<section class="grid grid-cols-2 gap-10">
+<div class="flex flex-col gap-4">
+<h2 class="text-[22px] leading-7 font-bold">08 · Quy tắc</h2>
+<ul class="flex flex-col gap-2 text-muted list-disc pl-5">
+<li>Một màn, một hành động chính: nút .btn full-width ở đáy, màu brand.blue. Hành động phá hủy (nghỉ học, khóa) dùng brand.orange.</li>
+<li>Không viền card. Phân cấp bằng nền: surface → white → soft.* → brand.</li>
+<li>Trạng thái luôn là .pill 2 chữ, màu theo ý nghĩa, không chỉ dựa vào màu (có chữ kèm).</li>
+<li>Học sinh có ảnh minh họa; nhân sự dùng .initials cho đến khi có ảnh thật.</li>
+<li>Dropdown mở bằng bottom sheet bo 28 (xem GV05·s2, s3). Gợi ý tìm kiếm mở ngay dưới ô nhập (GV05·s1).</li>
+<li>Không vẽ status bar giả. Nội dung bắt đầu ở 56 px, tab bar nổi cách đáy 24 px.</li>
+<li>Họa tiết: hình học trừu tượng, không dùng nhân vật. Gồm vòng tròn mảnh trắng 8%, lưới chấm trắng 14%, đường cong gradient vàng sang đỏ lấy từ logo. Chỉ dùng ở màn chào và trạng thái trống.</li>
+<li>Logo có chữ trắng: luôn đặt trên nền brand.blue.</li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h2 class="text-[22px] leading-7 font-bold">09 · Bàn giao dev</h2>
+<div class="card bg-surface font-mono text-sm leading-6 flex flex-col">
+<span>project/tailwind.config.js · tokens màu, font, radius, shadow</span>
+<span>project/tailwind.src.css · 24 component class (@layer components)</span>
+<span>project/tailwind.css · bản build minified</span>
+<span>project/*.dc.html · 28 màn, markup Tailwind thuần</span>
+<span>Font: fonts.googleapis.com · Google Sans Flex 300–800</span>
+<span>Logo, avatar: xuất từ Assets của canvas</span>
+</div>
+<span class="cap">Flutter: map token sang ThemeData (colorScheme.primary = brand.blue, surface = surface, error = brand.orange) và TextTheme theo bảng 02.</span>
+</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2560}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

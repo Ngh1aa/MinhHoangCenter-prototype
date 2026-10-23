@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>GV11b Chi tiết tài khoản</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[844px]">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3">
+<a href="CN01-TaiKhoanCuaToi.dc.html" class="icon-btn shrink-0 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<div class="flex-1 min-w-0 flex flex-col"><h1 class="m-0 text-[22px] leading-7 font-bold tracking-tight whitespace-nowrap">Chi tiết tài khoản</h1></div>
+</header>
+<main class="page gap-4 pt-2 [&amp;&gt;*]:shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<section class="bg-white rounded-3xl overflow-hidden flex flex-col" aria-label="Thông tin tài khoản">
+<div class="h-16 bg-brand-blue shrink-0" aria-hidden="true"></div>
+<div class="px-4 pb-4 flex items-start gap-4">
+<span class="initials w-20 h-24 -mt-10 rounded-2xl text-2xl ring-4 ring-white shrink-0">TA</span>
+<span class="flex-1 min-w-0 flex flex-col gap-1 pt-3"><span class="text-[20px] leading-6 font-bold tracking-tight whitespace-nowrap">Nguyễn Thu Anh</span><span class="font-mono text-[13px] leading-4 tracking-wide text-ink/70 whitespace-nowrap">thuanh</span></span>
+</div>
+</section>
+
+<section class="flex flex-col" aria-label="Trạng thái">
+<div class="bg-white rounded-3xl px-4 min-h-[64px] py-3 flex items-center justify-between gap-3"><span class="flex flex-col"><span class="font-medium">Hoạt động</span><span class="cap whitespace-nowrap">Đăng nhập gần nhất hôm nay 07:42</span></span><button type="button" role="switch" aria-checked="true" aria-label="Tài khoản đang hoạt động" class="w-12 h-7 shrink-0 rounded-full bg-success relative border-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue before:absolute before:-inset-2"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></button></div>
+</section>
+
+<section class="flex flex-col" aria-labelledby="vt">
+<h2 id="vt" class="m-0 px-1 pb-2 text-[13px] leading-[18px] font-medium text-muted">Vai trò</h2>
+<div class="bg-white rounded-3xl p-4 flex flex-wrap gap-2">
+<span class="chip chip-on">Giáo viên</span>
+</div>
+</section>
+
+<section class="flex flex-col" aria-labelledby="tbm">
+<h2 id="tbm" class="m-0 px-1 pb-2 text-[13px] leading-[18px] font-medium text-muted">Tổ bộ môn</h2>
+<div class="bg-white rounded-3xl p-4 flex flex-wrap gap-2">
+<button type="button" aria-pressed="true" class="chip chip-on transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Toán</button>
+<button type="button" aria-pressed="false" class="chip bg-surface transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">KHTN</button>
+</div>
+</section>
+
+<section class="bg-white rounded-3xl overflow-hidden flex flex-col divide-y divide-line" aria-label="Thao tác">
+<button type="button" class="w-full min-h-[56px] px-4 flex items-center justify-between gap-3 bg-white border-0 font-sans text-[15px] font-medium text-ink text-left active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue"><span class="whitespace-nowrap">Đặt lại mật khẩu</span><svg class="w-5 h-5 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></button>
+<button type="button" class="w-full min-h-[56px] px-4 flex items-center gap-3 bg-white border-0 font-sans text-[15px] font-medium text-brand-orange text-left active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue"><svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg><span class="whitespace-nowrap">Khóa tài khoản</span></button>
+</section>
+</main>
+
+<div class="absolute inset-0 z-30 bg-ink/40" aria-hidden="true"></div>
+<section role="dialog" aria-modal="true" aria-labelledby="lk-title" aria-describedby="lk-desc" class="absolute inset-x-0 bottom-0 z-40 bg-white rounded-t-[32px] px-6 pt-3 pb-8 flex flex-col gap-4">
+<span class="w-10 h-1 rounded-full bg-line self-center" aria-hidden="true"></span>
+<div class="flex items-center gap-3">
+<span class="w-11 h-11 shrink-0 rounded-full bg-soft-orange text-brand-orange flex items-center justify-center"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg></span>
+<h2 id="lk-title" class="h2 m-0 whitespace-nowrap">Khóa tài khoản Nguyễn Thu Anh?</h2>
+</div>
+<p id="lk-desc" class="m-0 text-sm text-ink">Cô Thu Anh sẽ không đăng nhập được. Dữ liệu vẫn được giữ.</p>
+<div class="rounded-2xl bg-surface p-3 flex items-center gap-3"><span class="initials shrink-0 bg-white">TA</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Nguyễn Thu Anh</span><span class="cap whitespace-nowrap">Trưởng bộ môn Toán</span></span></div>
+<div class="flex gap-2 pt-1">
+<a href="GV11b-ChiTietTaiKhoan.dc.html" class="btn-ghost h-14 px-6 shrink-0 whitespace-nowrap active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Hủy</a>
+<a href="CN01-TaiKhoanCuaToi.dc.html" class="btn bg-ink flex-1 whitespace-nowrap transition-transform active:scale-[.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Khóa tài khoản</a>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

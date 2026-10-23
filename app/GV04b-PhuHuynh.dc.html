@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>GV04b Tiếp nhận hồ sơ · 2 Phụ huynh</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[1426px]">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3">
+<a href="GV04-NhapHoSo.dc.html" class="icon-btn shrink-0 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<div class="flex-1 min-w-0 flex flex-col"><h1 class="m-0 text-[22px] leading-7 font-bold tracking-tight whitespace-nowrap">Thông tin phụ huynh</h1></div>
+</header>
+<div class="px-5 pb-3 flex gap-2" role="progressbar" aria-label="Bước 2 trên 3" aria-valuemin="1" aria-valuemax="3" aria-valuenow="2"><span class="flex-1 h-1 rounded-full bg-brand-blue"></span><span class="flex-1 h-1 rounded-full bg-brand-blue"></span><span class="flex-1 h-1 rounded-full bg-line"></span></div>
+<div class="px-5 pb-3"><div class="min-h-[52px] px-4 py-2 rounded-3xl bg-white flex items-center gap-3" aria-label="Học sinh"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="w-8 h-8 shrink-0 object-cover bg-soft-blue rounded-lg"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold text-[14px] leading-[18px] truncate">Nguyễn Văn A</span><span class="font-mono text-[12px] leading-4 tracking-wide text-muted whitespace-nowrap">17A0105</span></span></div></div>
+<main class="page gap-6 pt-2 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<section class="flex flex-col gap-4" aria-labelledby="g-ph"><h2 id="g-ph" class="m-0 text-[12px] leading-4 font-semibold uppercase tracking-[0.12em] text-muted px-1">Phụ huynh</h2>
+<div class="flex flex-col gap-2"><label for="pn" class="text-[13px] font-medium text-muted px-1">Họ tên phụ huynh <span class="text-brand-orange" aria-hidden="true">*</span></label><input id="pn" aria-required="true" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="Nguyễn Văn X"></div>
+<div class="flex flex-col gap-2">
+<label for="pp" class="text-[13px] font-medium text-muted px-1">Số điện thoại <span class="text-brand-orange" aria-hidden="true">*</span></label>
+<input id="pp" type="tel" inputmode="numeric" aria-required="true" aria-describedby="pp-note" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="0912 345 678">
+<div id="pp-note" class="rounded-2xl bg-soft-blue px-4 py-3 flex flex-col gap-2">
+<span class="flex items-center gap-3"><svg class="w-5 h-5 text-brand-blue shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8h.01"></path></svg><span class="flex-1 min-w-0 text-sm font-medium whitespace-nowrap">SĐT này đã có trong hệ thống</span></span>
+<span class="pl-8 flex flex-col gap-1.5"><span class="cap text-ink whitespace-nowrap">Phụ huynh của :&nbsp;</span><span class="flex items-center gap-3 rounded-2xl bg-white/70 pl-2 pr-3 py-1.5"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="w-8 h-8 shrink-0 object-cover bg-soft-blue ring-2 ring-white rounded-lg"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold text-[14px] leading-[18px] truncate">Lê Văn C</span><span class="font-mono text-[12px] leading-4 tracking-wide text-muted whitespace-nowrap">16A0004</span></span>
+<button type="button" class="text-sm font-semibold text-brand-blue underline shrink-0 whitespace-nowrap py-3 -my-3 px-2 -mx-2 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Liên kết</button></span></span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span id="qh-label" class="text-[13px] font-medium text-muted px-1">Quan hệ với học sinh <span class="text-brand-orange" aria-hidden="true">*</span></span>
+<button type="button" class="field ring-2 ring-brand-blue active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="qh-label" aria-required="true"><span class="font-medium">Bố</span><svg class="w-5 h-5 text-brand-blue rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+<ul class="card p-2 shadow-nav m-0 list-none flex flex-col" role="listbox" aria-labelledby="qh-label">
+<li role="option" aria-selected="true" class="px-3 py-3 rounded-2xl bg-soft-blue flex items-center justify-between font-medium">Bố<svg class="w-5 h-5 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></li>
+<li role="option" aria-selected="false" class="px-3 py-3 rounded-2xl">Mẹ</li>
+<li role="option" aria-selected="false" class="px-3 py-3 rounded-2xl">Ông</li>
+<li role="option" aria-selected="false" class="px-3 py-3 rounded-2xl">Bà</li>
+<li role="option" aria-selected="false" class="px-3 py-3 rounded-2xl">Người giám hộ</li>
+<li role="option" aria-selected="false" class="px-3 py-3 rounded-2xl">Khác</li>
+</ul>
+</div>
+<div class="flex flex-col gap-2"><label for="pe" class="text-[13px] font-medium text-muted px-1">Email</label><input id="pe" type="email" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="email@…"></div>
+</section>
+<section class="flex flex-col gap-4" aria-labelledby="g-kc"><h2 id="g-kc" class="m-0 text-[12px] leading-4 font-semibold uppercase tracking-[0.12em] text-muted px-1">Người liên hệ khẩn cấp</h2>
+<div class="flex flex-col gap-2"><label for="en" class="text-[13px] font-medium text-muted px-1">Họ tên</label><input id="en" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Họ và tên"></div>
+<div class="flex flex-col gap-2"><label for="ep" class="text-[13px] font-medium text-muted px-1">Số điện thoại</label><input id="ep" type="tel" inputmode="numeric" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="0xxx xxx xxx"></div>
+</section>
+</main>
+<div class="absolute inset-x-0 bottom-0 z-20 px-5 pt-3 pb-8 bg-surface border-t border-line flex gap-2">
+<a href="GV04-NhapHoSo.dc.html" class="btn-ghost bg-white h-14 px-5 whitespace-nowrap no-underline active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Quay lại</a>
+<a href="GV04c-TestDauVao.dc.html" class="btn flex-1 whitespace-nowrap transition-transform active:scale-[.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Tiếp tục</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1426}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

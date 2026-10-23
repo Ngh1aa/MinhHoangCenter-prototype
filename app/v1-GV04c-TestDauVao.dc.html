@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>v1 · GV04c Nhập hồ sơ · 3 Test đầu vào</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen"><div class="absolute inset-0 z-[60] pointer-events-none ring-[6px] ring-inset ring-brand-orange" aria-hidden="true"></div><div class="absolute top-3 left-1/2 -translate-x-1/2 z-[61] pointer-events-none pill h-7 px-4 bg-brand-orange text-white font-semibold whitespace-nowrap" aria-hidden="true">V1 · Bản cũ</div>&gt;
+<header class="px-5 pt-14 pb-3 flex items-center gap-3">
+<a href="v1-GV04b-PhuHuynh.dc.html" class="icon-btn" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<div class="flex-1 flex flex-col"><span class="text-[22px] leading-7 font-bold tracking-tight">Test đầu vào</span><span class="cap">Bước 3 / 3 · Nguyễn Văn A</span></div>
+</header>
+<div class="px-5 pb-2 flex gap-1.5"><span class="flex-1 h-1 rounded-full bg-brand-blue"></span><span class="flex-1 h-1 rounded-full bg-brand-blue"></span><span class="flex-1 h-1 rounded-full bg-brand-blue"></span></div>
+<main class="page gap-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-2"><label for="td" class="text-[13px] font-medium text-muted px-1">Ngày test</label><input id="td" class="input" value="12/10/2026"></div>
+<div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Môn</span><div class="field"><span>Toán</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></div></div>
+</div>
+<div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Giáo viên kiểm tra</span><div class="field"><span class="flex items-center gap-2"><span class="initials w-7 h-7 text-[11px]">TA</span>Cô Thu Anh</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></div></div>
+<div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Bài test (scan bản cứng)</span>
+<div class="card flex items-center gap-3">
+<span class="w-14 h-[72px] rounded-xl bg-surface shrink-0 flex items-center justify-center"><svg class="w-6 h-6 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 13h6M9 17h6"></path></svg></span>
+<span class="flex-1 flex flex-col"><span class="font-medium">phieu-danh-gia-toan.jpg</span><span class="cap">1 trang · 2.1 MB</span></span>
+<button class="icon-btn bg-surface" aria-label="Xóa"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<div class="grid grid-cols-2 gap-2"><a href="v1-GV04c-TestDauVao.dc.html" class="btn-ghost bg-white gap-2"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3"></circle></svg>Chụp thêm</a><a href="v1-GV04c-TestDauVao.dc.html" class="btn-ghost bg-white gap-2"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M6 10l6-6 6 6M4 20h16"></path></svg>Tải lên</a></div>
+</div>
+<div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Mức đánh giá (thang M)</span>
+<div class="grid grid-cols-4 gap-2">
+<button class="h-14 rounded-2xl bg-white flex flex-col items-center justify-center"><span class="font-bold">M1</span><span class="text-[10px] text-muted">Xây nền</span></button>
+<button class="h-14 rounded-2xl bg-white flex flex-col items-center justify-center"><span class="font-bold">M2</span><span class="text-[10px] text-muted">Phát triển</span></button>
+<button class="h-14 rounded-2xl bg-brand-blue text-white flex flex-col items-center justify-center"><span class="font-bold">M3</span><span class="text-[10px] text-white/75">Đạt chuẩn</span></button>
+<button class="h-14 rounded-2xl bg-white flex flex-col items-center justify-center"><span class="font-bold">M4</span><span class="text-[10px] text-muted">Vững chắc</span></button>
+</div>
+</div>
+<div class="flex flex-col gap-2"><label for="nx" class="text-[13px] font-medium text-muted px-1">Nhận xét của giáo viên</label><div class="min-h-20 rounded-2xl bg-white px-4 py-3 text-muted">Tiếp thu nhanh, cần luyện tính toán…</div></div>
+</main>
+<div class="absolute left-5 right-5 bottom-6 flex flex-col gap-2">
+<a href="v1-GV05-TaoLop.dc.html" class="btn">Lưu hồ sơ và tạo lớp</a>
+<a href="v1-GV02-HocSinh.dc.html" class="btn-ghost bg-white h-12">Chỉ lưu hồ sơ</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

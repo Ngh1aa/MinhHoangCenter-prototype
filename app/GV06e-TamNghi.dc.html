@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>GV06e Tạm nghỉ</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen h-[1160px]">
+<header class="px-5 pt-14 pb-3 flex items-center gap-3"><a href="GV06a-DieuChinhLop.dc.html" class="icon-btn shrink-0 active:bg-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a><h1 class="flex-1 min-w-0 m-0 text-[22px] leading-7 font-bold tracking-tight whitespace-nowrap">Nghỉ học</h1></header>
+<main class="page gap-5 pb-36 [&amp;&gt;*]:shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="px-4 h-16 bg-white rounded-3xl flex items-center gap-3"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="w-10 h-10 shrink-0 object-cover bg-soft-blue rounded-xl"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold text-[15px] leading-5 truncate">Lê Văn C</span><span class="font-mono text-[12px] leading-4 tracking-wide text-muted whitespace-nowrap">16A0004</span></span><span class="shrink-0 flex flex-col items-end"><span class="text-sm leading-5 font-medium text-ink whitespace-nowrap">Toán · Cô Thu Anh</span><span class="text-[12px] leading-4 text-muted whitespace-nowrap">Sáng T2, Chiều T4</span></span></div>
+<div class="p-1 rounded-full bg-line grid grid-cols-2 gap-1" role="radiogroup" aria-label="Hình thức nghỉ"><a href="GV06c-NghiHoc.dc.html" role="radio" aria-checked="false" class="seg rounded-full whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Nghỉ học luôn</a><a href="GV06e-TamNghi.dc.html" role="radio" aria-checked="true" class="seg seg-on rounded-full whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Tạm nghỉ</a></div>
+
+<fieldset class="m-0 p-0 border-0 flex flex-col gap-2"><legend class="text-[13px] font-semibold text-muted px-1 mb-2">Nghỉ trong bao lâu <span class="text-brand-orange" aria-hidden="true">*</span></legend>
+<div class="grid grid-cols-4 gap-2"><sc-for list="{{presets}}" as="p" hint-placeholder-count="4"><button type="button" onClick="{{p.pick}}" aria-pressed="{{p.on}}" class="{{p.cls}}">{{p.label}}</button></sc-for></div>
+<div class="grid grid-cols-2 gap-2 mt-1"><a href="GV05s3-ChonNgay.dc.html" class="h-14 rounded-2xl bg-white px-4 flex flex-col justify-center no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="text-[11px] leading-4 text-muted">Từ ngày</span><span class="font-semibold tabular-nums whitespace-nowrap">{{from}}</span></a><a href="GV05s3-ChonNgay.dc.html" class="h-14 rounded-2xl bg-white px-4 flex flex-col justify-center no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="text-[11px] leading-4 text-muted">Đến hết ngày</span><span class="font-semibold tabular-nums whitespace-nowrap">{{to}}</span></a></div>
+</fieldset>
+
+<section class="rounded-3xl bg-soft-blue p-4 flex flex-col gap-3" aria-live="polite" aria-label="Tóm tắt tạm nghỉ">
+<div class="flex items-baseline justify-between gap-3"><span class="text-[22px] leading-7 font-bold tracking-tight whitespace-nowrap">{{dur}}</span><span class="text-[14px] font-semibold text-brand-blue tabular-nums whitespace-nowrap">{{lessons}} buổi tạm dừng</span></div>
+<div class="grid grid-cols-3 text-sm tabular-nums"><span class="flex flex-col"><span class="cap">Nghỉ từ</span><span class="font-semibold">{{fromS}}</span></span><span class="flex flex-col items-center"><span class="cap">Đến</span><span class="font-semibold">{{toS}}</span></span><span class="flex flex-col items-end"><span class="cap">Học lại</span><span class="font-semibold text-success">{{back}}</span></span></div>
+<p class="m-0 text-[13px] leading-[18px] text-muted">Các buổi này ghi là Tạm nghỉ trên lịch và điểm danh, không tính vắng.</p>
+</section>
+
+<section class="rounded-3xl bg-white overflow-hidden flex flex-col divide-y divide-line" aria-label="Tùy chọn">
+<label class="flex items-center gap-3 px-4 min-h-[68px] py-3 cursor-pointer"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">Giữ chỗ trong lớp</span><span class="cap">Giữ lịch Sáng T2, Chiều T4 khi học lại</span></span><input type="checkbox" role="switch" checked class="sr-only peer"><span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span></label>
+<label class="flex items-center gap-3 px-4 min-h-[68px] py-3 cursor-pointer"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">Báo phụ huynh và giáo viên</span><span class="cap">Gửi qua app ngay khi xác nhận</span></span><input type="checkbox" role="switch" checked class="sr-only peer"><span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span></label>
+</section>
+
+<fieldset class="m-0 p-0 border-0 flex flex-col gap-2"><legend class="text-[13px] font-semibold text-muted px-1 mb-2">Lý do <span class="text-brand-orange" aria-hidden="true">*</span></legend><div class="flex flex-wrap gap-2"><sc-for list="{{reasons}}" as="r" hint-placeholder-count="4"><button type="button" onClick="{{r.pick}}" aria-pressed="{{r.on}}" class="{{r.cls}}">{{r.label}}</button></sc-for></div><input class="input bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Ghi chú thêm (không bắt buộc)" aria-label="Ghi chú thêm"></fieldset>
+</main>
+<div class="absolute inset-x-0 bottom-0 z-20 px-5 pt-3 pb-8 bg-surface border-t border-line flex gap-2"><a href="GV06f-DaTamNghi.dc.html" class="btn flex-1 whitespace-nowrap transition-transform active:scale-[.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Xác nhận tạm nghỉ {{dur}}</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1160}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { len: 'w2', reason: 'Ôn thi' }; }
+  renderVals() {
+    var self = this, s = this.state;
+    var P = {
+      w1: { label: '1 tuần', dur: '1 tuần', from: '19/10/2026', to: '25/10/2026', fromS: '19/10', toS: '25/10', back: '26/10', lessons: 2 },
+      w2: { label: '2 tuần', dur: '2 tuần', from: '19/10/2026', to: '01/11/2026', fromS: '19/10', toS: '01/11', back: '02/11', lessons: 4 },
+      m1: { label: '1 tháng', dur: '1 tháng', from: '19/10/2026', to: '18/11/2026', fromS: '19/10', toS: '18/11', back: '19/11', lessons: 9 },
+      cu: { label: 'Khác', dur: '10 ngày', from: '19/10/2026', to: '28/10/2026', fromS: '19/10', toS: '28/10', back: '29/10', lessons: 3 }
+    };
+    var CH = 'chip justify-center px-2 transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue ';
+    var presets = ['w1', 'w2', 'm1', 'cu'].map(function (k) {
+      var on = s.len === k;
+      return { label: P[k].label, on: on ? 'true' : 'false', cls: CH + 'h-11 w-full ' + (on ? 'chip-on' : 'bg-white'), pick: function () { self.setState({ len: k }); } };
+    });
+    var reasons = ['Ốm', 'Ôn thi', 'Du lịch', 'Việc gia đình'].map(function (r) {
+      var on = s.reason === r;
+      return { label: r, on: on ? 'true' : 'false', cls: 'chip transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue ' + (on ? 'chip-on' : 'bg-white'), pick: function () { self.setState({ reason: r }); } };
+    });
+    return Object.assign({ presets: presets, reasons: reasons }, P[s.len]);
+  }
+}
+</script>
+</body>
+</html>

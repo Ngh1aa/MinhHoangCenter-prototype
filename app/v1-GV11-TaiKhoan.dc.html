@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>v1 · GV11 Quản trị tài khoản</title>
+<script src="./proto-shim.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div class="screen"><div class="absolute inset-0 z-[60] pointer-events-none ring-[6px] ring-inset ring-brand-orange" aria-hidden="true"></div><div class="absolute top-3 left-1/2 -translate-x-1/2 z-[61] pointer-events-none pill h-7 px-4 bg-brand-orange text-white font-semibold whitespace-nowrap" aria-hidden="true">V1 · Bản cũ</div>&gt;
+<header class="px-5 pt-14 pb-3 flex items-center gap-3">
+<a href="v1-GV01-TongQuan.dc.html" class="icon-btn" aria-label="Quay lại"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<h1 class="text-[22px] leading-7 font-bold tracking-tight flex-1">Tài khoản</h1>
+<a href="v1-GV11-TaiKhoan.dc.html" class="w-11 h-11 rounded-full bg-brand-blue text-white flex items-center justify-center no-underline" aria-label="Thêm tài khoản"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a>
+</header>
+<div class="px-5 flex gap-2 overflow-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+<button class="chip chip-on">Tất cả 14</button>
+<button class="chip">Giáo viên</button>
+<button class="chip">Trưởng bộ môn</button>
+<button class="chip">Giáo vụ</button>
+<button class="chip">Tạm khóa</button>
+</div>
+<main class="page pt-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+<div class="list">
+<a href="v1-GV11-TaiKhoan.dc.html" class="row"><span class="initials">TA</span><span class="flex-1 flex flex-col"><span class="font-medium">Nguyễn Thu Anh</span><span class="cap">09xx xxx xxx</span></span><span class="flex gap-1"><span class="pill bg-soft-blue text-brand-blue h-6">Giáo viên</span><span class="pill bg-soft-yellow h-6">TBM Toán</span></span></a>
+<a href="v1-GV11-TaiKhoan.dc.html" class="row"><span class="initials">MĐ</span><span class="flex-1 flex flex-col"><span class="font-medium">Trần Minh Đức</span><span class="cap">09xx xxx xxx</span></span><span class="pill bg-soft-blue text-brand-blue h-6">Giáo viên</span></a>
+<a href="v1-GV11-TaiKhoan.dc.html" class="row"><span class="initials">DL</span><span class="flex-1 flex flex-col"><span class="font-medium">Phạm Diệu Linh</span><span class="cap">09xx xxx xxx</span></span><span class="flex gap-1"><span class="pill bg-soft-blue text-brand-blue h-6">Giáo viên</span><span class="pill bg-soft-yellow h-6">TBM Văn</span></span></a>
+<a href="v1-GV11-TaiKhoan.dc.html" class="row"><span class="initials bg-soft-yellow text-ink">L</span><span class="flex-1 flex flex-col"><span class="font-medium">Hoàng Lan</span><span class="cap">09xx xxx xxx</span></span><span class="pill bg-soft-green text-success h-6">Giáo vụ</span></a>
+<a href="v1-GV11-TaiKhoan.dc.html" class="row"><span class="initials">QH</span><span class="flex-1 flex flex-col"><span class="font-medium text-muted">Lê Quang Huy</span><span class="cap">Khóa từ 01/10</span></span><span class="pill bg-surface text-muted h-6">Tạm khóa</span></a>
+</div>
+<h2 class="h2 mt-2">Chi tiết tài khoản</h2>
+<div class="card flex flex-col gap-3">
+<div class="flex items-center gap-3"><span class="initials w-12 h-12">TA</span><span class="flex-1 flex flex-col"><span class="font-semibold">Nguyễn Thu Anh</span><span class="cap">thuanh · tạo 12/08/2026</span></span><span class="w-12 h-7 rounded-full bg-success relative"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span></div>
+<div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted">Vai trò</span><div class="flex flex-wrap gap-2"><span class="chip chip-on h-8 text-xs">Giáo viên</span><span class="chip chip-on h-8 text-xs">Trưởng bộ môn</span><span class="chip h-8 text-xs">Giáo vụ</span><span class="chip h-8 text-xs">Admin</span></div></div>
+<div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted">Bộ môn</span><div class="flex flex-wrap gap-2"><span class="chip chip-on h-8 text-xs">Toán</span><span class="chip h-8 text-xs">KHTN</span></div></div>
+<div class="grid grid-cols-2 gap-2"><a href="v1-GV11-TaiKhoan.dc.html" class="btn-ghost">Đặt lại mật khẩu</a><a href="v1-GV11-TaiKhoan.dc.html" class="btn-ghost text-brand-orange">Khóa tài khoản</a></div>
+</div>
+</main>
+<nav class="nav">
+<a href="v1-GV01-TongQuan.dc.html" class="tab tab-on" aria-label="Tổng quan"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"></path></svg></a>
+<a href="v1-GV02-HocSinh.dc.html" class="tab" aria-label="Học sinh"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></a>
+<a href="v1-GV07-DuyetBaoCao.dc.html" class="tab" aria-label="Duyệt"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg></a>
+<a href="v1-GV08-HoaDon.dc.html" class="tab" aria-label="Hóa đơn"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6"></path></svg></a>
+<a href="v1-TC07-TraoDoi.dc.html" class="tab" aria-label="Trao đổi"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
