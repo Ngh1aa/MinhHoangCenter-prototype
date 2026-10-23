@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "plan_sha256": "93550251aef606ee9ba286c7032b547db65b35ce8f3c512d5feab48480d58c1d",
+  "plan_sha256": "a624428f7a72ae4cc115d67cf9f8d678cc7d2ff2f0590691f9bee42eb7c1d063",
   "reviews": [
     {
       "reviewer_id": "codex-author-review",
@@ -22,7 +22,7 @@
             true
           ],
           "observed_element": "First priority task: Sửa điểm danh / Hạn 0h hôm nay / Xử lý",
-          "capture_sha256": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099"
+          "capture_sha256": "98c4c7a3049f2016dab96b3ba968ff9d689daa8727d3c71a7ca43efc084f2edf"
         },
         {
           "label": "A",
@@ -33,7 +33,7 @@
             true
           ],
           "observed_element": "Daily session summary relative to task queue",
-          "capture_sha256": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099"
+          "capture_sha256": "98c4c7a3049f2016dab96b3ba968ff9d689daa8727d3c71a7ca43efc084f2edf"
         },
         {
           "label": "B",
@@ -44,7 +44,7 @@
             true
           ],
           "observed_element": "First priority task: Sửa điểm danh / Hạn 0h hôm nay / Xử lý",
-          "capture_sha256": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb"
+          "capture_sha256": "73e90698eda97aaab6f87f1c3383f3ecf2b846a135026d12bd0536a1af2ba29f"
         },
         {
           "label": "B",
@@ -55,7 +55,7 @@
             false
           ],
           "observed_element": "Daily session summary relative to task queue",
-          "capture_sha256": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb"
+          "capture_sha256": "73e90698eda97aaab6f87f1c3383f3ecf2b846a135026d12bd0536a1af2ba29f"
         }
       ],
       "preferred_label": "A",

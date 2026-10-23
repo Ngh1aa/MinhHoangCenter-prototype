@@ -17,21 +17,21 @@
     }
   ],
   "direction_comparison": "MULTI_AXIS_DECLARED",
-  "contract_sha256": "72659ffcb9503b4fcd291cade269bd2c85def65bee707f60b60a6c97cabf8854",
+  "contract_sha256": "387d40372956f6799cd40131386b7d69d0e2e2dc44b7ed518d33b59386920814",
   "path": "docs/uiux/design-decisions.json",
   "project_root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center",
   "artifact_path": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center\\docs\\uiux\\design-decisions.json",
-  "artifact_sha256": "sha256:72659ffcb9503b4fcd291cade269bd2c85def65bee707f60b60a6c97cabf8854",
+  "artifact_sha256": "sha256:387d40372956f6799cd40131386b7d69d0e2e2dc44b7ed518d33b59386920814",
   "dependency_hashes": {
-    "docs/evidence/GV01-TongQuan-selected-1280.png": "d1b6ec8e2b640c190e4cbefee130e5dfc03b47667e7e8cfa41b98a3ef33933d0",
-    "docs/evidence/GV01-TongQuan-selected-390.png": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099",
-    "docs/evidence/GV01-alternative-1280.png": "162c0b020b564197284447b5206253d3f6432e2580b6b55b0f4aea9fdcd2fbaa",
-    "docs/evidence/GV01-alternative-390.png": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb",
-    "docs/evidence/GV04-NhapHoSo-selected-1280.png": "efe43352a8e08b50c3b47ce338ba4f6063245d50f68a48f4a42255a85a757b3b",
-    "docs/evidence/GV04-NhapHoSo-selected-390.png": "853a941cdd1c8cc09a45617760677002703e82f52997b26a3e5193cbbf302627",
-    "docs/evidence/XL02-ChonLop-selected-1280.png": "05c0d8c42182887a5b6fadb319d6a78a9013ae0caca8eeb5ba1817319bec758e",
-    "docs/evidence/XL02-ChonLop-selected-390.png": "d2e64c1451c16ab319a2c86eb4e4c427507336e70d8b20facb97ae86fabf0142",
-    "docs/uiux/comparison-observations.json": "05068b6c5ba06f1d0e26b377c13f4e59792936da342717a14eea8b7689f6ecf6",
-    "docs/uiux/comparison-plan.json": "6ebf0d8af6883f5b9a782247f79ec6c2796f48d3c52b741af7c90190d514ab66"
+    "docs/evidence/GV01-TongQuan-selected-1280.png": "95cc8a3897ec530004174f5aae3f1610c47ab04e45140c1fe8436e606553ed37",
+    "docs/evidence/GV01-TongQuan-selected-390.png": "98c4c7a3049f2016dab96b3ba968ff9d689daa8727d3c71a7ca43efc084f2edf",
+    "docs/evidence/GV01-alternative-1280.png": "00c76daae890a553405cd1c82b0ed4814255a15c160a64aa673b10a1cad9b2da",
+    "docs/evidence/GV01-alternative-390.png": "73e90698eda97aaab6f87f1c3383f3ecf2b846a135026d12bd0536a1af2ba29f",
+    "docs/evidence/GV04-NhapHoSo-selected-1280.png": "96cfe32de2b70f2394d729af5818af0b6a7ff94e9a44ca3e054e6c711ae2e367",
+    "docs/evidence/GV04-NhapHoSo-selected-390.png": "0f48b29c61aeb8802ceb10db5c8ed3a258dc4422e78534b0886c030b6ea37173",
+    "docs/evidence/XL02-ChonLop-selected-1280.png": "1b7d84ccb46a2b88e6ce8d149267d94c49c4d1a7738c95b052c58d590066b24c",
+    "docs/evidence/XL02-ChonLop-selected-390.png": "3794a2e788a4f92d3b7a6a13cdbb983a73984eaebabb56019240825dfc22f13c",
+    "docs/uiux/comparison-observations.json": "cd751a55c4727a61c5f656535c9012b6f153c390eba374e728d09de6995f4ed2",
+    "docs/uiux/comparison-plan.json": "83d50eb5a64fabb3e46901061c5582917d597190796ea75548008fc72747abac"
   }
 }

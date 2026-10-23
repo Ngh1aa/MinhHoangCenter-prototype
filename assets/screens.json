@@ -7,8 +7,7 @@
     "i": false,
     "id": "Main",
     "version": "reference",
-    "group": "Sơ đồ & Design System",
-    "preview": "assets/previews/Main.png"
+    "group": "Sơ đồ & Design System"
   },
   {
     "f": "Line-1.dc.html",
@@ -18,8 +17,7 @@
     "i": false,
     "id": "Line-1",
     "version": "reference",
-    "group": "Sơ đồ & Design System",
-    "preview": "assets/previews/Line-1.png"
+    "group": "Sơ đồ & Design System"
   },
   {
     "f": "Line-2.dc.html",
@@ -29,8 +27,7 @@
     "i": false,
     "id": "Line-2",
     "version": "reference",
-    "group": "Sơ đồ & Design System",
-    "preview": "assets/previews/Line-2.png"
+    "group": "Sơ đồ & Design System"
   },
   {
     "f": "DS-DesignSystem.dc.html",
@@ -40,8 +37,7 @@
     "i": false,
     "id": "DS-DesignSystem",
     "version": "reference",
-    "group": "Sơ đồ & Design System",
-    "preview": "assets/previews/DS-DesignSystem.png"
+    "group": "Sơ đồ & Design System"
   },
   {
     "f": "v1-A00-DangNhap.dc.html",
@@ -51,8 +47,7 @@
     "i": true,
     "id": "v1-A00-DangNhap",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-A00-DangNhap.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "v1-GV01-TongQuan.dc.html",
@@ -62,8 +57,7 @@
     "i": true,
     "id": "v1-GV01-TongQuan",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV01-TongQuan.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV01-TongQuan.dc.html",
@@ -73,8 +67,7 @@
     "i": true,
     "id": "GV01-TongQuan",
     "version": "current",
-    "group": "Tổng quan & tài khoản",
-    "preview": "assets/previews/GV01-TongQuan.png"
+    "group": "Tổng quan & tài khoản"
   },
   {
     "f": "CN01-TaiKhoanCuaToi.dc.html",
@@ -84,8 +77,7 @@
     "i": true,
     "id": "CN01-TaiKhoanCuaToi",
     "version": "current",
-    "group": "Tổng quan & tài khoản",
-    "preview": "assets/previews/CN01-TaiKhoanCuaToi.png"
+    "group": "Tổng quan & tài khoản"
   },
   {
     "f": "v1-GV02-HocSinh.dc.html",
@@ -95,8 +87,7 @@
     "i": true,
     "id": "v1-GV02-HocSinh",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV02-HocSinh.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV02-HocSinh.dc.html",
@@ -106,8 +97,7 @@
     "i": true,
     "id": "GV02-HocSinh",
     "version": "current",
-    "group": "Học sinh & hồ sơ",
-    "preview": "assets/previews/GV02-HocSinh.png"
+    "group": "Học sinh & hồ sơ"
   },
   {
     "f": "v1-GV03-HoSo.dc.html",
@@ -117,8 +107,7 @@
     "i": true,
     "id": "v1-GV03-HoSo",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV03-HoSo.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV03-HoSo.dc.html",
@@ -128,8 +117,7 @@
     "i": true,
     "id": "GV03-HoSo",
     "version": "current",
-    "group": "Học sinh & hồ sơ",
-    "preview": "assets/previews/GV03-HoSo.png"
+    "group": "Học sinh & hồ sơ"
   },
   {
     "f": "v1-GV04-NhapHoSo.dc.html",
@@ -139,8 +127,7 @@
     "i": true,
     "id": "v1-GV04-NhapHoSo",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV04-NhapHoSo.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV04-NhapHoSo.dc.html",
@@ -150,8 +137,7 @@
     "i": true,
     "id": "GV04-NhapHoSo",
     "version": "current",
-    "group": "Tiếp nhận học sinh",
-    "preview": "assets/previews/GV04-NhapHoSo.png"
+    "group": "Tiếp nhận học sinh"
   },
   {
     "f": "v1-GV04b-PhuHuynh.dc.html",
@@ -161,8 +147,7 @@
     "i": true,
     "id": "v1-GV04b-PhuHuynh",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV04b-PhuHuynh.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV04b-PhuHuynh.dc.html",
@@ -172,8 +157,7 @@
     "i": true,
     "id": "GV04b-PhuHuynh",
     "version": "current",
-    "group": "Tiếp nhận học sinh",
-    "preview": "assets/previews/GV04b-PhuHuynh.png"
+    "group": "Tiếp nhận học sinh"
   },
   {
     "f": "v1-GV04c-TestDauVao.dc.html",
@@ -183,8 +167,7 @@
     "i": true,
     "id": "v1-GV04c-TestDauVao",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV04c-TestDauVao.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV04c-TestDauVao.dc.html",
@@ -194,8 +177,7 @@
     "i": true,
     "id": "GV04c-TestDauVao",
     "version": "current",
-    "group": "Tiếp nhận học sinh",
-    "preview": "assets/previews/GV04c-TestDauVao.png"
+    "group": "Tiếp nhận học sinh"
   },
   {
     "f": "GV04d-DaLuuHoSo.dc.html",
@@ -205,8 +187,7 @@
     "i": true,
     "id": "GV04d-DaLuuHoSo",
     "version": "current",
-    "group": "Tiếp nhận học sinh",
-    "preview": "assets/previews/GV04d-DaLuuHoSo.png"
+    "group": "Tiếp nhận học sinh"
   },
   {
     "f": "v1-GV05-TaoLop.dc.html",
@@ -216,8 +197,7 @@
     "i": true,
     "id": "v1-GV05-TaoLop",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV05-TaoLop.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV05-TaoLop.dc.html",
@@ -227,8 +207,7 @@
     "i": true,
     "id": "GV05-TaoLop",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/GV05-TaoLop.png"
+    "group": "Tạo lớp & xếp lớp"
   },
   {
     "f": "v1-GV05s1-GoiYMaHS.dc.html",
@@ -238,8 +217,7 @@
     "i": true,
     "id": "v1-GV05s1-GoiYMaHS",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV05s1-GoiYMaHS.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV05s1-GoiYMaHS.dc.html",
@@ -249,8 +227,7 @@
     "i": true,
     "id": "GV05s1-GoiYMaHS",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/GV05s1-GoiYMaHS.png"
+    "group": "Tạo lớp & xếp lớp"
   },
   {
     "f": "v1-GV05s2-ChonMon.dc.html",
@@ -260,8 +237,7 @@
     "i": true,
     "id": "v1-GV05s2-ChonMon",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV05s2-ChonMon.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV05s2-ChonMon.dc.html",
@@ -271,8 +247,7 @@
     "i": true,
     "id": "GV05s2-ChonMon",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/GV05s2-ChonMon.png"
+    "group": "Tạo lớp & xếp lớp"
   },
   {
     "f": "v1-GV05s3-ChonNgay.dc.html",
@@ -282,8 +257,7 @@
     "i": true,
     "id": "v1-GV05s3-ChonNgay",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV05s3-ChonNgay.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV05s3-ChonNgay.dc.html",
@@ -293,8 +267,7 @@
     "i": true,
     "id": "GV05s3-ChonNgay",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/GV05s3-ChonNgay.png"
+    "group": "Tạo lớp & xếp lớp"
   },
   {
     "f": "GV05d-XepLopXong.dc.html",
@@ -304,8 +277,7 @@
     "i": true,
     "id": "GV05d-XepLopXong",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/GV05d-XepLopXong.png"
+    "group": "Tạo lớp & xếp lớp"
   },
   {
     "f": "GV06a-DieuChinhLop.dc.html",
@@ -315,8 +287,7 @@
     "i": true,
     "id": "GV06a-DieuChinhLop",
     "version": "current",
-    "group": "Điều chỉnh lớp",
-    "preview": "assets/previews/GV06a-DieuChinhLop.png"
+    "group": "Điều chỉnh lớp"
   },
   {
     "f": "v1-GV06-ChuyenGV.dc.html",
@@ -326,8 +297,7 @@
     "i": true,
     "id": "v1-GV06-ChuyenGV",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV06-ChuyenGV.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV06-ChuyenGV.dc.html",
@@ -337,8 +307,7 @@
     "i": true,
     "id": "GV06-ChuyenGV",
     "version": "current",
-    "group": "Điều chỉnh lớp",
-    "preview": "assets/previews/GV06-ChuyenGV.png"
+    "group": "Điều chỉnh lớp"
   },
   {
     "f": "v1-GV06b-ChuyenLich.dc.html",
@@ -348,8 +317,7 @@
     "i": true,
     "id": "v1-GV06b-ChuyenLich",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV06b-ChuyenLich.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV06b-ChuyenLich.dc.html",
@@ -359,8 +327,7 @@
     "i": true,
     "id": "GV06b-ChuyenLich",
     "version": "current",
-    "group": "Điều chỉnh lớp",
-    "preview": "assets/previews/GV06b-ChuyenLich.png"
+    "group": "Điều chỉnh lớp"
   },
   {
     "f": "v1-GV06c-NghiHoc.dc.html",
@@ -370,8 +337,7 @@
     "i": true,
     "id": "v1-GV06c-NghiHoc",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV06c-NghiHoc.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV06c-NghiHoc.dc.html",
@@ -381,8 +347,7 @@
     "i": true,
     "id": "GV06c-NghiHoc",
     "version": "current",
-    "group": "Điều chỉnh lớp",
-    "preview": "assets/previews/GV06c-NghiHoc.png"
+    "group": "Điều chỉnh lớp"
   },
   {
     "f": "GV06d-XacNhanThoiHoc.dc.html",
@@ -392,8 +357,7 @@
     "i": true,
     "id": "GV06d-XacNhanThoiHoc",
     "version": "current",
-    "group": "Điều chỉnh lớp",
-    "preview": "assets/previews/GV06d-XacNhanThoiHoc.png"
+    "group": "Điều chỉnh lớp"
   },
   {
     "f": "GV06e-TamNghi.dc.html",
@@ -403,8 +367,7 @@
     "i": true,
     "id": "GV06e-TamNghi",
     "version": "current",
-    "group": "Điều chỉnh lớp",
-    "preview": "assets/previews/GV06e-TamNghi.png"
+    "group": "Điều chỉnh lớp"
   },
   {
     "f": "GV06f-DaTamNghi.dc.html",
@@ -414,8 +377,7 @@
     "i": true,
     "id": "GV06f-DaTamNghi",
     "version": "current",
-    "group": "Điều chỉnh lớp",
-    "preview": "assets/previews/GV06f-DaTamNghi.png"
+    "group": "Điều chỉnh lớp"
   },
   {
     "f": "v1-GV07-DuyetBaoCao.dc.html",
@@ -425,8 +387,7 @@
     "i": true,
     "id": "v1-GV07-DuyetBaoCao",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV07-DuyetBaoCao.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV07-DuyetBaoCao.dc.html",
@@ -436,8 +397,7 @@
     "i": true,
     "id": "GV07-DuyetBaoCao",
     "version": "current",
-    "group": "Báo cáo & điểm danh",
-    "preview": "assets/previews/GV07-DuyetBaoCao.png"
+    "group": "Báo cáo & điểm danh"
   },
   {
     "f": "GV07b-ChiTietBaoCao.dc.html",
@@ -447,8 +407,7 @@
     "i": true,
     "id": "GV07b-ChiTietBaoCao",
     "version": "current",
-    "group": "Báo cáo & điểm danh",
-    "preview": "assets/previews/GV07b-ChiTietBaoCao.png"
+    "group": "Báo cáo & điểm danh"
   },
   {
     "f": "GV07c-YeuCauBoSung.dc.html",
@@ -458,8 +417,7 @@
     "i": true,
     "id": "GV07c-YeuCauBoSung",
     "version": "current",
-    "group": "Báo cáo & điểm danh",
-    "preview": "assets/previews/GV07c-YeuCauBoSung.png"
+    "group": "Báo cáo & điểm danh"
   },
   {
     "f": "ST01-DuyetRong.dc.html",
@@ -469,8 +427,7 @@
     "i": true,
     "id": "ST01-DuyetRong",
     "version": "current",
-    "group": "Báo cáo & điểm danh",
-    "preview": "assets/previews/ST01-DuyetRong.png"
+    "group": "Báo cáo & điểm danh"
   },
   {
     "f": "v1-GV10-SuaTichLich.dc.html",
@@ -480,8 +437,7 @@
     "i": true,
     "id": "v1-GV10-SuaTichLich",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV10-SuaTichLich.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV10-SuaTichLich.dc.html",
@@ -491,8 +447,7 @@
     "i": true,
     "id": "GV10-SuaTichLich",
     "version": "current",
-    "group": "Báo cáo & điểm danh",
-    "preview": "assets/previews/GV10-SuaTichLich.png"
+    "group": "Báo cáo & điểm danh"
   },
   {
     "f": "v1-GV08-HoaDon.dc.html",
@@ -502,8 +457,7 @@
     "i": true,
     "id": "v1-GV08-HoaDon",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV08-HoaDon.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV08-HoaDon.dc.html",
@@ -513,8 +467,7 @@
     "i": true,
     "id": "GV08-HoaDon",
     "version": "current",
-    "group": "Học phí",
-    "preview": "assets/previews/GV08-HoaDon.png"
+    "group": "Học phí"
   },
   {
     "f": "GV08b-ChiTietHocPhi.dc.html",
@@ -524,8 +477,7 @@
     "i": true,
     "id": "GV08b-ChiTietHocPhi",
     "version": "current",
-    "group": "Học phí",
-    "preview": "assets/previews/GV08b-ChiTietHocPhi.png"
+    "group": "Học phí"
   },
   {
     "f": "v1-GV09-GiaoViec.dc.html",
@@ -535,8 +487,7 @@
     "i": true,
     "id": "v1-GV09-GiaoViec",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV09-GiaoViec.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV09-GiaoViec.dc.html",
@@ -546,8 +497,7 @@
     "i": true,
     "id": "GV09-GiaoViec",
     "version": "current",
-    "group": "Công việc & tài khoản",
-    "preview": "assets/previews/GV09-GiaoViec.png"
+    "group": "Công việc & tài khoản"
   },
   {
     "f": "GV09b-ChiTietViecGiao.dc.html",
@@ -557,8 +507,7 @@
     "i": true,
     "id": "GV09b-ChiTietViecGiao",
     "version": "current",
-    "group": "Công việc & tài khoản",
-    "preview": "assets/previews/GV09b-ChiTietViecGiao.png"
+    "group": "Công việc & tài khoản"
   },
   {
     "f": "GV09c-TraLaiViec.dc.html",
@@ -568,8 +517,7 @@
     "i": true,
     "id": "GV09c-TraLaiViec",
     "version": "current",
-    "group": "Công việc & tài khoản",
-    "preview": "assets/previews/GV09c-TraLaiViec.png"
+    "group": "Công việc & tài khoản"
   },
   {
     "f": "GV09d-DaDongViec.dc.html",
@@ -579,8 +527,7 @@
     "i": true,
     "id": "GV09d-DaDongViec",
     "version": "current",
-    "group": "Công việc & tài khoản",
-    "preview": "assets/previews/GV09d-DaDongViec.png"
+    "group": "Công việc & tài khoản"
   },
   {
     "f": "v1-GV11-TaiKhoan.dc.html",
@@ -590,8 +537,7 @@
     "i": true,
     "id": "v1-GV11-TaiKhoan",
     "version": "legacy",
-    "group": "Bản v1 lưu trữ",
-    "preview": "assets/previews/v1-GV11-TaiKhoan.png"
+    "group": "Bản v1 lưu trữ"
   },
   {
     "f": "GV11b-ChiTietTaiKhoan.dc.html",
@@ -601,8 +547,7 @@
     "i": true,
     "id": "GV11b-ChiTietTaiKhoan",
     "version": "current",
-    "group": "Công việc & tài khoản",
-    "preview": "assets/previews/GV11b-ChiTietTaiKhoan.png"
+    "group": "Công việc & tài khoản"
   },
   {
     "f": "GV13-LienLac.dc.html",
@@ -612,8 +557,7 @@
     "i": true,
     "id": "GV13-LienLac",
     "version": "current",
-    "group": "Liên lạc",
-    "preview": "assets/previews/GV13-LienLac.png"
+    "group": "Liên lạc"
   },
   {
     "f": "GV14-GuiThongBao.dc.html",
@@ -623,8 +567,7 @@
     "i": true,
     "id": "GV14-GuiThongBao",
     "version": "current",
-    "group": "Liên lạc",
-    "preview": "assets/previews/GV14-GuiThongBao.png"
+    "group": "Liên lạc"
   },
   {
     "f": "TP01-XemTep.dc.html",
@@ -634,8 +577,7 @@
     "i": true,
     "id": "TP01-XemTep",
     "version": "current",
-    "group": "Liên lạc",
-    "preview": "assets/previews/TP01-XemTep.png"
+    "group": "Liên lạc"
   },
   {
     "f": "GV03b-HoSoOFF.dc.html",
@@ -645,8 +587,7 @@
     "i": true,
     "id": "GV03b-HoSoOFF",
     "version": "current",
-    "group": "Học sinh & hồ sơ",
-    "preview": "assets/previews/GV03b-HoSoOFF.png"
+    "group": "Học sinh & hồ sơ"
   },
   {
     "f": "GV03f-DaAnHoSo.dc.html",
@@ -656,8 +597,7 @@
     "i": true,
     "id": "GV03f-DaAnHoSo",
     "version": "current",
-    "group": "Học sinh & hồ sơ",
-    "preview": "assets/previews/GV03f-DaAnHoSo.png"
+    "group": "Học sinh & hồ sơ"
   },
   {
     "f": "GV14b-GuiHangLoat.dc.html",
@@ -667,8 +607,7 @@
     "i": true,
     "id": "GV14b-GuiHangLoat",
     "version": "current",
-    "group": "Liên lạc",
-    "preview": "assets/previews/GV14b-GuiHangLoat.png"
+    "group": "Liên lạc"
   },
   {
     "f": "GV14c-TaoNhom.dc.html",
@@ -678,8 +617,7 @@
     "i": true,
     "id": "GV14c-TaoNhom",
     "version": "current",
-    "group": "Liên lạc",
-    "preview": "assets/previews/GV14c-TaoNhom.png"
+    "group": "Liên lạc"
   },
   {
     "f": "GV03c-HoSoON.dc.html",
@@ -689,8 +627,7 @@
     "i": true,
     "id": "GV03c-HoSoON",
     "version": "current",
-    "group": "Học sinh & hồ sơ",
-    "preview": "assets/previews/GV03c-HoSoON.png"
+    "group": "Học sinh & hồ sơ"
   },
   {
     "f": "GV02c-KetQuaLoc.dc.html",
@@ -700,8 +637,7 @@
     "i": true,
     "id": "GV02c-KetQuaLoc",
     "version": "current",
-    "group": "Học sinh & hồ sơ",
-    "preview": "assets/previews/GV02c-KetQuaLoc.png"
+    "group": "Học sinh & hồ sơ"
   },
   {
     "f": "GV02b-LocMon.dc.html",
@@ -711,8 +647,7 @@
     "i": true,
     "id": "GV02b-LocMon",
     "version": "current",
-    "group": "Học sinh & hồ sơ",
-    "preview": "assets/previews/GV02b-LocMon.png"
+    "group": "Học sinh & hồ sơ"
   },
   {
     "f": "XL02-ChonLop.dc.html",
@@ -722,8 +657,7 @@
     "i": true,
     "id": "XL02-ChonLop",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/XL02-ChonLop.png"
+    "group": "Tạo lớp & xếp lớp"
   },
   {
     "f": "XL01-ChoXepLop.dc.html",
@@ -733,8 +667,7 @@
     "i": true,
     "id": "XL01-ChoXepLop",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/XL01-ChoXepLop.png"
+    "group": "Tạo lớp & xếp lớp"
   },
   {
     "f": "XL04-DaXepLop.dc.html",
@@ -744,8 +677,7 @@
     "i": true,
     "id": "XL04-DaXepLop",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/XL04-DaXepLop.png"
+    "group": "Tạo lớp & xếp lớp"
   },
   {
     "f": "XL03-XacNhanXepLop.dc.html",
@@ -755,7 +687,6 @@
     "i": true,
     "id": "XL03-XacNhanXepLop",
     "version": "current",
-    "group": "Tạo lớp & xếp lớp",
-    "preview": "assets/previews/XL03-XacNhanXepLop.png"
+    "group": "Tạo lớp & xếp lớp"
   }
 ]

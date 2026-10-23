@@ -1,0 +1,399 @@
+{
+  "generatedAt": "2026-10-23T05:03:31.246Z",
+  "checks": [
+    {
+      "check": "69 live frames, no screenshot tiles; 17 exact adjacent pairs; 19 red V1 frames; two explicit unmatched V1 states",
+      "result": "PASS"
+    },
+    {
+      "check": "Real navigation works inside a canvas frame and resets independently",
+      "result": "PASS"
+    },
+    {
+      "check": "Hand mode pans across prototypes; interaction mode restores pointer input",
+      "result": "PASS"
+    },
+    {
+      "check": "Editing works in canvas; filter/search preserve iframe document and field state",
+      "result": "PASS"
+    },
+    {
+      "check": "All 69 documents mounted as real canvas prototypes",
+      "result": "PASS"
+    },
+    {
+      "check": "Mobile comparison and full-width design-system preview render",
+      "result": "PASS"
+    },
+    {
+      "check": "Canonical token/config/component CSS match user archive byte for byte",
+      "result": "PASS"
+    }
+  ],
+  "pairs": 17,
+  "frames": [
+    {
+      "id": "Main",
+      "route": "Main.dc.html",
+      "live": true
+    },
+    {
+      "id": "Line-1",
+      "route": "Line-1.dc.html",
+      "live": true
+    },
+    {
+      "id": "Line-2",
+      "route": "Line-2.dc.html",
+      "live": true
+    },
+    {
+      "id": "DS-DesignSystem",
+      "route": "DS-DesignSystem.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-A00-DangNhap",
+      "route": "v1-A00-DangNhap.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV01-TongQuan",
+      "route": "v1-GV01-TongQuan.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV01-TongQuan",
+      "route": "GV01-TongQuan.dc.html",
+      "live": true
+    },
+    {
+      "id": "CN01-TaiKhoanCuaToi",
+      "route": "CN01-TaiKhoanCuaToi.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV02-HocSinh",
+      "route": "v1-GV02-HocSinh.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV02-HocSinh",
+      "route": "GV02-HocSinh.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV03-HoSo",
+      "route": "v1-GV03-HoSo.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV03-HoSo",
+      "route": "GV03-HoSo.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV04-NhapHoSo",
+      "route": "v1-GV04-NhapHoSo.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV04-NhapHoSo",
+      "route": "GV04-NhapHoSo.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV04b-PhuHuynh",
+      "route": "v1-GV04b-PhuHuynh.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV04b-PhuHuynh",
+      "route": "GV04b-PhuHuynh.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV04c-TestDauVao",
+      "route": "v1-GV04c-TestDauVao.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV04c-TestDauVao",
+      "route": "GV04c-TestDauVao.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV04d-DaLuuHoSo",
+      "route": "GV04d-DaLuuHoSo.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV05-TaoLop",
+      "route": "v1-GV05-TaoLop.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV05-TaoLop",
+      "route": "GV05-TaoLop.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV05s1-GoiYMaHS",
+      "route": "v1-GV05s1-GoiYMaHS.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV05s1-GoiYMaHS",
+      "route": "GV05s1-GoiYMaHS.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV05s2-ChonMon",
+      "route": "v1-GV05s2-ChonMon.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV05s2-ChonMon",
+      "route": "GV05s2-ChonMon.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV05s3-ChonNgay",
+      "route": "v1-GV05s3-ChonNgay.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV05s3-ChonNgay",
+      "route": "GV05s3-ChonNgay.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV05d-XepLopXong",
+      "route": "GV05d-XepLopXong.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV06a-DieuChinhLop",
+      "route": "GV06a-DieuChinhLop.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV06-ChuyenGV",
+      "route": "v1-GV06-ChuyenGV.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV06-ChuyenGV",
+      "route": "GV06-ChuyenGV.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV06b-ChuyenLich",
+      "route": "v1-GV06b-ChuyenLich.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV06b-ChuyenLich",
+      "route": "GV06b-ChuyenLich.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV06c-NghiHoc",
+      "route": "v1-GV06c-NghiHoc.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV06c-NghiHoc",
+      "route": "GV06c-NghiHoc.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV06d-XacNhanThoiHoc",
+      "route": "GV06d-XacNhanThoiHoc.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV06e-TamNghi",
+      "route": "GV06e-TamNghi.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV06f-DaTamNghi",
+      "route": "GV06f-DaTamNghi.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV07-DuyetBaoCao",
+      "route": "v1-GV07-DuyetBaoCao.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV07-DuyetBaoCao",
+      "route": "GV07-DuyetBaoCao.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV07b-ChiTietBaoCao",
+      "route": "GV07b-ChiTietBaoCao.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV07c-YeuCauBoSung",
+      "route": "GV07c-YeuCauBoSung.dc.html",
+      "live": true
+    },
+    {
+      "id": "ST01-DuyetRong",
+      "route": "ST01-DuyetRong.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV10-SuaTichLich",
+      "route": "v1-GV10-SuaTichLich.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV10-SuaTichLich",
+      "route": "GV10-SuaTichLich.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV08-HoaDon",
+      "route": "v1-GV08-HoaDon.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV08-HoaDon",
+      "route": "GV08-HoaDon.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV08b-ChiTietHocPhi",
+      "route": "GV08b-ChiTietHocPhi.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV09-GiaoViec",
+      "route": "v1-GV09-GiaoViec.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV09-GiaoViec",
+      "route": "GV09-GiaoViec.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV09b-ChiTietViecGiao",
+      "route": "GV09b-ChiTietViecGiao.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV09c-TraLaiViec",
+      "route": "GV09c-TraLaiViec.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV09d-DaDongViec",
+      "route": "GV09d-DaDongViec.dc.html",
+      "live": true
+    },
+    {
+      "id": "v1-GV11-TaiKhoan",
+      "route": "v1-GV11-TaiKhoan.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV11b-ChiTietTaiKhoan",
+      "route": "GV11b-ChiTietTaiKhoan.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV13-LienLac",
+      "route": "GV13-LienLac.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV14-GuiThongBao",
+      "route": "GV14-GuiThongBao.dc.html",
+      "live": true
+    },
+    {
+      "id": "TP01-XemTep",
+      "route": "TP01-XemTep.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV03b-HoSoOFF",
+      "route": "GV03b-HoSoOFF.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV03f-DaAnHoSo",
+      "route": "GV03f-DaAnHoSo.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV14b-GuiHangLoat",
+      "route": "GV14b-GuiHangLoat.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV14c-TaoNhom",
+      "route": "GV14c-TaoNhom.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV03c-HoSoON",
+      "route": "GV03c-HoSoON.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV02c-KetQuaLoc",
+      "route": "GV02c-KetQuaLoc.dc.html",
+      "live": true
+    },
+    {
+      "id": "GV02b-LocMon",
+      "route": "GV02b-LocMon.dc.html",
+      "live": true
+    },
+    {
+      "id": "XL02-ChonLop",
+      "route": "XL02-ChonLop.dc.html",
+      "live": true
+    },
+    {
+      "id": "XL01-ChoXepLop",
+      "route": "XL01-ChoXepLop.dc.html",
+      "live": true
+    },
+    {
+      "id": "XL04-DaXepLop",
+      "route": "XL04-DaXepLop.dc.html",
+      "live": true
+    },
+    {
+      "id": "XL03-XacNhanXepLop",
+      "route": "XL03-XacNhanXepLop.dc.html",
+      "live": true
+    }
+  ],
+  "computedDesignSystem": {
+    "home": {
+      "font": "\"Google Sans Flex\", system-ui, sans-serif",
+      "surface": "rgb(244, 245, 249)",
+      "taskRadius": "24px",
+      "taskBorder": "0px",
+      "taskPadding": "16px",
+      "navBottom": "24px",
+      "navColor": "rgb(37, 58, 126)",
+      "navRadius": "9999px"
+    },
+    "form": {
+      "radius": "16px",
+      "height": "56px",
+      "border": "0px"
+    }
+  },
+  "errors": []
+}

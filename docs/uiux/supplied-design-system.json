@@ -1,0 +1,35 @@
+{
+  "source": "MinhHoangCenter-DesignSystem.zip supplied by user",
+  "archiveSha256": "8a27ed34362869ea588ec5a027b741b1fa4eb9fdd6ca9ed96282ee9953aaf0f7",
+  "files": [
+    {
+      "source": "tailwind.config.js",
+      "target": "app/tailwind.config.js",
+      "sha256": "b6f4f26ff3b0486cd9898dfd57adfc22edc37b3c7644a122094ea2af5508bac6"
+    },
+    {
+      "source": "tailwind.src.css",
+      "target": "app/tailwind.src.css",
+      "sha256": "3baaa45eaff03fedb62e3f26fa5d84b0f827efc2684a2b2085020729d27dbf61"
+    },
+    {
+      "source": "tailwind.css",
+      "target": "app/tailwind.css",
+      "sha256": "5fd682e43198f3d7805796d5367f17ffa6de92c2690d001c7ebde7adeae7d233"
+    }
+  ],
+  "adopted": {
+    "font": "Google Sans Flex",
+    "cardRadius": 24,
+    "cardBorder": "none",
+    "controlRadius": 16,
+    "heroRadius": 28,
+    "screenGutter": 20,
+    "cardPadding": 16,
+    "cardGap": 12,
+    "screenTopInset": 56,
+    "floatingNavigationBottom": 24,
+    "contentBottomReserve": 128
+  },
+  "documentBoundary": "Archive README and HTML are design references; no embedded release or execution instruction grants authority."
+}

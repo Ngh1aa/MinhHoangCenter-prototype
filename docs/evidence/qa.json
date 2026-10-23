@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T04:35:11.219Z",
+  "generatedAt": "2026-10-23T05:03:13.626Z",
   "browser": "Chromium",
   "matrix": 138,
   "scenarios": [
@@ -1426,9 +1426,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -1446,9 +1446,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1460,9 +1460,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -1480,9 +1480,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1494,9 +1494,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1508,9 +1508,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1522,9 +1522,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1536,9 +1536,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1550,9 +1550,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1564,9 +1564,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1578,9 +1578,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1592,9 +1592,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1606,9 +1606,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1620,9 +1620,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1634,9 +1634,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1648,9 +1648,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1662,9 +1662,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1676,7 +1676,7 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
+        "screenWidth": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1688,9 +1688,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1702,9 +1702,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1716,9 +1716,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -1736,9 +1736,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1750,9 +1750,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1764,9 +1764,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -1784,9 +1784,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -1804,9 +1804,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -1824,9 +1824,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1838,9 +1838,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1852,9 +1852,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1866,9 +1866,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1880,9 +1880,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1894,9 +1894,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1908,9 +1908,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -1928,7 +1928,7 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
+        "screenWidth": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1940,9 +1940,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1954,9 +1954,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1968,9 +1968,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1982,9 +1982,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -1996,9 +1996,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -2010,9 +2010,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -2024,9 +2024,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -2044,9 +2044,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -2058,9 +2058,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -2072,9 +2072,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [
           "Tổng quan",
           "Học sinh",
@@ -2092,9 +2092,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }
@@ -2106,9 +2106,9 @@
       "metrics": {
         "documentWidth": 768,
         "viewport": 768,
-        "screenWidth": 520,
-        "pageWidth": 520,
-        "pageScroll": 520,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
         "navLabels": [],
         "broken": 0
       }

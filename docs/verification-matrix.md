@@ -4,7 +4,10 @@ Mode: browser prototype, static fixture data, local session drafts. No server lo
 
 | Change | Verification | Scope |
 |---|---|---|
-| Complete canvas | Exact equality between app HTML inventory, manifest and 69 artboard previews | All existing files |
+| Complete live canvas | Exact equality between app HTML inventory, manifest and 69 live iframe documents; no raster artboard nodes | All existing files |
+| V1 comparison | Exact file-ID matching, same row, old-left/current-right spacing, red old-frame outline | 17 pairs; 2 explicit missing counterparts |
+| Supplied design system | Canonical file hashes plus computed font, color, card radius/border/padding, input geometry and floating navigation | Source ZIP and current representative components |
+| Live state | Type inside a canvas frame, filter/hide/show it, retain document state; navigate and reset independently | Direct runtime checks |
 | Shared visual owner | Render, overflow, image and runtime checks at 320/390/768px | All 46 current screens, 138 cases |
 | Preview experience | Search, empty recovery, version filters, pan/zoom, open/close dialog and deep-link metadata | Desktop and mobile |
 | Form recovery | Clear required name → inline error and focus → correct it → next → Back retains it | Admissions representative |
@@ -16,6 +19,6 @@ The five scenarios are agent browser walkthroughs, not sessions with five people
 
 Known source limitations: the repo contains mainly Giáo vụ screens. Several teacher, password and notification detail targets appear only as links in the original diagram. The prototype explains their absence; it does not invent their business rules. Some less central controls show an explicit prototype limitation because their original data/action is absent. All current screens receive shared responsive and style refinement, but this is not a new backend or a formal accessibility audit.
 
-Performance decisions: the canvas loads actual captured images lazily and mounts only one live iframe when requested. Removing the original 836KB inlined HTML cache avoids stale duplicate ownership. No frontend production framework or library was added; Playwright is development-only QA.
+Performance decisions: the canvas mounts real iframe sources as artboards approach the viewport, then preserves visited documents through filters and searches. No captured image or raster fallback is used. Removing the original 836KB inlined HTML cache avoids stale duplicate ownership. No frontend production framework or library was added; Playwright is development-only QA. Memory use grows with visited frames to preserve live state; no claim of performance on every device is made.
 
 Release rollback: GitHub Pages can be restored to the previous `main` source. The source change is isolated on `codex/uiux-canvas` and reviewed through a pull request; publication and main-branch merge are separate states.

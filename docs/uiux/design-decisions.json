@@ -27,8 +27,8 @@
         },
         {
           "axis": "font",
-          "value": "Google Sans Flex from current source, Segoe UI fallback; alternative explicitly tests Segoe UI.",
-          "rejected_alternative": "A new decorative typeface has no task or brand reason.",
+          "value": "Google Sans Flex from user supplied design system with system-ui fallback; both directions follow this family.",
+          "rejected_alternative": "A new decorative typeface contradicts the supplied design system.",
           "source": {
             "kind": "rule",
             "ref": "docs/visual-direction.md"
@@ -36,8 +36,8 @@
         },
         {
           "axis": "typography",
-          "value": "27px title, 18px section, 15px body, 13px UI, 12px metadata; 1.5 body line-height.",
-          "rejected_alternative": "Oversized type that displaces the decision object.",
+          "value": "28px title, 17px section, 15/22px body, 14px UI, 13px caption; supplied role scale.",
+          "rejected_alternative": "Custom sizes outside the supplied role scale.",
           "source": {
             "kind": "rule",
             "ref": "docs/visual-direction.md"
@@ -54,7 +54,7 @@
         },
         {
           "axis": "spacing",
-          "value": "{\"gutter_px\":20,\"section_gap_px\":16,\"group_gap_px\":10,\"component_padding_px\":14}",
+          "value": "{\"gutter_px\":20,\"section_gap_px\":12,\"group_gap_px\":12,\"component_padding_px\":16}",
           "rejected_alternative": "Inconsistent per-page margins and all-pill controls.",
           "source": {
             "kind": "rule",
@@ -78,87 +78,96 @@
             "kind": "rule",
             "ref": "docs/visual-direction.md"
           }
+        },
+        {
+          "axis": "supplied-design-system",
+          "source": {
+            "kind": "user",
+            "ref": "MinhHoangCenter-DesignSystem.zip; docs/uiux/supplied-design-system.json"
+          },
+          "value": "Google Sans Flex; exact supplied palette; cards 24px without borders; controls 16px; heroes/sheets 28px; 20px gutters; floating blue navigation 24px above the bottom.",
+          "rejected_alternative": "The previous custom 18px cards, 12px controls and white full-width navigation conflict with the newly supplied source."
         }
       ],
       "desktop_type": {
         "title": {
-          "size_px": 27,
-          "line_height": 1.25,
-          "weight": 650
+          "size_px": 28,
+          "line_height": 1.1428571428571428,
+          "weight": 700
         },
         "section": {
-          "size_px": 18,
-          "line_height": 1.4,
+          "size_px": 17,
+          "line_height": 1.411764705882353,
           "weight": 600
         },
         "body": {
           "size_px": 15,
-          "line_height": 1.5,
+          "line_height": 1.4666666666666666,
           "weight": 400
         },
         "ui": {
-          "size_px": 13,
-          "line_height": 1.5,
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
           "weight": 600
         },
         "meta": {
-          "size_px": 12,
-          "line_height": 1.5,
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
           "weight": 400
         }
       },
       "mobile_type": {
         "title": {
-          "size_px": 27,
-          "line_height": 1.25,
-          "weight": 650
+          "size_px": 28,
+          "line_height": 1.1428571428571428,
+          "weight": 700
         },
         "section": {
-          "size_px": 18,
-          "line_height": 1.4,
+          "size_px": 17,
+          "line_height": 1.411764705882353,
           "weight": 600
         },
         "body": {
           "size_px": 15,
-          "line_height": 1.5,
+          "line_height": 1.4666666666666666,
           "weight": 400
         },
         "ui": {
-          "size_px": 13,
-          "line_height": 1.5,
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
           "weight": 600
         },
         "meta": {
-          "size_px": 12,
-          "line_height": 1.5,
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
           "weight": 400
         }
       },
       "desktop_layout": {
-        "max_width_px": 520,
+        "max_width_px": 390,
         "columns": 1,
-        "column_gap_px": 16,
+        "column_gap_px": 12,
         "reading_width_ch": 40,
         "density": "productive"
       },
       "mobile_layout": {
-        "max_width_px": 520,
+        "max_width_px": 390,
         "columns": 1,
-        "column_gap_px": 16,
+        "column_gap_px": 12,
         "reading_width_ch": 40,
         "density": "productive"
       },
       "desktop_spacing": {
         "gutter_px": 20,
-        "section_gap_px": 16,
-        "group_gap_px": 10,
-        "component_padding_px": 14
+        "section_gap_px": 12,
+        "group_gap_px": 12,
+        "component_padding_px": 16
       },
       "mobile_spacing": {
         "gutter_px": 20,
-        "section_gap_px": 16,
-        "group_gap_px": 10,
-        "component_padding_px": 14
+        "section_gap_px": 12,
+        "group_gap_px": 12,
+        "component_padding_px": 16
       },
       "compositions": [
         {
@@ -227,46 +236,46 @@
           "tradeoff": "Some lower-priority work needs scrolling, but each task has a grouped action.",
           "direction": {
             "desktop_typography": {
-              "family": "Google Sans Flex, Segoe UI, sans-serif",
+              "family": "Google Sans Flex, system-ui, sans-serif",
               "title": {
-                "size_px": 27,
-                "line_height": 1.25,
-                "weight": 650
+                "size_px": 28,
+                "line_height": 1.1428571428571428,
+                "weight": 700
               },
               "body": {
                 "size_px": 15,
-                "line_height": 1.5,
+                "line_height": 1.4666666666666666,
                 "weight": 400
               },
-              "title_tracking_em": -0.035,
+              "title_tracking_em": -0.025,
               "reading_width_ch": 40
             },
             "mobile_typography": {
-              "family": "Google Sans Flex, Segoe UI, sans-serif",
+              "family": "Google Sans Flex, system-ui, sans-serif",
               "title": {
-                "size_px": 27,
-                "line_height": 1.25,
-                "weight": 650
+                "size_px": 28,
+                "line_height": 1.1428571428571428,
+                "weight": 700
               },
               "body": {
                 "size_px": 15,
-                "line_height": 1.5,
+                "line_height": 1.4666666666666666,
                 "weight": 400
               },
-              "title_tracking_em": -0.035,
+              "title_tracking_em": -0.025,
               "reading_width_ch": 40
             },
             "desktop_density": {
               "mode": "productive",
-              "section_gap_px": 16,
-              "group_gap_px": 10,
-              "object_padding_px": 14
+              "section_gap_px": 12,
+              "group_gap_px": 12,
+              "object_padding_px": 16
             },
             "mobile_density": {
               "mode": "productive",
-              "section_gap_px": 16,
-              "group_gap_px": 10,
-              "object_padding_px": 14
+              "section_gap_px": 12,
+              "group_gap_px": 12,
+              "object_padding_px": 16
             },
             "visual_object": {
               "kind": "app-overview",
@@ -333,46 +342,46 @@
           "tradeoff": "Due work appears sooner; daily schedule context falls below the task list, and the action is on a separate line.",
           "direction": {
             "desktop_typography": {
-              "family": "Segoe UI, sans-serif",
+              "family": "Google Sans Flex, system-ui, sans-serif",
               "title": {
-                "size_px": 34,
-                "line_height": 1.25,
-                "weight": 400
+                "size_px": 44,
+                "line_height": 1.1818181818181819,
+                "weight": 700
               },
               "body": {
                 "size_px": 15,
-                "line_height": 1.5,
+                "line_height": 1.4666666666666666,
                 "weight": 400
               },
-              "title_tracking_em": -0.035,
+              "title_tracking_em": -0.025,
               "reading_width_ch": 40
             },
             "mobile_typography": {
-              "family": "Segoe UI, sans-serif",
+              "family": "Google Sans Flex, system-ui, sans-serif",
               "title": {
-                "size_px": 34,
-                "line_height": 1.25,
-                "weight": 400
+                "size_px": 44,
+                "line_height": 1.1818181818181819,
+                "weight": 700
               },
               "body": {
                 "size_px": 15,
-                "line_height": 1.5,
+                "line_height": 1.4666666666666666,
                 "weight": 400
               },
-              "title_tracking_em": -0.035,
+              "title_tracking_em": -0.025,
               "reading_width_ch": 40
             },
             "desktop_density": {
               "mode": "productive",
-              "section_gap_px": 8,
-              "group_gap_px": 8,
-              "object_padding_px": 8
+              "section_gap_px": 24,
+              "group_gap_px": 16,
+              "object_padding_px": 20
             },
             "mobile_density": {
               "mode": "productive",
-              "section_gap_px": 8,
-              "group_gap_px": 8,
-              "object_padding_px": 8
+              "section_gap_px": 24,
+              "group_gap_px": 16,
+              "object_padding_px": 20
             },
             "visual_object": {
               "kind": "task ledger",
@@ -381,7 +390,7 @@
                 "task title",
                 "deadline",
                 "count at right",
-                "underlined action below",
+                "action below",
                 "daily summary after tasks"
               ],
               "reality": "illustrative"
@@ -496,8 +505,8 @@
         },
         {
           "axis": "font",
-          "value": "Google Sans Flex from current source, Segoe UI fallback; alternative explicitly tests Segoe UI.",
-          "rejected_alternative": "A new decorative typeface has no task or brand reason.",
+          "value": "Google Sans Flex from user supplied design system with system-ui fallback; both directions follow this family.",
+          "rejected_alternative": "A new decorative typeface contradicts the supplied design system.",
           "source": {
             "kind": "rule",
             "ref": "docs/visual-direction.md"
@@ -505,8 +514,8 @@
         },
         {
           "axis": "typography",
-          "value": "22px title, 18px section, 15px body, 13px UI, 12px metadata; 1.5 body line-height.",
-          "rejected_alternative": "Oversized type that displaces the decision object.",
+          "value": "22px title, 17px section, 15/22px body, 14px UI, 13px caption; supplied role scale.",
+          "rejected_alternative": "Custom sizes outside the supplied role scale.",
           "source": {
             "kind": "rule",
             "ref": "docs/visual-direction.md"
@@ -523,7 +532,7 @@
         },
         {
           "axis": "spacing",
-          "value": "{\"gutter_px\":20,\"section_gap_px\":16,\"group_gap_px\":16,\"component_padding_px\":16}",
+          "value": "{\"gutter_px\":20,\"section_gap_px\":12,\"group_gap_px\":12,\"component_padding_px\":16}",
           "rejected_alternative": "Inconsistent per-page margins and all-pill controls.",
           "source": {
             "kind": "rule",
@@ -547,86 +556,95 @@
             "kind": "rule",
             "ref": "docs/visual-direction.md"
           }
+        },
+        {
+          "axis": "supplied-design-system",
+          "source": {
+            "kind": "user",
+            "ref": "MinhHoangCenter-DesignSystem.zip; docs/uiux/supplied-design-system.json"
+          },
+          "value": "Google Sans Flex; exact supplied palette; cards 24px without borders; controls 16px; heroes/sheets 28px; 20px gutters; floating blue navigation 24px above the bottom.",
+          "rejected_alternative": "The previous custom 18px cards, 12px controls and white full-width navigation conflict with the newly supplied source."
         }
       ],
       "desktop_type": {
         "title": {
           "size_px": 22,
-          "line_height": 1.25,
+          "line_height": 1.2727272727272727,
           "weight": 700
         },
         "section": {
-          "size_px": 18,
-          "line_height": 1.4,
+          "size_px": 17,
+          "line_height": 1.411764705882353,
           "weight": 600
         },
         "body": {
           "size_px": 15,
-          "line_height": 1.5,
+          "line_height": 1.4666666666666666,
           "weight": 400
         },
         "ui": {
-          "size_px": 13,
-          "line_height": 1.5,
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
           "weight": 600
         },
         "meta": {
-          "size_px": 12,
-          "line_height": 1.5,
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
           "weight": 400
         }
       },
       "mobile_type": {
         "title": {
           "size_px": 22,
-          "line_height": 1.25,
+          "line_height": 1.2727272727272727,
           "weight": 700
         },
         "section": {
-          "size_px": 18,
-          "line_height": 1.4,
+          "size_px": 17,
+          "line_height": 1.411764705882353,
           "weight": 600
         },
         "body": {
           "size_px": 15,
-          "line_height": 1.5,
+          "line_height": 1.4666666666666666,
           "weight": 400
         },
         "ui": {
-          "size_px": 13,
-          "line_height": 1.5,
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
           "weight": 600
         },
         "meta": {
-          "size_px": 12,
-          "line_height": 1.5,
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
           "weight": 400
         }
       },
       "desktop_layout": {
-        "max_width_px": 520,
+        "max_width_px": 390,
         "columns": 1,
-        "column_gap_px": 16,
+        "column_gap_px": 12,
         "reading_width_ch": 40,
         "density": "productive"
       },
       "mobile_layout": {
-        "max_width_px": 520,
+        "max_width_px": 390,
         "columns": 1,
-        "column_gap_px": 16,
+        "column_gap_px": 12,
         "reading_width_ch": 40,
         "density": "productive"
       },
       "desktop_spacing": {
         "gutter_px": 20,
-        "section_gap_px": 16,
-        "group_gap_px": 16,
+        "section_gap_px": 12,
+        "group_gap_px": 12,
         "component_padding_px": 16
       },
       "mobile_spacing": {
         "gutter_px": 20,
-        "section_gap_px": 16,
-        "group_gap_px": 16,
+        "section_gap_px": 12,
+        "group_gap_px": 12,
         "component_padding_px": 16
       },
       "compositions": [
@@ -683,45 +701,45 @@
           "tradeoff": "Maintain existing workflow, fit the real viewport and allow internal scrolling.",
           "direction": {
             "desktop_typography": {
-              "family": "Google Sans Flex, Segoe UI, sans-serif",
+              "family": "Google Sans Flex, system-ui, sans-serif",
               "title": {
                 "size_px": 22,
-                "line_height": 1.25,
+                "line_height": 1.2727272727272727,
                 "weight": 700
               },
               "body": {
                 "size_px": 15,
-                "line_height": 1.5,
+                "line_height": 1.4666666666666666,
                 "weight": 400
               },
-              "title_tracking_em": -0.035,
+              "title_tracking_em": -0.025,
               "reading_width_ch": 40
             },
             "mobile_typography": {
-              "family": "Google Sans Flex, Segoe UI, sans-serif",
+              "family": "Google Sans Flex, system-ui, sans-serif",
               "title": {
                 "size_px": 22,
-                "line_height": 1.25,
+                "line_height": 1.2727272727272727,
                 "weight": 700
               },
               "body": {
                 "size_px": 15,
-                "line_height": 1.5,
+                "line_height": 1.4666666666666666,
                 "weight": 400
               },
-              "title_tracking_em": -0.035,
+              "title_tracking_em": -0.025,
               "reading_width_ch": 40
             },
             "desktop_density": {
               "mode": "productive",
-              "section_gap_px": 16,
-              "group_gap_px": 16,
+              "section_gap_px": 12,
+              "group_gap_px": 12,
               "object_padding_px": 16
             },
             "mobile_density": {
               "mode": "productive",
-              "section_gap_px": 16,
-              "group_gap_px": 16,
+              "section_gap_px": 12,
+              "group_gap_px": 12,
               "object_padding_px": 16
             },
             "visual_object": {
@@ -812,8 +830,8 @@
         },
         {
           "axis": "font",
-          "value": "Google Sans Flex from current source, Segoe UI fallback; alternative explicitly tests Segoe UI.",
-          "rejected_alternative": "A new decorative typeface has no task or brand reason.",
+          "value": "Google Sans Flex from user supplied design system with system-ui fallback; both directions follow this family.",
+          "rejected_alternative": "A new decorative typeface contradicts the supplied design system.",
           "source": {
             "kind": "rule",
             "ref": "docs/visual-direction.md"
@@ -821,8 +839,8 @@
         },
         {
           "axis": "typography",
-          "value": "22px title, 18px section, 15px body, 13px UI, 12px metadata; 1.5 body line-height.",
-          "rejected_alternative": "Oversized type that displaces the decision object.",
+          "value": "22px title, 17px section, 15/22px body, 14px UI, 13px caption; supplied role scale.",
+          "rejected_alternative": "Custom sizes outside the supplied role scale.",
           "source": {
             "kind": "rule",
             "ref": "docs/visual-direction.md"
@@ -839,7 +857,7 @@
         },
         {
           "axis": "spacing",
-          "value": "{\"gutter_px\":20,\"section_gap_px\":16,\"group_gap_px\":12,\"component_padding_px\":16}",
+          "value": "{\"gutter_px\":20,\"section_gap_px\":12,\"group_gap_px\":12,\"component_padding_px\":16}",
           "rejected_alternative": "Inconsistent per-page margins and all-pill controls.",
           "source": {
             "kind": "rule",
@@ -863,85 +881,94 @@
             "kind": "rule",
             "ref": "docs/visual-direction.md"
           }
+        },
+        {
+          "axis": "supplied-design-system",
+          "source": {
+            "kind": "user",
+            "ref": "MinhHoangCenter-DesignSystem.zip; docs/uiux/supplied-design-system.json"
+          },
+          "value": "Google Sans Flex; exact supplied palette; cards 24px without borders; controls 16px; heroes/sheets 28px; 20px gutters; floating blue navigation 24px above the bottom.",
+          "rejected_alternative": "The previous custom 18px cards, 12px controls and white full-width navigation conflict with the newly supplied source."
         }
       ],
       "desktop_type": {
         "title": {
           "size_px": 22,
-          "line_height": 1.25,
+          "line_height": 1.2727272727272727,
           "weight": 700
         },
         "section": {
-          "size_px": 18,
-          "line_height": 1.4,
+          "size_px": 17,
+          "line_height": 1.411764705882353,
           "weight": 600
         },
         "body": {
           "size_px": 15,
-          "line_height": 1.5,
+          "line_height": 1.4666666666666666,
           "weight": 400
         },
         "ui": {
-          "size_px": 13,
-          "line_height": 1.5,
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
           "weight": 600
         },
         "meta": {
-          "size_px": 12,
-          "line_height": 1.5,
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
           "weight": 400
         }
       },
       "mobile_type": {
         "title": {
           "size_px": 22,
-          "line_height": 1.25,
+          "line_height": 1.2727272727272727,
           "weight": 700
         },
         "section": {
-          "size_px": 18,
-          "line_height": 1.4,
+          "size_px": 17,
+          "line_height": 1.411764705882353,
           "weight": 600
         },
         "body": {
           "size_px": 15,
-          "line_height": 1.5,
+          "line_height": 1.4666666666666666,
           "weight": 400
         },
         "ui": {
-          "size_px": 13,
-          "line_height": 1.5,
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
           "weight": 600
         },
         "meta": {
-          "size_px": 12,
-          "line_height": 1.5,
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
           "weight": 400
         }
       },
       "desktop_layout": {
-        "max_width_px": 520,
+        "max_width_px": 390,
         "columns": 1,
-        "column_gap_px": 16,
+        "column_gap_px": 12,
         "reading_width_ch": 40,
         "density": "productive"
       },
       "mobile_layout": {
-        "max_width_px": 520,
+        "max_width_px": 390,
         "columns": 1,
-        "column_gap_px": 16,
+        "column_gap_px": 12,
         "reading_width_ch": 40,
         "density": "productive"
       },
       "desktop_spacing": {
         "gutter_px": 20,
-        "section_gap_px": 16,
+        "section_gap_px": 12,
         "group_gap_px": 12,
         "component_padding_px": 16
       },
       "mobile_spacing": {
         "gutter_px": 20,
-        "section_gap_px": 16,
+        "section_gap_px": 12,
         "group_gap_px": 12,
         "component_padding_px": 16
       },
@@ -999,44 +1026,44 @@
           "tradeoff": "Maintain existing workflow, fit the real viewport and allow internal scrolling.",
           "direction": {
             "desktop_typography": {
-              "family": "Google Sans Flex, Segoe UI, sans-serif",
+              "family": "Google Sans Flex, system-ui, sans-serif",
               "title": {
                 "size_px": 22,
-                "line_height": 1.25,
+                "line_height": 1.2727272727272727,
                 "weight": 700
               },
               "body": {
                 "size_px": 15,
-                "line_height": 1.5,
+                "line_height": 1.4666666666666666,
                 "weight": 400
               },
-              "title_tracking_em": -0.035,
+              "title_tracking_em": -0.025,
               "reading_width_ch": 40
             },
             "mobile_typography": {
-              "family": "Google Sans Flex, Segoe UI, sans-serif",
+              "family": "Google Sans Flex, system-ui, sans-serif",
               "title": {
                 "size_px": 22,
-                "line_height": 1.25,
+                "line_height": 1.2727272727272727,
                 "weight": 700
               },
               "body": {
                 "size_px": 15,
-                "line_height": 1.5,
+                "line_height": 1.4666666666666666,
                 "weight": 400
               },
-              "title_tracking_em": -0.035,
+              "title_tracking_em": -0.025,
               "reading_width_ch": 40
             },
             "desktop_density": {
               "mode": "productive",
-              "section_gap_px": 16,
+              "section_gap_px": 12,
               "group_gap_px": 12,
               "object_padding_px": 16
             },
             "mobile_density": {
               "mode": "productive",
-              "section_gap_px": 16,
+              "section_gap_px": 12,
               "group_gap_px": 12,
               "object_padding_px": 16
             },
@@ -1108,16 +1135,16 @@
       "route": "/app/GV01-TongQuan.dc.html",
       "composition_id": "selected",
       "file": "docs/evidence/GV01-TongQuan-selected-390.png",
-      "sha256": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099",
+      "sha256": "98c4c7a3049f2016dab96b3ba968ff9d689daa8727d3c71a7ca43efc084f2edf",
       "width": 390,
       "viewport_height": 900,
       "inspected": true,
       "review_source": "agent-heuristic",
       "critique": {
         "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
-        "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
-        "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
-        "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
         "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
       }
     },
@@ -1125,16 +1152,16 @@
       "route": "/app/GV01-TongQuan.dc.html",
       "composition_id": "selected",
       "file": "docs/evidence/GV01-TongQuan-selected-1280.png",
-      "sha256": "d1b6ec8e2b640c190e4cbefee130e5dfc03b47667e7e8cfa41b98a3ef33933d0",
+      "sha256": "95cc8a3897ec530004174f5aae3f1610c47ab04e45140c1fe8436e606553ed37",
       "width": 1280,
       "viewport_height": 900,
       "inspected": true,
       "review_source": "agent-heuristic",
       "critique": {
         "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
-        "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
-        "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
-        "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
         "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
       }
     },
@@ -1142,16 +1169,16 @@
       "route": "/app/GV04-NhapHoSo.dc.html",
       "composition_id": "selected",
       "file": "docs/evidence/GV04-NhapHoSo-selected-390.png",
-      "sha256": "853a941cdd1c8cc09a45617760677002703e82f52997b26a3e5193cbbf302627",
+      "sha256": "0f48b29c61aeb8802ceb10db5c8ed3a258dc4422e78534b0886c030b6ea37173",
       "width": 390,
       "viewport_height": 900,
       "inspected": true,
       "review_source": "agent-heuristic",
       "critique": {
         "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
-        "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
-        "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
-        "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
         "distinctiveness": "Student identity and admissions steps anchor the domain."
       }
     },
@@ -1159,16 +1186,16 @@
       "route": "/app/GV04-NhapHoSo.dc.html",
       "composition_id": "selected",
       "file": "docs/evidence/GV04-NhapHoSo-selected-1280.png",
-      "sha256": "efe43352a8e08b50c3b47ce338ba4f6063245d50f68a48f4a42255a85a757b3b",
+      "sha256": "96cfe32de2b70f2394d729af5818af0b6a7ff94e9a44ca3e054e6c711ae2e367",
       "width": 1280,
       "viewport_height": 900,
       "inspected": true,
       "review_source": "agent-heuristic",
       "critique": {
         "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
-        "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
-        "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
-        "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
         "distinctiveness": "Student identity and admissions steps anchor the domain."
       }
     },
@@ -1176,16 +1203,16 @@
       "route": "/app/XL02-ChonLop.dc.html",
       "composition_id": "selected",
       "file": "docs/evidence/XL02-ChonLop-selected-390.png",
-      "sha256": "d2e64c1451c16ab319a2c86eb4e4c427507336e70d8b20facb97ae86fabf0142",
+      "sha256": "3794a2e788a4f92d3b7a6a13cdbb983a73984eaebabb56019240825dfc22f13c",
       "width": 390,
       "viewport_height": 900,
       "inspected": true,
       "review_source": "agent-heuristic",
       "critique": {
         "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
-        "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
-        "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
-        "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
         "distinctiveness": "Schedule match, capacity and teacher/room are the decision object."
       }
     },
@@ -1193,16 +1220,16 @@
       "route": "/app/XL02-ChonLop.dc.html",
       "composition_id": "selected",
       "file": "docs/evidence/XL02-ChonLop-selected-1280.png",
-      "sha256": "05c0d8c42182887a5b6fadb319d6a78a9013ae0caca8eeb5ba1817319bec758e",
+      "sha256": "1b7d84ccb46a2b88e6ce8d149267d94c49c4d1a7738c95b052c58d590066b24c",
       "width": 1280,
       "viewport_height": 900,
       "inspected": true,
       "review_source": "agent-heuristic",
       "critique": {
         "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
-        "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
-        "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
-        "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
         "distinctiveness": "Schedule match, capacity and teacher/room are the decision object."
       }
     },
@@ -1210,16 +1237,16 @@
       "route": "/app/GV01-TongQuan.dc.html",
       "composition_id": "ledger",
       "file": "docs/evidence/GV01-alternative-390.png",
-      "sha256": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb",
+      "sha256": "73e90698eda97aaab6f87f1c3383f3ecf2b846a135026d12bd0536a1af2ba29f",
       "width": 390,
       "viewport_height": 900,
       "inspected": true,
       "review_source": "agent-heuristic",
       "critique": {
         "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
-        "typography": "Segoe UI 34px regular greeting, 16px row titles; lighter and more spread out than the chosen queue.",
-        "spacing": "Flat divider rows have 8px padding, but each action occupies a separate line.",
-        "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+        "typography": "Supplied Google Sans Flex display role 44/52; this greeting takes more initial space than the chosen 28/32 title role.",
+        "spacing": "24px section gaps, 16px task gaps and 20px object padding; each action occupies a separate line.",
+        "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
         "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
       }
     },
@@ -1227,16 +1254,16 @@
       "route": "/app/GV01-TongQuan.dc.html",
       "composition_id": "ledger",
       "file": "docs/evidence/GV01-alternative-1280.png",
-      "sha256": "162c0b020b564197284447b5206253d3f6432e2580b6b55b0f4aea9fdcd2fbaa",
+      "sha256": "00c76daae890a553405cd1c82b0ed4814255a15c160a64aa673b10a1cad9b2da",
       "width": 1280,
       "viewport_height": 900,
       "inspected": true,
       "review_source": "agent-heuristic",
       "critique": {
         "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
-        "typography": "Segoe UI 34px regular greeting, 16px row titles; lighter and more spread out than the chosen queue.",
-        "spacing": "Flat divider rows have 8px padding, but each action occupies a separate line.",
-        "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+        "typography": "Supplied Google Sans Flex display role 44/52; this greeting takes more initial space than the chosen 28/32 title role.",
+        "spacing": "24px section gaps, 16px task gaps and 20px object padding; each action occupies a separate line.",
+        "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
         "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
       }
     }

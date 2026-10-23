@@ -14,7 +14,7 @@
 <header class="toolbar">
  <button id="menu" class="icon-button mobile-menu" aria-label="Mở danh sách màn hình" aria-expanded="false" aria-controls="sidebar">☰</button>
  <a class="brand" href="./" aria-label="Minh Hoàng Center, về canvas"><span class="brand-mark">M<span>H</span></span><span>Minh Hoàng Center<small>Không gian thiết kế</small></span></a>
- <div class="toolbar-divider"></div><span class="file-name">Prototype / <b>Design Canvas</b></span>
+ <div class="toolbar-divider"></div><span class="file-name">Prototype / <b>So sánh trực tiếp</b></span>
  <div class="toolbar-actions"><span class="screen-total" id="total">Đang đọc màn hình…</span><button id="play" class="primary-button"><span aria-hidden="true">▷</span> Trải nghiệm</button><a class="icon-button repo-link" href="https://github.com/Ngh1aa/MinhHoangCenter-prototype" target="_blank" rel="noopener" aria-label="Mở repository GitHub">↗</a></div>
 </header>
 <aside id="sidebar" class="sidebar" aria-label="Danh sách màn hình">
@@ -26,18 +26,18 @@
  <footer class="sidebar-footer"><span class="status-indicator" aria-hidden="true"></span><div>Bản mẫu tương tác<small>Dữ liệu minh họa từ thiết kế gốc</small></div><button id="help" class="icon-button" aria-label="Hướng dẫn sử dụng canvas">?</button></footer>
 </aside>
 <main id="viewport" class="viewport" tabindex="0" aria-label="Canvas màn hình. Kéo để di chuyển, Ctrl và cuộn để thu phóng, Enter trên một màn để mở.">
- <div class="canvas-heading"><span class="breadcrumb">MINH HOÀNG / PRODUCT DESIGN</span><h1>Mọi màn hình. Một góc nhìn.</h1><p id="canvas-description">Chọn một màn để xem gần hơn hoặc mở prototype.</p></div>
+ <div class="canvas-heading"><span class="breadcrumb">MINH HOÀNG / LIVE PROTOTYPES</span><h1>V1 và hiện tại. So sánh cạnh nhau.</h1><p id="canvas-description">Viền đỏ: v1 · Thao tác trực tiếp trong từng màn.</p></div>
  <div id="world" class="world"></div>
- <div class="canvas-hint">Kéo để di chuyển <span>·</span> Ctrl + cuộn để zoom <span>·</span> Bấm màn hình để trải nghiệm</div>
- <div class="zoom-bar" role="group" aria-label="Điều khiển canvas"><button id="zoom-out" aria-label="Thu nhỏ">−</button><output id="zoom-level" aria-live="polite">40%</output><button id="zoom-in" aria-label="Phóng to">+</button><span></span><button id="fit" title="Vừa toàn bộ màn hình (0)" aria-label="Vừa toàn bộ màn hình">⊡</button><button id="reset" title="Về đầu canvas" aria-label="Về đầu canvas">⌂</button></div>
+ <div class="canvas-hint">Viền đỏ: v1 <span>·</span> Bấm, nhập và cuộn ngay trong màn <span>·</span> Dùng “Kéo” để di chuyển canvas</div>
+ <div class="zoom-bar" role="group" aria-label="Điều khiển canvas"><button id="interact-mode" class="mode-button" aria-pressed="true" title="Thao tác trực tiếp với prototype">Thao tác</button><button id="pan-mode" class="mode-button" aria-pressed="false" title="Kéo canvas qua cả vùng prototype">Kéo</button><span></span><button id="zoom-out" aria-label="Thu nhỏ">−</button><output id="zoom-level" aria-live="polite">40%</output><button id="zoom-in" aria-label="Phóng to">+</button><span></span><button id="fit" title="Vừa toàn bộ màn hình (0)" aria-label="Vừa toàn bộ màn hình">⊡</button><button id="reset" title="Về đầu canvas" aria-label="Về đầu canvas">⌂</button></div>
  <div class="canvas-error" id="load-error" role="alert" hidden><h2>Chưa tải được canvas</h2><p>Kiểm tra kết nối rồi tải lại trang.</p><button onclick="location.reload()">Thử lại</button></div>
 </main>
 <dialog id="preview" class="preview-dialog" aria-labelledby="preview-title">
  <div class="preview-toolbar"><button id="close-preview" class="secondary-button">← Canvas</button><div class="preview-name"><strong id="preview-title"></strong><span id="preview-group"></span></div><button id="previous" class="icon-button" aria-label="Màn trước">←</button><button id="next" class="icon-button" aria-label="Màn tiếp theo">→</button><button id="share" class="secondary-button">Chép link</button><a id="open-screen" class="secondary-button" target="_blank" rel="noopener">Mở riêng ↗</a></div>
- <div class="preview-body"><iframe id="prototype" title="Màn hình prototype tương tác"></iframe></div>
+ <div class="preview-body"><div id="preview-frame-shell"><iframe id="prototype" title="Màn hình prototype tương tác"></iframe></div></div>
  <div class="preview-note">Prototype trong trình duyệt · Dữ liệu minh họa · Chưa kết nối hệ thống vận hành</div>
 </dialog>
-<dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title"><h2 id="help-title">Không gian để xem toàn bộ sản phẩm</h2><p>Kéo vùng trống để di chuyển. Dùng nút + / − hoặc Ctrl + cuộn để thu phóng. Trên điện thoại, kéo bằng một ngón và dùng nút zoom.</p><p>Chọn tên nhóm để vừa cả luồng. Bấm một màn để mở bản tương tác; nút “Canvas” hoặc Escape đưa bạn trở lại.</p><p>Phím tắt: / tìm kiếm, 0 vừa tất cả, + / − thu phóng, phím mũi tên để di chuyển.</p><p>Màn v1 và sơ đồ gốc được giữ riêng. Một số đích liên kết chưa được cung cấp trong repository sẽ có giải thích khi mở.</p><button id="close-help" class="primary-button">Bắt đầu khám phá</button></dialog>
+<dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title"><h2 id="help-title">So sánh bằng prototype trực tiếp</h2><p>Mỗi cặp đặt bản v1 viền đỏ bên trái và màn hiện tại bên phải. Bấm nút, nhập dữ liệu và cuộn nội dung ngay trong từng màn.</p><p>Chọn “Kéo” để di chuyển canvas qua cả vùng prototype. Chọn “Thao tác” để dùng lại các màn. Nút + / − hoặc Ctrl + cuộn giúp thu phóng.</p><p>Bấm tên cặp trong danh sách để xem cả hai. Nút ↗ trên đầu mỗi màn mở bản xem lớn; nút ↺ đặt màn đó về điểm bắt đầu.</p><p>Phím tắt: / tìm kiếm, 0 vừa tất cả, + / − thu phóng. Hai màn v1 chưa có bản hiện tại tương ứng được ghi rõ; sơ đồ và design system vẫn được giữ trên canvas.</p><button id="close-help" class="primary-button">Bắt đầu khám phá</button></dialog>
 <div id="announcement" role="status" aria-live="polite" class="announcement"></div>
 </body>
 </html>

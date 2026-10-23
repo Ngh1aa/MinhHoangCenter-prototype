@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "contract_sha256": "46951f6acb9498f1c23c8755949c320ff81d991f8ae011f824d85581e493b4f6",
+  "contract_sha256": "6e9c2367f6bc438f2a878d964023e1524ac901d8042c140733bf6bb0c27763de",
   "route": "/app/GV01-TongQuan.dc.html",
   "seed": 0,
   "facilitator": {
@@ -45,16 +45,16 @@
         "route": "/app/GV01-TongQuan.dc.html",
         "composition_id": "selected",
         "file": "docs/evidence/GV01-TongQuan-selected-390.png",
-        "sha256": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099",
+        "sha256": "98c4c7a3049f2016dab96b3ba968ff9d689daa8727d3c71a7ca43efc084f2edf",
         "width": 390,
         "viewport_height": 900,
         "inspected": true,
         "review_source": "agent-heuristic",
         "critique": {
           "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
-          "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
-          "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
-          "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+          "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+          "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+          "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
           "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
         }
       },
@@ -62,16 +62,16 @@
         "route": "/app/GV01-TongQuan.dc.html",
         "composition_id": "selected",
         "file": "docs/evidence/GV01-TongQuan-selected-1280.png",
-        "sha256": "d1b6ec8e2b640c190e4cbefee130e5dfc03b47667e7e8cfa41b98a3ef33933d0",
+        "sha256": "95cc8a3897ec530004174f5aae3f1610c47ab04e45140c1fe8436e606553ed37",
         "width": 1280,
         "viewport_height": 900,
         "inspected": true,
         "review_source": "agent-heuristic",
         "critique": {
           "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
-          "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
-          "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
-          "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+          "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+          "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+          "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
           "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
         }
       },
@@ -79,16 +79,16 @@
         "route": "/app/GV01-TongQuan.dc.html",
         "composition_id": "ledger",
         "file": "docs/evidence/GV01-alternative-390.png",
-        "sha256": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb",
+        "sha256": "73e90698eda97aaab6f87f1c3383f3ecf2b846a135026d12bd0536a1af2ba29f",
         "width": 390,
         "viewport_height": 900,
         "inspected": true,
         "review_source": "agent-heuristic",
         "critique": {
           "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
-          "typography": "Segoe UI 34px regular greeting, 16px row titles; lighter and more spread out than the chosen queue.",
-          "spacing": "Flat divider rows have 8px padding, but each action occupies a separate line.",
-          "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+          "typography": "Supplied Google Sans Flex display role 44/52; this greeting takes more initial space than the chosen 28/32 title role.",
+          "spacing": "24px section gaps, 16px task gaps and 20px object padding; each action occupies a separate line.",
+          "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
           "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
         }
       },
@@ -96,16 +96,16 @@
         "route": "/app/GV01-TongQuan.dc.html",
         "composition_id": "ledger",
         "file": "docs/evidence/GV01-alternative-1280.png",
-        "sha256": "162c0b020b564197284447b5206253d3f6432e2580b6b55b0f4aea9fdcd2fbaa",
+        "sha256": "00c76daae890a553405cd1c82b0ed4814255a15c160a64aa673b10a1cad9b2da",
         "width": 1280,
         "viewport_height": 900,
         "inspected": true,
         "review_source": "agent-heuristic",
         "critique": {
           "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
-          "typography": "Segoe UI 34px regular greeting, 16px row titles; lighter and more spread out than the chosen queue.",
-          "spacing": "Flat divider rows have 8px padding, but each action occupies a separate line.",
-          "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+          "typography": "Supplied Google Sans Flex display role 44/52; this greeting takes more initial space than the chosen 28/32 title role.",
+          "spacing": "24px section gaps, 16px task gaps and 20px object padding; each action occupies a separate line.",
+          "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
           "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
         }
       }

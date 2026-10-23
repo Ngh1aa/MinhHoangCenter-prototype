@@ -6,7 +6,7 @@
   "start":"node scripts/server.cjs",
   "check":"node --check canvas.js && node --check app/interactions.js && node scripts/check.cjs",
   "capture":"node scripts/capture.cjs",
-  "test":"node scripts/qa.cjs",
+  "test":"node scripts/qa.cjs && node scripts/live-canvas-qa.cjs",
   "build":"node scripts/build.cjs"
  },
  "devDependencies":{"playwright":"1.62.1"}
