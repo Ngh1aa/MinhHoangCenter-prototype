@@ -1,0 +1,1394 @@
+{
+  "schema_version": "1.2",
+  "status": "READY_FOR_EXTERNAL_COLLABORATOR",
+  "target_repository": "Ngh1aa/MinhHoangCenter-prototype",
+  "task": "Redesign all existing screens of education center management prototype, preserve brand blue and Vietnamese workflows, build zoomable all-screen canvas and publish GitHub Pages",
+  "authority": "release",
+  "task_contract": {
+    "intent": "redesign",
+    "website_type": "web-app",
+    "domain": "generic",
+    "product_archetype": "generic",
+    "validation_lane": "prototype",
+    "mode": "interactive-prototype",
+    "risk": "standard",
+    "features": [
+      "dashboard",
+      "forms"
+    ],
+    "scope": [],
+    "change_surface": "REDESIGN",
+    "preserve": [
+      "brand blue and vietnamese workflows"
+    ],
+    "forbidden": [],
+    "references": [],
+    "authority": "release",
+    "platform_family": "web",
+    "target_platforms": [],
+    "implementation_stack": "unknown",
+    "requested_output": "browser-prototype",
+    "task_contract_version": "1.0",
+    "delivery": {
+      "policy": "adaptive-prompt-os-v4",
+      "lane": "full_prompt_os"
+    },
+    "inference": {
+      "confidence": 0.95,
+      "evidence": [
+        "intent:redesign",
+        "change_surface:PAGE",
+        "preserve:brand blue and vietnamese workflows",
+        "website_type:education",
+        "website_type_evidence:education",
+        "mode:interactive-prototype",
+        "risk:standard",
+        "validation_lane:prototype",
+        "delivery_policy:adaptive-prompt-os-v4",
+        "delivery_lane:full_prompt_os"
+      ],
+      "routing_status": "resolved",
+      "candidate_domains": [],
+      "resolution_source": "canonical"
+    },
+    "target_truth": {
+      "status": "NO_USABLE_TRUTH",
+      "target_root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center",
+      "fields": {},
+      "provenance": {},
+      "sources": [
+        "README.md"
+      ],
+      "diagnostics": []
+    },
+    "routing_provenance": {
+      "precedence": [
+        "explicit_override",
+        "target_project_truth",
+        "goal_inference"
+      ],
+      "field_sources": {
+        "website_type": "explicit_override",
+        "domain": "goal_inference",
+        "product_archetype": "goal_inference",
+        "validation_lane": "goal_inference",
+        "mode": "goal_inference",
+        "risk": "goal_inference",
+        "features": "explicit_override",
+        "platform_family": "goal_inference",
+        "target_platforms": "goal_inference",
+        "implementation_stack": "goal_inference",
+        "requested_output": "explicit_override"
+      },
+      "explicit_override_fields": [
+        "change_surface",
+        "features",
+        "intent",
+        "requested_output",
+        "website_type"
+      ],
+      "derived_fields": {},
+      "merge_diagnostics": [],
+      "target_truth_applied_before_flow_resolution": true
+    },
+    "requested_authority": "unspecified",
+    "effective_authority": "release"
+  },
+  "resolved_flow": {
+    "id": "professional-website-redesign",
+    "source": "skills_UIUX/flows/professional-website-redesign.json",
+    "score": 68,
+    "stages": [
+      {
+        "id": "research",
+        "agent": "research",
+        "purpose": "Establish project truth, audience intent, preserve/change rationale, information architecture and reference evidence before design.",
+        "skills": [
+          "project-context",
+          "adaptive-skill-routing-and-context-budget",
+          "website-audit-and-redesign",
+          "audience-intent-and-top-tasks",
+          "information-architecture",
+          "ux-structure-and-flow-design",
+          "design-reference-research-and-benchmark",
+          "prototype-visual-experience-qa"
+        ],
+        "mandatory_skills": [
+          "project-context",
+          "adaptive-skill-routing-and-context-budget",
+          "website-audit-and-redesign",
+          "audience-intent-and-top-tasks",
+          "information-architecture",
+          "ux-structure-and-flow-design",
+          "design-reference-research-and-benchmark"
+        ],
+        "jit_skills": [
+          "prototype-visual-experience-qa"
+        ],
+        "jit_skill_sources": {
+          "prototype-visual-experience-qa": "conditional"
+        },
+        "gates": [
+          {
+            "id": "project-truth-known",
+            "require": "owner goal, audience, scope, mode and source-of-truth are explicit"
+          },
+          {
+            "id": "design-input-ready",
+            "require": "IA/reference evidence, vertical/page-role intelligence and preserve/change decisions are sufficient for a concrete Design Contract"
+          },
+          {
+            "id": "ux-before-visual",
+            "require": "Before visual direction, the UX Readiness verdict from ux-structure-and-flow-design is READY or READY_WITH_RISKS: every top task has a user flow with a happy path and a failure path ending in recovery; every key screen records user question, information priority, one primary action, destination, feedback and recovery; walkthrough findings have severity, fix and retest with no open blocker. When docs/ux/ux-structure.json exists, check-ux-structure.py must PASS. Expert walkthroughs are agent-heuristic evidence, never participant research."
+          }
+        ]
+      },
+      {
+        "id": "design",
+        "agent": "implementation",
+        "purpose": "Turn research into a distinctive modern Design Contract and reusable visual system without generic template repetition.",
+        "skills": [
+          "project-context",
+          "ai-agent-coding-guardrails",
+          "journey-driven-content-and-layout",
+          "visual-design-direction",
+          "brand-distinctiveness-and-visual-signature",
+          "design-system-and-components",
+          "asset-media-and-art-direction",
+          "prototype-visual-experience-qa",
+          "visual-taste-calibration",
+          "data-visualization-and-dashboard-ux",
+          "data-tables-and-enterprise-ux",
+          "interaction-patterns-and-form-ux"
+        ],
+        "mandatory_skills": [
+          "project-context",
+          "ai-agent-coding-guardrails",
+          "journey-driven-content-and-layout",
+          "visual-design-direction",
+          "brand-distinctiveness-and-visual-signature",
+          "design-system-and-components",
+          "asset-media-and-art-direction"
+        ],
+        "jit_skills": [
+          "prototype-visual-experience-qa",
+          "visual-taste-calibration",
+          "data-visualization-and-dashboard-ux",
+          "data-tables-and-enterprise-ux",
+          "interaction-patterns-and-form-ux"
+        ],
+        "jit_skill_sources": {
+          "prototype-visual-experience-qa": "conditional",
+          "visual-taste-calibration": "conditional",
+          "data-visualization-and-dashboard-ux": "conditional",
+          "data-tables-and-enterprise-ux": "conditional",
+          "interaction-patterns-and-form-ux": "conditional"
+        },
+        "gates": [
+          {
+            "id": "design-contract",
+            "approval": "human",
+            "require": "page-role compositions, typography, imagery, interaction, mobile transformation, prototype signature moment when applicable, and do/don't rules are concrete before broad implementation"
+          },
+          {
+            "id": "design-decision-integrity",
+            "require": "canonical decision checker verifies numeric roles, source traces and distinct internal composition topology; integrity is not aesthetic acceptance",
+            "evidence_types": [
+              "design_contract_check"
+            ],
+            "design_phase": "design",
+            "design_contract_version": "2.0",
+            "ux_contract_required": true
+          }
+        ]
+      },
+      {
+        "id": "implementation",
+        "agent": "implementation",
+        "purpose": "Implement the approved design system and page roles as maintainable responsive code with truthful system behavior.",
+        "skills": [
+          "project-context",
+          "ai-agent-coding-guardrails",
+          "frontend-implementation",
+          "component-driven-development",
+          "responsive-and-device-strategy",
+          "prototype-visual-experience-qa",
+          "complex-forms-and-wizards",
+          "state-feedback-and-error-recovery",
+          "data-tables-and-enterprise-ux",
+          "data-visualization-and-dashboard-ux",
+          "frontend-architecture-and-refactoring"
+        ],
+        "mandatory_skills": [
+          "project-context",
+          "ai-agent-coding-guardrails",
+          "frontend-implementation",
+          "component-driven-development",
+          "responsive-and-device-strategy"
+        ],
+        "jit_skills": [
+          "prototype-visual-experience-qa",
+          "complex-forms-and-wizards",
+          "state-feedback-and-error-recovery",
+          "data-tables-and-enterprise-ux",
+          "data-visualization-and-dashboard-ux",
+          "frontend-architecture-and-refactoring"
+        ],
+        "jit_skill_sources": {
+          "prototype-visual-experience-qa": "conditional",
+          "complex-forms-and-wizards": "conditional",
+          "state-feedback-and-error-recovery": "conditional",
+          "data-tables-and-enterprise-ux": "conditional",
+          "data-visualization-and-dashboard-ux": "conditional",
+          "frontend-architecture-and-refactoring": "conditional"
+        },
+        "gates": [
+          {
+            "id": "implementation-evidence",
+            "require": "material changes have acceptance criteria and focused verification; build success is not treated as rendered UX proof"
+          }
+        ]
+      },
+      {
+        "id": "qa",
+        "agent": "qa",
+        "purpose": "Independently verify rendered interface quality, responsive behavior, accessibility, brand integrity, media crops and code/experience regressions.",
+        "skills": [
+          "testing-strategy",
+          "agent-evaluation-and-reliability",
+          "ui-craft-and-visual-qa",
+          "web-ui-code-review",
+          "accessibility",
+          "web-quality-and-performance",
+          "brand-recognition-and-consistency-qa",
+          "media-crop-and-layout-integrity",
+          "prototype-visual-experience-qa",
+          "visual-regression-and-design-drift",
+          "data-tables-and-enterprise-ux",
+          "data-visualization-and-dashboard-ux",
+          "state-feedback-and-error-recovery"
+        ],
+        "mandatory_skills": [
+          "testing-strategy",
+          "agent-evaluation-and-reliability",
+          "ui-craft-and-visual-qa",
+          "web-ui-code-review",
+          "accessibility",
+          "web-quality-and-performance",
+          "brand-recognition-and-consistency-qa",
+          "media-crop-and-layout-integrity"
+        ],
+        "jit_skills": [
+          "prototype-visual-experience-qa",
+          "visual-regression-and-design-drift",
+          "data-tables-and-enterprise-ux",
+          "data-visualization-and-dashboard-ux",
+          "state-feedback-and-error-recovery"
+        ],
+        "jit_skill_sources": {
+          "prototype-visual-experience-qa": "conditional",
+          "visual-regression-and-design-drift": "conditional",
+          "data-tables-and-enterprise-ux": "conditional",
+          "data-visualization-and-dashboard-ux": "conditional",
+          "state-feedback-and-error-recovery": "conditional"
+        },
+        "gates": [
+          {
+            "id": "rendered-qa",
+            "require": "actual rendered pixels are inspected across representative routes/viewports and obvious shared-owner defects are checked across affected routes"
+          },
+          {
+            "id": "design-render-integrity",
+            "require": "decision contract references inspected desktop/mobile alternatives with capture digests and concrete critique; human preference remains unknown",
+            "evidence_types": [
+              "design_contract_check"
+            ],
+            "design_phase": "rendered",
+            "design_contract_version": "2.0",
+            "ux_contract_required": true
+          },
+          {
+            "id": "keyboard-focus",
+            "require": "Current browser evidence checks focus indicators on actual controls; source CSS lint and unresolved manual review cannot establish PASS.",
+            "evidence_types": [
+              "browser_render"
+            ]
+          },
+          {
+            "id": "prototype-experience-qa",
+            "require": "for prototype modes, squint hierarchy, 5-second comprehension prompts, signature moment, domain media relevance, interaction states and anti-generic repetition are explicitly reviewed"
+          },
+          {
+            "id": "truthful-completion",
+            "require": "verified versus unverified areas are explicit; no production/accessibility/UX improvement claim exceeds evidence"
+          }
+        ]
+      }
+    ],
+    "replanning": {
+      "max_replans": 4,
+      "triggers": [
+        "GATE_FAIL",
+        "BLOCKED",
+        "NEW_RISK",
+        "INVALID_ASSUMPTION",
+        "TOOL_FAILURE",
+        "CONTEXT_DRIFT"
+      ],
+      "policies": [
+        {
+          "when": {
+            "signal": "GATE_FAIL",
+            "current_stage": "qa"
+          },
+          "reason": "QA found a material interface or implementation defect; return to implementation with root-cause review before re-verifying.",
+          "target_stage": "implementation",
+          "add_skills": [
+            "ui-improvement",
+            "web-ui-code-review",
+            "prototype-visual-experience-qa"
+          ]
+        },
+        {
+          "when": {
+            "signal": "GATE_FAIL",
+            "current_stage": "design"
+          },
+          "reason": "Design gate failed or direction remains generic; deepen critique before implementation.",
+          "target_stage": "design",
+          "add_skills": [
+            "design-critique-and-rationale",
+            "visual-taste-calibration",
+            "prototype-visual-experience-qa"
+          ]
+        },
+        {
+          "when": {
+            "signal": "INVALID_ASSUMPTION"
+          },
+          "reason": "A project/research assumption was invalidated; return to evidence synthesis rather than patch downstream symptoms.",
+          "target_stage": "research",
+          "add_skills": [
+            "research-synthesis-and-insight-management",
+            "design-reference-research-and-benchmark"
+          ]
+        },
+        {
+          "when": {
+            "signal": "NEW_RISK",
+            "risk": [
+              "production",
+              "high"
+            ]
+          },
+          "reason": "A new production/high-consequence risk requires system reality and security review.",
+          "target_stage": "implementation",
+          "add_skills": [
+            "system-reality-and-production-readiness",
+            "security-and-privacy",
+            "testing-strategy"
+          ]
+        },
+        {
+          "when": {
+            "signal": "TOOL_FAILURE"
+          },
+          "reason": "Repeated tool failure requires diagnosis and changed evidence, not blind retry.",
+          "add_skills": [
+            "agent-evaluation-and-reliability"
+          ]
+        },
+        {
+          "when": {
+            "signal": "CONTEXT_DRIFT"
+          },
+          "reason": "Project truth/context drift requires re-grounding before further design or code decisions.",
+          "target_stage": "research",
+          "add_skills": [
+            "project-context"
+          ]
+        },
+        {
+          "when": {
+            "signal": "BLOCKED"
+          },
+          "reason": "A material blocker requires reframing the unresolved decision before downstream execution.",
+          "target_stage": "research",
+          "add_skills": [
+            "product-decision-and-stakeholder-framing"
+          ]
+        }
+      ]
+    },
+    "revision": 0,
+    "replan_history": []
+  },
+  "stages": [
+    {
+      "id": "research",
+      "agent": "research",
+      "purpose": "Establish project truth, audience intent, preserve/change rationale, information architecture and reference evidence before design.",
+      "skills": [
+        "project-context",
+        "adaptive-skill-routing-and-context-budget",
+        "website-audit-and-redesign",
+        "audience-intent-and-top-tasks",
+        "information-architecture",
+        "ux-structure-and-flow-design",
+        "design-reference-research-and-benchmark",
+        "prototype-visual-experience-qa"
+      ],
+      "mandatory_skills": [
+        "project-context",
+        "adaptive-skill-routing-and-context-budget",
+        "website-audit-and-redesign",
+        "audience-intent-and-top-tasks",
+        "information-architecture",
+        "ux-structure-and-flow-design",
+        "design-reference-research-and-benchmark"
+      ],
+      "jit_skills": [
+        "prototype-visual-experience-qa"
+      ],
+      "skill_paths": [
+        "skills_UIUX/project-context/SKILL.md",
+        "skills_UIUX/adaptive-skill-routing-and-context-budget/SKILL.md",
+        "skills_UIUX/website-audit-and-redesign/SKILL.md",
+        "skills_UIUX/audience-intent-and-top-tasks/SKILL.md",
+        "skills_UIUX/information-architecture/SKILL.md",
+        "skills_UIUX/ux-structure-and-flow-design/SKILL.md",
+        "skills_UIUX/design-reference-research-and-benchmark/SKILL.md",
+        "skills_UIUX/prototype-visual-experience-qa/SKILL.md"
+      ],
+      "gates": [
+        {
+          "id": "project-truth-known",
+          "require": "owner goal, audience, scope, mode and source-of-truth are explicit"
+        },
+        {
+          "id": "design-input-ready",
+          "require": "IA/reference evidence, vertical/page-role intelligence and preserve/change decisions are sufficient for a concrete Design Contract"
+        },
+        {
+          "id": "ux-before-visual",
+          "require": "Before visual direction, the UX Readiness verdict from ux-structure-and-flow-design is READY or READY_WITH_RISKS: every top task has a user flow with a happy path and a failure path ending in recovery; every key screen records user question, information priority, one primary action, destination, feedback and recovery; walkthrough findings have severity, fix and retest with no open blocker. When docs/ux/ux-structure.json exists, check-ux-structure.py must PASS. Expert walkthroughs are agent-heuristic evidence, never participant research."
+        }
+      ],
+      "design_workflow": {
+        "active": false,
+        "decision_contract_required": false,
+        "ux_contract_required": false,
+        "required_check_phases": [],
+        "knowledge_source": null,
+        "lookup_tool": null,
+        "lookup_argv_template": null,
+        "check_tool": null,
+        "checker": null,
+        "contract_output": null,
+        "contract_version": null,
+        "comparison_tool": null,
+        "comparison_protocol": null,
+        "sequence": [],
+        "ux_first": null,
+        "structural_rule": null,
+        "authority_effect": "none",
+        "gate_effect": "none",
+        "evidence_effect": "none",
+        "aesthetic_quality": "UNKNOWN"
+      },
+      "delivery_workflow": {
+        "active": true,
+        "stage": "research",
+        "owner": "website-delivery-pipeline",
+        "source": "skills_UIUX/website-delivery-pipeline/data/lifecycle.json",
+        "catalog_sha256": "56638b4bf9c3fd5eb3ff512ca6f66acaaae59246abc3ab404561b8a338cece56",
+        "baseline_rule": "Existing project: inspect source and rendered UI; preserve explicit invariants and uncommitted work.",
+        "mode": "interactive-prototype",
+        "decision": "Which problem, audience, journey and evidence justify building or changing this website?",
+        "exit_checks": [
+          "Owner and scope agreed; missing decisions named",
+          "Facts separated from brief, inference and concept",
+          "Research tied to decisions; human validation UNKNOWN without sessions",
+          "Preservation and new-site content gaps explicit"
+        ],
+        "deliverables": [
+          {
+            "id": "research.brief",
+            "output": "brief and decision log",
+            "fields": [
+              "business goal and user JTBD",
+              "buyer, user, operator and approver (unknown or same person when justified)",
+              "top tasks and entry intents",
+              "budget, languages, devices, risk and exclusions",
+              "success metric with baseline/data source or UNKNOWN",
+              "decision owner and open questions"
+            ],
+            "resources": [
+              "product-discovery/SKILL.md",
+              "product-decision-and-stakeholder-framing/SKILL.md"
+            ]
+          },
+          {
+            "id": "research.baseline",
+            "output": "source and rendered baseline inventory",
+            "fields": [
+              "routes, page roles, states and journeys",
+              "screenshots with route/viewport/time",
+              "brand/content/assets rights and sources",
+              "preserve/change/retire and dirty-worktree boundaries",
+              "new project: available material and explicitly absent baseline"
+            ],
+            "resources": [
+              "project-context/SKILL.md",
+              "website-audit-and-redesign/SKILL.md"
+            ]
+          },
+          {
+            "id": "research.evidence",
+            "output": "research plan, evidence ledger and decision links",
+            "fields": [
+              "question -> method -> evidence -> decision -> page/state -> verification",
+              "dated desk sources, limitations and counterevidence",
+              "FACT / ASSUMPTION / CONCEPT / UNKNOWN",
+              "direct-user sessions only with actual participation and consent",
+              "access constraints; PLANNED_VALIDATION without participants",
+              "privacy, retention and decision-changing uncertainty"
+            ],
+            "resources": [
+              "research-evidence-pipeline/SKILL.md",
+              "user-research-planning-and-recruitment/SKILL.md",
+              "research-synthesis-and-insight-management/SKILL.md"
+            ]
+          },
+          {
+            "id": "research.references",
+            "output": "reference transfer matrix",
+            "fields": [
+              "references chosen for audience and decision, not popularity",
+              "source-backed observation",
+              "ADOPT / ADAPT / REJECT with rationale",
+              "transfer mechanism and differences from this project",
+              "no copied brand assets, distinctive copy or complete composition"
+            ],
+            "resources": [
+              "design-reference-research-and-benchmark/SKILL.md"
+            ]
+          },
+          {
+            "id": "research.structure",
+            "output": "journey, IA and content model",
+            "fields": [
+              "entry -> evaluation -> action -> recovery",
+              "sitemap and role of each page",
+              "content entities, owners, proof and claim provenance",
+              "CTA and required real data",
+              "findability risks and validation plan"
+            ],
+            "resources": [
+              "information-architecture/SKILL.md",
+              "journey-driven-content-and-layout/SKILL.md",
+              "content-design-and-question-design/SKILL.md"
+            ]
+          }
+        ],
+        "checker": "skills_UIUX/website-delivery-pipeline/scripts/check-delivery.py",
+        "human_validation": "UNKNOWN",
+        "aesthetic_quality": "UNKNOWN",
+        "gate_effect": "none",
+        "authority_effect": "none",
+        "rule": "Use the active card only. Reuse existing project artifacts; one file may serve several deliverables. Load linked resources only for unresolved decisions. RECORDED_CURRENT proves file integrity, not content quality, human validation, approval or stage completion. Existing Flow gates remain required."
+      },
+      "load_policy": "Load only this stage's routed skills plus target-project evidence needed for the active decision."
+    },
+    {
+      "id": "design",
+      "agent": "implementation",
+      "purpose": "Turn research into a distinctive modern Design Contract and reusable visual system without generic template repetition.",
+      "skills": [
+        "project-context",
+        "ai-agent-coding-guardrails",
+        "journey-driven-content-and-layout",
+        "visual-design-direction",
+        "brand-distinctiveness-and-visual-signature",
+        "design-system-and-components",
+        "asset-media-and-art-direction",
+        "prototype-visual-experience-qa",
+        "visual-taste-calibration",
+        "data-visualization-and-dashboard-ux",
+        "data-tables-and-enterprise-ux",
+        "interaction-patterns-and-form-ux"
+      ],
+      "mandatory_skills": [
+        "project-context",
+        "ai-agent-coding-guardrails",
+        "journey-driven-content-and-layout",
+        "visual-design-direction",
+        "brand-distinctiveness-and-visual-signature",
+        "design-system-and-components",
+        "asset-media-and-art-direction"
+      ],
+      "jit_skills": [
+        "prototype-visual-experience-qa",
+        "visual-taste-calibration",
+        "data-visualization-and-dashboard-ux",
+        "data-tables-and-enterprise-ux",
+        "interaction-patterns-and-form-ux"
+      ],
+      "skill_paths": [
+        "skills_UIUX/project-context/SKILL.md",
+        "skills_UIUX/ai-agent-coding-guardrails/SKILL.md",
+        "skills_UIUX/journey-driven-content-and-layout/SKILL.md",
+        "skills_UIUX/visual-design-direction/SKILL.md",
+        "skills_UIUX/brand-distinctiveness-and-visual-signature/SKILL.md",
+        "skills_UIUX/design-system-and-components/SKILL.md",
+        "skills_UIUX/asset-media-and-art-direction/SKILL.md",
+        "skills_UIUX/prototype-visual-experience-qa/SKILL.md",
+        "skills_UIUX/visual-taste-calibration/SKILL.md",
+        "skills_UIUX/data-visualization-and-dashboard-ux/SKILL.md",
+        "skills_UIUX/data-tables-and-enterprise-ux/SKILL.md",
+        "skills_UIUX/interaction-patterns-and-form-ux/SKILL.md"
+      ],
+      "gates": [
+        {
+          "id": "design-contract",
+          "approval": "human",
+          "require": "page-role compositions, typography, imagery, interaction, mobile transformation, prototype signature moment when applicable, and do/don't rules are concrete before broad implementation"
+        },
+        {
+          "id": "design-decision-integrity",
+          "require": "canonical decision checker verifies numeric roles, source traces and distinct internal composition topology; integrity is not aesthetic acceptance",
+          "evidence_types": [
+            "design_contract_check"
+          ],
+          "design_phase": "design",
+          "design_contract_version": "2.0",
+          "ux_contract_required": true
+        }
+      ],
+      "design_workflow": {
+        "active": true,
+        "decision_contract_required": true,
+        "ux_contract_required": true,
+        "required_check_phases": [
+          "design"
+        ],
+        "knowledge_source": "skills_UIUX/visual-design-direction/data/design-knowledge.json",
+        "lookup_tool": "retrieve_design_knowledge",
+        "lookup_argv_template": [
+          "python",
+          "-B",
+          "skills_UIUX/design-intelligence-retrieval/scripts/query.py",
+          "<focused-domain-query>",
+          "--design-system",
+          "--json",
+          "--website-type",
+          "web-app",
+          "--project-domain",
+          "generic",
+          "--product-archetype",
+          "generic",
+          "--page-role",
+          "<active-page-role>"
+        ],
+        "check_tool": "check_design_decisions",
+        "checker": "skills_UIUX/visual-design-direction/scripts/check-design-decisions.py",
+        "contract_output": "docs/uiux/design-decisions.json",
+        "contract_version": "2.0",
+        "comparison_tool": "skills_UIUX/visual-design-direction/scripts/evaluate-design-comparison.py",
+        "comparison_protocol": {
+          "hold_constant": [
+            "audience",
+            "content",
+            "claims",
+            "cta",
+            "state",
+            "assets",
+            "viewports"
+          ],
+          "vary_free_axes": [
+            "typography",
+            "density",
+            "visual_object"
+          ],
+          "evaluate": [
+            "comprehension",
+            "distinctiveness"
+          ],
+          "boundary": "Material declared differences and recorded judgments are inspectable; neither proves beauty, authentic human participation or a causal Factory upgrade."
+        },
+        "sequence": [
+          "load project truth and classify hard/suggested/free axes",
+          "map entry state, user question, prioritized information, primary action, feedback and recovery",
+          "walk through representative wireframes and repair UX blockers before visual styling",
+          "lookup identity + one page role + reference anatomy",
+          "ADOPT/ADAPT/REJECT reference properties with reasons",
+          "declare numeric type/density and object anatomy for alternatives",
+          "compare distinct topologies and every free direction axis on representative pages",
+          "predeclare comprehension/distinctiveness questions and constant inputs",
+          "check v2 decision contract",
+          "render/inspect representative desktop/mobile",
+          "prepare counterbalanced review and record observations",
+          "repair before rollout"
+        ],
+        "ux_first": {
+          "review_order": [
+            "task comprehension",
+            "navigation and recovery",
+            "hierarchy and composition",
+            "type spacing and media",
+            "visual consistency"
+          ],
+          "blockers": [
+            "unclear next action",
+            "dead end",
+            "misleading status",
+            "lost input",
+            "unreadable essential content"
+          ],
+          "rule": "Visual scores cannot compensate for a UX blocker. Record observations and retest in the existing design/review artifact; this packet does not perform the review."
+        },
+        "structural_rule": "Two representative alternatives must differ in the decision object's anatomy, region relationships or mobile grouping. Renaming anchors, skin changes or only swapping unchanged sections do not count. Rollout pages may inherit a representative decision owner.",
+        "authority_effect": "none",
+        "gate_effect": "none",
+        "evidence_effect": "none",
+        "aesthetic_quality": "UNKNOWN"
+      },
+      "delivery_workflow": {
+        "active": true,
+        "stage": "design",
+        "owner": "website-delivery-pipeline",
+        "source": "skills_UIUX/website-delivery-pipeline/data/lifecycle.json",
+        "catalog_sha256": "56638b4bf9c3fd5eb3ff512ca6f66acaaae59246abc3ab404561b8a338cece56",
+        "baseline_rule": "Existing project: inspect source and rendered UI; preserve explicit invariants and uncommitted work.",
+        "mode": "interactive-prototype",
+        "decision": "Which composition and interaction serves each page job, and how will it be tested?",
+        "exit_checks": [
+          "Decisions link to current evidence",
+          "Materially different directions compared with real content",
+          "Desktop/mobile and critical states specified",
+          "Contract checked; human approval applies to this version only"
+        ],
+        "deliverables": [
+          {
+            "id": "design.directions",
+            "output": "direction comparison and rationale",
+            "fields": [
+              "distinct composition hypotheses, not palette swaps",
+              "real headings, proof objects, imagery and density",
+              "comprehension/brand tradeoffs",
+              "questions, capture-bound observations and chosen rationale",
+              "no human preference claim without actual observers"
+            ],
+            "resources": [
+              "visual-design-direction/SKILL.md",
+              "design-critique-and-rationale/SKILL.md",
+              "brand-distinctiveness-and-visual-signature/SKILL.md"
+            ]
+          },
+          {
+            "id": "design.layout",
+            "output": "wireframes and responsive rules",
+            "fields": [
+              "section purpose and content priority",
+              "desktop, narrow mobile and intermediate transformations",
+              "long/empty/localized content, zoom and reading order",
+              "navigation, CTA and recovery paths",
+              "brand signatures without one hero repeated on every page"
+            ],
+            "resources": [
+              "responsive-and-device-strategy/SKILL.md",
+              "information-architecture/SKILL.md"
+            ]
+          },
+          {
+            "id": "design.system",
+            "output": "tokens and component/state specification",
+            "fields": [
+              "type, spacing, color roles, contrast and density",
+              "licensed imagery/icon direction and crop behavior",
+              "existing renderer/tokens before new variants",
+              "hover/focus/active/loading/disabled/error/empty/success",
+              "reduced motion, keyboard behavior and semantic names"
+            ],
+            "resources": [
+              "design-system-and-components/SKILL.md",
+              "accessibility/SKILL.md",
+              "motion-and-microinteractions/SKILL.md"
+            ]
+          },
+          {
+            "id": "design.prototype",
+            "output": "critical-journey prototype and validation plan",
+            "fields": [
+              "task entry, action, result and recovery",
+              "real/static/mock/simulated boundaries",
+              "validation, permission, offline/interruption states when relevant",
+              "risky assumptions and test tasks",
+              "PLANNED_VALIDATION or actual session records"
+            ],
+            "resources": [
+              "prototype-strategy-and-concept-testing/SKILL.md",
+              "interaction-patterns-and-form-ux/SKILL.md"
+            ]
+          },
+          {
+            "id": "design.contract",
+            "output": "canonical docs/uiux/design-decisions.json",
+            "fields": [
+              "goals, evidence links, page roles and compositions",
+              "visual signatures and do/do-not rules",
+              "component/token and responsive decisions",
+              "source/capture hashes and current checker receipt",
+              "version-specific approval and remaining uncertainty"
+            ],
+            "resources": [
+              "visual-design-direction/SKILL.md",
+              "system-reality-and-production-readiness/SKILL.md"
+            ]
+          }
+        ],
+        "checker": "skills_UIUX/website-delivery-pipeline/scripts/check-delivery.py",
+        "human_validation": "UNKNOWN",
+        "aesthetic_quality": "UNKNOWN",
+        "gate_effect": "none",
+        "authority_effect": "none",
+        "rule": "Use the active card only. Reuse existing project artifacts; one file may serve several deliverables. Load linked resources only for unresolved decisions. RECORDED_CURRENT proves file integrity, not content quality, human validation, approval or stage completion. Existing Flow gates remain required."
+      },
+      "load_policy": "Load only this stage's routed skills plus target-project evidence needed for the active decision."
+    },
+    {
+      "id": "implementation",
+      "agent": "implementation",
+      "purpose": "Implement the approved design system and page roles as maintainable responsive code with truthful system behavior.",
+      "skills": [
+        "project-context",
+        "ai-agent-coding-guardrails",
+        "frontend-implementation",
+        "component-driven-development",
+        "responsive-and-device-strategy",
+        "prototype-visual-experience-qa",
+        "complex-forms-and-wizards",
+        "state-feedback-and-error-recovery",
+        "data-tables-and-enterprise-ux",
+        "data-visualization-and-dashboard-ux",
+        "frontend-architecture-and-refactoring"
+      ],
+      "mandatory_skills": [
+        "project-context",
+        "ai-agent-coding-guardrails",
+        "frontend-implementation",
+        "component-driven-development",
+        "responsive-and-device-strategy"
+      ],
+      "jit_skills": [
+        "prototype-visual-experience-qa",
+        "complex-forms-and-wizards",
+        "state-feedback-and-error-recovery",
+        "data-tables-and-enterprise-ux",
+        "data-visualization-and-dashboard-ux",
+        "frontend-architecture-and-refactoring"
+      ],
+      "skill_paths": [
+        "skills_UIUX/project-context/SKILL.md",
+        "skills_UIUX/ai-agent-coding-guardrails/SKILL.md",
+        "skills_UIUX/frontend-implementation/SKILL.md",
+        "skills_UIUX/component-driven-development/SKILL.md",
+        "skills_UIUX/responsive-and-device-strategy/SKILL.md",
+        "skills_UIUX/prototype-visual-experience-qa/SKILL.md",
+        "skills_UIUX/complex-forms-and-wizards/SKILL.md",
+        "skills_UIUX/state-feedback-and-error-recovery/SKILL.md",
+        "skills_UIUX/data-tables-and-enterprise-ux/SKILL.md",
+        "skills_UIUX/data-visualization-and-dashboard-ux/SKILL.md",
+        "skills_UIUX/frontend-architecture-and-refactoring/SKILL.md"
+      ],
+      "gates": [
+        {
+          "id": "implementation-evidence",
+          "require": "material changes have acceptance criteria and focused verification; build success is not treated as rendered UX proof"
+        }
+      ],
+      "design_workflow": {
+        "active": false,
+        "decision_contract_required": false,
+        "ux_contract_required": false,
+        "required_check_phases": [],
+        "knowledge_source": null,
+        "lookup_tool": null,
+        "lookup_argv_template": null,
+        "check_tool": null,
+        "checker": null,
+        "contract_output": null,
+        "contract_version": null,
+        "comparison_tool": null,
+        "comparison_protocol": null,
+        "sequence": [],
+        "ux_first": null,
+        "structural_rule": null,
+        "authority_effect": "none",
+        "gate_effect": "none",
+        "evidence_effect": "none",
+        "aesthetic_quality": "UNKNOWN"
+      },
+      "delivery_workflow": {
+        "active": true,
+        "stage": "implementation",
+        "owner": "website-delivery-pipeline",
+        "source": "skills_UIUX/website-delivery-pipeline/data/lifecycle.json",
+        "catalog_sha256": "56638b4bf9c3fd5eb3ff512ca6f66acaaae59246abc3ab404561b8a338cece56",
+        "baseline_rule": "Existing project: inspect source and rendered UI; preserve explicit invariants and uncommitted work.",
+        "mode": "interactive-prototype",
+        "decision": "How does the approved design become maintainable, truthful behavior without breaking the product?",
+        "exit_checks": [
+          "Compiled spec and design are current",
+          "Authority and preservation respected",
+          "Critical paths work; real/mock behavior disclosed",
+          "Local checks and unresolved QA gaps recorded"
+        ],
+        "deliverables": [
+          {
+            "id": "implementation.plan",
+            "output": "bounded implementation plan",
+            "fields": [
+              "renderer/components/tokens to reuse",
+              "files and owners",
+              "acceptance by route/state",
+              "dependencies and rollback",
+              "no unrelated architecture replacement"
+            ],
+            "resources": [
+              "frontend-architecture-and-refactoring/SKILL.md",
+              "testing-strategy/SKILL.md"
+            ]
+          },
+          {
+            "id": "implementation.product",
+            "output": "working responsive implementation",
+            "fields": [
+              "content and Design Contract mapping",
+              "semantic HTML and keyboard controls",
+              "states and error recovery",
+              "form/API/auth/CMS reality status",
+              "secrets, permissions, validation and privacy when relevant"
+            ],
+            "resources": [
+              "frontend-implementation/SKILL.md",
+              "system-reality-and-production-readiness/SKILL.md",
+              "security-and-privacy/SKILL.md"
+            ]
+          },
+          {
+            "id": "implementation.checks",
+            "output": "build and regression evidence",
+            "fields": [
+              "type/lint/build/tests: commands and actual results",
+              "content/claim and asset-license checks",
+              "SEO metadata and crawlability when applicable",
+              "performance budget and measurement environment",
+              "deviations with rationale; no self-certified quality"
+            ],
+            "resources": [
+              "web-quality-and-performance/SKILL.md",
+              "testing-strategy/SKILL.md",
+              "content-governance-and-cms/SKILL.md"
+            ]
+          }
+        ],
+        "checker": "skills_UIUX/website-delivery-pipeline/scripts/check-delivery.py",
+        "human_validation": "UNKNOWN",
+        "aesthetic_quality": "UNKNOWN",
+        "gate_effect": "none",
+        "authority_effect": "none",
+        "rule": "Use the active card only. Reuse existing project artifacts; one file may serve several deliverables. Load linked resources only for unresolved decisions. RECORDED_CURRENT proves file integrity, not content quality, human validation, approval or stage completion. Existing Flow gates remain required."
+      },
+      "load_policy": "Load only this stage's routed skills plus target-project evidence needed for the active decision."
+    },
+    {
+      "id": "qa",
+      "agent": "qa",
+      "purpose": "Independently verify rendered interface quality, responsive behavior, accessibility, brand integrity, media crops and code/experience regressions.",
+      "skills": [
+        "testing-strategy",
+        "agent-evaluation-and-reliability",
+        "ui-craft-and-visual-qa",
+        "web-ui-code-review",
+        "accessibility",
+        "web-quality-and-performance",
+        "brand-recognition-and-consistency-qa",
+        "media-crop-and-layout-integrity",
+        "prototype-visual-experience-qa",
+        "visual-regression-and-design-drift",
+        "data-tables-and-enterprise-ux",
+        "data-visualization-and-dashboard-ux",
+        "state-feedback-and-error-recovery"
+      ],
+      "mandatory_skills": [
+        "testing-strategy",
+        "agent-evaluation-and-reliability",
+        "ui-craft-and-visual-qa",
+        "web-ui-code-review",
+        "accessibility",
+        "web-quality-and-performance",
+        "brand-recognition-and-consistency-qa",
+        "media-crop-and-layout-integrity"
+      ],
+      "jit_skills": [
+        "prototype-visual-experience-qa",
+        "visual-regression-and-design-drift",
+        "data-tables-and-enterprise-ux",
+        "data-visualization-and-dashboard-ux",
+        "state-feedback-and-error-recovery"
+      ],
+      "skill_paths": [
+        "skills_UIUX/testing-strategy/SKILL.md",
+        "skills_UIUX/agent-evaluation-and-reliability/SKILL.md",
+        "skills_UIUX/ui-craft-and-visual-qa/SKILL.md",
+        "skills_UIUX/web-ui-code-review/SKILL.md",
+        "skills_UIUX/accessibility/SKILL.md",
+        "skills_UIUX/web-quality-and-performance/SKILL.md",
+        "skills_UIUX/brand-recognition-and-consistency-qa/SKILL.md",
+        "skills_UIUX/media-crop-and-layout-integrity/SKILL.md",
+        "skills_UIUX/prototype-visual-experience-qa/SKILL.md",
+        "skills_UIUX/visual-regression-and-design-drift/SKILL.md",
+        "skills_UIUX/data-tables-and-enterprise-ux/SKILL.md",
+        "skills_UIUX/data-visualization-and-dashboard-ux/SKILL.md",
+        "skills_UIUX/state-feedback-and-error-recovery/SKILL.md"
+      ],
+      "gates": [
+        {
+          "id": "rendered-qa",
+          "require": "actual rendered pixels are inspected across representative routes/viewports and obvious shared-owner defects are checked across affected routes"
+        },
+        {
+          "id": "design-render-integrity",
+          "require": "decision contract references inspected desktop/mobile alternatives with capture digests and concrete critique; human preference remains unknown",
+          "evidence_types": [
+            "design_contract_check"
+          ],
+          "design_phase": "rendered",
+          "design_contract_version": "2.0",
+          "ux_contract_required": true
+        },
+        {
+          "id": "keyboard-focus",
+          "require": "Current browser evidence checks focus indicators on actual controls; source CSS lint and unresolved manual review cannot establish PASS.",
+          "evidence_types": [
+            "browser_render"
+          ]
+        },
+        {
+          "id": "prototype-experience-qa",
+          "require": "for prototype modes, squint hierarchy, 5-second comprehension prompts, signature moment, domain media relevance, interaction states and anti-generic repetition are explicitly reviewed"
+        },
+        {
+          "id": "truthful-completion",
+          "require": "verified versus unverified areas are explicit; no production/accessibility/UX improvement claim exceeds evidence"
+        }
+      ],
+      "design_workflow": {
+        "active": false,
+        "decision_contract_required": true,
+        "ux_contract_required": true,
+        "required_check_phases": [
+          "rendered"
+        ],
+        "knowledge_source": null,
+        "lookup_tool": null,
+        "lookup_argv_template": null,
+        "check_tool": "check_design_decisions",
+        "checker": "skills_UIUX/visual-design-direction/scripts/check-design-decisions.py",
+        "contract_output": "docs/uiux/design-decisions.json",
+        "contract_version": "2.0",
+        "comparison_tool": null,
+        "comparison_protocol": null,
+        "sequence": [],
+        "ux_first": {
+          "review_order": [
+            "task comprehension",
+            "navigation and recovery",
+            "hierarchy and composition",
+            "type spacing and media",
+            "visual consistency"
+          ],
+          "blockers": [
+            "unclear next action",
+            "dead end",
+            "misleading status",
+            "lost input",
+            "unreadable essential content"
+          ],
+          "rule": "Visual scores cannot compensate for a UX blocker. Record observations and retest in the existing design/review artifact; this packet does not perform the review."
+        },
+        "structural_rule": null,
+        "authority_effect": "none",
+        "gate_effect": "none",
+        "evidence_effect": "none",
+        "aesthetic_quality": "UNKNOWN"
+      },
+      "delivery_workflow": {
+        "active": true,
+        "stage": "qa",
+        "owner": "website-delivery-pipeline",
+        "source": "skills_UIUX/website-delivery-pipeline/data/lifecycle.json",
+        "catalog_sha256": "56638b4bf9c3fd5eb3ff512ca6f66acaaae59246abc3ab404561b8a338cece56",
+        "baseline_rule": "Existing project: inspect source and rendered UI; preserve explicit invariants and uncommitted work.",
+        "mode": "interactive-prototype",
+        "decision": "What works on the rendered product, what remains uncertain, and what is safe to hand over?",
+        "exit_checks": [
+          "Current captures cover declared route/viewport/state matrix",
+          "Visual, keyboard and journey observations recorded",
+          "Issues have severity and owner; approvals current",
+          "Handoff separates machine checks, human validation and release authorization"
+        ],
+        "deliverables": [
+          {
+            "id": "qa.rendered",
+            "output": "visual review and regression matrix",
+            "fields": [
+              "desktop/mobile/intermediate routes and key states",
+              "hierarchy, typography, spacing, density, crop and content",
+              "comparison to current contract and baseline",
+              "interaction/console/broken links",
+              "captures, hashes, observations and severity; PNG alone does not prove good design"
+            ],
+            "resources": [
+              "ui-craft-and-visual-qa/SKILL.md",
+              "visual-regression-and-design-drift/SKILL.md"
+            ]
+          },
+          {
+            "id": "qa.accessibility",
+            "output": "accessibility and keyboard findings",
+            "fields": [
+              "automated findings plus manual Tab order, traps and focus",
+              "labels, errors, names/roles, zoom/reflow, reduced motion",
+              "contrast and applicable WCAG criteria",
+              "assistive technology sample and limitations",
+              "rendered focus smoke is not WCAG conformance"
+            ],
+            "resources": [
+              "accessibility/SKILL.md",
+              "assistive-technology-testing/SKILL.md",
+              "accessibility-conformance-evaluation/SKILL.md"
+            ]
+          },
+          {
+            "id": "qa.validation",
+            "output": "critical-journey and user-validation report",
+            "fields": [
+              "tasks, recovery and boundary states",
+              "desk/synthetic/browser/direct-user evidence separated",
+              "actual sessions only when available",
+              "human validation UNKNOWN without participants",
+              "unresolved hypotheses and next research"
+            ],
+            "resources": [
+              "moderated-usability-testing/SKILL.md",
+              "research-evidence-pipeline/SKILL.md"
+            ]
+          },
+          {
+            "id": "qa.handoff",
+            "output": "delivery manifest and known issues",
+            "fields": [
+              "version, preview/run instructions, artifact inventory",
+              "component/token/content ownership",
+              "test matrix PASS/FAIL/NOT_RUN/UNKNOWN",
+              "issue severity, owner and acceptance decision",
+              "machine, agent and human checks separated"
+            ],
+            "resources": [
+              "code-review-and-release/SKILL.md",
+              "design-system-governance-and-adoption/SKILL.md"
+            ]
+          },
+          {
+            "id": "qa.release_learning",
+            "output": "release/measurement plan or explicit future-phase boundary",
+            "fields": [
+              "prototype: no production claim; next owner and verification plan",
+              "production candidate: approvals, deploy/rollback, security and monitoring",
+              "existing release authority/gates still required",
+              "metric event/data source and privacy/consent",
+              "review cadence, real baseline and experiment decision rule"
+            ],
+            "resources": [
+              "production-monitoring-and-maintenance/SKILL.md",
+              "outcome-metrics-and-instrumentation/SKILL.md",
+              "analytics-and-experimentation/SKILL.md"
+            ]
+          }
+        ],
+        "checker": "skills_UIUX/website-delivery-pipeline/scripts/check-delivery.py",
+        "human_validation": "UNKNOWN",
+        "aesthetic_quality": "UNKNOWN",
+        "gate_effect": "none",
+        "authority_effect": "none",
+        "rule": "Use the active card only. Reuse existing project artifacts; one file may serve several deliverables. Load linked resources only for unresolved decisions. RECORDED_CURRENT proves file integrity, not content quality, human validation, approval or stage completion. Existing Flow gates remain required."
+      },
+      "load_policy": "Load only this stage's routed skills plus target-project evidence needed for the active decision."
+    }
+  ],
+  "acceptance_criteria": [
+    "owner goal, audience, scope, mode and source-of-truth are explicit",
+    "IA/reference evidence, vertical/page-role intelligence and preserve/change decisions are sufficient for a concrete Design Contract",
+    "Before visual direction, the UX Readiness verdict from ux-structure-and-flow-design is READY or READY_WITH_RISKS: every top task has a user flow with a happy path and a failure path ending in recovery; every key screen records user question, information priority, one primary action, destination, feedback and recovery; walkthrough findings have severity, fix and retest with no open blocker. When docs/ux/ux-structure.json exists, check-ux-structure.py must PASS. Expert walkthroughs are agent-heuristic evidence, never participant research.",
+    "page-role compositions, typography, imagery, interaction, mobile transformation, prototype signature moment when applicable, and do/don't rules are concrete before broad implementation",
+    "canonical decision checker verifies numeric roles, source traces and distinct internal composition topology; integrity is not aesthetic acceptance",
+    "material changes have acceptance criteria and focused verification; build success is not treated as rendered UX proof",
+    "actual rendered pixels are inspected across representative routes/viewports and obvious shared-owner defects are checked across affected routes",
+    "decision contract references inspected desktop/mobile alternatives with capture digests and concrete critique; human preference remains unknown",
+    "Current browser evidence checks focus indicators on actual controls; source CSS lint and unresolved manual review cannot establish PASS.",
+    "for prototype modes, squint hierarchy, 5-second comprehension prompts, signature moment, domain media relevance, interaction states and anti-generic repetition are explicitly reviewed",
+    "verified versus unverified areas are explicit; no production/accessibility/UX improvement claim exceeds evidence"
+  ],
+  "qa_routes": [],
+  "canonical_sources": [
+    "START-HERE.md",
+    "AGENTS.md",
+    "docs/CONTRACT-OWNERSHIP.md",
+    "docs/VISUAL-SIGNATURE-REGRESSION-CONTRACT.md",
+    "skills_UIUX/runtime/runtime-policy.json",
+    "skills_UIUX/flows/professional-website-redesign.json"
+  ],
+  "research_packet": {
+    "required": false,
+    "state": "NOT_REQUIRED_BY_CURRENT_TASK_CONTRACT",
+    "templates": []
+  },
+  "execution_advice": {
+    "schema_version": "1.0",
+    "advisory_only": true,
+    "manual_model_selection_required": true,
+    "overall_profile": {
+      "recommended_capability": "advanced",
+      "capability_floor": "advanced",
+      "reasoning_effort": "high",
+      "downgrade_allowed": false,
+      "complexity_score": 7,
+      "selection_reasons": [
+        "multi-dimensional task signals: prototype",
+        "authority=release",
+        "long flow with 4 stages"
+      ],
+      "picker_instruction": "Choose the strongest available reasoning/coding model for this run.",
+      "auto_switch_model_in_consumer_ui": false,
+      "rule": "This is a preflight recommendation only. ChatGPT/Codex model selection remains manual; never downgrade below the capability floor to save tokens."
+    },
+    "stage_profiles": [
+      {
+        "stage_id": "research",
+        "agent": "research",
+        "recommended_capability": "advanced",
+        "reasoning_effort": "high",
+        "skill_count": 8,
+        "gate_count": 3,
+        "model_stickiness": "keep the selected model stable for this stage/tool loop",
+        "reselect_between_runs_only": true
+      },
+      {
+        "stage_id": "design",
+        "agent": "implementation",
+        "recommended_capability": "advanced",
+        "reasoning_effort": "high",
+        "skill_count": 12,
+        "gate_count": 2,
+        "model_stickiness": "keep the selected model stable for this stage/tool loop",
+        "reselect_between_runs_only": true
+      },
+      {
+        "stage_id": "implementation",
+        "agent": "implementation",
+        "recommended_capability": "advanced",
+        "reasoning_effort": "high",
+        "skill_count": 11,
+        "gate_count": 1,
+        "model_stickiness": "keep the selected model stable for this stage/tool loop",
+        "reselect_between_runs_only": true
+      },
+      {
+        "stage_id": "qa",
+        "agent": "qa",
+        "recommended_capability": "advanced",
+        "reasoning_effort": "high",
+        "skill_count": 13,
+        "gate_count": 5,
+        "model_stickiness": "keep the selected model stable for this stage/tool loop",
+        "reselect_between_runs_only": true
+      }
+    ],
+    "context_strategy": {
+      "mode": "progressive_disclosure",
+      "active_stage_only": true,
+      "max_active_skills_per_stage": 6,
+      "provider_document_char_ceiling": 180000,
+      "stable_prefix": [
+        "AGENTS.md",
+        "docs/CONTRACT-OWNERSHIP.md",
+        "task contract / manifest",
+        "resolved flow"
+      ],
+      "dynamic_tail": [
+        "active-stage SKILL.md files",
+        "target files directly needed by the current decision",
+        "current-run evidence"
+      ],
+      "avoid_eager_loading": true,
+      "prompt_cache_guidance": "Keep stable policy/instruction context ordered before dynamic task evidence so provider/platform-native prompt caching can help when available; never assume a cache hit.",
+      "compression_guidance": "Prefer an evidence-preserving checkpoint summary over lossy prompt compression. Do not compress mandatory rules, authority constraints, acceptance criteria or unresolved failures."
+    },
+    "continuation_strategy": {
+      "suggest_split_into_separate_runs": true,
+      "checkpoint_boundary": "after each completed flow stage and before context reset",
+      "resume_source": "latest verified checkpoint + unresolved work + required evidence refs",
+      "model_stickiness": "Do not switch models inside an active tool loop solely for cost. Reselect only at a clean checkpoint or separate run when the next stage has a different capability floor.",
+      "quota_exhaustion": "Persist completed stages and unresolved blockers; resume from the checkpoint instead of re-reading the whole repository or replaying verified work."
+    },
+    "measurement_strategy": {
+      "measure_before_default_downgrade": true,
+      "compare": [
+        "acceptance-criteria completion",
+        "verification pass/fail",
+        "repair/retry count",
+        "task completion before quota exhaustion",
+        "input/output token usage when provider metadata exists",
+        "elapsed time and provider cost when available"
+      ],
+      "promotion_rule": "Promote a cheaper/smaller profile only when representative-task quality is non-inferior and completion reliability does not regress."
+    },
+    "quality_boundary": {
+      "optimization_order": [
+        "correctness",
+        "grounding",
+        "completion",
+        "verification",
+        "maintainability",
+        "clarity",
+        "compute_efficiency"
+      ],
+      "provider_or_model_self_report_is_evidence": false,
+      "advisor_may_change_authority": false,
+      "advisor_may_satisfy_gates": false,
+      "advisor_may_authorize_release": false
+    }
+  },
+  "evidence_boundary": {
+    "manifest_is_not_qa_pass": true,
+    "provider_self_report_is_not_gate_evidence": true,
+    "target_repository_audit_required_before_mutation": true,
+    "target_runtime_evidence_required_for_runtime_claims": true,
+    "missing_user_evidence_must_remain_planned_blocked_or_unknown": true,
+    "authority_never_exceeds_caller_or_task_language": true,
+    "target_truth_never_grants_authority_or_evidence": true,
+    "target_truth_status": "NO_USABLE_TRUTH",
+    "target_truth_probed_before_flow_resolution": true,
+    "routing_precedence": [
+      "explicit_override",
+      "target_project_truth",
+      "goal_inference"
+    ],
+    "visual_signature_guardrail_active": true,
+    "execution_advice_is_not_gate_evidence": true,
+    "execution_advice_never_selects_consumer_model": true,
+    "preferred_repository_workflow": "feature branch -> implementation -> verification -> pull request -> merge"
+  }
+}

@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>v1 · GV01 Tổng quan</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-archive" data-screen="v1-GV01-TongQuan">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -20,13 +23,13 @@
 <span class="cap">Thứ Ba, 13 tháng 10</span>
 <span class="text-[22px] leading-7 font-bold tracking-tight">Chào Lan</span>
 </div>
-<a href="v1-TC07-TraoDoi.dc.html" class="icon-btn relative" aria-label="Thông báo"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.5 2h-15z"></path><path d="M10 21h4"></path></svg><span class="absolute top-2.5 right-2.5 w-2.5 h-2.5 rounded-full bg-brand-orange"></span></a>
+
 </header>
 <main class="page [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
 <div class="grid grid-cols-2 gap-3">
 <a href="v1-GV02-HocSinh.dc.html" class="tile bg-brand-blue text-white no-underline"><span class="num">3</span><span class="text-sm text-white/80">Chờ xếp lớp</span></a>
 <a href="v1-GV07-DuyetBaoCao.dc.html" class="tile no-underline text-ink"><span class="num">12</span><span class="cap">Báo cáo chờ duyệt</span></a>
-<a href="v1-TC03-TichLich.dc.html" class="tile bg-soft-orange no-underline text-ink"><span class="num text-brand-orange">4</span><span class="cap">Ca chưa tích lịch</span></a>
+<a href="#unavailable" data-unavailable="v1-TC03-TichLich.dc.html" class="tile bg-soft-orange no-underline text-ink"><span class="num text-brand-orange">4</span><span class="cap">Ca chưa tích lịch</span></a>
 <a href="v1-GV08-HoaDon.dc.html" class="tile no-underline text-ink"><span class="num">18</span><span class="cap">Hóa đơn chưa thu</span></a>
 </div>
 <h2 class="h2 mt-3">Tác vụ</h2>
@@ -52,7 +55,7 @@
 <a href="v1-GV02-HocSinh.dc.html" class="tab" aria-label="Học sinh"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></a>
 <a href="v1-GV07-DuyetBaoCao.dc.html" class="tab" aria-label="Duyệt"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg></a>
 <a href="v1-GV08-HoaDon.dc.html" class="tab" aria-label="Hóa đơn"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6"></path></svg></a>
-<a href="v1-TC07-TraoDoi.dc.html" class="tab" aria-label="Trao đổi"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></a>
+<a href="#unavailable" data-unavailable="v1-TC07-TraoDoi.dc.html" class="tab" aria-label="Trao đổi"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></a>
 </nav>
 </div>
 </x-dc>

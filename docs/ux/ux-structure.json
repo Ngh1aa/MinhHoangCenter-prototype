@@ -1,0 +1,528 @@
+{
+  "schema_version": "1.0",
+  "product": "Minh Hoàng Center browser prototype",
+  "problem": {
+    "statement": {
+      "text": "Cần kiểm tra thứ tự xử lý, khả năng nhập sửa và không gian xem toàn bộ màn hiện có.",
+      "label": "HYPOTHESIS"
+    },
+    "outcome_metric": "Task completion by real users UNKNOWN; browser scenario assertions in docs/evidence/qa.json"
+  },
+  "audiences": [
+    {
+      "text": "Giáo vụ xử lý công việc trên điện thoại",
+      "label": "HYPOTHESIS"
+    },
+    {
+      "text": "Người duyệt thiết kế so sánh toàn bộ màn trên desktop",
+      "label": "HYPOTHESIS"
+    }
+  ],
+  "top_tasks": [
+    {
+      "id": "T1",
+      "task": "Xử lý việc cần ưu tiên",
+      "job": "Khi bắt đầu ca, tôi muốn biết việc sắp hết hạn để xử lý đúng thứ tự.",
+      "frequency": 3,
+      "consequence": 3,
+      "scenario": "Giáo vụ mở điện thoại trước giờ dạy.",
+      "success_signal": "Tới màn tiếp theo với lựa chọn và dữ liệu nhập được giữ trong phiên; chưa có backend.",
+      "label": "HYPOTHESIS"
+    },
+    {
+      "id": "T2",
+      "task": "Tiếp nhận học sinh",
+      "job": "Khi tiếp nhận hồ sơ, tôi muốn nhập theo bước và giữ nháp để không mất thông tin khi quay lại.",
+      "frequency": 3,
+      "consequence": 3,
+      "scenario": "Giáo vụ bị gián đoạn lúc nhập liên hệ phụ huynh.",
+      "success_signal": "Tới màn tiếp theo với lựa chọn và dữ liệu nhập được giữ trong phiên; chưa có backend.",
+      "label": "HYPOTHESIS"
+    },
+    {
+      "id": "T3",
+      "task": "Xếp lớp phù hợp",
+      "job": "Khi có học sinh chờ lớp, tôi muốn so lịch và giáo viên trước khi xác nhận.",
+      "frequency": 3,
+      "consequence": 3,
+      "scenario": "Giáo vụ chọn một lớp khác gợi ý đầu tiên.",
+      "success_signal": "Tới màn tiếp theo với lựa chọn và dữ liệu nhập được giữ trong phiên; chưa có backend.",
+      "label": "HYPOTHESIS"
+    }
+  ],
+  "flows": [
+    {
+      "id": "F1",
+      "task_id": "T1",
+      "entry_points": [
+        "Canvas",
+        "Liên kết trực tiếp",
+        "Điều hướng trong app"
+      ],
+      "happy_path": [
+        "GV01-TongQuan",
+        "GV07-DuyetBaoCao",
+        "GV07b-ChiTietBaoCao"
+      ],
+      "alternative_paths": [
+        [
+          "GV01-TongQuan",
+          "GV01-TongQuan",
+          "GV07-DuyetBaoCao",
+          "GV07b-ChiTietBaoCao"
+        ]
+      ],
+      "failure_paths": [
+        {
+          "trigger": "Không tìm thấy kết quả hoặc màn đích chưa có trong repo",
+          "recovery": "Quay lại chọn khác hoặc đóng giải thích để tiếp tục luồng",
+          "keeps_user_input": true,
+          "returns_to": "GV01-TongQuan"
+        }
+      ],
+      "diagram_ref": "flows.md"
+    },
+    {
+      "id": "F2",
+      "task_id": "T2",
+      "entry_points": [
+        "Canvas",
+        "Liên kết trực tiếp",
+        "Điều hướng trong app"
+      ],
+      "happy_path": [
+        "GV04-NhapHoSo",
+        "GV04b-PhuHuynh",
+        "GV04c-TestDauVao",
+        "GV04d-DaLuuHoSo"
+      ],
+      "alternative_paths": [
+        [
+          "GV01-TongQuan",
+          "GV04-NhapHoSo",
+          "GV04b-PhuHuynh",
+          "GV04c-TestDauVao",
+          "GV04d-DaLuuHoSo"
+        ]
+      ],
+      "failure_paths": [
+        {
+          "trigger": "Thiếu họ tên hoặc sai SĐT",
+          "recovery": "Giữ dữ liệu, focus trường lỗi và cho sửa lại",
+          "keeps_user_input": true,
+          "returns_to": "GV04-NhapHoSo"
+        }
+      ],
+      "diagram_ref": "flows.md"
+    },
+    {
+      "id": "F3",
+      "task_id": "T3",
+      "entry_points": [
+        "Canvas",
+        "Liên kết trực tiếp",
+        "Điều hướng trong app"
+      ],
+      "happy_path": [
+        "XL01-ChoXepLop",
+        "XL02-ChonLop",
+        "XL03-XacNhanXepLop",
+        "XL04-DaXepLop"
+      ],
+      "alternative_paths": [
+        [
+          "GV01-TongQuan",
+          "XL01-ChoXepLop",
+          "XL02-ChonLop",
+          "XL03-XacNhanXepLop",
+          "XL04-DaXepLop"
+        ]
+      ],
+      "failure_paths": [
+        {
+          "trigger": "Lớp khớp một phần hoặc chọn nhầm",
+          "recovery": "Quay lại chọn khác hoặc đóng giải thích để tiếp tục luồng",
+          "keeps_user_input": true,
+          "returns_to": "XL01-ChoXepLop"
+        }
+      ],
+      "diagram_ref": "flows.md"
+    }
+  ],
+  "screens": [
+    {
+      "id": "GV01-TongQuan",
+      "route": "/app/GV01-TongQuan.dc.html",
+      "flows": [
+        "F1"
+      ],
+      "entry_state": "GV01 Tổng quan giáo vụ",
+      "user_goal": "Việc nào cần xử lý trước?",
+      "information_priority": [
+        "Thời hạn",
+        "Số việc cần xử lý",
+        "Lịch ca",
+        "Thao tác nhanh"
+      ],
+      "primary_action": "Duyệt báo cáo",
+      "destination": "GV07-DuyetBaoCao",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "GV04-NhapHoSo",
+      "route": "/app/GV04-NhapHoSo.dc.html",
+      "flows": [
+        "F2"
+      ],
+      "entry_state": "GV04 Tiếp nhận hồ sơ · 1 Học sinh",
+      "user_goal": "Đã đủ thông tin học sinh để tiếp tục chưa?",
+      "information_priority": [
+        "Danh tính học sinh",
+        "Nơi học",
+        "Liên hệ",
+        "Nguồn tuyển sinh"
+      ],
+      "primary_action": "Tiếp tục",
+      "destination": "GV04b-PhuHuynh",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "GV04b-PhuHuynh",
+      "route": "/app/GV04b-PhuHuynh.dc.html",
+      "flows": [
+        "F2"
+      ],
+      "entry_state": "GV04b Tiếp nhận hồ sơ · 2 Phụ huynh",
+      "user_goal": "Thông tin và hành động tiếp theo của GV04b Tiếp nhận hồ sơ · 2 Phụ huynh là gì?",
+      "information_priority": [
+        "Ngữ cảnh hiện tại",
+        "Thông tin chính",
+        "Hành động tiếp theo"
+      ],
+      "primary_action": "Tiếp tục theo CTA hiện có",
+      "destination": "Quay lại luồng Tiếp nhận học sinh",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "GV04c-TestDauVao",
+      "route": "/app/GV04c-TestDauVao.dc.html",
+      "flows": [
+        "F2"
+      ],
+      "entry_state": "GV04c Tiếp nhận hồ sơ · 3 Kiểm tra đầu vào",
+      "user_goal": "Thông tin và hành động tiếp theo của GV04c Tiếp nhận hồ sơ · 3 Kiểm tra đầu vào là gì?",
+      "information_priority": [
+        "Ngữ cảnh hiện tại",
+        "Thông tin chính",
+        "Hành động tiếp theo"
+      ],
+      "primary_action": "Tiếp tục theo CTA hiện có",
+      "destination": "Quay lại luồng Tiếp nhận học sinh",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "GV04d-DaLuuHoSo",
+      "route": "/app/GV04d-DaLuuHoSo.dc.html",
+      "flows": [
+        "F2"
+      ],
+      "entry_state": "GV04d Đã lưu hồ sơ",
+      "user_goal": "Thông tin và hành động tiếp theo của GV04d Đã lưu hồ sơ là gì?",
+      "information_priority": [
+        "Ngữ cảnh hiện tại",
+        "Thông tin chính",
+        "Hành động tiếp theo"
+      ],
+      "primary_action": "Tiếp tục theo CTA hiện có",
+      "destination": "Quay lại luồng Tiếp nhận học sinh",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "GV07-DuyetBaoCao",
+      "route": "/app/GV07-DuyetBaoCao.dc.html",
+      "flows": [
+        "F1"
+      ],
+      "entry_state": "GV07 Duyệt báo cáo",
+      "user_goal": "Thông tin và hành động tiếp theo của GV07 Duyệt báo cáo là gì?",
+      "information_priority": [
+        "Ngữ cảnh hiện tại",
+        "Thông tin chính",
+        "Hành động tiếp theo"
+      ],
+      "primary_action": "Tiếp tục theo CTA hiện có",
+      "destination": "Quay lại luồng Báo cáo & điểm danh",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "GV07b-ChiTietBaoCao",
+      "route": "/app/GV07b-ChiTietBaoCao.dc.html",
+      "flows": [
+        "F1"
+      ],
+      "entry_state": "GV07b Chi tiết báo cáo học tập · Giáo vụ",
+      "user_goal": "Thông tin và hành động tiếp theo của GV07b Chi tiết báo cáo học tập · Giáo vụ là gì?",
+      "information_priority": [
+        "Ngữ cảnh hiện tại",
+        "Thông tin chính",
+        "Hành động tiếp theo"
+      ],
+      "primary_action": "Tiếp tục theo CTA hiện có",
+      "destination": "Quay lại luồng Báo cáo & điểm danh",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "XL02-ChonLop",
+      "route": "/app/XL02-ChonLop.dc.html",
+      "flows": [
+        "F3"
+      ],
+      "entry_state": "XL02 Chọn lớp",
+      "user_goal": "Lớp nào khớp lịch và còn chỗ?",
+      "information_priority": [
+        "Nhu cầu học sinh",
+        "Mức khớp lịch",
+        "Giáo viên và phòng",
+        "Chỗ trống"
+      ],
+      "primary_action": "Tiếp tục xác nhận",
+      "destination": "XL03-XacNhanXepLop",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "XL01-ChoXepLop",
+      "route": "/app/XL01-ChoXepLop.dc.html",
+      "flows": [
+        "F3"
+      ],
+      "entry_state": "XL01 Chờ xếp lớp",
+      "user_goal": "Thông tin và hành động tiếp theo của XL01 Chờ xếp lớp là gì?",
+      "information_priority": [
+        "Ngữ cảnh hiện tại",
+        "Thông tin chính",
+        "Hành động tiếp theo"
+      ],
+      "primary_action": "Tiếp tục theo CTA hiện có",
+      "destination": "Quay lại luồng Tạo lớp & xếp lớp",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "XL04-DaXepLop",
+      "route": "/app/XL04-DaXepLop.dc.html",
+      "flows": [
+        "F3"
+      ],
+      "entry_state": "XL04 Đã xếp lớp",
+      "user_goal": "Thông tin và hành động tiếp theo của XL04 Đã xếp lớp là gì?",
+      "information_priority": [
+        "Ngữ cảnh hiện tại",
+        "Thông tin chính",
+        "Hành động tiếp theo"
+      ],
+      "primary_action": "Tiếp tục theo CTA hiện có",
+      "destination": "Quay lại luồng Tạo lớp & xếp lớp",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    },
+    {
+      "id": "XL03-XacNhanXepLop",
+      "route": "/app/XL03-XacNhanXepLop.dc.html",
+      "flows": [
+        "F3"
+      ],
+      "entry_state": "XL03 Xác nhận xếp lớp",
+      "user_goal": "Thông tin và hành động tiếp theo của XL03 Xác nhận xếp lớp là gì?",
+      "information_priority": [
+        "Ngữ cảnh hiện tại",
+        "Thông tin chính",
+        "Hành động tiếp theo"
+      ],
+      "primary_action": "Tiếp tục theo CTA hiện có",
+      "destination": "Quay lại luồng Tạo lớp & xếp lớp",
+      "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+      "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+      "required_states": [
+        "default",
+        "focus",
+        "selected",
+        "recovery"
+      ]
+    }
+  ],
+  "navigation": {
+    "model": "hybrid",
+    "reason": "Năm nhóm nghiệp vụ dùng thường xuyên; wizard giữ CTA và quay lại riêng. Canvas giữ đủ cả bản cũ và tài liệu tham chiếu.",
+    "persistent": [
+      "Tổng quan",
+      "Học sinh",
+      "Duyệt",
+      "Học phí",
+      "Liên lạc"
+    ],
+    "hidden": []
+  },
+  "walkthrough": {
+    "review_source": "agent-heuristic",
+    "scenarios": [
+      {
+        "id": "S1",
+        "description": "Người duyệt dùng canvas trên desktop và tìm màn không tồn tại",
+        "varies": [
+          "first-time",
+          "low-confidence",
+          "failure"
+        ]
+      },
+      {
+        "id": "S2",
+        "description": "Giáo vụ nhập thiếu họ tên rồi quay lại sau bước phụ huynh",
+        "varies": [
+          "interruption",
+          "failure"
+        ]
+      },
+      {
+        "id": "S3",
+        "description": "Chọn giáo viên khác gợi ý mặc định trước khi xác nhận",
+        "varies": [
+          "returning",
+          "edge-content"
+        ]
+      },
+      {
+        "id": "S4",
+        "description": "Tìm tên không tồn tại rồi phục hồi danh sách",
+        "varies": [
+          "hurried",
+          "failure"
+        ]
+      },
+      {
+        "id": "S5",
+        "description": "Điện thoại nhỏ mở menu, tìm tiếng Việt và trở lại canvas",
+        "varies": [
+          "situational",
+          "accessibility"
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "id": "W1",
+        "screen_id": "GV04-NhapHoSo",
+        "scenario_ids": [
+          "S2"
+        ],
+        "observation": "Input value tĩnh bị React giữ cố định; xóa tên bị hoàn nguyên.",
+        "severity": "blocker",
+        "status": "resolved",
+        "fix": "Tách giá trị ban đầu sang defaultValue, lưu nháp theo phiên và kiểm tra trước chuyển bước.",
+        "retest": "S2 PASS: xóa tên tạo lỗi, sửa tên đi tiếp và Back giữ giá trị."
+      },
+      {
+        "id": "W2",
+        "screen_id": "XL02-ChonLop",
+        "scenario_ids": [
+          "S3"
+        ],
+        "observation": "Lựa chọn giáo viên khác không đi theo sang xác nhận.",
+        "severity": "major",
+        "status": "resolved",
+        "fix": "Giữ teacher, room, size, slots trong session của luồng xếp lớp.",
+        "retest": "S3 PASS: Thầy Minh Đức xuất hiện trong xác nhận."
+      },
+      {
+        "id": "W3",
+        "screen_id": "GV01-TongQuan",
+        "scenario_ids": [
+          "S1",
+          "S5"
+        ],
+        "observation": "Tab chỉ có icon làm khó phát hiện các nhóm nghiệp vụ.",
+        "severity": "minor",
+        "status": "resolved",
+        "fix": "Thêm nhãn ngắn nhất quán cho đủ năm tab.",
+        "retest": "All-route matrix records five tab labels at 320, 390 and 768 CSS pixels."
+      }
+    ]
+  },
+  "verdict": {
+    "status": "READY_WITH_RISKS",
+    "open_majors": [],
+    "hypotheses_to_validate": [
+      "Thứ tự ưu tiên theo nguồn mẫu, chưa có nghiên cứu với giáo vụ thật.",
+      "Các màn giáo viên và một số màn đích chỉ được nhắc trong sơ đồ, chưa có tệp nguồn.",
+      "Dữ liệu minh họa và hành động chưa kết nối hệ thống vận hành."
+    ],
+    "next_validation": "Thử 3 top tasks với giáo vụ thực; kiểm tra chính sách và dữ liệu nghiệp vụ trước tích hợp."
+  }
+}

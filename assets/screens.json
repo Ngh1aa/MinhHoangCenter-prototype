@@ -1,0 +1,692 @@
+[
+  {
+    "f": "Main.dc.html",
+    "t": "Luồng màn hình",
+    "w": 2600,
+    "h": 1240,
+    "i": false,
+    "id": "Main",
+    "version": "reference",
+    "group": "Sơ đồ & Design System"
+  },
+  {
+    "f": "Line-1.dc.html",
+    "t": "Đường chia vai trò",
+    "w": 40,
+    "h": 7488,
+    "i": false,
+    "id": "Line-1",
+    "version": "reference",
+    "group": "Sơ đồ & Design System"
+  },
+  {
+    "f": "Line-2.dc.html",
+    "t": "Đường chia vai trò",
+    "w": 40,
+    "h": 7488,
+    "i": false,
+    "id": "Line-2",
+    "version": "reference",
+    "group": "Sơ đồ & Design System"
+  },
+  {
+    "f": "DS-DesignSystem.dc.html",
+    "t": "Design System · Minh Hoàng Center",
+    "w": 1440,
+    "h": 2560,
+    "i": false,
+    "id": "DS-DesignSystem",
+    "version": "reference",
+    "group": "Sơ đồ & Design System"
+  },
+  {
+    "f": "v1-A00-DangNhap.dc.html",
+    "t": "v1 · 00 Đăng nhập",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-A00-DangNhap",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "v1-GV01-TongQuan.dc.html",
+    "t": "v1 · GV01 Tổng quan",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV01-TongQuan",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV01-TongQuan.dc.html",
+    "t": "GV01 Tổng quan giáo vụ",
+    "w": 390,
+    "h": 1135,
+    "i": true,
+    "id": "GV01-TongQuan",
+    "version": "current",
+    "group": "Tổng quan & tài khoản"
+  },
+  {
+    "f": "CN01-TaiKhoanCuaToi.dc.html",
+    "t": "CN01 Tài khoản của bạn",
+    "w": 390,
+    "h": 1122,
+    "i": true,
+    "id": "CN01-TaiKhoanCuaToi",
+    "version": "current",
+    "group": "Tổng quan & tài khoản"
+  },
+  {
+    "f": "v1-GV02-HocSinh.dc.html",
+    "t": "v1 · GV02 Học sinh",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV02-HocSinh",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV02-HocSinh.dc.html",
+    "t": "GV02 Danh sách học sinh",
+    "w": 390,
+    "h": 1808,
+    "i": true,
+    "id": "GV02-HocSinh",
+    "version": "current",
+    "group": "Học sinh & hồ sơ"
+  },
+  {
+    "f": "v1-GV03-HoSo.dc.html",
+    "t": "v1 · GV03 Hồ sơ học sinh",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV03-HoSo",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV03-HoSo.dc.html",
+    "t": "GV03 Hồ sơ học sinh",
+    "w": 390,
+    "h": 952,
+    "i": true,
+    "id": "GV03-HoSo",
+    "version": "current",
+    "group": "Học sinh & hồ sơ"
+  },
+  {
+    "f": "v1-GV04-NhapHoSo.dc.html",
+    "t": "v1 · GV04 Nhập hồ sơ · 1 Học sinh",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV04-NhapHoSo",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV04-NhapHoSo.dc.html",
+    "t": "GV04 Tiếp nhận hồ sơ · 1 Học sinh",
+    "w": 390,
+    "h": 1380,
+    "i": true,
+    "id": "GV04-NhapHoSo",
+    "version": "current",
+    "group": "Tiếp nhận học sinh"
+  },
+  {
+    "f": "v1-GV04b-PhuHuynh.dc.html",
+    "t": "v1 · GV04b Nhập hồ sơ · 2 Phụ huynh",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV04b-PhuHuynh",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV04b-PhuHuynh.dc.html",
+    "t": "GV04b Tiếp nhận hồ sơ · 2 Phụ huynh",
+    "w": 390,
+    "h": 1426,
+    "i": true,
+    "id": "GV04b-PhuHuynh",
+    "version": "current",
+    "group": "Tiếp nhận học sinh"
+  },
+  {
+    "f": "v1-GV04c-TestDauVao.dc.html",
+    "t": "v1 · GV04c Nhập hồ sơ · 3 Test đầu vào",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV04c-TestDauVao",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV04c-TestDauVao.dc.html",
+    "t": "GV04c Tiếp nhận hồ sơ · 3 Kiểm tra đầu vào",
+    "w": 390,
+    "h": 957,
+    "i": true,
+    "id": "GV04c-TestDauVao",
+    "version": "current",
+    "group": "Tiếp nhận học sinh"
+  },
+  {
+    "f": "GV04d-DaLuuHoSo.dc.html",
+    "t": "GV04d Đã lưu hồ sơ",
+    "w": 390,
+    "h": 920,
+    "i": true,
+    "id": "GV04d-DaLuuHoSo",
+    "version": "current",
+    "group": "Tiếp nhận học sinh"
+  },
+  {
+    "f": "v1-GV05-TaoLop.dc.html",
+    "t": "v1 · GV05 Tạo lớp",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV05-TaoLop",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV05-TaoLop.dc.html",
+    "t": "GV05 Tạo lớp",
+    "w": 390,
+    "h": 1196,
+    "i": true,
+    "id": "GV05-TaoLop",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  },
+  {
+    "f": "v1-GV05s1-GoiYMaHS.dc.html",
+    "t": "v1 · GV05 · Gõ mã HS, hiện gợi ý",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV05s1-GoiYMaHS",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV05s1-GoiYMaHS.dc.html",
+    "t": "GV05s1 Tìm học sinh",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV05s1-GoiYMaHS",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  },
+  {
+    "f": "v1-GV05s2-ChonMon.dc.html",
+    "t": "v1 · GV05 · Xổ chọn Môn",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV05s2-ChonMon",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV05s2-ChonMon.dc.html",
+    "t": "GV05s2 Chọn môn",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV05s2-ChonMon",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  },
+  {
+    "f": "v1-GV05s3-ChonNgay.dc.html",
+    "t": "v1 · GV05 · Lịch chọn ngày bắt đầu",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV05s3-ChonNgay",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV05s3-ChonNgay.dc.html",
+    "t": "GV05s3 Chọn ngày bắt đầu",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV05s3-ChonNgay",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  },
+  {
+    "f": "GV05d-XepLopXong.dc.html",
+    "t": "GV05d Đã tạo lớp",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV05d-XepLopXong",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  },
+  {
+    "f": "GV06a-DieuChinhLop.dc.html",
+    "t": "GV06a Điều chỉnh lớp",
+    "w": 390,
+    "h": 1453,
+    "i": true,
+    "id": "GV06a-DieuChinhLop",
+    "version": "current",
+    "group": "Điều chỉnh lớp"
+  },
+  {
+    "f": "v1-GV06-ChuyenGV.dc.html",
+    "t": "v1 · GV06 Chuyển giáo viên",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV06-ChuyenGV",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV06-ChuyenGV.dc.html",
+    "t": "GV06 Chuyển giáo viên",
+    "w": 390,
+    "h": 1379,
+    "i": true,
+    "id": "GV06-ChuyenGV",
+    "version": "current",
+    "group": "Điều chỉnh lớp"
+  },
+  {
+    "f": "v1-GV06b-ChuyenLich.dc.html",
+    "t": "v1 · GV06b Chuyển lịch",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV06b-ChuyenLich",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV06b-ChuyenLich.dc.html",
+    "t": "GV06b Chuyển lịch",
+    "w": 390,
+    "h": 935,
+    "i": true,
+    "id": "GV06b-ChuyenLich",
+    "version": "current",
+    "group": "Điều chỉnh lớp"
+  },
+  {
+    "f": "v1-GV06c-NghiHoc.dc.html",
+    "t": "v1 · GV06c Nghỉ học",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV06c-NghiHoc",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV06c-NghiHoc.dc.html",
+    "t": "GV06c Nghỉ học luôn",
+    "w": 390,
+    "h": 1075,
+    "i": true,
+    "id": "GV06c-NghiHoc",
+    "version": "current",
+    "group": "Điều chỉnh lớp"
+  },
+  {
+    "f": "GV06d-XacNhanThoiHoc.dc.html",
+    "t": "GV06d Xác nhận thôi học",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV06d-XacNhanThoiHoc",
+    "version": "current",
+    "group": "Điều chỉnh lớp"
+  },
+  {
+    "f": "GV06e-TamNghi.dc.html",
+    "t": "GV06e Tạm nghỉ",
+    "w": 390,
+    "h": 1160,
+    "i": true,
+    "id": "GV06e-TamNghi",
+    "version": "current",
+    "group": "Điều chỉnh lớp"
+  },
+  {
+    "f": "GV06f-DaTamNghi.dc.html",
+    "t": "GV06f Đã tạm nghỉ",
+    "w": 390,
+    "h": 1000,
+    "i": true,
+    "id": "GV06f-DaTamNghi",
+    "version": "current",
+    "group": "Điều chỉnh lớp"
+  },
+  {
+    "f": "v1-GV07-DuyetBaoCao.dc.html",
+    "t": "v1 · GV07 Duyệt báo cáo",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV07-DuyetBaoCao",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV07-DuyetBaoCao.dc.html",
+    "t": "GV07 Duyệt báo cáo",
+    "w": 390,
+    "h": 1334,
+    "i": true,
+    "id": "GV07-DuyetBaoCao",
+    "version": "current",
+    "group": "Báo cáo & điểm danh"
+  },
+  {
+    "f": "GV07b-ChiTietBaoCao.dc.html",
+    "t": "GV07b Chi tiết báo cáo học tập · Giáo vụ",
+    "w": 390,
+    "h": 1437,
+    "i": true,
+    "id": "GV07b-ChiTietBaoCao",
+    "version": "current",
+    "group": "Báo cáo & điểm danh"
+  },
+  {
+    "f": "GV07c-YeuCauBoSung.dc.html",
+    "t": "GV07c Yêu cầu làm lại",
+    "w": 390,
+    "h": 1486,
+    "i": true,
+    "id": "GV07c-YeuCauBoSung",
+    "version": "current",
+    "group": "Báo cáo & điểm danh"
+  },
+  {
+    "f": "ST01-DuyetRong.dc.html",
+    "t": "ST01 Trạng thái rỗng · Duyệt báo cáo",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "ST01-DuyetRong",
+    "version": "current",
+    "group": "Báo cáo & điểm danh"
+  },
+  {
+    "f": "v1-GV10-SuaTichLich.dc.html",
+    "t": "v1 · GV10 Sửa tích lịch sau giờ khóa",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV10-SuaTichLich",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV10-SuaTichLich.dc.html",
+    "t": "GV10 Sửa điểm danh",
+    "w": 390,
+    "h": 1063,
+    "i": true,
+    "id": "GV10-SuaTichLich",
+    "version": "current",
+    "group": "Báo cáo & điểm danh"
+  },
+  {
+    "f": "v1-GV08-HoaDon.dc.html",
+    "t": "v1 · GV08 Hóa đơn",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV08-HoaDon",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV08-HoaDon.dc.html",
+    "t": "GV08 Học phí",
+    "w": 390,
+    "h": 963,
+    "i": true,
+    "id": "GV08-HoaDon",
+    "version": "current",
+    "group": "Học phí"
+  },
+  {
+    "f": "GV08b-ChiTietHocPhi.dc.html",
+    "t": "GV08b Phiếu học phí",
+    "w": 390,
+    "h": 1233,
+    "i": true,
+    "id": "GV08b-ChiTietHocPhi",
+    "version": "current",
+    "group": "Học phí"
+  },
+  {
+    "f": "v1-GV09-GiaoViec.dc.html",
+    "t": "v1 · GV09 Giao việc",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV09-GiaoViec",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV09-GiaoViec.dc.html",
+    "t": "GV09 Giao công việc",
+    "w": 390,
+    "h": 1148,
+    "i": true,
+    "id": "GV09-GiaoViec",
+    "version": "current",
+    "group": "Công việc & tài khoản"
+  },
+  {
+    "f": "GV09b-ChiTietViecGiao.dc.html",
+    "t": "GV09b Chi tiết công việc · người giao",
+    "w": 390,
+    "h": 868,
+    "i": true,
+    "id": "GV09b-ChiTietViecGiao",
+    "version": "current",
+    "group": "Công việc & tài khoản"
+  },
+  {
+    "f": "GV09c-TraLaiViec.dc.html",
+    "t": "GV09c Trả lại công việc",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV09c-TraLaiViec",
+    "version": "current",
+    "group": "Công việc & tài khoản"
+  },
+  {
+    "f": "GV09d-DaDongViec.dc.html",
+    "t": "GV09d Công việc đã đóng",
+    "w": 390,
+    "h": 900,
+    "i": true,
+    "id": "GV09d-DaDongViec",
+    "version": "current",
+    "group": "Công việc & tài khoản"
+  },
+  {
+    "f": "v1-GV11-TaiKhoan.dc.html",
+    "t": "v1 · GV11 Quản trị tài khoản",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "v1-GV11-TaiKhoan",
+    "version": "legacy",
+    "group": "Bản v1 lưu trữ"
+  },
+  {
+    "f": "GV11b-ChiTietTaiKhoan.dc.html",
+    "t": "GV11b Chi tiết tài khoản",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV11b-ChiTietTaiKhoan",
+    "version": "current",
+    "group": "Công việc & tài khoản"
+  },
+  {
+    "f": "GV13-LienLac.dc.html",
+    "t": "GV13 Liên lạc giáo vụ",
+    "w": 390,
+    "h": 1180,
+    "i": true,
+    "id": "GV13-LienLac",
+    "version": "current",
+    "group": "Liên lạc"
+  },
+  {
+    "f": "GV14-GuiThongBao.dc.html",
+    "t": "GV14 Tạo mới",
+    "w": 390,
+    "h": 1090,
+    "i": true,
+    "id": "GV14-GuiThongBao",
+    "version": "current",
+    "group": "Liên lạc"
+  },
+  {
+    "f": "TP01-XemTep.dc.html",
+    "t": "TP01 Xem tệp Excel",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "TP01-XemTep",
+    "version": "current",
+    "group": "Liên lạc"
+  },
+  {
+    "f": "GV03b-HoSoOFF.dc.html",
+    "t": "GV03b Hồ sơ học sinh OFF",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV03b-HoSoOFF",
+    "version": "current",
+    "group": "Học sinh & hồ sơ"
+  },
+  {
+    "f": "GV03f-DaAnHoSo.dc.html",
+    "t": "GV03f Đã tạm ẩn hồ sơ",
+    "w": 390,
+    "h": 920,
+    "i": true,
+    "id": "GV03f-DaAnHoSo",
+    "version": "current",
+    "group": "Học sinh & hồ sơ"
+  },
+  {
+    "f": "GV14b-GuiHangLoat.dc.html",
+    "t": "GV14b Gửi hàng loạt",
+    "w": 390,
+    "h": 1780,
+    "i": true,
+    "id": "GV14b-GuiHangLoat",
+    "version": "current",
+    "group": "Liên lạc"
+  },
+  {
+    "f": "GV14c-TaoNhom.dc.html",
+    "t": "GV14c Tạo nhóm",
+    "w": 390,
+    "h": 1054,
+    "i": true,
+    "id": "GV14c-TaoNhom",
+    "version": "current",
+    "group": "Liên lạc"
+  },
+  {
+    "f": "GV03c-HoSoON.dc.html",
+    "t": "GV03c Hồ sơ học sinh ON",
+    "w": 390,
+    "h": 952,
+    "i": true,
+    "id": "GV03c-HoSoON",
+    "version": "current",
+    "group": "Học sinh & hồ sơ"
+  },
+  {
+    "f": "GV02c-KetQuaLoc.dc.html",
+    "t": "GV02c Kết quả lọc",
+    "w": 390,
+    "h": 1087,
+    "i": true,
+    "id": "GV02c-KetQuaLoc",
+    "version": "current",
+    "group": "Học sinh & hồ sơ"
+  },
+  {
+    "f": "GV02b-LocMon.dc.html",
+    "t": "GV02b Lọc theo môn",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "GV02b-LocMon",
+    "version": "current",
+    "group": "Học sinh & hồ sơ"
+  },
+  {
+    "f": "XL02-ChonLop.dc.html",
+    "t": "XL02 Chọn lớp",
+    "w": 390,
+    "h": 1100,
+    "i": true,
+    "id": "XL02-ChonLop",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  },
+  {
+    "f": "XL01-ChoXepLop.dc.html",
+    "t": "XL01 Chờ xếp lớp",
+    "w": 390,
+    "h": 1060,
+    "i": true,
+    "id": "XL01-ChoXepLop",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  },
+  {
+    "f": "XL04-DaXepLop.dc.html",
+    "t": "XL04 Đã xếp lớp",
+    "w": 390,
+    "h": 844,
+    "i": true,
+    "id": "XL04-DaXepLop",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  },
+  {
+    "f": "XL03-XacNhanXepLop.dc.html",
+    "t": "XL03 Xác nhận xếp lớp",
+    "w": 390,
+    "h": 943,
+    "i": true,
+    "id": "XL03-XacNhanXepLop",
+    "version": "current",
+    "group": "Tạo lớp & xếp lớp"
+  }
+]

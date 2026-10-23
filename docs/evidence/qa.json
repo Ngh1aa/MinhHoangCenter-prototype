@@ -1,0 +1,2117 @@
+{
+  "generatedAt": "2026-10-23T05:41:58.133Z",
+  "browser": "Chromium",
+  "matrix": 138,
+  "scenarios": [
+    {
+      "id": "S1",
+      "task": "Canvas, search, empty recovery, version filters, zoom, pan and static screen dialog",
+      "result": "PASS"
+    },
+    {
+      "id": "S2",
+      "task": "Admissions validation, correction, next step and back preserving input",
+      "result": "PASS"
+    },
+    {
+      "id": "S3",
+      "task": "Choose an alternative class; confirmation keeps teacher and room; notification switch toggles once",
+      "result": "PASS"
+    },
+    {
+      "id": "S4",
+      "task": "No student search results can recover; missing source screen gives closable explanation",
+      "result": "PASS"
+    },
+    {
+      "id": "S5",
+      "task": "Mobile menu, search by Vietnamese title, open artboard and return to canvas",
+      "result": "PASS"
+    }
+  ],
+  "issues": [],
+  "results": [
+    {
+      "route": "GV01-TongQuan.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "CN01-TaiKhoanCuaToi.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02-HocSinh.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03-HoSo.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04-NhapHoSo.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04b-PhuHuynh.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04c-TestDauVao.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04d-DaLuuHoSo.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05-TaoLop.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s1-GoiYMaHS.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s2-ChonMon.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s3-ChonNgay.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05d-XepLopXong.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06a-DieuChinhLop.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06-ChuyenGV.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06b-ChuyenLich.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06c-NghiHoc.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06d-XacNhanThoiHoc.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06e-TamNghi.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06f-DaTamNghi.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07-DuyetBaoCao.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07b-ChiTietBaoCao.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07c-YeuCauBoSung.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "ST01-DuyetRong.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV10-SuaTichLich.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV08-HoaDon.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV08b-ChiTietHocPhi.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09-GiaoViec.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09b-ChiTietViecGiao.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09c-TraLaiViec.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09d-DaDongViec.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV11b-ChiTietTaiKhoan.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV13-LienLac.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14-GuiThongBao.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "TP01-XemTep.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03b-HoSoOFF.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03f-DaAnHoSo.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14b-GuiHangLoat.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14c-TaoNhom.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03c-HoSoON.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02c-KetQuaLoc.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02b-LocMon.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL02-ChonLop.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL01-ChoXepLop.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL04-DaXepLop.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL03-XacNhanXepLop.dc.html",
+      "width": 320,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 320,
+        "viewport": 320,
+        "screenWidth": 320,
+        "pageWidth": 320,
+        "pageScroll": 320,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV01-TongQuan.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "CN01-TaiKhoanCuaToi.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02-HocSinh.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03-HoSo.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04-NhapHoSo.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04b-PhuHuynh.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04c-TestDauVao.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04d-DaLuuHoSo.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05-TaoLop.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s1-GoiYMaHS.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s2-ChonMon.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s3-ChonNgay.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05d-XepLopXong.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06a-DieuChinhLop.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06-ChuyenGV.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06b-ChuyenLich.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06c-NghiHoc.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06d-XacNhanThoiHoc.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06e-TamNghi.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06f-DaTamNghi.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07-DuyetBaoCao.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07b-ChiTietBaoCao.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07c-YeuCauBoSung.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "ST01-DuyetRong.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV10-SuaTichLich.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV08-HoaDon.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV08b-ChiTietHocPhi.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09-GiaoViec.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09b-ChiTietViecGiao.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09c-TraLaiViec.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09d-DaDongViec.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV11b-ChiTietTaiKhoan.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV13-LienLac.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14-GuiThongBao.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "TP01-XemTep.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03b-HoSoOFF.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03f-DaAnHoSo.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14b-GuiHangLoat.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14c-TaoNhom.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03c-HoSoON.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02c-KetQuaLoc.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02b-LocMon.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL02-ChonLop.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL01-ChoXepLop.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL04-DaXepLop.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL03-XacNhanXepLop.dc.html",
+      "width": 390,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 390,
+        "viewport": 390,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV01-TongQuan.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "CN01-TaiKhoanCuaToi.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02-HocSinh.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03-HoSo.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04-NhapHoSo.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04b-PhuHuynh.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04c-TestDauVao.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV04d-DaLuuHoSo.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05-TaoLop.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s1-GoiYMaHS.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s2-ChonMon.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05s3-ChonNgay.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV05d-XepLopXong.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06a-DieuChinhLop.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06-ChuyenGV.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06b-ChuyenLich.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06c-NghiHoc.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06d-XacNhanThoiHoc.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06e-TamNghi.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV06f-DaTamNghi.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07-DuyetBaoCao.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07b-ChiTietBaoCao.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV07c-YeuCauBoSung.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "ST01-DuyetRong.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV10-SuaTichLich.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV08-HoaDon.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV08b-ChiTietHocPhi.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09-GiaoViec.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09b-ChiTietViecGiao.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09c-TraLaiViec.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV09d-DaDongViec.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV11b-ChiTietTaiKhoan.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV13-LienLac.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14-GuiThongBao.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "TP01-XemTep.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03b-HoSoOFF.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03f-DaAnHoSo.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14b-GuiHangLoat.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV14c-TaoNhom.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV03c-HoSoON.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02c-KetQuaLoc.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "GV02b-LocMon.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL02-ChonLop.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL01-ChoXepLop.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [
+          "Tổng quan",
+          "Học sinh",
+          "Duyệt",
+          "Học phí",
+          "Liên lạc"
+        ],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL04-DaXepLop.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    },
+    {
+      "route": "XL03-XacNhanXepLop.dc.html",
+      "width": 768,
+      "result": "PASS",
+      "metrics": {
+        "documentWidth": 768,
+        "viewport": 768,
+        "screenWidth": 390,
+        "pageWidth": 390,
+        "pageScroll": 390,
+        "navLabels": [],
+        "broken": 0
+      }
+    }
+  ]
+}

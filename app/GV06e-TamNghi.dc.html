@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GV06e Tạm nghỉ</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-current" data-screen="GV06e-TamNghi">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -20,7 +23,7 @@
 <div class="p-1 rounded-full bg-line grid grid-cols-2 gap-1" role="radiogroup" aria-label="Hình thức nghỉ"><a href="GV06c-NghiHoc.dc.html" role="radio" aria-checked="false" class="seg rounded-full whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Nghỉ học luôn</a><a href="GV06e-TamNghi.dc.html" role="radio" aria-checked="true" class="seg seg-on rounded-full whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Tạm nghỉ</a></div>
 
 <fieldset class="m-0 p-0 border-0 flex flex-col gap-2"><legend class="text-[13px] font-semibold text-muted px-1 mb-2">Nghỉ trong bao lâu <span class="text-brand-orange" aria-hidden="true">*</span></legend>
-<div class="grid grid-cols-4 gap-2"><sc-for list="{{presets}}" as="p" hint-placeholder-count="4"><button type="button" onClick="{{p.pick}}" aria-pressed="{{p.on}}" class="{{p.cls}}">{{p.label}}</button></sc-for></div>
+<div class="grid grid-cols-4 gap-2"><sc-for list="{{presets}}" as="p" hint-placeholder-count="4"><button type="button" onClick="{{p.pick}}" aria-pressed="{{p.on}}" class="{{p.cls}}" data-native-handler="true">{{p.label}}</button></sc-for></div>
 <div class="grid grid-cols-2 gap-2 mt-1"><a href="GV05s3-ChonNgay.dc.html" class="h-14 rounded-2xl bg-white px-4 flex flex-col justify-center no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="text-[11px] leading-4 text-muted">Từ ngày</span><span class="font-semibold tabular-nums whitespace-nowrap">{{from}}</span></a><a href="GV05s3-ChonNgay.dc.html" class="h-14 rounded-2xl bg-white px-4 flex flex-col justify-center no-underline text-ink active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="text-[11px] leading-4 text-muted">Đến hết ngày</span><span class="font-semibold tabular-nums whitespace-nowrap">{{to}}</span></a></div>
 </fieldset>
 
@@ -31,11 +34,11 @@
 </section>
 
 <section class="rounded-3xl bg-white overflow-hidden flex flex-col divide-y divide-line" aria-label="Tùy chọn">
-<label class="flex items-center gap-3 px-4 min-h-[68px] py-3 cursor-pointer"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">Giữ chỗ trong lớp</span><span class="cap">Giữ lịch Sáng T2, Chiều T4 khi học lại</span></span><input type="checkbox" role="switch" checked class="sr-only peer"><span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span></label>
-<label class="flex items-center gap-3 px-4 min-h-[68px] py-3 cursor-pointer"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">Báo phụ huynh và giáo viên</span><span class="cap">Gửi qua app ngay khi xác nhận</span></span><input type="checkbox" role="switch" checked class="sr-only peer"><span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span></label>
+<label class="flex items-center gap-3 px-4 min-h-[68px] py-3 cursor-pointer"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">Giữ chỗ trong lớp</span><span class="cap">Giữ lịch Sáng T2, Chiều T4 khi học lại</span></span><input type="checkbox" role="switch" data-mh-checked="true" class="sr-only peer"><span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span></label>
+<label class="flex items-center gap-3 px-4 min-h-[68px] py-3 cursor-pointer"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">Báo phụ huynh và giáo viên</span><span class="cap">Gửi qua app ngay khi xác nhận</span></span><input type="checkbox" role="switch" data-mh-checked="true" class="sr-only peer"><span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span></label>
 </section>
 
-<fieldset class="m-0 p-0 border-0 flex flex-col gap-2"><legend class="text-[13px] font-semibold text-muted px-1 mb-2">Lý do <span class="text-brand-orange" aria-hidden="true">*</span></legend><div class="flex flex-wrap gap-2"><sc-for list="{{reasons}}" as="r" hint-placeholder-count="4"><button type="button" onClick="{{r.pick}}" aria-pressed="{{r.on}}" class="{{r.cls}}">{{r.label}}</button></sc-for></div><input class="input bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Ghi chú thêm (không bắt buộc)" aria-label="Ghi chú thêm"></fieldset>
+<fieldset class="m-0 p-0 border-0 flex flex-col gap-2"><legend class="text-[13px] font-semibold text-muted px-1 mb-2">Lý do <span class="text-brand-orange" aria-hidden="true">*</span></legend><div class="flex flex-wrap gap-2"><sc-for list="{{reasons}}" as="r" hint-placeholder-count="4"><button type="button" onClick="{{r.pick}}" aria-pressed="{{r.on}}" class="{{r.cls}}" data-native-handler="true">{{r.label}}</button></sc-for></div><input class="input bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Ghi chú thêm (không bắt buộc)" aria-label="Ghi chú thêm"></fieldset>
 </main>
 <div class="absolute inset-x-0 bottom-0 z-20 px-5 pt-3 pb-8 bg-surface border-t border-line flex gap-2"><a href="GV06f-DaTamNghi.dc.html" class="btn flex-1 whitespace-nowrap transition-transform active:scale-[.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue">Xác nhận tạm nghỉ {{dur}}</a></div>
 </div>

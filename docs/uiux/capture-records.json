@@ -1,0 +1,66 @@
+[
+  {
+    "route": "/app/GV01-TongQuan.dc.html",
+    "composition_id": "selected",
+    "file": "docs/evidence/GV01-TongQuan-selected-390.png",
+    "sha256": "36d763e3f16540a957685fd184b6647ede2b8311426aaeca4cffb12d2a2f7295",
+    "width": 390,
+    "viewport_height": 900
+  },
+  {
+    "route": "/app/GV01-TongQuan.dc.html",
+    "composition_id": "selected",
+    "file": "docs/evidence/GV01-TongQuan-selected-1280.png",
+    "sha256": "aebe8c5c9a1d2a24e2a9398e7b3bb312b44b1dc59132c0d5975b606ab6537790",
+    "width": 1280,
+    "viewport_height": 900
+  },
+  {
+    "route": "/app/GV04-NhapHoSo.dc.html",
+    "composition_id": "selected",
+    "file": "docs/evidence/GV04-NhapHoSo-selected-390.png",
+    "sha256": "0f48b29c61aeb8802ceb10db5c8ed3a258dc4422e78534b0886c030b6ea37173",
+    "width": 390,
+    "viewport_height": 900
+  },
+  {
+    "route": "/app/GV04-NhapHoSo.dc.html",
+    "composition_id": "selected",
+    "file": "docs/evidence/GV04-NhapHoSo-selected-1280.png",
+    "sha256": "96cfe32de2b70f2394d729af5818af0b6a7ff94e9a44ca3e054e6c711ae2e367",
+    "width": 1280,
+    "viewport_height": 900
+  },
+  {
+    "route": "/app/XL02-ChonLop.dc.html",
+    "composition_id": "selected",
+    "file": "docs/evidence/XL02-ChonLop-selected-390.png",
+    "sha256": "3794a2e788a4f92d3b7a6a13cdbb983a73984eaebabb56019240825dfc22f13c",
+    "width": 390,
+    "viewport_height": 900
+  },
+  {
+    "route": "/app/XL02-ChonLop.dc.html",
+    "composition_id": "selected",
+    "file": "docs/evidence/XL02-ChonLop-selected-1280.png",
+    "sha256": "1b7d84ccb46a2b88e6ce8d149267d94c49c4d1a7738c95b052c58d590066b24c",
+    "width": 1280,
+    "viewport_height": 900
+  },
+  {
+    "route": "/app/GV01-TongQuan.dc.html",
+    "composition_id": "ledger",
+    "file": "docs/evidence/GV01-alternative-390.png",
+    "sha256": "862ee5598fbacba3a6623866c20c805fb5695bdefba9dd9cf134caf11da63fea",
+    "width": 390,
+    "viewport_height": 900
+  },
+  {
+    "route": "/app/GV01-TongQuan.dc.html",
+    "composition_id": "ledger",
+    "file": "docs/evidence/GV01-alternative-1280.png",
+    "sha256": "d358ee8cbad705b0ad31805d97d04132e647133531a3e84794d3a1d260173ac6",
+    "width": 1280,
+    "viewport_height": 900
+  }
+]

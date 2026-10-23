@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GV14c Tạo nhóm</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-current" data-screen="GV14c-TaoNhom">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -18,7 +21,7 @@
 <main class="page gap-6 pt-2 pb-40 [&amp;&gt;*]:shrink-0 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
 <section class="flex items-center gap-4" aria-label="Ảnh và tên nhóm">
 <button type="button" class="relative w-[88px] h-[88px] shrink-0 rounded-full border-2 border-dashed border-brand-blue/40 bg-soft-blue text-brand-blue flex flex-col items-center justify-center gap-0.5 font-sans focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue" aria-label="Chọn ảnh nhóm"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg><span class="text-[12px] leading-4 font-semibold">Ảnh nhóm</span></button>
-<label class="flex-1 min-w-0 flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1 whitespace-nowrap">Tên nhóm</span><input class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="Toán 9 Chiều T5"></label>
+<label class="flex-1 min-w-0 flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1 whitespace-nowrap">Tên nhóm</span><input class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" data-mh-value="Toán 9 Chiều T5"></label>
 </section>
 <section class="flex flex-col gap-3" aria-labelledby="g-tv"><div class="flex items-center justify-between"><h2 id="g-tv" class="m-0 text-[13px] leading-[18px] font-semibold uppercase tracking-[0.08em] text-muted">Thành viên</h2><span class="text-[13px] font-medium text-ink tabular-nums whitespace-nowrap">3 đã chọn</span></div>
 <ul class="-mx-5 px-5 m-0 p-0 list-none flex gap-2 overflow-x-auto [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden" aria-label="Đã chọn">

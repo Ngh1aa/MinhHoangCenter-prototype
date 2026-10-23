@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+app/tailwind.config.js text eol=lf
+app/tailwind.src.css text eol=lf
+app/tailwind.css text eol=lf

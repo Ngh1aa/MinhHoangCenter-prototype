@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>v1 · GV04 Nhập hồ sơ · 1 Học sinh</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-archive" data-screen="v1-GV04-NhapHoSo">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -23,7 +26,7 @@
 <div class="rounded-2xl bg-soft-blue px-4 py-3 flex items-center justify-between"><span class="cap">Mã học sinh</span><span class="flex items-center gap-2"><span class="font-semibold text-brand-blue">17A0105</span><span class="pill bg-white text-brand-blue h-6">Tự tạo</span></span></div>
 <div class="flex flex-col gap-2">
 <label for="n" class="text-[13px] font-medium text-muted px-1">Họ và tên</label>
-<input id="n" class="input" value="Nguyễn Văn A">
+<input id="n" class="input" data-mh-value="Nguyễn Văn A">
 <div class="rounded-2xl bg-soft-orange px-4 py-3 flex items-center gap-3">
 <svg class="w-5 h-5 text-brand-orange shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4M12 16h.01"></path></svg>
 <span class="text-sm flex-1">Trùng tên với <b>Nguyễn Văn A</b> · 17A0004 · TH Thịnh Hào</span>
@@ -31,14 +34,14 @@
 </div>
 </div>
 <div class="grid grid-cols-2 gap-3">
-<div class="flex flex-col gap-2"><label for="d" class="text-[13px] font-medium text-muted px-1">Ngày sinh</label><input id="d" class="input" value="25/02/2017"></div>
+<div class="flex flex-col gap-2"><label for="d" class="text-[13px] font-medium text-muted px-1">Ngày sinh</label><input id="d" class="input" data-mh-value="25/02/2017"></div>
 <div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Giới tính</span><div class="h-14 p-1 rounded-2xl bg-white flex gap-1"><button class="seg seg-on bg-brand-blue text-white h-full">Nam</button><button class="seg h-full">Nữ</button></div></div>
 </div>
 <div class="grid grid-cols-2 gap-3">
 <div class="flex flex-col gap-2"><label for="k" class="text-[13px] font-medium text-muted px-1">Khối</label><div class="field"><span>4</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></div></div>
 <div class="flex flex-col gap-2"><label for="c" class="text-[13px] font-medium text-muted px-1">Cơ sở</label><div class="field"><span>150 TĐT</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></div></div>
 </div>
-<div class="flex flex-col gap-2"><label for="s" class="text-[13px] font-medium text-muted px-1">Trường</label><input id="s" class="input" value="TH Thịnh Hào"></div>
+<div class="flex flex-col gap-2"><label for="s" class="text-[13px] font-medium text-muted px-1">Trường</label><input id="s" class="input" data-mh-value="TH Thịnh Hào"></div>
 <div class="flex flex-col gap-2"><label for="a" class="text-[13px] font-medium text-muted px-1">Địa chỉ</label><input id="a" class="input" placeholder="Số nhà, phố, phường"></div>
 <div class="flex flex-col gap-2"><label for="p" class="text-[13px] font-medium text-muted px-1">SĐT học sinh (nếu có)</label><input id="p" class="input" placeholder="0xxx xxx xxx"></div>
 <div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Biết đến trung tâm qua</span>

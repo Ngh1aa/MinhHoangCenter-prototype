@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>XL02 Chọn lớp</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-current" data-screen="XL02-ChonLop">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -23,7 +26,7 @@
 <div class="flex items-center gap-4 px-1 text-[12px] leading-4 text-muted"><span class="flex items-center gap-1.5 whitespace-nowrap"><span class="w-2.5 h-2.5 rounded-full bg-success" aria-hidden="true"></span>Khớp lịch</span><span class="flex items-center gap-1.5 whitespace-nowrap"><span class="w-2.5 h-2.5 rounded-full bg-brand-orange" aria-hidden="true"></span>Lệch lịch</span><span class="ml-auto whitespace-nowrap">3 lớp Toán M3</span></div>
 <div class="flex flex-col gap-3" role="radiogroup" aria-label="Lớp phù hợp">
 <sc-for list="{{classes}}" as="c" hint-placeholder-count="3">
-<button type="button" role="radio" aria-checked="{{c.checked}}" onClick="{{c.pick}}" class="{{c.cardCls}}">
+<button type="button" role="radio" aria-checked="{{c.checked}}" onClick="{{c.pick}}" class="{{c.cardCls}}" data-native-handler="true">
 <span class="flex items-center gap-3"><span class="initials w-11 h-11 text-[13px]">{{c.ini}}</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">{{c.teacher}}</span><span class="text-[13px] leading-[18px] text-muted whitespace-nowrap">{{c.room}} · {{c.size}} học sinh</span></span><span class="{{c.radioCls}}" aria-hidden="true"><span class="{{c.dotCls}}"></span></span></span>
 <span class="flex items-center gap-1.5 flex-wrap"><span class="{{c.matchCls}}">{{c.matchText}}</span><sc-for list="{{c.slots}}" as="s" hint-placeholder-count="2"><span class="{{s.cls}}"><span class="{{s.dot}}" aria-hidden="true"></span>{{s.t}}</span></sc-for></span>
 <span class="flex items-center gap-3"><span class="flex-1 h-2 rounded-full bg-surface overflow-hidden flex" aria-hidden="true"><span class="{{c.barCls}}"></span></span><span class="text-[13px] font-semibold tabular-nums whitespace-nowrap">Còn {{c.left}} chỗ</span></span>
@@ -37,7 +40,12 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1100}}'>
 class Component extends DCLogic {
-  constructor(props) { super(props); this.state = { pick: 'ta' }; }
+  constructor(props) {
+    super(props);
+    var saved = null;
+    try { saved = JSON.parse(sessionStorage.getItem('mh:placement') || 'null'); } catch (error) { saved = null; }
+    this.state = { pick: saved && saved.id || 'ta' };
+  }
   renderVals() {
     var self = this, p = this.state.pick;
     var list = [
@@ -52,7 +60,10 @@ class Component extends DCLogic {
       return {
         ini: c.ini, teacher: c.teacher, room: c.room, size: c.size, left: c.left, warn: c.warn || '', hasWarn: !!c.warn,
         checked: on ? 'true' : 'false',
-        pick: function () { self.setState({ pick: c.id }); },
+        pick: function () {
+          sessionStorage.setItem('mh:placement', JSON.stringify({id:c.id,teacher:c.teacher,room:c.room,size:c.size,slots:c.slots.map(function(s){return s[0];}).join(', ')}));
+          self.setState({ pick: c.id });
+        },
         cardCls: 'w-full p-4 m-0 rounded-3xl bg-white text-left font-sans text-ink flex flex-col gap-3 border-0 transition-transform active:scale-[.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue ' + (on ? 'ring-2 ring-brand-blue' : 'ring-1 ring-line'),
         radioCls: 'w-6 h-6 shrink-0 rounded-full flex items-center justify-center ' + (on ? 'bg-brand-blue' : 'ring-2 ring-inset ring-line'),
         dotCls: on ? 'w-2.5 h-2.5 rounded-full bg-white' : 'hidden',

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "returncode": 0,
+  "phase": "design",
+  "contract_version": "2.0",
+  "errors": [],
+  "page_count": 3,
+  "verification": "DECISION_INTEGRITY_ONLY",
+  "aesthetic_quality": "UNKNOWN",
+  "ux_integrity": "RECORDED",
+  "human_preference": "UNKNOWN",
+  "comparison_reviews": [],
+  "direction_comparison": "MULTI_AXIS_DECLARED",
+  "contract_sha256": "6d06357393ed0fc0f09b5e8cc1e8e7f9a1f0a969e6d38b886afc631baf2fdd87",
+  "path": "docs/uiux/design-decisions.json",
+  "project_root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center",
+  "artifact_path": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center\\docs\\uiux\\design-decisions.json",
+  "artifact_sha256": "sha256:6d06357393ed0fc0f09b5e8cc1e8e7f9a1f0a969e6d38b886afc631baf2fdd87",
+  "dependency_hashes": {}
+}

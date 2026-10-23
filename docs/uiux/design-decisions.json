@@ -1,0 +1,1271 @@
+{
+  "schema_version": "2.0",
+  "pages": [
+    {
+      "route": "/app/GV01-TongQuan.dc.html",
+      "page_role": "app-overview",
+      "user_question": "Việc nào cần xử lý trước?",
+      "cta": "Duyệt báo cáo",
+      "decisions": [
+        {
+          "axis": "brand",
+          "source": {
+            "kind": "reference",
+            "ref": "app/tailwind.config.js"
+          },
+          "value": "Preserve brand blue #253a7e and the current Vietnamese domain content.",
+          "rejected_alternative": "Retrieved LMS teal/amber palette and marketing showcase layout do not fit an operational app."
+        },
+        {
+          "axis": "hierarchy-and-spacing",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          },
+          "value": "Numeric typography and spacing above are project hypotheses with browser captures.",
+          "rejected_alternative": "Uniform large decorative cards and fixed live screen heights."
+        },
+        {
+          "axis": "font",
+          "value": "Google Sans Flex from user supplied design system with system-ui fallback; both directions follow this family.",
+          "rejected_alternative": "A new decorative typeface contradicts the supplied design system.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "typography",
+          "value": "28px title, 17px section, 15/22px body, 14px UI, 13px caption; supplied role scale.",
+          "rejected_alternative": "Custom sizes outside the supplied role scale.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "layout",
+          "value": "Daily context then priority queue.",
+          "rejected_alternative": "A repeated generic hero cannot serve all three tasks.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "spacing",
+          "value": "{\"gutter_px\":20,\"section_gap_px\":12,\"group_gap_px\":12,\"component_padding_px\":16}",
+          "rejected_alternative": "Inconsistent per-page margins and all-pill controls.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "media",
+          "value": "Keep the existing illustrative avatars and stroke icons; no new photography.",
+          "rejected_alternative": "Stock classroom images would not prove these operational tasks.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "voice",
+          "value": "Vietnamese task names and explicit verbs; errors state correction and preserve entered data.",
+          "rejected_alternative": "Generic English dashboard labels or unverified operational success claims.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "supplied-design-system",
+          "source": {
+            "kind": "user",
+            "ref": "MinhHoangCenter-DesignSystem.zip; docs/uiux/supplied-design-system.json"
+          },
+          "value": "Google Sans Flex; exact supplied palette; cards 24px without borders; controls 16px; heroes/sheets 28px; 20px gutters; floating blue navigation 24px above the bottom.",
+          "rejected_alternative": "The previous custom 18px cards, 12px controls and white full-width navigation conflict with the newly supplied source."
+        }
+      ],
+      "desktop_type": {
+        "title": {
+          "size_px": 28,
+          "line_height": 1.1428571428571428,
+          "weight": 700
+        },
+        "section": {
+          "size_px": 17,
+          "line_height": 1.411764705882353,
+          "weight": 600
+        },
+        "body": {
+          "size_px": 15,
+          "line_height": 1.4666666666666666,
+          "weight": 400
+        },
+        "ui": {
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
+          "weight": 600
+        },
+        "meta": {
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
+          "weight": 400
+        }
+      },
+      "mobile_type": {
+        "title": {
+          "size_px": 28,
+          "line_height": 1.1428571428571428,
+          "weight": 700
+        },
+        "section": {
+          "size_px": 17,
+          "line_height": 1.411764705882353,
+          "weight": 600
+        },
+        "body": {
+          "size_px": 15,
+          "line_height": 1.4666666666666666,
+          "weight": 400
+        },
+        "ui": {
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
+          "weight": 600
+        },
+        "meta": {
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
+          "weight": 400
+        }
+      },
+      "desktop_layout": {
+        "max_width_px": 390,
+        "columns": 1,
+        "column_gap_px": 12,
+        "reading_width_ch": 40,
+        "density": "productive"
+      },
+      "mobile_layout": {
+        "max_width_px": 390,
+        "columns": 1,
+        "column_gap_px": 12,
+        "reading_width_ch": 40,
+        "density": "productive"
+      },
+      "desktop_spacing": {
+        "gutter_px": 20,
+        "section_gap_px": 12,
+        "group_gap_px": 12,
+        "component_padding_px": 16
+      },
+      "mobile_spacing": {
+        "gutter_px": 20,
+        "section_gap_px": 12,
+        "group_gap_px": 12,
+        "component_padding_px": 16
+      },
+      "compositions": [
+        {
+          "id": "selected",
+          "anchor": "daily workload, school session counts, task count, deadline, action",
+          "structure": {
+            "regions": [
+              {
+                "role": "daily-context",
+                "layout": "compact-summary",
+                "contains": [
+                  "daily-total",
+                  "schedule",
+                  "contextual-cta"
+                ]
+              },
+              {
+                "role": "work-queue",
+                "layout": "count-content-action-rows",
+                "contains": [
+                  "count",
+                  "task",
+                  "deadline",
+                  "action"
+                ]
+              },
+              {
+                "role": "navigation",
+                "layout": "five-labelled-tabs",
+                "contains": [
+                  "overview",
+                  "students",
+                  "review",
+                  "tuition",
+                  "messages"
+                ]
+              }
+            ],
+            "relationships": [
+              [
+                "daily-context",
+                "precedes",
+                "work-queue"
+              ],
+              [
+                "work-queue",
+                "above",
+                "navigation"
+              ]
+            ],
+            "mobile_layout": "Single-column summary then complete priority rows; sticky five labelled tabs",
+            "mobile_grouping": [
+              [
+                "daily-total",
+                "schedule"
+              ],
+              [
+                "count",
+                "task",
+                "deadline",
+                "action"
+              ]
+            ]
+          },
+          "proof": "docs/visual-direction.md and current captures at 390 / 1280 CSS pixels.",
+          "tradeoff": "Some lower-priority work needs scrolling, but each task has a grouped action.",
+          "direction": {
+            "desktop_typography": {
+              "family": "Google Sans Flex, system-ui, sans-serif",
+              "title": {
+                "size_px": 28,
+                "line_height": 1.1428571428571428,
+                "weight": 700
+              },
+              "body": {
+                "size_px": 15,
+                "line_height": 1.4666666666666666,
+                "weight": 400
+              },
+              "title_tracking_em": -0.025,
+              "reading_width_ch": 40
+            },
+            "mobile_typography": {
+              "family": "Google Sans Flex, system-ui, sans-serif",
+              "title": {
+                "size_px": 28,
+                "line_height": 1.1428571428571428,
+                "weight": 700
+              },
+              "body": {
+                "size_px": 15,
+                "line_height": 1.4666666666666666,
+                "weight": 400
+              },
+              "title_tracking_em": -0.025,
+              "reading_width_ch": 40
+            },
+            "desktop_density": {
+              "mode": "productive",
+              "section_gap_px": 12,
+              "group_gap_px": 12,
+              "object_padding_px": 16
+            },
+            "mobile_density": {
+              "mode": "productive",
+              "section_gap_px": 12,
+              "group_gap_px": 12,
+              "object_padding_px": 16
+            },
+            "visual_object": {
+              "kind": "app-overview",
+              "information_task": "Read current state, consequence and next action in the education task.",
+              "anatomy": [
+                "daily workload",
+                "school session counts",
+                "task count",
+                "deadline",
+                "action"
+              ],
+              "reality": "illustrative"
+            }
+          }
+        },
+        {
+          "id": "ledger",
+          "anchor": "Immediate task ledger before the daily context",
+          "structure": {
+            "regions": [
+              {
+                "role": "work-ledger",
+                "layout": "task-first-with-action-underneath",
+                "contains": [
+                  "task",
+                  "deadline",
+                  "right-count",
+                  "underlined-action"
+                ]
+              },
+              {
+                "role": "secondary-context",
+                "layout": "flat-summary-below-ledger",
+                "contains": [
+                  "daily-total",
+                  "schedule"
+                ]
+              }
+            ],
+            "relationships": [
+              [
+                "work-ledger",
+                "precedes",
+                "secondary-context"
+              ]
+            ],
+            "mobile_layout": "Task ledger first, daily context below; count separate from action line",
+            "mobile_grouping": [
+              [
+                "task",
+                "deadline",
+                "right-count"
+              ],
+              [
+                "underlined-action"
+              ],
+              [
+                "daily-total",
+                "schedule"
+              ]
+            ]
+          },
+          "proof": "docs/uiux/alternative.html; captured at 390 and 1280px",
+          "tradeoff": "Due work appears sooner; daily schedule context falls below the task list, and the action is on a separate line.",
+          "direction": {
+            "desktop_typography": {
+              "family": "Google Sans Flex, system-ui, sans-serif",
+              "title": {
+                "size_px": 44,
+                "line_height": 1.1818181818181819,
+                "weight": 700
+              },
+              "body": {
+                "size_px": 15,
+                "line_height": 1.4666666666666666,
+                "weight": 400
+              },
+              "title_tracking_em": -0.025,
+              "reading_width_ch": 40
+            },
+            "mobile_typography": {
+              "family": "Google Sans Flex, system-ui, sans-serif",
+              "title": {
+                "size_px": 44,
+                "line_height": 1.1818181818181819,
+                "weight": 700
+              },
+              "body": {
+                "size_px": 15,
+                "line_height": 1.4666666666666666,
+                "weight": 400
+              },
+              "title_tracking_em": -0.025,
+              "reading_width_ch": 40
+            },
+            "desktop_density": {
+              "mode": "productive",
+              "section_gap_px": 24,
+              "group_gap_px": 16,
+              "object_padding_px": 20
+            },
+            "mobile_density": {
+              "mode": "productive",
+              "section_gap_px": 24,
+              "group_gap_px": 16,
+              "object_padding_px": 20
+            },
+            "visual_object": {
+              "kind": "task ledger",
+              "information_task": "Read current state, consequence and next action in the education task.",
+              "anatomy": [
+                "task title",
+                "deadline",
+                "count at right",
+                "action below",
+                "daily summary after tasks"
+              ],
+              "reality": "illustrative"
+            }
+          }
+        }
+      ],
+      "selected_composition": "selected",
+      "comparison_required": true,
+      "reference_transfers": [
+        {
+          "reference_id": "w3c-reflow",
+          "source": {
+            "kind": "reference",
+            "ref": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+          },
+          "action": "ADAPT",
+          "property": "Keep tasks and controls readable as viewport narrows; canvas is explicitly two-dimensional.",
+          "reason": "App screens need responsive flow; the all-screen canvas needs spatial navigation.",
+          "boundary": "This does not claim WCAG conformance; only declared browser checks."
+        },
+        {
+          "reference_id": "source-anatomy",
+          "source": {
+            "kind": "reference",
+            "ref": "docs/visual-direction.md"
+          },
+          "action": "ADAPT",
+          "property": "Retain real counts, student/class records, and next action relationships from current source.",
+          "reason": "The repository provides education task objects; marketing-layout retrieval is rejected.",
+          "boundary": "Fixtures are illustrative, not real operational data."
+        }
+      ],
+      "ux": {
+        "entry_state": "GV01 Tổng quan giáo vụ",
+        "user_goal": "Việc nào cần xử lý trước?",
+        "information_priority": [
+          "Thời hạn",
+          "Số việc cần xử lý",
+          "Lịch ca",
+          "Thao tác nhanh"
+        ],
+        "primary_action": "Duyệt báo cáo",
+        "destination": "GV07-DuyetBaoCao",
+        "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+        "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+        "walkthrough_observation": "Direct browser scenarios in qa.json validate representative navigation, invalid input and selection continuity.",
+        "evidence_ref": "docs/evidence/qa.json",
+        "review_source": "agent-heuristic",
+        "findings": []
+      },
+      "comparison_protocol": {
+        "buyer_task": "Identify the due education task and next action while retaining today’s workload context.",
+        "held_constant": {
+          "audience": "Education office staff",
+          "content": "Same fixture identities, totals, task labels and destinations",
+          "claims": "No operational or outcome claim in either candidate",
+          "cta": "Same due-task links and next actions",
+          "state": "Same initial illustrative data",
+          "assets": "Same original avatar and icon family",
+          "viewports": "390x900 and 1280x900"
+        },
+        "questions": [
+          {
+            "id": "C1",
+            "dimension": "comprehension",
+            "prompt": "Which item is due first and which control advances it?",
+            "criteria": [
+              "First due task can be identified",
+              "Action is labelled in the same task group"
+            ]
+          },
+          {
+            "id": "D1",
+            "dimension": "distinctiveness",
+            "prompt": "Which concrete education context is visible without relying on the logo?",
+            "criteria": [
+              "Task counts and deadlines remain connected",
+              "Daily teaching sessions are visible near the task queue"
+            ]
+          }
+        ]
+      },
+      "comparison_record": {
+        "plan": "docs/uiux/comparison-plan.json",
+        "observations": "docs/uiux/comparison-observations.json"
+      }
+    },
+    {
+      "route": "/app/GV04-NhapHoSo.dc.html",
+      "page_role": "app-task",
+      "user_question": "Đã đủ thông tin học sinh để tiếp tục chưa?",
+      "cta": "Tiếp tục",
+      "decisions": [
+        {
+          "axis": "brand",
+          "source": {
+            "kind": "reference",
+            "ref": "app/tailwind.config.js"
+          },
+          "value": "Preserve brand blue #253a7e and the current Vietnamese domain content.",
+          "rejected_alternative": "Retrieved LMS teal/amber palette and marketing showcase layout do not fit an operational app."
+        },
+        {
+          "axis": "hierarchy-and-spacing",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          },
+          "value": "Numeric typography and spacing above are project hypotheses with browser captures.",
+          "rejected_alternative": "Uniform large decorative cards and fixed live screen heights."
+        },
+        {
+          "axis": "font",
+          "value": "Google Sans Flex from user supplied design system with system-ui fallback; both directions follow this family.",
+          "rejected_alternative": "A new decorative typeface contradicts the supplied design system.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "typography",
+          "value": "22px title, 17px section, 15/22px body, 14px UI, 13px caption; supplied role scale.",
+          "rejected_alternative": "Custom sizes outside the supplied role scale.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "layout",
+          "value": "Grouped identity, school and contact fields with one Continue footer.",
+          "rejected_alternative": "A repeated generic hero cannot serve all three tasks.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "spacing",
+          "value": "{\"gutter_px\":20,\"section_gap_px\":12,\"group_gap_px\":12,\"component_padding_px\":16}",
+          "rejected_alternative": "Inconsistent per-page margins and all-pill controls.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "media",
+          "value": "Keep the existing illustrative avatars and stroke icons; no new photography.",
+          "rejected_alternative": "Stock classroom images would not prove these operational tasks.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "voice",
+          "value": "Vietnamese task names and explicit verbs; errors state correction and preserve entered data.",
+          "rejected_alternative": "Generic English dashboard labels or unverified operational success claims.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "supplied-design-system",
+          "source": {
+            "kind": "user",
+            "ref": "MinhHoangCenter-DesignSystem.zip; docs/uiux/supplied-design-system.json"
+          },
+          "value": "Google Sans Flex; exact supplied palette; cards 24px without borders; controls 16px; heroes/sheets 28px; 20px gutters; floating blue navigation 24px above the bottom.",
+          "rejected_alternative": "The previous custom 18px cards, 12px controls and white full-width navigation conflict with the newly supplied source."
+        }
+      ],
+      "desktop_type": {
+        "title": {
+          "size_px": 22,
+          "line_height": 1.2727272727272727,
+          "weight": 700
+        },
+        "section": {
+          "size_px": 17,
+          "line_height": 1.411764705882353,
+          "weight": 600
+        },
+        "body": {
+          "size_px": 15,
+          "line_height": 1.4666666666666666,
+          "weight": 400
+        },
+        "ui": {
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
+          "weight": 600
+        },
+        "meta": {
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
+          "weight": 400
+        }
+      },
+      "mobile_type": {
+        "title": {
+          "size_px": 22,
+          "line_height": 1.2727272727272727,
+          "weight": 700
+        },
+        "section": {
+          "size_px": 17,
+          "line_height": 1.411764705882353,
+          "weight": 600
+        },
+        "body": {
+          "size_px": 15,
+          "line_height": 1.4666666666666666,
+          "weight": 400
+        },
+        "ui": {
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
+          "weight": 600
+        },
+        "meta": {
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
+          "weight": 400
+        }
+      },
+      "desktop_layout": {
+        "max_width_px": 390,
+        "columns": 1,
+        "column_gap_px": 12,
+        "reading_width_ch": 40,
+        "density": "productive"
+      },
+      "mobile_layout": {
+        "max_width_px": 390,
+        "columns": 1,
+        "column_gap_px": 12,
+        "reading_width_ch": 40,
+        "density": "productive"
+      },
+      "desktop_spacing": {
+        "gutter_px": 20,
+        "section_gap_px": 12,
+        "group_gap_px": 12,
+        "component_padding_px": 16
+      },
+      "mobile_spacing": {
+        "gutter_px": 20,
+        "section_gap_px": 12,
+        "group_gap_px": 12,
+        "component_padding_px": 16
+      },
+      "compositions": [
+        {
+          "id": "selected",
+          "anchor": "named step, student identity, school, contact, validation, continue",
+          "structure": {
+            "regions": [
+              {
+                "role": "app-task",
+                "layout": "grouped-form-with-fixed-continue",
+                "contains": [
+                  "named step",
+                  "student identity",
+                  "school",
+                  "contact",
+                  "validation",
+                  "continue"
+                ]
+              },
+              {
+                "role": "recovery",
+                "layout": "return-or-inline-error",
+                "contains": [
+                  "back",
+                  "preserved-input"
+                ]
+              }
+            ],
+            "relationships": [
+              [
+                "app-task",
+                "enables",
+                "recovery"
+              ]
+            ],
+            "mobile_layout": "Single-column app-task with reachable footer and scrollable content.",
+            "mobile_grouping": [
+              [
+                "named step",
+                "student identity",
+                "school",
+                "contact",
+                "validation",
+                "continue"
+              ],
+              [
+                "back",
+                "preserved-input"
+              ]
+            ]
+          },
+          "proof": "docs/visual-direction.md and current captures at 390 / 1280 CSS pixels.",
+          "tradeoff": "Maintain existing workflow, fit the real viewport and allow internal scrolling.",
+          "direction": {
+            "desktop_typography": {
+              "family": "Google Sans Flex, system-ui, sans-serif",
+              "title": {
+                "size_px": 22,
+                "line_height": 1.2727272727272727,
+                "weight": 700
+              },
+              "body": {
+                "size_px": 15,
+                "line_height": 1.4666666666666666,
+                "weight": 400
+              },
+              "title_tracking_em": -0.025,
+              "reading_width_ch": 40
+            },
+            "mobile_typography": {
+              "family": "Google Sans Flex, system-ui, sans-serif",
+              "title": {
+                "size_px": 22,
+                "line_height": 1.2727272727272727,
+                "weight": 700
+              },
+              "body": {
+                "size_px": 15,
+                "line_height": 1.4666666666666666,
+                "weight": 400
+              },
+              "title_tracking_em": -0.025,
+              "reading_width_ch": 40
+            },
+            "desktop_density": {
+              "mode": "productive",
+              "section_gap_px": 12,
+              "group_gap_px": 12,
+              "object_padding_px": 16
+            },
+            "mobile_density": {
+              "mode": "productive",
+              "section_gap_px": 12,
+              "group_gap_px": 12,
+              "object_padding_px": 16
+            },
+            "visual_object": {
+              "kind": "app-task",
+              "information_task": "Read current state, consequence and next action in the education task.",
+              "anatomy": [
+                "named step",
+                "student identity",
+                "school",
+                "contact",
+                "validation",
+                "continue"
+              ],
+              "reality": "illustrative"
+            }
+          }
+        }
+      ],
+      "selected_composition": "selected",
+      "comparison_required": false,
+      "reference_transfers": [
+        {
+          "reference_id": "w3c-reflow",
+          "source": {
+            "kind": "reference",
+            "ref": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+          },
+          "action": "ADAPT",
+          "property": "Keep tasks and controls readable as viewport narrows; canvas is explicitly two-dimensional.",
+          "reason": "App screens need responsive flow; the all-screen canvas needs spatial navigation.",
+          "boundary": "This does not claim WCAG conformance; only declared browser checks."
+        },
+        {
+          "reference_id": "source-anatomy",
+          "source": {
+            "kind": "reference",
+            "ref": "docs/visual-direction.md"
+          },
+          "action": "ADAPT",
+          "property": "Retain real counts, student/class records, and next action relationships from current source.",
+          "reason": "The repository provides education task objects; marketing-layout retrieval is rejected.",
+          "boundary": "Fixtures are illustrative, not real operational data."
+        }
+      ],
+      "ux": {
+        "entry_state": "GV04 Tiếp nhận hồ sơ · 1 Học sinh",
+        "user_goal": "Đã đủ thông tin học sinh để tiếp tục chưa?",
+        "information_priority": [
+          "Danh tính học sinh",
+          "Nơi học",
+          "Liên hệ",
+          "Nguồn tuyển sinh"
+        ],
+        "primary_action": "Tiếp tục",
+        "destination": "GV04b-PhuHuynh",
+        "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+        "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+        "walkthrough_observation": "Direct browser scenarios in qa.json validate representative navigation, invalid input and selection continuity.",
+        "evidence_ref": "docs/evidence/qa.json",
+        "review_source": "agent-heuristic",
+        "findings": []
+      },
+      "inherited_from": "/app/GV01-TongQuan.dc.html"
+    },
+    {
+      "route": "/app/XL02-ChonLop.dc.html",
+      "page_role": "app-selection",
+      "user_question": "Lớp nào khớp lịch và còn chỗ?",
+      "cta": "Tiếp tục xác nhận",
+      "decisions": [
+        {
+          "axis": "brand",
+          "source": {
+            "kind": "reference",
+            "ref": "app/tailwind.config.js"
+          },
+          "value": "Preserve brand blue #253a7e and the current Vietnamese domain content.",
+          "rejected_alternative": "Retrieved LMS teal/amber palette and marketing showcase layout do not fit an operational app."
+        },
+        {
+          "axis": "hierarchy-and-spacing",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          },
+          "value": "Numeric typography and spacing above are project hypotheses with browser captures.",
+          "rejected_alternative": "Uniform large decorative cards and fixed live screen heights."
+        },
+        {
+          "axis": "font",
+          "value": "Google Sans Flex from user supplied design system with system-ui fallback; both directions follow this family.",
+          "rejected_alternative": "A new decorative typeface contradicts the supplied design system.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "typography",
+          "value": "22px title, 17px section, 15/22px body, 14px UI, 13px caption; supplied role scale.",
+          "rejected_alternative": "Custom sizes outside the supplied role scale.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "layout",
+          "value": "Student need then class comparison, selected summary and one Continue footer.",
+          "rejected_alternative": "A repeated generic hero cannot serve all three tasks.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "spacing",
+          "value": "{\"gutter_px\":20,\"section_gap_px\":12,\"group_gap_px\":12,\"component_padding_px\":16}",
+          "rejected_alternative": "Inconsistent per-page margins and all-pill controls.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "media",
+          "value": "Keep the existing illustrative avatars and stroke icons; no new photography.",
+          "rejected_alternative": "Stock classroom images would not prove these operational tasks.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "voice",
+          "value": "Vietnamese task names and explicit verbs; errors state correction and preserve entered data.",
+          "rejected_alternative": "Generic English dashboard labels or unverified operational success claims.",
+          "source": {
+            "kind": "rule",
+            "ref": "docs/visual-direction.md"
+          }
+        },
+        {
+          "axis": "supplied-design-system",
+          "source": {
+            "kind": "user",
+            "ref": "MinhHoangCenter-DesignSystem.zip; docs/uiux/supplied-design-system.json"
+          },
+          "value": "Google Sans Flex; exact supplied palette; cards 24px without borders; controls 16px; heroes/sheets 28px; 20px gutters; floating blue navigation 24px above the bottom.",
+          "rejected_alternative": "The previous custom 18px cards, 12px controls and white full-width navigation conflict with the newly supplied source."
+        }
+      ],
+      "desktop_type": {
+        "title": {
+          "size_px": 22,
+          "line_height": 1.2727272727272727,
+          "weight": 700
+        },
+        "section": {
+          "size_px": 17,
+          "line_height": 1.411764705882353,
+          "weight": 600
+        },
+        "body": {
+          "size_px": 15,
+          "line_height": 1.4666666666666666,
+          "weight": 400
+        },
+        "ui": {
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
+          "weight": 600
+        },
+        "meta": {
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
+          "weight": 400
+        }
+      },
+      "mobile_type": {
+        "title": {
+          "size_px": 22,
+          "line_height": 1.2727272727272727,
+          "weight": 700
+        },
+        "section": {
+          "size_px": 17,
+          "line_height": 1.411764705882353,
+          "weight": 600
+        },
+        "body": {
+          "size_px": 15,
+          "line_height": 1.4666666666666666,
+          "weight": 400
+        },
+        "ui": {
+          "size_px": 14,
+          "line_height": 1.4285714285714286,
+          "weight": 600
+        },
+        "meta": {
+          "size_px": 13,
+          "line_height": 1.3846153846153846,
+          "weight": 400
+        }
+      },
+      "desktop_layout": {
+        "max_width_px": 390,
+        "columns": 1,
+        "column_gap_px": 12,
+        "reading_width_ch": 40,
+        "density": "productive"
+      },
+      "mobile_layout": {
+        "max_width_px": 390,
+        "columns": 1,
+        "column_gap_px": 12,
+        "reading_width_ch": 40,
+        "density": "productive"
+      },
+      "desktop_spacing": {
+        "gutter_px": 20,
+        "section_gap_px": 12,
+        "group_gap_px": 12,
+        "component_padding_px": 16
+      },
+      "mobile_spacing": {
+        "gutter_px": 20,
+        "section_gap_px": 12,
+        "group_gap_px": 12,
+        "component_padding_px": 16
+      },
+      "compositions": [
+        {
+          "id": "selected",
+          "anchor": "student need, teacher, room, schedule match, capacity, selected class summary",
+          "structure": {
+            "regions": [
+              {
+                "role": "app-selection",
+                "layout": "comparison-radio-list-with-summary",
+                "contains": [
+                  "student need",
+                  "teacher",
+                  "room",
+                  "schedule match",
+                  "capacity",
+                  "selected class summary"
+                ]
+              },
+              {
+                "role": "recovery",
+                "layout": "return-or-inline-error",
+                "contains": [
+                  "back",
+                  "preserved-input"
+                ]
+              }
+            ],
+            "relationships": [
+              [
+                "app-selection",
+                "enables",
+                "recovery"
+              ]
+            ],
+            "mobile_layout": "Single-column app-selection with reachable footer and scrollable content.",
+            "mobile_grouping": [
+              [
+                "student need",
+                "teacher",
+                "room",
+                "schedule match",
+                "capacity",
+                "selected class summary"
+              ],
+              [
+                "back",
+                "preserved-input"
+              ]
+            ]
+          },
+          "proof": "docs/visual-direction.md and current captures at 390 / 1280 CSS pixels.",
+          "tradeoff": "Maintain existing workflow, fit the real viewport and allow internal scrolling.",
+          "direction": {
+            "desktop_typography": {
+              "family": "Google Sans Flex, system-ui, sans-serif",
+              "title": {
+                "size_px": 22,
+                "line_height": 1.2727272727272727,
+                "weight": 700
+              },
+              "body": {
+                "size_px": 15,
+                "line_height": 1.4666666666666666,
+                "weight": 400
+              },
+              "title_tracking_em": -0.025,
+              "reading_width_ch": 40
+            },
+            "mobile_typography": {
+              "family": "Google Sans Flex, system-ui, sans-serif",
+              "title": {
+                "size_px": 22,
+                "line_height": 1.2727272727272727,
+                "weight": 700
+              },
+              "body": {
+                "size_px": 15,
+                "line_height": 1.4666666666666666,
+                "weight": 400
+              },
+              "title_tracking_em": -0.025,
+              "reading_width_ch": 40
+            },
+            "desktop_density": {
+              "mode": "productive",
+              "section_gap_px": 12,
+              "group_gap_px": 12,
+              "object_padding_px": 16
+            },
+            "mobile_density": {
+              "mode": "productive",
+              "section_gap_px": 12,
+              "group_gap_px": 12,
+              "object_padding_px": 16
+            },
+            "visual_object": {
+              "kind": "app-selection",
+              "information_task": "Read current state, consequence and next action in the education task.",
+              "anatomy": [
+                "student need",
+                "teacher",
+                "room",
+                "schedule match",
+                "capacity",
+                "selected class summary"
+              ],
+              "reality": "illustrative"
+            }
+          }
+        }
+      ],
+      "selected_composition": "selected",
+      "comparison_required": false,
+      "reference_transfers": [
+        {
+          "reference_id": "w3c-reflow",
+          "source": {
+            "kind": "reference",
+            "ref": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+          },
+          "action": "ADAPT",
+          "property": "Keep tasks and controls readable as viewport narrows; canvas is explicitly two-dimensional.",
+          "reason": "App screens need responsive flow; the all-screen canvas needs spatial navigation.",
+          "boundary": "This does not claim WCAG conformance; only declared browser checks."
+        },
+        {
+          "reference_id": "source-anatomy",
+          "source": {
+            "kind": "reference",
+            "ref": "docs/visual-direction.md"
+          },
+          "action": "ADAPT",
+          "property": "Retain real counts, student/class records, and next action relationships from current source.",
+          "reason": "The repository provides education task objects; marketing-layout retrieval is rejected.",
+          "boundary": "Fixtures are illustrative, not real operational data."
+        }
+      ],
+      "ux": {
+        "entry_state": "XL02 Chọn lớp",
+        "user_goal": "Lớp nào khớp lịch và còn chỗ?",
+        "information_priority": [
+          "Nhu cầu học sinh",
+          "Mức khớp lịch",
+          "Giáo viên và phòng",
+          "Chỗ trống"
+        ],
+        "primary_action": "Tiếp tục xác nhận",
+        "destination": "XL03-XacNhanXepLop",
+        "feedback": "Trạng thái chọn, focus và lỗi nhập được thể hiện trong trình duyệt.",
+        "recovery": "Quay lại giữ nháp trong phiên; liên kết thiếu có giải thích và nút đóng.",
+        "walkthrough_observation": "Direct browser scenarios in qa.json validate representative navigation, invalid input and selection continuity.",
+        "evidence_ref": "docs/evidence/qa.json",
+        "review_source": "agent-heuristic",
+        "findings": []
+      },
+      "inherited_from": "/app/GV01-TongQuan.dc.html"
+    }
+  ],
+  "captures": [
+    {
+      "route": "/app/GV01-TongQuan.dc.html",
+      "composition_id": "selected",
+      "file": "docs/evidence/GV01-TongQuan-selected-390.png",
+      "sha256": "36d763e3f16540a957685fd184b6647ede2b8311426aaeca4cffb12d2a2f7295",
+      "width": 390,
+      "viewport_height": 900,
+      "inspected": true,
+      "review_source": "agent-heuristic",
+      "critique": {
+        "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
+        "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
+      }
+    },
+    {
+      "route": "/app/GV01-TongQuan.dc.html",
+      "composition_id": "selected",
+      "file": "docs/evidence/GV01-TongQuan-selected-1280.png",
+      "sha256": "aebe8c5c9a1d2a24e2a9398e7b3bb312b44b1dc59132c0d5975b606ab6537790",
+      "width": 1280,
+      "viewport_height": 900,
+      "inspected": true,
+      "review_source": "agent-heuristic",
+      "critique": {
+        "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
+        "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
+      }
+    },
+    {
+      "route": "/app/GV04-NhapHoSo.dc.html",
+      "composition_id": "selected",
+      "file": "docs/evidence/GV04-NhapHoSo-selected-390.png",
+      "sha256": "0f48b29c61aeb8802ceb10db5c8ed3a258dc4422e78534b0886c030b6ea37173",
+      "width": 390,
+      "viewport_height": 900,
+      "inspected": true,
+      "review_source": "agent-heuristic",
+      "critique": {
+        "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
+        "distinctiveness": "Student identity and admissions steps anchor the domain."
+      }
+    },
+    {
+      "route": "/app/GV04-NhapHoSo.dc.html",
+      "composition_id": "selected",
+      "file": "docs/evidence/GV04-NhapHoSo-selected-1280.png",
+      "sha256": "96cfe32de2b70f2394d729af5818af0b6a7ff94e9a44ca3e054e6c711ae2e367",
+      "width": 1280,
+      "viewport_height": 900,
+      "inspected": true,
+      "review_source": "agent-heuristic",
+      "critique": {
+        "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
+        "distinctiveness": "Student identity and admissions steps anchor the domain."
+      }
+    },
+    {
+      "route": "/app/XL02-ChonLop.dc.html",
+      "composition_id": "selected",
+      "file": "docs/evidence/XL02-ChonLop-selected-390.png",
+      "sha256": "3794a2e788a4f92d3b7a6a13cdbb983a73984eaebabb56019240825dfc22f13c",
+      "width": 390,
+      "viewport_height": 900,
+      "inspected": true,
+      "review_source": "agent-heuristic",
+      "critique": {
+        "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
+        "distinctiveness": "Schedule match, capacity and teacher/room are the decision object."
+      }
+    },
+    {
+      "route": "/app/XL02-ChonLop.dc.html",
+      "composition_id": "selected",
+      "file": "docs/evidence/XL02-ChonLop-selected-1280.png",
+      "sha256": "1b7d84ccb46a2b88e6ce8d149267d94c49c4d1a7738c95b052c58d590066b24c",
+      "width": 1280,
+      "viewport_height": 900,
+      "inspected": true,
+      "review_source": "agent-heuristic",
+      "critique": {
+        "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
+        "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
+        "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
+        "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
+        "distinctiveness": "Schedule match, capacity and teacher/room are the decision object."
+      }
+    },
+    {
+      "route": "/app/GV01-TongQuan.dc.html",
+      "composition_id": "ledger",
+      "file": "docs/evidence/GV01-alternative-390.png",
+      "sha256": "862ee5598fbacba3a6623866c20c805fb5695bdefba9dd9cf134caf11da63fea",
+      "width": 390,
+      "viewport_height": 900,
+      "inspected": true,
+      "review_source": "agent-heuristic",
+      "critique": {
+        "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
+        "typography": "Supplied Google Sans Flex display role 44/52; this greeting takes more initial space than the chosen 28/32 title role.",
+        "spacing": "24px section gaps, 16px task gaps and 20px object padding; each action occupies a separate line.",
+        "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
+        "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
+      }
+    },
+    {
+      "route": "/app/GV01-TongQuan.dc.html",
+      "composition_id": "ledger",
+      "file": "docs/evidence/GV01-alternative-1280.png",
+      "sha256": "d358ee8cbad705b0ad31805d97d04132e647133531a3e84794d3a1d260173ac6",
+      "width": 1280,
+      "viewport_height": 900,
+      "inspected": true,
+      "review_source": "agent-heuristic",
+      "critique": {
+        "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
+        "typography": "Supplied Google Sans Flex display role 44/52; this greeting takes more initial space than the chosen 28/32 title role.",
+        "spacing": "24px section gaps, 16px task gaps and 20px object padding; each action occupies a separate line.",
+        "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
+        "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
+      }
+    }
+  ]
+}

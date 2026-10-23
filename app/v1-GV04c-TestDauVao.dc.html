@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>v1 · GV04c Nhập hồ sơ · 3 Test đầu vào</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-archive" data-screen="v1-GV04c-TestDauVao">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -21,7 +24,7 @@
 <div class="px-5 pb-2 flex gap-1.5"><span class="flex-1 h-1 rounded-full bg-brand-blue"></span><span class="flex-1 h-1 rounded-full bg-brand-blue"></span><span class="flex-1 h-1 rounded-full bg-brand-blue"></span></div>
 <main class="page gap-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
 <div class="grid grid-cols-2 gap-3">
-<div class="flex flex-col gap-2"><label for="td" class="text-[13px] font-medium text-muted px-1">Ngày test</label><input id="td" class="input" value="12/10/2026"></div>
+<div class="flex flex-col gap-2"><label for="td" class="text-[13px] font-medium text-muted px-1">Ngày test</label><input id="td" class="input" data-mh-value="12/10/2026"></div>
 <div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Môn</span><div class="field"><span>Toán</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></div></div>
 </div>
 <div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Giáo viên kiểm tra</span><div class="field"><span class="flex items-center gap-2"><span class="initials w-7 h-7 text-[11px]">TA</span>Cô Thu Anh</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></div></div>

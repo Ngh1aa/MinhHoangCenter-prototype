@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "returncode": 0,
+  "verdict": "READY_WITH_RISKS",
+  "errors": [],
+  "warnings": [
+    "walkthrough is agent-heuristic evidence, not participant research"
+  ],
+  "coverage": {
+    "top_tasks": 3,
+    "flows": 3,
+    "failure_paths": 3,
+    "screens": 11,
+    "scenarios": 5,
+    "findings_open": 0
+  },
+  "review_source": "agent-heuristic",
+  "usability": "UNKNOWN",
+  "path": "docs/ux/ux-structure.json",
+  "artifact_sha256": "sha256:ad6723b934285ab4965f739e7bd0072d4837650a35ff5b97d379ce2f0f98dcc0"
+}
