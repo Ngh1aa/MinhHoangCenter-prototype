@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>v1 · GV10 Sửa tích lịch sau giờ khóa</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-archive" data-screen="v1-GV10-SuaTichLich">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -54,7 +57,7 @@
 <a href="v1-GV02-HocSinh.dc.html" class="tab" aria-label="Học sinh"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></a>
 <a href="v1-GV07-DuyetBaoCao.dc.html" class="tab tab-on" aria-label="Duyệt"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M9 14l2 2 4-4"></path></svg></a>
 <a href="v1-GV08-HoaDon.dc.html" class="tab" aria-label="Hóa đơn"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6"></path></svg></a>
-<a href="v1-TC07-TraoDoi.dc.html" class="tab" aria-label="Trao đổi"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></a>
+<a href="#unavailable" data-unavailable="v1-TC07-TraoDoi.dc.html" class="tab" aria-label="Trao đổi"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></a>
 </nav>
 </div>
 </x-dc>

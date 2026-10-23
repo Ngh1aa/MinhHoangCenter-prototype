@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CN01 Tài khoản của bạn</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-current" data-screen="CN01-TaiKhoanCuaToi">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -39,17 +42,17 @@
 </div>
 
 <h2 class="m-0 mt-5 mb-2 px-4 text-[13px] leading-[18px] font-semibold uppercase tracking-[0.08em] text-muted">Quản lý</h2>
-<div class="list"><a href="GV11-TaiKhoan.dc.html" class="row py-4 active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="w-9 h-9 shrink-0 rounded-2xl bg-soft-blue text-brand-blue flex items-center justify-center"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"></circle><path d="M11 12l9-9M17 6l3 3"></path></svg></span><span class="flex-1 min-w-0 font-medium whitespace-nowrap">Tài khoản và phân quyền</span><svg class="w-5 h-5 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a><a href="GV09-GiaoViec.dc.html" class="row py-4 active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="w-9 h-9 shrink-0 rounded-2xl bg-soft-blue text-brand-blue flex items-center justify-center"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2"></rect><path d="M9 4V3h6v1"></path><path d="M8 11l2 2 4-4M8 17h8"></path></svg></span><span class="flex-1 min-w-0 font-medium whitespace-nowrap">Giao việc</span><svg class="w-5 h-5 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a></div>
+<div class="list"><a href="v1-GV11-TaiKhoan.dc.html" class="row py-4 active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="w-9 h-9 shrink-0 rounded-2xl bg-soft-blue text-brand-blue flex items-center justify-center"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"></circle><path d="M11 12l9-9M17 6l3 3"></path></svg></span><span class="flex-1 min-w-0 font-medium whitespace-nowrap">Tài khoản và phân quyền</span><svg class="w-5 h-5 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a><a href="GV09-GiaoViec.dc.html" class="row py-4 active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"><span class="w-9 h-9 shrink-0 rounded-2xl bg-soft-blue text-brand-blue flex items-center justify-center"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2"></rect><path d="M9 4V3h6v1"></path><path d="M8 11l2 2 4-4M8 17h8"></path></svg></span><span class="flex-1 min-w-0 font-medium whitespace-nowrap">Giao việc</span><svg class="w-5 h-5 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a></div>
 
 <h2 class="m-0 mt-5 mb-2 px-4 text-[13px] leading-[18px] font-semibold uppercase tracking-[0.08em] text-muted">Bảo mật</h2>
 <div class="list">
-<a href="CN02-DoiMatKhau.dc.html" class="row py-4 active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue">
+<a href="#unavailable" data-unavailable="CN02-DoiMatKhau.dc.html" class="row py-4 active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue">
 <span class="flex-1 min-w-0 font-medium whitespace-nowrap">Đổi mật khẩu</span>
 <svg class="w-5 h-5 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
 </a>
 <label class="row py-4 cursor-pointer">
 
-<input type="checkbox" role="switch" checked="" class="sr-only peer">
+<input type="checkbox" role="switch" data-mh-checked="true" class="sr-only peer">
 <span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Đăng nhập bằng vân tay / Face ID</span></span><span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span>
 </label>
 </div>
@@ -58,22 +61,22 @@
 <div class="list">
 <label class="row py-4 cursor-pointer">
 <span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Nhắc hạn chốt điểm danh</span></span>
-<input type="checkbox" role="switch" checked="" class="sr-only peer">
+<input type="checkbox" role="switch" data-mh-checked="true" class="sr-only peer">
 <span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span>
 </label>
 <label class="row py-4 cursor-pointer">
 <span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Báo cáo chờ duyệt</span></span>
-<input type="checkbox" role="switch" checked="" class="sr-only peer">
+<input type="checkbox" role="switch" data-mh-checked="true" class="sr-only peer">
 <span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span>
 </label>
 <label class="row py-4 cursor-pointer">
 <span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Tin nhắn phụ huynh</span></span>
-<input type="checkbox" role="switch" checked="" class="sr-only peer">
+<input type="checkbox" role="switch" data-mh-checked="true" class="sr-only peer">
 <span class="w-12 h-7 shrink-0 rounded-full bg-success relative peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-brand-blue" aria-hidden="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white"></span></span>
 </label>
 </div>
 
-<div class="list mt-8"><a href="A00-DangNhap.dc.html" class="row py-4 justify-center gap-2 font-semibold text-brand-orange active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"></path><path d="M9 8l-4 4 4 4M5 12h11"></path></svg>Đăng xuất</a></div>
+<div class="list mt-8"><a href="v1-A00-DangNhap.dc.html" class="row py-4 justify-center gap-2 font-semibold text-brand-orange active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"></path><path d="M9 8l-4 4 4 4M5 12h11"></path></svg>Đăng xuất</a></div>
 <p class="cap text-center m-0 mt-3">Phiên bản 1.0</p>
 </main>
 </div>

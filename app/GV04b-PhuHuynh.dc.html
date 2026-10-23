@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GV04b Tiếp nhận hồ sơ · 2 Phụ huynh</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-current" data-screen="GV04b-PhuHuynh">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -22,10 +25,10 @@
 <div class="px-5 pb-3"><div class="min-h-[52px] px-4 py-2 rounded-3xl bg-white flex items-center gap-3" aria-label="Học sinh"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="w-8 h-8 shrink-0 object-cover bg-soft-blue rounded-lg"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold text-[14px] leading-[18px] truncate">Nguyễn Văn A</span><span class="font-mono text-[12px] leading-4 tracking-wide text-muted whitespace-nowrap">17A0105</span></span></div></div>
 <main class="page gap-6 pt-2 [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
 <section class="flex flex-col gap-4" aria-labelledby="g-ph"><h2 id="g-ph" class="m-0 text-[12px] leading-4 font-semibold uppercase tracking-[0.12em] text-muted px-1">Phụ huynh</h2>
-<div class="flex flex-col gap-2"><label for="pn" class="text-[13px] font-medium text-muted px-1">Họ tên phụ huynh <span class="text-brand-orange" aria-hidden="true">*</span></label><input id="pn" aria-required="true" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="Nguyễn Văn X"></div>
+<div class="flex flex-col gap-2"><label for="pn" class="text-[13px] font-medium text-muted px-1">Họ tên phụ huynh <span class="text-brand-orange" aria-hidden="true">*</span></label><input id="pn" aria-required="true" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" data-mh-value="Nguyễn Văn X"></div>
 <div class="flex flex-col gap-2">
 <label for="pp" class="text-[13px] font-medium text-muted px-1">Số điện thoại <span class="text-brand-orange" aria-hidden="true">*</span></label>
-<input id="pp" type="tel" inputmode="numeric" aria-required="true" aria-describedby="pp-note" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="0912 345 678">
+<input id="pp" type="tel" inputmode="numeric" aria-required="true" aria-describedby="pp-note" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" data-mh-value="0912 345 678">
 <div id="pp-note" class="rounded-2xl bg-soft-blue px-4 py-3 flex flex-col gap-2">
 <span class="flex items-center gap-3"><svg class="w-5 h-5 text-brand-blue shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8h.01"></path></svg><span class="flex-1 min-w-0 text-sm font-medium whitespace-nowrap">SĐT này đã có trong hệ thống</span></span>
 <span class="pl-8 flex flex-col gap-1.5"><span class="cap text-ink whitespace-nowrap">Phụ huynh của :&nbsp;</span><span class="flex items-center gap-3 rounded-2xl bg-white/70 pl-2 pr-3 py-1.5"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20fill%3D%27%23dfe5f5%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2725%27%20r%3D%2711%27%20fill%3D%27%238d9bc9%27/%3E%3Cpath%20d%3D%27M10%2060c3-14%2014-20%2022-20s19%206%2022%2020z%27%20fill%3D%27%238d9bc9%27/%3E%3C/svg%3E" alt="" class="w-8 h-8 shrink-0 object-cover bg-soft-blue ring-2 ring-white rounded-lg"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold text-[14px] leading-[18px] truncate">Lê Văn C</span><span class="font-mono text-[12px] leading-4 tracking-wide text-muted whitespace-nowrap">16A0004</span></span>

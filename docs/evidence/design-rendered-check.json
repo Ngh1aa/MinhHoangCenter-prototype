@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "returncode": 0,
+  "phase": "rendered",
+  "contract_version": "2.0",
+  "errors": [],
+  "page_count": 3,
+  "verification": "DECISION_INTEGRITY_ONLY",
+  "aesthetic_quality": "UNKNOWN",
+  "ux_integrity": "RECORDED",
+  "human_preference": "UNKNOWN",
+  "comparison_reviews": [
+    {
+      "route": "/app/GV01-TongQuan.dc.html",
+      "status": "HEURISTIC_ONLY",
+      "human_review_count": 0
+    }
+  ],
+  "direction_comparison": "MULTI_AXIS_DECLARED",
+  "contract_sha256": "72659ffcb9503b4fcd291cade269bd2c85def65bee707f60b60a6c97cabf8854",
+  "path": "docs/uiux/design-decisions.json",
+  "project_root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center",
+  "artifact_path": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center\\docs\\uiux\\design-decisions.json",
+  "artifact_sha256": "sha256:72659ffcb9503b4fcd291cade269bd2c85def65bee707f60b60a6c97cabf8854",
+  "dependency_hashes": {
+    "docs/evidence/GV01-TongQuan-selected-1280.png": "d1b6ec8e2b640c190e4cbefee130e5dfc03b47667e7e8cfa41b98a3ef33933d0",
+    "docs/evidence/GV01-TongQuan-selected-390.png": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099",
+    "docs/evidence/GV01-alternative-1280.png": "162c0b020b564197284447b5206253d3f6432e2580b6b55b0f4aea9fdcd2fbaa",
+    "docs/evidence/GV01-alternative-390.png": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb",
+    "docs/evidence/GV04-NhapHoSo-selected-1280.png": "efe43352a8e08b50c3b47ce338ba4f6063245d50f68a48f4a42255a85a757b3b",
+    "docs/evidence/GV04-NhapHoSo-selected-390.png": "853a941cdd1c8cc09a45617760677002703e82f52997b26a3e5193cbbf302627",
+    "docs/evidence/XL02-ChonLop-selected-1280.png": "05c0d8c42182887a5b6fadb319d6a78a9013ae0caca8eeb5ba1817319bec758e",
+    "docs/evidence/XL02-ChonLop-selected-390.png": "d2e64c1451c16ab319a2c86eb4e4c427507336e70d8b20facb97ae86fabf0142",
+    "docs/uiux/comparison-observations.json": "05068b6c5ba06f1d0e26b377c13f4e59792936da342717a14eea8b7689f6ecf6",
+    "docs/uiux/comparison-plan.json": "6ebf0d8af6883f5b9a782247f79ec6c2796f48d3c52b741af7c90190d514ab66"
+  }
+}

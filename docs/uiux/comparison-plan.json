@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "contract_sha256": "46951f6acb9498f1c23c8755949c320ff81d991f8ae011f824d85581e493b4f6",
+  "route": "/app/GV01-TongQuan.dc.html",
+  "seed": 0,
+  "facilitator": {
+    "labels": {
+      "A": "selected",
+      "B": "ledger"
+    },
+    "protocol": {
+      "buyer_task": "Identify the due education task and next action while retaining today’s workload context.",
+      "held_constant": {
+        "audience": "Education office staff",
+        "content": "Same fixture identities, totals, task labels and destinations",
+        "claims": "No operational or outcome claim in either candidate",
+        "cta": "Same due-task links and next actions",
+        "state": "Same initial illustrative data",
+        "assets": "Same original avatar and icon family",
+        "viewports": "390x900 and 1280x900"
+      },
+      "questions": [
+        {
+          "id": "C1",
+          "dimension": "comprehension",
+          "prompt": "Which item is due first and which control advances it?",
+          "criteria": [
+            "First due task can be identified",
+            "Action is labelled in the same task group"
+          ]
+        },
+        {
+          "id": "D1",
+          "dimension": "distinctiveness",
+          "prompt": "Which concrete education context is visible without relying on the logo?",
+          "criteria": [
+            "Task counts and deadlines remain connected",
+            "Daily teaching sessions are visible near the task queue"
+          ]
+        }
+      ]
+    },
+    "captures": [
+      {
+        "route": "/app/GV01-TongQuan.dc.html",
+        "composition_id": "selected",
+        "file": "docs/evidence/GV01-TongQuan-selected-390.png",
+        "sha256": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099",
+        "width": 390,
+        "viewport_height": 900,
+        "inspected": true,
+        "review_source": "agent-heuristic",
+        "critique": {
+          "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
+          "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
+          "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
+          "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+          "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
+        }
+      },
+      {
+        "route": "/app/GV01-TongQuan.dc.html",
+        "composition_id": "selected",
+        "file": "docs/evidence/GV01-TongQuan-selected-1280.png",
+        "sha256": "d1b6ec8e2b640c190e4cbefee130e5dfc03b47667e7e8cfa41b98a3ef33933d0",
+        "width": 1280,
+        "viewport_height": 900,
+        "inspected": true,
+        "review_source": "agent-heuristic",
+        "critique": {
+          "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
+          "typography": "Google Sans Flex has clear Vietnamese diacritics; title, body and metadata remain distinct.",
+          "spacing": "20px gutters and consistent card/field spacing; the footer stays reachable while content scrolls.",
+          "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+          "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
+        }
+      },
+      {
+        "route": "/app/GV01-TongQuan.dc.html",
+        "composition_id": "ledger",
+        "file": "docs/evidence/GV01-alternative-390.png",
+        "sha256": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb",
+        "width": 390,
+        "viewport_height": 900,
+        "inspected": true,
+        "review_source": "agent-heuristic",
+        "critique": {
+          "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
+          "typography": "Segoe UI 34px regular greeting, 16px row titles; lighter and more spread out than the chosen queue.",
+          "spacing": "Flat divider rows have 8px padding, but each action occupies a separate line.",
+          "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+          "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
+        }
+      },
+      {
+        "route": "/app/GV01-TongQuan.dc.html",
+        "composition_id": "ledger",
+        "file": "docs/evidence/GV01-alternative-1280.png",
+        "sha256": "162c0b020b564197284447b5206253d3f6432e2580b6b55b0f4aea9fdcd2fbaa",
+        "width": 1280,
+        "viewport_height": 900,
+        "inspected": true,
+        "review_source": "agent-heuristic",
+        "critique": {
+          "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
+          "typography": "Segoe UI 34px regular greeting, 16px row titles; lighter and more spread out than the chosen queue.",
+          "spacing": "Flat divider rows have 8px padding, but each action occupies a separate line.",
+          "media": "Original illustrative avatars and line icons only. No real-person or outcome claim.",
+          "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
+        }
+      }
+    ],
+    "ordering": "Assign contiguous session_index from zero; rotate label order by seed + session index. This balances first exposure within one cohort."
+  },
+  "reviewer": {
+    "buyer_task": "Identify the due education task and next action while retaining today’s workload context.",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "questions": [
+      {
+        "id": "C1",
+        "dimension": "comprehension",
+        "prompt": "Which item is due first and which control advances it?"
+      },
+      {
+        "id": "D1",
+        "dimension": "distinctiveness",
+        "prompt": "Which concrete education context is visible without relying on the logo?"
+      }
+    ],
+    "instruction": "Show only this reviewer packet and anonymously labelled captures. Answer before seeing another candidate. Do not disclose answer criteria or author preference."
+  },
+  "status": "PLANNED_VALIDATION",
+  "human_preference": "UNKNOWN",
+  "causal_effect": "UNKNOWN",
+  "boundary": "Labels do not prove blinding. A facilitator who also authored or grades the candidates must report heuristic review. Human provenance remains a reviewer declaration."
+}

@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Luồng màn hình</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-archive" data-screen="Main">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -31,7 +34,7 @@
 <!-- Lane: login -->
 <section class="rounded-3xl bg-surface p-6 flex items-center gap-4">
 <span class="w-48 shrink-0 text-lg font-bold">Đăng nhập</span>
-<a href="A00-DangNhap.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>A00</b><span>Đăng nhập</span></a>
+<a href="v1-A00-DangNhap.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>A00</b><span>Đăng nhập</span></a>
 <span class="text-muted text-lg">→</span>
 <span class="rounded-2xl bg-white ring-1 ring-line h-20 px-5 flex items-center">Giáo vụ → <b class="mx-1">GV01</b> | Giáo viên / Trưởng bộ môn → <b class="ml-1">TC01</b></span>
 </section>
@@ -80,11 +83,11 @@
 <span class="w-28 shrink-0 font-semibold">Tài khoản</span>
 <a href="CN01-TaiKhoanCuaToi.dc.html" class="text-brand-blue font-semibold">CN01</a><span class="text-muted">→</span>
 <a href="GV09-GiaoViec.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>GV09</b><span>Giao công việc</span></a>
-<a href="GV11-TaiKhoan.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>GV11</b><span>Tài khoản</span></a><span class="text-muted">→</span>
+<a href="v1-GV11-TaiKhoan.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>GV11</b><span>Tài khoản</span></a><span class="text-muted">→</span>
 <a href="GV11b-ChiTietTaiKhoan.dc.html" class="h-16 w-44 rounded-2xl bg-soft-yellow ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>GV11b | mới</b><span>Chi tiết, khóa tài khoản</span></a>
 <a href="GV14-GuiThongBao.dc.html" class="h-16 w-44 rounded-2xl bg-soft-yellow ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3 ml-6"><b>GV14 | mới</b><span>Gửi thông báo</span></a>
-<a href="CN02-DoiMatKhau.dc.html" class="h-16 w-44 rounded-2xl bg-soft-yellow ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>CN02 | mới</b><span>Đổi mật khẩu</span></a>
-<a href="ST03-DangTai.dc.html" class="h-16 w-44 rounded-2xl bg-soft-orange ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3 ml-6"><b>ST03 | mới</b><span>Đang tải danh sách</span></a>
+<a href="#unavailable" data-unavailable="CN02-DoiMatKhau.dc.html" class="h-16 w-44 rounded-2xl bg-soft-yellow ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>CN02 | mới</b><span>Đổi mật khẩu</span></a>
+<a href="#unavailable" data-unavailable="ST03-DangTai.dc.html" class="h-16 w-44 rounded-2xl bg-soft-orange ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3 ml-6"><b>ST03 | mới</b><span>Đang tải danh sách</span></a>
 </div>
 </section>
 
@@ -92,54 +95,54 @@
 <section class="rounded-3xl bg-soft-yellow p-6 flex flex-col gap-4">
 <div class="flex items-center gap-4">
 <span class="w-48 shrink-0 text-lg font-bold">Giáo viên | 5 tab</span>
-<a href="TC01-TongQuan.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC01</b><span>Tổng quan</span></a>
-<a href="TC02-LichDay.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC02 | 02b</b><span>Lịch dạy | tuần, ngày</span></a>
-<a href="TC04a-DanhSachHS.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC04a</b><span>Học sinh</span></a>
-<a href="TC05-BaoCao.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC05</b><span>Báo cáo học tập</span></a>
-<a href="TC06-CongViec.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC06</b><span>Nhiệm vụ</span></a>
+<a href="#unavailable" data-unavailable="TC01-TongQuan.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC01</b><span>Tổng quan</span></a>
+<a href="#unavailable" data-unavailable="TC02-LichDay.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC02 | 02b</b><span>Lịch dạy | tuần, ngày</span></a>
+<a href="#unavailable" data-unavailable="TC04a-DanhSachHS.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC04a</b><span>Học sinh</span></a>
+<a href="#unavailable" data-unavailable="TC05-BaoCao.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC05</b><span>Báo cáo học tập</span></a>
+<a href="#unavailable" data-unavailable="TC06-CongViec.dc.html" class="w-56 h-20 shrink-0 rounded-2xl bg-brand-blue text-white no-underline flex flex-col justify-center px-4"><b>TC06</b><span>Nhiệm vụ</span></a>
 </div>
 <div class="flex items-center gap-3 pl-52">
 <span class="w-28 shrink-0 font-semibold">Điểm danh</span>
-<a href="TC01-TongQuan.dc.html" class="text-brand-blue font-semibold">TC01 | TC02</a><span class="text-muted">→</span>
-<a href="TC03-TichLich.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC03</b><span>Điểm danh | đã lưu</span></a>
-<a href="ST02-LoiLuuDiemDanh.dc.html" class="h-16 w-44 rounded-2xl bg-soft-orange ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>ST02 | mới</b><span>Lỗi mạng khi lưu</span></a>
-<a href="TC03b-DaKhoa.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC03b</b><span>Đã chốt lúc 0h</span></a>
-<a href="TC03c-BuoiPhatSinh.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC03c</b><span>Buổi học bổ sung</span></a>
+<a href="#unavailable" data-unavailable="TC01-TongQuan.dc.html" class="text-brand-blue font-semibold">TC01 | TC02</a><span class="text-muted">→</span>
+<a href="#unavailable" data-unavailable="TC03-TichLich.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC03</b><span>Điểm danh | đã lưu</span></a>
+<a href="#unavailable" data-unavailable="ST02-LoiLuuDiemDanh.dc.html" class="h-16 w-44 rounded-2xl bg-soft-orange ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>ST02 | mới</b><span>Lỗi mạng khi lưu</span></a>
+<a href="#unavailable" data-unavailable="TC03b-DaKhoa.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC03b</b><span>Đã chốt lúc 0h</span></a>
+<a href="#unavailable" data-unavailable="TC03c-BuoiPhatSinh.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC03c</b><span>Buổi học bổ sung</span></a>
 <span class="text-muted ml-4">TC03b → đề nghị Giáo vụ điều chỉnh → GV10</span>
 </div>
 <div class="flex items-center gap-3 pl-52">
 <span class="w-28 shrink-0 font-semibold">Học sinh</span>
-<a href="TC04a-DanhSachHS.dc.html" class="text-brand-blue font-semibold">TC04a</a><span class="text-muted">→</span>
-<a href="TC04-HoSoHS.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC04</b><span>Hồ sơ học sinh</span></a><span class="text-muted">→</span>
-<a href="TC04b-PhieuTest.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC04b</b><span>Phiếu đánh giá năng lực</span></a>
+<a href="#unavailable" data-unavailable="TC04a-DanhSachHS.dc.html" class="text-brand-blue font-semibold">TC04a</a><span class="text-muted">→</span>
+<a href="#unavailable" data-unavailable="TC04-HoSoHS.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC04</b><span>Hồ sơ học sinh</span></a><span class="text-muted">→</span>
+<a href="#unavailable" data-unavailable="TC04b-PhieuTest.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC04b</b><span>Phiếu đánh giá năng lực</span></a>
 <span class="w-28 shrink-0 font-semibold ml-6">Chỉ số</span>
-<a href="TC01b-ThongKe.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC01b</b><span>Chỉ số giảng dạy</span></a>
+<a href="#unavailable" data-unavailable="TC01b-ThongKe.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC01b</b><span>Chỉ số giảng dạy</span></a>
 </div>
 <div class="flex items-center gap-3 pl-52">
 <span class="w-28 shrink-0 font-semibold">Báo cáo</span>
-<a href="TC05-BaoCao.dc.html" class="text-brand-blue font-semibold">TC05</a><span class="text-muted">→</span>
-<a href="TC05c-NhapBaoCao.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC05c</b><span>Lập báo cáo | gửi duyệt</span></a>
-<a href="TC05b-ChiTietBaoCao.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC05b</b><span>Chi tiết báo cáo</span></a>
-<a href="TC05d-GuiLai.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC05d</b><span>Chỉnh sửa, gửi lại</span></a>
-<a href="TC05w-ImportWeb.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC05w | web</b><span>Nhập hàng loạt Excel</span></a>
+<a href="#unavailable" data-unavailable="TC05-BaoCao.dc.html" class="text-brand-blue font-semibold">TC05</a><span class="text-muted">→</span>
+<a href="#unavailable" data-unavailable="TC05c-NhapBaoCao.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC05c</b><span>Lập báo cáo | gửi duyệt</span></a>
+<a href="#unavailable" data-unavailable="TC05b-ChiTietBaoCao.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC05b</b><span>Chi tiết báo cáo</span></a>
+<a href="#unavailable" data-unavailable="TC05d-GuiLai.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC05d</b><span>Chỉnh sửa, gửi lại</span></a>
+<a href="#unavailable" data-unavailable="TC05w-ImportWeb.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC05w | web</b><span>Nhập hàng loạt Excel</span></a>
 </div>
 <div class="flex items-center gap-3 pl-52">
 <span class="w-28 shrink-0 font-semibold">Nhiệm vụ</span>
-<a href="TC06-CongViec.dc.html" class="text-brand-blue font-semibold">TC06</a><span class="text-muted">→</span>
-<a href="TC06b-ChiTietViec.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC06b</b><span>Chi tiết nhiệm vụ</span></a><span class="text-muted">→</span>
-<a href="TC06c-GuiKetQua.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC06c</b><span>Báo cáo kết quả</span></a>
+<a href="#unavailable" data-unavailable="TC06-CongViec.dc.html" class="text-brand-blue font-semibold">TC06</a><span class="text-muted">→</span>
+<a href="#unavailable" data-unavailable="TC06b-ChiTietViec.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC06b</b><span>Chi tiết nhiệm vụ</span></a><span class="text-muted">→</span>
+<a href="#unavailable" data-unavailable="TC06c-GuiKetQua.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC06c</b><span>Báo cáo kết quả</span></a>
 <span class="w-28 shrink-0 font-semibold ml-6">Trưởng BM</span>
-<a href="TC01-TongQuan.dc.html" class="text-brand-blue font-semibold">TC01</a><span class="text-muted">→</span>
-<a href="TBM01-Duyet.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TBM01</b><span>Duyệt báo cáo của tổ</span></a><span class="text-muted">→ GV07c</span>
+<a href="#unavailable" data-unavailable="TC01-TongQuan.dc.html" class="text-brand-blue font-semibold">TC01</a><span class="text-muted">→</span>
+<a href="#unavailable" data-unavailable="TBM01-Duyet.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TBM01</b><span>Duyệt báo cáo của tổ</span></a><span class="text-muted">→ GV07c</span>
 </div>
 </section>
 
 <!-- Lane: shared -->
 <section class="rounded-3xl bg-surface p-6 flex items-center gap-4">
 <span class="w-48 shrink-0 text-lg font-bold">Dùng chung</span>
-<a href="TC07-TraoDoi.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC07</b><span>Liên lạc | thông báo</span></a><span class="text-muted">→</span>
-<a href="TC07b-HoiThoai.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC07b</b><span>Hội thoại</span></a>
-<a href="TC07c-SoanTin.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC07c</b><span>Tin nhắn mới</span></a>
+<a href="#unavailable" data-unavailable="TC07-TraoDoi.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC07</b><span>Liên lạc | thông báo</span></a><span class="text-muted">→</span>
+<a href="#unavailable" data-unavailable="TC07b-HoiThoai.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC07b</b><span>Hội thoại</span></a>
+<a href="#unavailable" data-unavailable="TC07c-SoanTin.dc.html" class="h-16 w-44 rounded-2xl bg-white ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3"><b>TC07c</b><span>Tin nhắn mới</span></a>
 <a href="CN01-TaiKhoanCuaToi.dc.html" class="h-16 w-44 rounded-2xl bg-soft-yellow ring-1 ring-line no-underline text-ink flex flex-col justify-center px-3 ml-6"><b>CN01 | mới</b><span>Tài khoản | đăng xuất</span></a>
 <span class="text-muted ml-6">Liên lạc tách theo vai trò: Giáo vụ dùng GV13 có thanh tab riêng, Giáo viên dùng TC07.</span>
 </section>

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "plan_sha256": "93550251aef606ee9ba286c7032b547db65b35ce8f3c512d5feab48480d58c1d",
+  "reviews": [
+    {
+      "reviewer_id": "codex-author-review",
+      "role": "Author conducting screenshot-based expert critique",
+      "source": "agent-heuristic",
+      "independent": false,
+      "session_index": 0,
+      "presentation_order": [
+        "A",
+        "B"
+      ],
+      "answers": [
+        {
+          "label": "A",
+          "question_id": "C1",
+          "response": "Sửa điểm danh is due at 0h; Xử lý is its labelled action. The filled action stays at the right of its count, title and deadline row.",
+          "criteria_met": [
+            true,
+            true
+          ],
+          "observed_element": "First priority task: Sửa điểm danh / Hạn 0h hôm nay / Xử lý",
+          "capture_sha256": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099"
+        },
+        {
+          "label": "A",
+          "question_id": "D1",
+          "response": "The count, task and deadline remain together. The blue daily summary includes sáng, chiều, tối sessions above the queue.",
+          "criteria_met": [
+            true,
+            true
+          ],
+          "observed_element": "Daily session summary relative to task queue",
+          "capture_sha256": "f5255e2bd8f914167ce3f2fa8e7046e7e1454a61615d66be7743a2c5f98c9099"
+        },
+        {
+          "label": "B",
+          "question_id": "C1",
+          "response": "Sửa điểm danh is due at 0h; Xử lý is its labelled action. The action sits below the text on a separate line.",
+          "criteria_met": [
+            true,
+            true
+          ],
+          "observed_element": "First priority task: Sửa điểm danh / Hạn 0h hôm nay / Xử lý",
+          "capture_sha256": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb"
+        },
+        {
+          "label": "B",
+          "question_id": "D1",
+          "response": "The count, task and deadline remain together. Daily sessions are below five ledger rows and outside the initial mobile viewport.",
+          "criteria_met": [
+            true,
+            false
+          ],
+          "observed_element": "Daily session summary relative to task queue",
+          "capture_sha256": "4c9e9cc7429310f7ed12d79c5c2e202a9031eb3afcc9ea2e72faf183c653e7fb"
+        }
+      ],
+      "preferred_label": "A",
+      "tradeoff": "Selected grouping retains daily context and compact actions. Ledger exposes the first task sooner but separates action and context. This is an author heuristic, not independent evidence, human preference, or a causal effect."
+    }
+  ]
+}

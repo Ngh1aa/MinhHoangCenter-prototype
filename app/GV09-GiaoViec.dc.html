@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GV09 Giao công việc</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-current" data-screen="GV09-GiaoViec">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -24,7 +27,7 @@
 <h2 id="g-nd" class="m-0 text-[13px] leading-[18px] font-semibold uppercase tracking-[0.08em] text-muted">Nội dung</h2>
 <div class="flex flex-col gap-2">
 <label for="td" class="text-[13px] font-medium text-muted px-1">Tiêu đề công việc <span class="text-brand-orange" aria-hidden="true">*</span></label>
-<input id="td" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="Soạn đề kiểm tra chương 2 lớp 7" aria-required="true">
+<input id="td" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" data-mh-value="Soạn đề kiểm tra chương 2 lớp 7" aria-required="true">
 </div>
 <div class="flex flex-col gap-2">
 <label for="yc" class="text-[13px] font-medium text-muted px-1">Yêu cầu thực hiện <span class="text-brand-orange" aria-hidden="true">*</span></label>
@@ -52,7 +55,7 @@
 <legend class="text-[13px] font-medium text-muted px-1 mb-2">Người phụ trách <span class="text-brand-orange" aria-hidden="true">*</span></legend>
 <div class="bg-white rounded-3xl overflow-hidden flex flex-col divide-y divide-line">
 <label class="flex items-center gap-3 px-4 py-3 min-h-[56px] active:bg-surface"><span class="initials w-9 h-9 text-xs shrink-0">TA</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Cô Thu Anh</span><span class="cap whitespace-nowrap">Toán · Trưởng bộ môn</span></span><input type="radio" name="pt" class="w-5 h-5 shrink-0 accent-brand-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"></label>
-<label class="relative flex items-center gap-3 px-4 py-3 min-h-[56px] bg-soft-blue before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-brand-blue"><span class="initials w-9 h-9 text-xs shrink-0 bg-white">MĐ</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Thầy Minh Đức</span><span class="cap text-ink whitespace-nowrap">Toán · 2 việc đang làm</span></span><input type="radio" name="pt" checked="" class="w-5 h-5 shrink-0 accent-brand-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"></label>
+<label class="relative flex items-center gap-3 px-4 py-3 min-h-[56px] bg-soft-blue before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-brand-blue"><span class="initials w-9 h-9 text-xs shrink-0 bg-white">MĐ</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Thầy Minh Đức</span><span class="cap text-ink whitespace-nowrap">Toán · 2 việc đang làm</span></span><input type="radio" name="pt" data-mh-checked="true" class="w-5 h-5 shrink-0 accent-brand-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"></label>
 <label class="flex items-center gap-3 px-4 py-3 min-h-[56px] active:bg-surface"><span class="initials w-9 h-9 text-xs shrink-0">DL</span><span class="flex-1 min-w-0 flex flex-col"><span class="font-medium whitespace-nowrap">Cô Diệu Linh</span><span class="cap whitespace-nowrap">Văn</span></span><input type="radio" name="pt" class="w-5 h-5 shrink-0 accent-brand-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue"></label>
 <button type="button" aria-haspopup="listbox" class="w-full flex items-center justify-between px-4 h-14 bg-white border-0 font-sans text-sm font-semibold text-brand-blue text-left active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-brand-blue"><span class="whitespace-nowrap">Xem tất cả giáo viên</span><svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></button>
 </div>

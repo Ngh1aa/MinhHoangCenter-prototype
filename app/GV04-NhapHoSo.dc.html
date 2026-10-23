@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GV04 Tiếp nhận hồ sơ · 1 Học sinh</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-current" data-screen="GV04-NhapHoSo">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -24,15 +27,15 @@
 <section class="flex flex-col gap-4" aria-labelledby="g-hs"><h2 id="g-hs" class="m-0 text-[12px] leading-4 font-semibold uppercase tracking-[0.12em] text-muted px-1">Học sinh</h2>
 <div class="flex flex-col gap-2">
 <label for="ms" class="text-[13px] font-medium text-muted px-1">Mã học sinh <span class="text-brand-orange" aria-hidden="true">*</span></label>
-<div class="relative"><input id="ms" aria-required="true" class="input pr-32 font-semibold focus:outline-none focus:ring-2 focus:ring-brand-blue" value="17A0105"><span class="pill bg-soft-blue text-ink h-6 absolute right-4 top-4">Điền tự động</span></div>
+<div class="relative"><input id="ms" aria-required="true" class="input pr-32 font-semibold focus:outline-none focus:ring-2 focus:ring-brand-blue" data-mh-value="17A0105"><span class="pill bg-soft-blue text-ink h-6 absolute right-4 top-4">Điền tự động</span></div>
 </div>
 <div class="flex flex-col gap-2">
 <label for="n" class="text-[13px] font-medium text-muted px-1">Họ và tên <span class="text-brand-orange" aria-hidden="true">*</span></label>
-<input id="n" aria-required="true" aria-describedby="dup" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="Nguyễn Văn A">
+<input id="n" aria-required="true" aria-describedby="dup" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" data-mh-value="Nguyễn Văn A">
 <div class="rounded-2xl bg-soft-orange px-4 py-3 flex items-center gap-3" id="dup" role="status"><span class="w-2 h-2 rounded-full bg-brand-orange shrink-0" aria-hidden="true"></span><span class="flex-1 min-w-0 text-sm whitespace-nowrap">Trùng tên với 17A0004</span><a href="GV03-HoSo.dc.html" class="text-sm font-semibold text-brand-blue no-underline whitespace-nowrap py-3 -my-3 px-2 -mx-2 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Xem</a></div>
 </div>
 <div class="grid grid-cols-2 gap-3">
-<div class="flex flex-col gap-2"><label for="d" class="text-[13px] font-medium text-muted px-1">Ngày sinh <span class="text-brand-orange" aria-hidden="true">*</span></label><input id="d" aria-required="true" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="25/02/2017"></div>
+<div class="flex flex-col gap-2"><label for="d" class="text-[13px] font-medium text-muted px-1">Ngày sinh <span class="text-brand-orange" aria-hidden="true">*</span></label><input id="d" aria-required="true" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" data-mh-value="25/02/2017"></div>
 <div class="flex flex-col gap-2" role="radiogroup" aria-labelledby="gt-label" aria-required="true"><span id="gt-label" class="text-[13px] font-medium text-muted px-1">Giới tính <span class="text-brand-orange" aria-hidden="true">*</span></span><div class="h-14 p-1 rounded-2xl bg-white flex gap-1"><button type="button" role="radio" aria-checked="true" class="seg seg-on bg-brand-blue text-white h-full transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Nam</button><button type="button" role="radio" aria-checked="false" class="seg h-full transition-transform active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue">Nữ</button></div></div>
 </div>
 </section>
@@ -41,7 +44,7 @@
 <div class="flex flex-col gap-2"><span id="kl-label" class="text-[13px] font-medium text-muted px-1">Khối lớp <span class="text-brand-orange" aria-hidden="true">*</span></span><button type="button" class="field active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-haspopup="listbox" aria-labelledby="kl-label" aria-required="true"><span>Khối 4</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button></div>
 <div class="flex flex-col gap-2"><span id="cs-label" class="text-[13px] font-medium text-muted px-1">Cơ sở học <span class="text-brand-orange" aria-hidden="true">*</span></span><button type="button" class="field active:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue" aria-haspopup="listbox" aria-labelledby="cs-label" aria-required="true"><span class="whitespace-nowrap">150 TĐT</span><svg class="w-5 h-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button></div>
 </div>
-<div class="flex flex-col gap-2"><label for="s" class="text-[13px] font-medium text-muted px-1">Trường đang học</label><input id="s" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" value="TH Thịnh Hào"></div>
+<div class="flex flex-col gap-2"><label for="s" class="text-[13px] font-medium text-muted px-1">Trường đang học</label><input id="s" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" data-mh-value="TH Thịnh Hào"></div>
 </section>
 <section class="flex flex-col gap-4" aria-labelledby="g-lh"><h2 id="g-lh" class="m-0 text-[12px] leading-4 font-semibold uppercase tracking-[0.12em] text-muted px-1">Liên hệ</h2>
 <div class="flex flex-col gap-2"><label for="a" class="text-[13px] font-medium text-muted px-1">Địa chỉ</label><input id="a" class="input focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Số nhà, phố, phường"></div>

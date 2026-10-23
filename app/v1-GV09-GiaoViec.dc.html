@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>v1 · GV09 Giao việc</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-archive" data-screen="v1-GV09-GiaoViec">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -19,7 +22,7 @@
 <h1 class="text-[22px] leading-7 font-bold tracking-tight flex-1">Giao việc</h1>
 </header>
 <main class="page gap-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-<div class="flex flex-col gap-2"><label for="t" class="text-[13px] font-medium text-muted px-1">Tiêu đề</label><input id="t" class="input" value="Soạn đề kiểm tra chương 2 lớp 7"></div>
+<div class="flex flex-col gap-2"><label for="t" class="text-[13px] font-medium text-muted px-1">Tiêu đề</label><input id="t" class="input" data-mh-value="Soạn đề kiểm tra chương 2 lớp 7"></div>
 <div class="flex flex-col gap-2"><label for="d" class="text-[13px] font-medium text-muted px-1">Mô tả</label><div class="min-h-24 rounded-2xl bg-white px-4 py-3">Đề 45 phút, 3 mức độ, kèm đáp án. Gửi file Word qua ticket.</div></div>
 <div class="flex flex-col gap-2"><span class="text-[13px] font-medium text-muted px-1">Giao cho</span>
 <div class="card flex flex-col gap-1 py-2">
@@ -40,7 +43,7 @@
 </div>
 </main>
 <div class="absolute left-5 right-5 bottom-6">
-<a href="v1-TC06-CongViec.dc.html" class="btn">Giao việc</a>
+<a href="#unavailable" data-unavailable="v1-TC06-CongViec.dc.html" class="btn">Giao việc</a>
 </div>
 </div>
 </x-dc>

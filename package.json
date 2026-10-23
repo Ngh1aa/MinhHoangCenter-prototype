@@ -1,0 +1,13 @@
+{
+ "name":"minh-hoang-design-canvas",
+ "version":"1.0.0",
+ "private":true,
+ "scripts":{
+  "start":"node scripts/server.cjs",
+  "check":"node --check canvas.js && node --check app/interactions.js && node scripts/check.cjs",
+  "capture":"node scripts/capture.cjs",
+  "test":"node scripts/qa.cjs",
+  "build":"node scripts/build.cjs"
+ },
+ "devDependencies":{"playwright":"1.62.1"}
+}

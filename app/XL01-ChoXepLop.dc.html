@@ -2,12 +2,15 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>XL01 Chờ xếp lớp</title>
 <script src="./proto-shim.js"></script>
 <script src="./support.js"></script>
 <link rel="stylesheet" href="./tailwind.css">
+<link rel="stylesheet" href="./refinement.css">
+<script src="./interactions.js" defer></script>
 </head>
-<body>
+<body class="mh-current" data-screen="XL01-ChoXepLop">
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
@@ -22,12 +25,12 @@
 <div class="bg-soft-green rounded-3xl px-3 py-3 flex flex-col gap-0.5"><span class="text-[24px] leading-8 font-bold tabular-nums text-success">2</span><span class="text-[12px] leading-4 text-ink whitespace-nowrap">Có lớp khớp</span></div>
 </section>
 <div class="-mx-5 px-5 flex gap-2 overflow-x-auto [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden" role="group" aria-label="Lọc theo môn">
-<sc-for list="{{filters}}" as="f" hint-placeholder-count="3"><button type="button" onClick="{{f.pick}}" aria-pressed="{{f.on}}" class="{{f.cls}}">{{f.label}}<span class="{{f.countCls}}">{{f.count}}</span></button></sc-for>
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="3"><button type="button" onClick="{{f.pick}}" aria-pressed="{{f.on}}" class="{{f.cls}}" data-native-handler="true">{{f.label}}<span class="{{f.countCls}}">{{f.count}}</span></button></sc-for>
 </div>
 <ul class="m-0 p-0 list-none flex flex-col gap-3" aria-label="Học sinh chờ xếp lớp">
 <sc-for list="{{items}}" as="it" hint-placeholder-count="3">
 <li class="bg-white rounded-3xl p-4 flex flex-col gap-3">
-<div class="flex items-center gap-3"><img src="{{it.src}}" alt="" class="w-12 h-12 shrink-0 rounded-xl object-cover bg-soft-blue"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">{{it.name}}</span><span class="text-[13px] leading-[18px] text-muted whitespace-nowrap"><span class="font-mono text-[12px] tracking-wide">{{it.code}}</span> · {{it.grade}}</span></span><span class="{{it.waitCls}}">Chờ {{it.wait}} ngày</span></div>
+<div class="flex items-center gap-3"><img data-mh-src="{{it.src}}" alt="" class="w-12 h-12 shrink-0 rounded-xl object-cover bg-soft-blue"><span class="flex-1 min-w-0 flex flex-col"><span class="font-semibold whitespace-nowrap">{{it.name}}</span><span class="text-[13px] leading-[18px] text-muted whitespace-nowrap"><span class="font-mono text-[12px] tracking-wide">{{it.code}}</span> · {{it.grade}}</span></span><span class="{{it.waitCls}}">Chờ {{it.wait}} ngày</span></div>
 <div class="grid grid-cols-3 gap-2 bg-surface rounded-2xl px-3 py-2.5">
 <span class="flex flex-col min-w-0"><span class="text-[11px] leading-4 text-muted">Môn</span><span class="text-[14px] leading-5 font-semibold truncate">{{it.subject}}</span></span>
 <span class="flex flex-col min-w-0"><span class="text-[11px] leading-4 text-muted">Lịch mong muốn</span><span class="text-[14px] leading-5 font-semibold whitespace-nowrap">{{it.slot}}</span></span>
