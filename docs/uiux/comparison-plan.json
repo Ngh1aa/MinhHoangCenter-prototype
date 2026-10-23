@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "contract_sha256": "6e9c2367f6bc438f2a878d964023e1524ac901d8042c140733bf6bb0c27763de",
+  "contract_sha256": "27228421a84934f2160aa31cb7334e02e19d5ad8270cc328b9fa146779ca53c3",
   "route": "/app/GV01-TongQuan.dc.html",
   "seed": 0,
   "facilitator": {
@@ -45,7 +45,7 @@
         "route": "/app/GV01-TongQuan.dc.html",
         "composition_id": "selected",
         "file": "docs/evidence/GV01-TongQuan-selected-390.png",
-        "sha256": "98c4c7a3049f2016dab96b3ba968ff9d689daa8727d3c71a7ca43efc084f2edf",
+        "sha256": "36d763e3f16540a957685fd184b6647ede2b8311426aaeca4cffb12d2a2f7295",
         "width": 390,
         "viewport_height": 900,
         "inspected": true,
@@ -54,7 +54,7 @@
           "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
           "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
           "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
-          "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
+          "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
           "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
         }
       },
@@ -62,7 +62,7 @@
         "route": "/app/GV01-TongQuan.dc.html",
         "composition_id": "selected",
         "file": "docs/evidence/GV01-TongQuan-selected-1280.png",
-        "sha256": "95cc8a3897ec530004174f5aae3f1610c47ab04e45140c1fe8436e606553ed37",
+        "sha256": "aebe8c5c9a1d2a24e2a9398e7b3bb312b44b1dc59132c0d5975b606ab6537790",
         "width": 1280,
         "viewport_height": 900,
         "inspected": true,
@@ -71,7 +71,7 @@
           "hierarchy": "Context leads, then grouped decision objects and a labelled primary action.",
           "typography": "Google Sans Flex follows the supplied title, body and caption roles with readable Vietnamese diacritics.",
           "spacing": "20px gutters, 12px grouping and 16px card padding; floating blue navigation matches the supplied system.",
-          "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
+          "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
           "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
         }
       },
@@ -79,7 +79,7 @@
         "route": "/app/GV01-TongQuan.dc.html",
         "composition_id": "ledger",
         "file": "docs/evidence/GV01-alternative-390.png",
-        "sha256": "73e90698eda97aaab6f87f1c3383f3ecf2b846a135026d12bd0536a1af2ba29f",
+        "sha256": "862ee5598fbacba3a6623866c20c805fb5695bdefba9dd9cf134caf11da63fea",
         "width": 390,
         "viewport_height": 900,
         "inspected": true,
@@ -88,7 +88,7 @@
           "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
           "typography": "Supplied Google Sans Flex display role 44/52; this greeting takes more initial space than the chosen 28/32 title role.",
           "spacing": "24px section gaps, 16px task gaps and 20px object padding; each action occupies a separate line.",
-          "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
+          "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
           "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
         }
       },
@@ -96,7 +96,7 @@
         "route": "/app/GV01-TongQuan.dc.html",
         "composition_id": "ledger",
         "file": "docs/evidence/GV01-alternative-1280.png",
-        "sha256": "00c76daae890a553405cd1c82b0ed4814255a15c160a64aa673b10a1cad9b2da",
+        "sha256": "d358ee8cbad705b0ad31805d97d04132e647133531a3e84794d3a1d260173ac6",
         "width": 1280,
         "viewport_height": 900,
         "inspected": true,
@@ -105,7 +105,7 @@
           "hierarchy": "Task ledger leads immediately; the school-day summary falls below five work rows.",
           "typography": "Supplied Google Sans Flex display role 44/52; this greeting takes more initial space than the chosen 28/32 title role.",
           "spacing": "24px section gaps, 16px task gaps and 20px object padding; each action occupies a separate line.",
-          "media": "Original illustrative avatars and line icons only. Live canvas embeds these canonical routes directly, with no raster artboard tiles.",
+          "media": "Original illustrative avatars and line icons only. Static canvas displays the canonical inert DOM with no raster artboard tiles; the explicit prototype viewer runs the source route.",
           "distinctiveness": "Work counts, deadlines and teaching-session context make the education work visible."
         }
       }

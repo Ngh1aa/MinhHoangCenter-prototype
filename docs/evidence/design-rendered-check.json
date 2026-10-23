@@ -17,21 +17,21 @@
     }
   ],
   "direction_comparison": "MULTI_AXIS_DECLARED",
-  "contract_sha256": "387d40372956f6799cd40131386b7d69d0e2e2dc44b7ed518d33b59386920814",
+  "contract_sha256": "6d06357393ed0fc0f09b5e8cc1e8e7f9a1f0a969e6d38b886afc631baf2fdd87",
   "path": "docs/uiux/design-decisions.json",
   "project_root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center",
   "artifact_path": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-23\\s-d-ng-https-github-com\\work\\center\\docs\\uiux\\design-decisions.json",
-  "artifact_sha256": "sha256:387d40372956f6799cd40131386b7d69d0e2e2dc44b7ed518d33b59386920814",
+  "artifact_sha256": "sha256:6d06357393ed0fc0f09b5e8cc1e8e7f9a1f0a969e6d38b886afc631baf2fdd87",
   "dependency_hashes": {
-    "docs/evidence/GV01-TongQuan-selected-1280.png": "95cc8a3897ec530004174f5aae3f1610c47ab04e45140c1fe8436e606553ed37",
-    "docs/evidence/GV01-TongQuan-selected-390.png": "98c4c7a3049f2016dab96b3ba968ff9d689daa8727d3c71a7ca43efc084f2edf",
-    "docs/evidence/GV01-alternative-1280.png": "00c76daae890a553405cd1c82b0ed4814255a15c160a64aa673b10a1cad9b2da",
-    "docs/evidence/GV01-alternative-390.png": "73e90698eda97aaab6f87f1c3383f3ecf2b846a135026d12bd0536a1af2ba29f",
+    "docs/evidence/GV01-TongQuan-selected-1280.png": "aebe8c5c9a1d2a24e2a9398e7b3bb312b44b1dc59132c0d5975b606ab6537790",
+    "docs/evidence/GV01-TongQuan-selected-390.png": "36d763e3f16540a957685fd184b6647ede2b8311426aaeca4cffb12d2a2f7295",
+    "docs/evidence/GV01-alternative-1280.png": "d358ee8cbad705b0ad31805d97d04132e647133531a3e84794d3a1d260173ac6",
+    "docs/evidence/GV01-alternative-390.png": "862ee5598fbacba3a6623866c20c805fb5695bdefba9dd9cf134caf11da63fea",
     "docs/evidence/GV04-NhapHoSo-selected-1280.png": "96cfe32de2b70f2394d729af5818af0b6a7ff94e9a44ca3e054e6c711ae2e367",
     "docs/evidence/GV04-NhapHoSo-selected-390.png": "0f48b29c61aeb8802ceb10db5c8ed3a258dc4422e78534b0886c030b6ea37173",
     "docs/evidence/XL02-ChonLop-selected-1280.png": "1b7d84ccb46a2b88e6ce8d149267d94c49c4d1a7738c95b052c58d590066b24c",
     "docs/evidence/XL02-ChonLop-selected-390.png": "3794a2e788a4f92d3b7a6a13cdbb983a73984eaebabb56019240825dfc22f13c",
-    "docs/uiux/comparison-observations.json": "cd751a55c4727a61c5f656535c9012b6f153c390eba374e728d09de6995f4ed2",
-    "docs/uiux/comparison-plan.json": "83d50eb5a64fabb3e46901061c5582917d597190796ea75548008fc72747abac"
+    "docs/uiux/comparison-observations.json": "932088670e83eccd9136058bee8bb0caaf25acf5bdff2ef99a32b57b94682009",
+    "docs/uiux/comparison-plan.json": "92485508b02bf288eb6d8e200acc60315744b847a168c91cc9a76fe35bd80712"
   }
 }

@@ -24,3 +24,7 @@ Browser screenshots in `docs/evidence/` are QA evidence only. They are never can
 ## Current presentation: static design canvas
 
 The latest user correction supersedes the live prototype presentation. Canonical screen compositions and supplied design-system tokens are retained. Static HTML/SVG is exported from the actual renderer and displayed in isolated, inert DOM without prototype scripts or screen navigation. Native-size viewing and 100% controls address legibility; screenshots remain QA evidence only.
+
+## Optional prototype entry
+
+One brand-blue primary CTA, Xem prototype, sits at the top-right of the workspace with a small play icon. It launches the canonical current screen in a separate viewer. The 69 artboards remain static and clear. Header notification/message shortcuts are removed from both overview versions; bottom communication navigation is retained.

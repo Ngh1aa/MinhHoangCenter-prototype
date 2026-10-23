@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T05:28:59.795Z",
+  "generatedAt": "2026-10-23T05:42:08.470Z",
   "checks": [
     {
       "check": "69 static artboards, 17 exact pairs, red V1 frames, two unmatched V1, zero prototype iframes or controls",
@@ -10,11 +10,19 @@
       "result": "PASS"
     },
     {
+      "check": "Top-right prototype CTA has focus state, opens live navigation and form flow, tracks share link, closes without changing static artboards",
+      "result": "PASS"
+    },
+    {
       "check": "All 69 canonical documents render as inert static HTML/SVG",
       "result": "PASS"
     },
     {
-      "check": "Canvas pan, search, filters, static large view, deep links and readable mobile focus",
+      "check": "Redundant top-right notification/message controls removed from current and V1 home screens",
+      "result": "PASS"
+    },
+    {
+      "check": "Canvas pan, search, filters, static large view and prototype deep links, 320/360/390 toolbar, mobile prototype and Escape recovery",
       "result": "PASS"
     }
   ],

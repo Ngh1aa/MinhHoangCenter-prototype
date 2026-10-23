@@ -16,5 +16,17 @@
     "100% entry zoom and native-size control",
     "Expand current-screen content without changing canonical app routes"
   ],
-  "verification": "docs/evidence/static-canvas-qa.json"
+  "verification": "docs/evidence/static-canvas-qa.json",
+  "optionalPrototype": {
+    "source": "Latest direct user request",
+    "trigger": "Top-right Xem prototype button",
+    "surface": "Separate modal viewer; static artboards unchanged",
+    "route": "#prototype=<current-screen-id>",
+    "fallback": "Current overview for references or unmatched V1",
+    "removedHeaderShortcuts": [
+      "GV01-TongQuan",
+      "v1-GV01-TongQuan"
+    ],
+    "verification": "docs/evidence/static-canvas-qa.json"
+  }
 }

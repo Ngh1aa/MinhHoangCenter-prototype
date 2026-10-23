@@ -8,15 +8,15 @@
 <title>Minh Hoàng Center · Design Canvas</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23253a7e'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='30' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="canvas.css?v=static-1">
-<script src="canvas.js?v=static-1" defer></script>
+<link rel="stylesheet" href="canvas.css?v=prototype-entry-1">
+<script src="canvas.js?v=prototype-entry-1" defer></script>
 </head>
 <body>
 <header class="toolbar">
  <button id="menu" class="icon-button mobile-menu" aria-label="Mở danh sách màn hình" aria-expanded="false" aria-controls="sidebar">☰</button>
  <a class="brand" href="./" aria-label="Minh Hoàng Center, về canvas"><span class="brand-mark">M<span>H</span></span><span>Minh Hoàng Center<small>Không gian thiết kế</small></span></a>
  <div class="toolbar-divider"></div><span class="file-name">Design / <b>So sánh màn tĩnh</b></span>
- <div class="toolbar-actions"><span class="screen-total" id="total">Đang đọc màn hình…</span><button id="actual-size" class="primary-button">Xem 100%</button><a class="icon-button repo-link" href="https://github.com/Ngh1aa/MinhHoangCenter-prototype" target="_blank" rel="noopener" aria-label="Mở repository GitHub">↗</a></div>
+ <div class="toolbar-actions"><span class="screen-total" id="total">Đang đọc màn hình…</span><button id="actual-size" class="secondary-button">Xem 100%</button><button id="view-prototype" class="primary-button" aria-haspopup="dialog" aria-controls="preview"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 11 7-11 7V5Z" fill="currentColor"/></svg>Xem prototype</button><a class="icon-button repo-link" href="https://github.com/Ngh1aa/MinhHoangCenter-prototype" target="_blank" rel="noopener" aria-label="Mở repository GitHub">↗</a></div>
 </header>
 <aside id="sidebar" class="sidebar" aria-label="Danh sách màn hình">
  <div class="sidebar-heading"><span>Màn hình</span><span class="count" id="side-count">0</span></div>
@@ -36,9 +36,9 @@
 <dialog id="preview" class="preview-dialog" aria-labelledby="preview-title">
  <div class="preview-toolbar"><button id="close-preview" class="secondary-button">← Canvas</button><div class="preview-name"><strong id="preview-title"></strong><span id="preview-group"></span></div><button id="previous" class="icon-button" aria-label="Màn trước">←</button><button id="next" class="icon-button" aria-label="Màn tiếp theo">→</button><button id="share" class="secondary-button">Chép link</button></div>
  <div class="preview-body"><div id="preview-static"></div></div>
- <div class="preview-note">Thiết kế tĩnh · Kích thước thật · Cuộn để xem toàn bộ màn</div>
+ <div class="preview-note" id="preview-note">Thiết kế tĩnh · Kích thước thật · Cuộn để xem toàn bộ màn</div>
 </dialog>
-<dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title"><h2 id="help-title">Xem và so sánh thiết kế</h2><p>V1 viền đỏ nằm bên trái, bản hiện tại bên phải. Các màn là HTML/SVG tĩnh, giữ chữ và icon rõ khi phóng to.</p><p>Kéo trên màn để di chuyển canvas. Nút 100% đưa về kích thước thật; + / − để thu phóng. Bấm tên hoặc ↗ để xem riêng từng thiết kế.</p><p>Phím tắt: / tìm kiếm, 0 vừa tất cả, + / − thu phóng. Hai màn V1 chưa có bản hiện tại tương ứng được ghi rõ.</p><button id="close-help" class="primary-button">Đã hiểu</button></dialog>
+<dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title"><h2 id="help-title">Xem và so sánh thiết kế</h2><p>V1 viền đỏ nằm bên trái, bản hiện tại bên phải. Các màn là HTML/SVG tĩnh, giữ chữ và icon rõ khi phóng to.</p><p>Kéo trên màn để di chuyển canvas. Nút 100% đưa về kích thước thật; + / − để thu phóng. Bấm tên hoặc ↗ để xem riêng từng thiết kế.</p><p>Nút “Xem prototype” ở góc trên bên phải mở màn hiện tại để thử thao tác. Bấm “Canvas” để quay lại bản thiết kế tĩnh.</p><p>Phím tắt: / tìm kiếm, 0 vừa tất cả, + / − thu phóng. Hai màn V1 chưa có bản hiện tại tương ứng được ghi rõ.</p><button id="close-help" class="primary-button">Đã hiểu</button></dialog>
 <div id="announcement" role="status" aria-live="polite" class="announcement"></div>
 </body>
 </html>
